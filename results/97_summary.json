@@ -1,0 +1,66 @@
+{
+  "MAFG|GM12878": {
+    "n_de_novo": 17,
+    "n_control": 46,
+    "oe_de_novo": 1.287,
+    "oe_control": 1.069,
+    "pct_de_novo": 0.917,
+    "p": 0.006901283343807035
+  },
+  "MAFG|blood B cell": {
+    "n_de_novo": 17,
+    "n_control": 46,
+    "oe_de_novo": 1.096,
+    "oe_control": 0.906,
+    "pct_de_novo": 0.795,
+    "p": 2.171340267564958e-05
+  },
+  "SLC7A11|GM12878": {
+    "n_de_novo": 5,
+    "n_control": 19,
+    "oe_de_novo": 1.382,
+    "oe_control": 1.075,
+    "pct_de_novo": 0.991,
+    "p": 0.023255561996872565
+  },
+  "SLC7A11|blood B cell": {
+    "n_de_novo": 5,
+    "n_control": 19,
+    "oe_de_novo": 1.008,
+    "oe_control": 1.017,
+    "pct_de_novo": 0.568,
+    "p": 0.7388733606111375
+  },
+  "methyl|MAFG|blood B cell": {
+    "n_de_novo": 19,
+    "methyl_de_novo": 0.0091,
+    "methyl_control": 0.0399,
+    "methyl_background": 0.0435,
+    "cpg_de_novo": 56,
+    "p": 0.9997242067397087
+  },
+  "methyl|MAFG|blood memory B cell": {
+    "n_de_novo": 19,
+    "methyl_de_novo": 0.0093,
+    "methyl_control": 0.032,
+    "methyl_background": 0.0403,
+    "cpg_de_novo": 56,
+    "p": 0.9993981843269866
+  },
+  "methyl|SLC7A11|blood B cell": {
+    "n_de_novo": 5,
+    "methyl_de_novo": 0.0025,
+    "methyl_control": 0.0069,
+    "methyl_background": 0.007,
+    "cpg_de_novo": 3,
+    "p": 0.9154903067946546
+  },
+  "methyl|SLC7A11|blood memory B cell": {
+    "n_de_novo": 5,
+    "methyl_de_novo": 0.0016,
+    "methyl_control": 0.0057,
+    "methyl_background": 0.0062,
+    "cpg_de_novo": 3,
+    "p": 0.9041407867494824
+  }
+}

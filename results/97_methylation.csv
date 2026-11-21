@@ -1,0 +1,665 @@
+gene,condition,label,kind,dist,width,dr,n_cpg,gc,methyl
+SLC7A11,blood B cell,de_novo_59952,de_novo,-19140,530,0.3730463,3,0.379,0.00675
+SLC7A11,blood B cell,de_novo_59959,de_novo,99572,847,0.583109,1,0.419,0.00085
+SLC7A11,blood B cell,de_novo_59961,de_novo,105913,455,0.38148373,3,0.435,0.00789
+SLC7A11,blood B cell,de_novo_59962,de_novo,150466,428,0.44660318,3,0.363,0.00249
+SLC7A11,blood B cell,de_novo_59963,de_novo,163971,257,0.38433352,1,0.325,0.00035
+SLC7A11,blood B cell,control_59940,control,-206574,930,0.16765417,4,0.425,0.01133
+SLC7A11,blood B cell,control_59941,control,-161009,258,-0.008910917,4,0.387,0.01281
+SLC7A11,blood B cell,control_59942,control,-151950,837,0.124803856,12,0.421,0.01814
+SLC7A11,blood B cell,control_59943,control,-144056,476,0.04579195,3,0.423,0.0048
+SLC7A11,blood B cell,control_59944,control,-142877,251,0.13257994,2,0.351,0.00618
+SLC7A11,blood B cell,control_59945,control,-141206,864,-0.024266511,3,0.337,0.01076
+SLC7A11,blood B cell,control_59946,control,-127717,1534,-0.18829675,1,0.365,0.00027
+SLC7A11,blood B cell,control_59947,control,-59444,496,-0.06008809,3,0.339,0.00411
+SLC7A11,blood B cell,control_59948,control,-53006,341,-0.18022668,5,0.389,0.01482
+SLC7A11,blood B cell,control_59949,control,-51708,1337,0.23030674,3,0.351,0.00273
+SLC7A11,blood B cell,control_59950,control,-42668,265,0.007883015,5,0.423,0.01341
+SLC7A11,blood B cell,control_59951,control,-21636,209,-0.02650702,0,0.299,1e-05
+SLC7A11,blood B cell,control_59953,control,-6592,454,0.2073869,1,0.329,0.00124
+SLC7A11,blood B cell,control_59954,control,-112,931,0.48148465,9,0.467,0.00475
+SLC7A11,blood B cell,control_59955,control,56266,251,0.057562694,2,0.311,0.00709
+SLC7A11,blood B cell,control_59956,control,62910,475,0.06074754,2,0.349,0.00663
+SLC7A11,blood B cell,control_59957,control,65134,285,0.24147056,9,0.449,0.01339
+SLC7A11,blood B cell,control_59958,control,85946,258,0.07986084,3,0.343,0.00932
+SLC7A11,blood B cell,control_59960,control,101793,224,0.17159286,1,0.399,0.00059
+SLC7A11,blood B cell,control_59964,control,171999,299,0.07775366,3,0.445,0.01041
+SLC7A11,blood B cell,random_138424774,random_background,182425,501,,5,0.461,0.01761
+SLC7A11,blood B cell,random_138313608,random_background,71259,501,,5,0.395,0.01747
+SLC7A11,blood B cell,random_138248143,random_background,5794,501,,1,0.355,0.00376
+SLC7A11,blood B cell,random_138122571,random_background,-119778,501,,3,0.295,0.0111
+SLC7A11,blood B cell,random_138142364,random_background,-99985,501,,4,0.301,0.01223
+SLC7A11,blood B cell,random_138003523,random_background,-238826,501,,2,0.373,0.00519
+SLC7A11,blood B cell,random_138021351,random_background,-220998,501,,2,0.331,0.00611
+SLC7A11,blood B cell,random_137990804,random_background,-251545,501,,4,0.297,0.01388
+SLC7A11,blood B cell,random_138073394,random_background,-168955,501,,2,0.331,0.00714
+SLC7A11,blood B cell,random_138405339,random_background,162990,501,,3,0.441,0.00723
+SLC7A11,blood B cell,random_138320088,random_background,77739,501,,0,0.335,0.0
+SLC7A11,blood B cell,random_138457100,random_background,214751,501,,3,0.359,0.01052
+SLC7A11,blood B cell,random_138244236,random_background,1887,501,,1,0.345,0.0036
+SLC7A11,blood B cell,random_138297830,random_background,55481,501,,2,0.383,0.00689
+SLC7A11,blood B cell,random_138487270,random_background,244921,501,,4,0.389,0.01445
+SLC7A11,blood B cell,random_138361753,random_background,119404,501,,3,0.347,0.01056
+SLC7A11,blood B cell,random_138311167,random_background,68818,501,,1,0.341,0.00365
+SLC7A11,blood B cell,random_138265046,random_background,22697,501,,4,0.391,0.01443
+SLC7A11,blood B cell,random_138273523,random_background,31174,501,,0,0.323,2e-05
+SLC7A11,blood B cell,random_138468711,random_background,226362,501,,1,0.387,0.00368
+SLC7A11,blood B cell,random_138126505,random_background,-115844,501,,0,0.425,1e-05
+SLC7A11,blood B cell,random_138406683,random_background,164334,501,,0,0.367,2e-05
+SLC7A11,blood B cell,random_138331254,random_background,88905,501,,2,0.387,0.00701
+SLC7A11,blood B cell,random_137983629,random_background,-258720,501,,5,0.411,0.01731
+SLC7A11,blood B cell,random_138187276,random_background,-55073,501,,4,0.411,0.01323
+SLC7A11,blood B cell,random_138428302,random_background,185953,501,,2,0.327,0.00529
+SLC7A11,blood B cell,random_138270608,random_background,28259,501,,2,0.365,0.00648
+SLC7A11,blood B cell,random_137999679,random_background,-242670,501,,4,0.361,0.01286
+SLC7A11,blood B cell,random_138380168,random_background,137819,501,,1,0.415,0.00352
+SLC7A11,blood B cell,random_138361835,random_background,119486,501,,3,0.353,0.01056
+SLC7A11,blood B cell,random_138422667,random_background,180318,501,,2,0.373,0.00702
+SLC7A11,blood B cell,random_138073596,random_background,-168753,501,,2,0.361,0.00683
+SLC7A11,blood B cell,random_138028659,random_background,-213690,501,,4,0.339,0.01415
+SLC7A11,blood B cell,random_138431306,random_background,188957,501,,4,0.499,0.01438
+SLC7A11,blood B cell,random_137993704,random_background,-248645,501,,2,0.371,0.00668
+SLC7A11,blood B cell,random_138263920,random_background,21571,501,,1,0.369,0.00326
+SLC7A11,blood B cell,random_138024035,random_background,-218314,501,,1,0.335,0.00354
+SLC7A11,blood B cell,random_138138141,random_background,-104208,501,,4,0.369,0.01465
+SLC7A11,blood B cell,random_138232495,random_background,-9854,501,,3,0.363,0.01189
+SLC7A11,blood B cell,random_138202124,random_background,-40225,501,,1,0.329,0.00377
+SLC7A11,blood B cell,random_138192005,random_background,-50344,501,,2,0.293,0.00743
+SLC7A11,blood B cell,random_137996939,random_background,-245410,501,,0,0.285,0.0
+SLC7A11,blood B cell,random_137984989,random_background,-257360,501,,3,0.246,0.01107
+SLC7A11,blood B cell,random_138046868,random_background,-195481,501,,1,0.345,0.00307
+SLC7A11,blood B cell,random_137986515,random_background,-255834,501,,1,0.295,0.00345
+SLC7A11,blood B cell,random_138331122,random_background,88773,501,,2,0.353,0.00701
+SLC7A11,blood B cell,random_138255677,random_background,13328,501,,2,0.309,0.00688
+SLC7A11,blood B cell,random_138318929,random_background,76580,501,,3,0.393,0.01095
+SLC7A11,blood B cell,random_138116074,random_background,-126275,501,,1,0.301,0.00363
+SLC7A11,blood B cell,random_138302382,random_background,60033,501,,3,0.411,0.01
+SLC7A11,blood B cell,random_138379733,random_background,137384,501,,0,0.363,0.0
+SLC7A11,blood B cell,random_138181827,random_background,-60522,501,,1,0.359,0.00291
+SLC7A11,blood B cell,random_138222016,random_background,-20333,501,,3,0.387,0.0106
+SLC7A11,blood B cell,random_138501041,random_background,258692,501,,1,0.385,0.00201
+SLC7A11,blood B cell,random_138401031,random_background,158682,501,,5,0.369,0.01834
+SLC7A11,blood B cell,random_138492521,random_background,250172,501,,3,0.427,0.00955
+SLC7A11,blood B cell,random_138179666,random_background,-62683,501,,6,0.355,0.02186
+SLC7A11,blood B cell,random_138338884,random_background,96535,501,,7,0.393,0.0257
+SLC7A11,blood B cell,random_138476530,random_background,234181,501,,1,0.363,0.00363
+SLC7A11,blood B cell,random_138320631,random_background,78282,501,,3,0.381,0.01003
+SLC7A11,blood memory B cell,de_novo_59952,de_novo,-19140,530,0.3730463,3,0.379,0.00619
+SLC7A11,blood memory B cell,de_novo_59959,de_novo,99572,847,0.583109,1,0.419,0.00095
+SLC7A11,blood memory B cell,de_novo_59961,de_novo,105913,455,0.38148373,3,0.435,0.0067
+SLC7A11,blood memory B cell,de_novo_59962,de_novo,150466,428,0.44660318,3,0.363,0.00156
+SLC7A11,blood memory B cell,de_novo_59963,de_novo,163971,257,0.38433352,1,0.325,0.00025
+SLC7A11,blood memory B cell,control_59940,control,-206574,930,0.16765417,4,0.425,0.00795
+SLC7A11,blood memory B cell,control_59941,control,-161009,258,-0.008910917,4,0.387,0.0093
+SLC7A11,blood memory B cell,control_59942,control,-151950,837,0.124803856,12,0.421,0.0156
+SLC7A11,blood memory B cell,control_59943,control,-144056,476,0.04579195,3,0.423,0.00381
+SLC7A11,blood memory B cell,control_59944,control,-142877,251,0.13257994,2,0.351,0.00427
+SLC7A11,blood memory B cell,control_59945,control,-141206,864,-0.024266511,3,0.337,0.00975
+SLC7A11,blood memory B cell,control_59946,control,-127717,1534,-0.18829675,1,0.365,0.00029
+SLC7A11,blood memory B cell,control_59947,control,-59444,496,-0.06008809,3,0.339,0.00374
+SLC7A11,blood memory B cell,control_59948,control,-53006,341,-0.18022668,5,0.389,0.01273
+SLC7A11,blood memory B cell,control_59949,control,-51708,1337,0.23030674,3,0.351,0.00223
+SLC7A11,blood memory B cell,control_59950,control,-42668,265,0.007883015,5,0.423,0.00721
+SLC7A11,blood memory B cell,control_59951,control,-21636,209,-0.02650702,0,0.299,1e-05
+SLC7A11,blood memory B cell,control_59953,control,-6592,454,0.2073869,1,0.329,0.00081
+SLC7A11,blood memory B cell,control_59954,control,-112,931,0.48148465,9,0.467,0.00551
+SLC7A11,blood memory B cell,control_59955,control,56266,251,0.057562694,2,0.311,0.0057
+SLC7A11,blood memory B cell,control_59956,control,62910,475,0.06074754,2,0.349,0.00568
+SLC7A11,blood memory B cell,control_59957,control,65134,285,0.24147056,9,0.449,0.01107
+SLC7A11,blood memory B cell,control_59958,control,85946,258,0.07986084,3,0.343,0.00759
+SLC7A11,blood memory B cell,control_59960,control,101793,224,0.17159286,1,0.399,0.00059
+SLC7A11,blood memory B cell,control_59964,control,171999,299,0.07775366,3,0.445,0.00902
+SLC7A11,blood memory B cell,random_138424774,random_background,182425,501,,5,0.461,0.01458
+SLC7A11,blood memory B cell,random_138313608,random_background,71259,501,,5,0.395,0.01552
+SLC7A11,blood memory B cell,random_138248143,random_background,5794,501,,1,0.355,0.00365
+SLC7A11,blood memory B cell,random_138122571,random_background,-119778,501,,3,0.295,0.01053
+SLC7A11,blood memory B cell,random_138142364,random_background,-99985,501,,4,0.301,0.00835
+SLC7A11,blood memory B cell,random_138003523,random_background,-238826,501,,2,0.373,0.00359
+SLC7A11,blood memory B cell,random_138021351,random_background,-220998,501,,2,0.331,0.00461
+SLC7A11,blood memory B cell,random_137990804,random_background,-251545,501,,4,0.297,0.01217
+SLC7A11,blood memory B cell,random_138073394,random_background,-168955,501,,2,0.331,0.00626
+SLC7A11,blood memory B cell,random_138405339,random_background,162990,501,,3,0.441,0.00452
+SLC7A11,blood memory B cell,random_138320088,random_background,77739,501,,0,0.335,0.0
+SLC7A11,blood memory B cell,random_138457100,random_background,214751,501,,3,0.359,0.00939
+SLC7A11,blood memory B cell,random_138244236,random_background,1887,501,,1,0.345,0.00335
+SLC7A11,blood memory B cell,random_138297830,random_background,55481,501,,2,0.383,0.00571
+SLC7A11,blood memory B cell,random_138487270,random_background,244921,501,,4,0.389,0.01295
+SLC7A11,blood memory B cell,random_138361753,random_background,119404,501,,3,0.347,0.00929
+SLC7A11,blood memory B cell,random_138311167,random_background,68818,501,,1,0.341,0.00335
+SLC7A11,blood memory B cell,random_138265046,random_background,22697,501,,4,0.391,0.01303
+SLC7A11,blood memory B cell,random_138273523,random_background,31174,501,,0,0.323,0.0
+SLC7A11,blood memory B cell,random_138468711,random_background,226362,501,,1,0.387,0.00333
+SLC7A11,blood memory B cell,random_138126505,random_background,-115844,501,,0,0.425,1e-05
+SLC7A11,blood memory B cell,random_138406683,random_background,164334,501,,0,0.367,2e-05
+SLC7A11,blood memory B cell,random_138331254,random_background,88905,501,,2,0.387,0.00643
+SLC7A11,blood memory B cell,random_137983629,random_background,-258720,501,,5,0.411,0.01511
+SLC7A11,blood memory B cell,random_138187276,random_background,-55073,501,,4,0.411,0.01185
+SLC7A11,blood memory B cell,random_138428302,random_background,185953,501,,2,0.327,0.00345
+SLC7A11,blood memory B cell,random_138270608,random_background,28259,501,,2,0.365,0.00551
+SLC7A11,blood memory B cell,random_137999679,random_background,-242670,501,,4,0.361,0.01044
+SLC7A11,blood memory B cell,random_138380168,random_background,137819,501,,1,0.415,0.00278
+SLC7A11,blood memory B cell,random_138361835,random_background,119486,501,,3,0.353,0.00929
+SLC7A11,blood memory B cell,random_138422667,random_background,180318,501,,2,0.373,0.00622
+SLC7A11,blood memory B cell,random_138073596,random_background,-168753,501,,2,0.361,0.00552
+SLC7A11,blood memory B cell,random_138028659,random_background,-213690,501,,4,0.339,0.01264
+SLC7A11,blood memory B cell,random_138431306,random_background,188957,501,,4,0.499,0.01323
+SLC7A11,blood memory B cell,random_137993704,random_background,-248645,501,,2,0.371,0.00543
+SLC7A11,blood memory B cell,random_138263920,random_background,21571,501,,1,0.369,0.00269
+SLC7A11,blood memory B cell,random_138024035,random_background,-218314,501,,1,0.335,0.00334
+SLC7A11,blood memory B cell,random_138138141,random_background,-104208,501,,4,0.369,0.01397
+SLC7A11,blood memory B cell,random_138232495,random_background,-9854,501,,3,0.363,0.01115
+SLC7A11,blood memory B cell,random_138202124,random_background,-40225,501,,1,0.329,0.00366
+SLC7A11,blood memory B cell,random_138192005,random_background,-50344,501,,2,0.293,0.00724
+SLC7A11,blood memory B cell,random_137996939,random_background,-245410,501,,0,0.285,0.0
+SLC7A11,blood memory B cell,random_137984989,random_background,-257360,501,,3,0.246,0.01059
+SLC7A11,blood memory B cell,random_138046868,random_background,-195481,501,,1,0.345,0.00191
+SLC7A11,blood memory B cell,random_137986515,random_background,-255834,501,,1,0.295,0.00277
+SLC7A11,blood memory B cell,random_138331122,random_background,88773,501,,2,0.353,0.00643
+SLC7A11,blood memory B cell,random_138255677,random_background,13328,501,,2,0.309,0.00615
+SLC7A11,blood memory B cell,random_138318929,random_background,76580,501,,3,0.393,0.00992
+SLC7A11,blood memory B cell,random_138116074,random_background,-126275,501,,1,0.301,0.00359
+SLC7A11,blood memory B cell,random_138302382,random_background,60033,501,,3,0.411,0.00754
+SLC7A11,blood memory B cell,random_138379733,random_background,137384,501,,0,0.363,0.0
+SLC7A11,blood memory B cell,random_138181827,random_background,-60522,501,,1,0.359,0.00169
+SLC7A11,blood memory B cell,random_138222016,random_background,-20333,501,,3,0.387,0.01029
+SLC7A11,blood memory B cell,random_138501041,random_background,258692,501,,1,0.385,0.00086
+SLC7A11,blood memory B cell,random_138401031,random_background,158682,501,,5,0.369,0.01703
+SLC7A11,blood memory B cell,random_138492521,random_background,250172,501,,3,0.427,0.00755
+SLC7A11,blood memory B cell,random_138179666,random_background,-62683,501,,6,0.355,0.02037
+SLC7A11,blood memory B cell,random_138338884,random_background,96535,501,,7,0.393,0.02499
+SLC7A11,blood memory B cell,random_138476530,random_background,234181,501,,1,0.363,0.00324
+SLC7A11,blood memory B cell,random_138320631,random_background,78282,501,,3,0.381,0.00788
+MAFG,blood B cell,de_novo_184177,de_novo,-224617,1763,0.39080846,56,0.667,0.00599
+MAFG,blood B cell,de_novo_184182,de_novo,-193984,659,0.35370705,20,0.619,0.04618
+MAFG,blood B cell,de_novo_184190,de_novo,-94975,2242,0.4940374,41,0.673,0.00534
+MAFG,blood B cell,de_novo_184192,de_novo,-67020,1926,0.44963017,62,0.673,0.00812
+MAFG,blood B cell,de_novo_184193,de_novo,-58243,328,0.30231136,30,0.687,0.05761
+MAFG,blood B cell,de_novo_184197,de_novo,-36240,1882,0.52310264,84,0.782,0.01036
+MAFG,blood B cell,de_novo_184199,de_novo,-25360,1402,0.43447274,64,0.786,0.01942
+MAFG,blood B cell,de_novo_184200,de_novo,-16412,1272,0.33240283,79,0.83,0.00829
+MAFG,blood B cell,de_novo_184201,de_novo,-9715,1052,0.3235349,72,0.772,0.00796
+MAFG,blood B cell,de_novo_184203,de_novo,-1103,723,0.49580365,17,0.645,0.00421
+MAFG,blood B cell,de_novo_184204,de_novo,420,1484,0.4983775,53,0.733,0.00637
+MAFG,blood B cell,de_novo_184205,de_novo,9423,1065,0.35347033,53,0.733,0.00953
+MAFG,blood B cell,de_novo_184208,de_novo,32020,947,0.29226747,77,0.772,0.00946
+MAFG,blood B cell,de_novo_184209,de_novo,33661,419,0.3046702,74,0.802,0.01409
+MAFG,blood B cell,de_novo_184221,de_novo,95455,1645,0.37559387,47,0.713,0.00571
+MAFG,blood B cell,de_novo_184222,de_novo,103210,1556,0.3201596,61,0.703,0.0091
+MAFG,blood B cell,de_novo_184223,de_novo,104371,402,0.29178044,48,0.786,0.02036
+MAFG,blood B cell,de_novo_184226,de_novo,123900,1603,0.39172128,79,0.814,0.01334
+MAFG,blood B cell,de_novo_184227,de_novo,137692,1796,0.39371896,56,0.737,0.00908
+MAFG,blood B cell,control_184176,control,-244060,1606,0.37836897,53,0.681,0.00605
+MAFG,blood B cell,control_184178,control,-216017,2433,0.4785882,27,0.597,0.00661
+MAFG,blood B cell,control_184179,control,-205309,388,0.02521336,4,0.637,0.01128
+MAFG,blood B cell,control_184180,control,-203956,242,0.049276136,9,0.457,0.02097
+MAFG,blood B cell,control_184181,control,-203193,385,-0.11786738,9,0.455,0.02684
+MAFG,blood B cell,control_184183,control,-192257,1268,0.27917725,15,0.673,0.0253
+MAFG,blood B cell,control_184184,control,-186235,1828,0.08204747,22,0.655,0.06535
+MAFG,blood B cell,control_184185,control,-134847,794,-0.042286567,0,0.497,6e-05
+MAFG,blood B cell,control_184186,control,-134027,272,0.006641589,15,0.575,0.05446
+MAFG,blood B cell,control_184187,control,-133290,361,0.034724288,7,0.519,0.02141
+MAFG,blood B cell,control_184188,control,-118743,323,0.11760829,13,0.663,0.03866
+MAFG,blood B cell,control_184189,control,-106012,799,0.16780119,16,0.647,0.04793
+MAFG,blood B cell,control_184191,control,-86417,240,0.0489334,22,0.653,0.07121
+MAFG,blood B cell,control_184194,control,-57386,1127,0.26931387,20,0.599,0.00707
+MAFG,blood B cell,control_184195,control,-56061,1201,0.28695273,60,0.721,0.00688
+MAFG,blood B cell,control_184196,control,-48598,381,0.14087528,4,0.397,0.01445
+MAFG,blood B cell,control_184198,control,-33676,221,-0.013288878,14,0.509,0.05005
+MAFG,blood B cell,control_184202,control,-2895,539,0.063645825,11,0.629,0.03554
+MAFG,blood B cell,control_184206,control,14037,308,0.16889179,21,0.661,0.04725
+MAFG,blood B cell,control_184207,control,21122,237,-0.035043757,12,0.627,0.04111
+MAFG,blood B cell,control_184210,control,39583,2012,0.12205677,16,0.659,0.02127
+MAFG,blood B cell,control_184211,control,49578,1918,0.36707592,42,0.713,0.00471
+MAFG,blood B cell,control_184212,control,56009,474,-0.09881876,17,0.589,0.05251
+MAFG,blood B cell,control_184213,control,57313,209,0.025316808,17,0.607,0.06034
+MAFG,blood B cell,control_184214,control,63612,203,-0.005862278,11,0.635,0.04107
+MAFG,blood B cell,control_184215,control,64119,297,0.11056432,21,0.657,0.07626
+MAFG,blood B cell,control_184216,control,73633,479,0.036581628,16,0.657,0.05061
+MAFG,blood B cell,control_184217,control,75679,233,0.04154772,17,0.575,0.06369
+MAFG,blood B cell,control_184218,control,76136,349,-0.035927758,29,0.613,0.10654
+MAFG,blood B cell,control_184219,control,92291,311,0.0835807,21,0.675,0.04223
+MAFG,blood B cell,control_184220,control,93493,425,-0.020870734,12,0.629,0.02782
+MAFG,blood B cell,control_184224,control,109686,1160,0.24284099,64,0.758,0.00699
+MAFG,blood B cell,control_184225,control,111338,375,0.07078597,13,0.491,0.04544
+MAFG,blood B cell,control_184228,control,147672,485,-0.08483599,19,0.541,0.05015
+MAFG,blood B cell,control_184229,control,150341,565,0.008967027,17,0.635,0.06331
+MAFG,blood B cell,control_184230,control,152589,270,0.05831093,22,0.649,0.08259
+MAFG,blood B cell,control_184231,control,170592,2609,0.37650964,82,0.802,0.00659
+MAFG,blood B cell,control_184232,control,178629,1496,0.18832347,15,0.623,0.00417
+MAFG,blood B cell,control_184233,control,179812,350,0.0008084513,21,0.643,0.07632
+MAFG,blood B cell,control_184234,control,192612,425,-0.106407486,13,0.437,0.04382
+MAFG,blood B cell,control_184235,control,194583,522,0.011648614,16,0.623,0.04423
+MAFG,blood B cell,control_184236,control,199510,1671,-0.095565245,23,0.593,0.08403
+MAFG,blood B cell,control_184237,control,205625,224,-0.044663735,4,0.427,0.01436
+MAFG,blood B cell,control_184238,control,226245,669,0.20666513,12,0.609,0.01892
+MAFG,blood B cell,control_184239,control,232392,199,0.020086944,7,0.469,0.02618
+MAFG,blood B cell,control_184240,control,242902,399,-0.12884964,14,0.525,0.03314
+MAFG,blood B cell,random_82104794,random_background,177059,501,,19,0.575,0.0716
+MAFG,blood B cell,random_82025781,random_background,98046,501,,17,0.645,0.06493
+MAFG,blood B cell,random_82033874,random_background,106139,501,,23,0.687,0.08655
+MAFG,blood B cell,random_81869942,random_background,-57793,501,,26,0.643,0.07007
+MAFG,blood B cell,random_82122924,random_background,195189,501,,7,0.509,0.02584
+MAFG,blood B cell,random_81737880,random_background,-189855,501,,8,0.561,0.03055
+MAFG,blood B cell,random_81968787,random_background,41052,501,,13,0.477,0.04215
+MAFG,blood B cell,random_82042972,random_background,115237,501,,13,0.559,0.04823
+MAFG,blood B cell,random_82107484,random_background,179749,501,,18,0.635,0.06527
+MAFG,blood B cell,random_81940926,random_background,13191,501,,24,0.639,0.09094
+MAFG,blood B cell,random_81862915,random_background,-64820,501,,13,0.475,0.04914
+MAFG,blood B cell,random_81829006,random_background,-98729,501,,13,0.647,0.04816
+MAFG,blood B cell,random_81887651,random_background,-40084,501,,8,0.563,0.0303
+MAFG,blood B cell,random_81920365,random_background,-7370,501,,5,0.513,0.01852
+MAFG,blood B cell,random_82041585,random_background,113850,501,,13,0.485,0.04385
+MAFG,blood B cell,random_82130380,random_background,202645,501,,9,0.515,0.03377
+MAFG,blood B cell,random_81705544,random_background,-222191,501,,13,0.527,0.05011
+MAFG,blood B cell,random_82153562,random_background,225827,501,,7,0.497,0.02416
+MAFG,blood B cell,random_81944042,random_background,16307,501,,17,0.511,0.05984
+MAFG,blood B cell,random_81853747,random_background,-73988,501,,17,0.565,0.06437
+MAFG,blood B cell,random_82017609,random_background,89874,501,,11,0.601,0.03879
+MAFG,blood B cell,random_81964951,random_background,37216,501,,10,0.449,0.03625
+MAFG,blood B cell,random_81800059,random_background,-127676,501,,9,0.451,0.03291
+MAFG,blood B cell,random_81835055,random_background,-92680,501,,29,0.627,0.10561
+MAFG,blood B cell,random_82041943,random_background,114208,501,,14,0.493,0.05145
+MAFG,blood B cell,random_81976798,random_background,49063,501,,21,0.631,0.02652
+MAFG,blood B cell,random_81930033,random_background,2298,501,,17,0.679,0.05503
+MAFG,blood B cell,random_81843402,random_background,-84333,501,,15,0.565,0.05674
+MAFG,blood B cell,random_82063352,random_background,135617,501,,9,0.623,0.03415
+MAFG,blood B cell,random_81871345,random_background,-56390,501,,74,0.776,0.00914
+MAFG,blood B cell,random_81838336,random_background,-89399,501,,17,0.537,0.06254
+MAFG,blood B cell,random_82130790,random_background,203055,501,,8,0.547,0.02957
+MAFG,blood B cell,random_81804909,random_background,-122826,501,,39,0.711,0.02619
+MAFG,blood B cell,random_81785778,random_background,-141957,501,,0,0.0,0.0
+MAFG,blood B cell,random_82039166,random_background,111431,501,,12,0.479,0.04167
+MAFG,blood B cell,random_81991827,random_background,64092,501,,21,0.651,0.07419
+MAFG,blood B cell,random_81692849,random_background,-234886,501,,17,0.521,0.06455
+MAFG,blood B cell,random_81711303,random_background,-216432,501,,15,0.607,0.02032
+MAFG,blood B cell,random_81863811,random_background,-63924,501,,5,0.513,0.0186
+MAFG,blood B cell,random_82100805,random_background,173070,501,,27,0.633,0.10224
+MAFG,blood B cell,random_81876147,random_background,-51588,501,,11,0.455,0.04133
+MAFG,blood B cell,random_82077108,random_background,149373,501,,12,0.553,0.04321
+MAFG,blood B cell,random_81832244,random_background,-95491,501,,18,0.557,0.01372
+MAFG,blood B cell,random_81792132,random_background,-135603,501,,0,0.0,0.0
+MAFG,blood B cell,random_82079497,random_background,151762,501,,33,0.633,0.12995
+MAFG,blood B cell,random_82123615,random_background,195880,501,,5,0.355,0.01894
+MAFG,blood B cell,random_81708849,random_background,-218886,501,,14,0.609,0.05268
+MAFG,blood B cell,random_81698063,random_background,-229672,501,,9,0.515,0.03356
+MAFG,blood B cell,random_82016841,random_background,89106,501,,16,0.681,0.06162
+MAFG,blood B cell,random_81842468,random_background,-85267,501,,16,0.527,0.06078
+MAFG,blood B cell,random_81966053,random_background,38318,501,,25,0.593,0.08665
+MAFG,blood B cell,random_81745779,random_background,-181956,501,,0,0.0,0.0
+MAFG,blood B cell,random_82115059,random_background,187324,501,,9,0.581,0.03409
+MAFG,blood B cell,random_81901897,random_background,-25838,501,,31,0.679,0.02979
+MAFG,blood B cell,random_82133245,random_background,205510,501,,6,0.475,0.02235
+MAFG,blood B cell,random_82081908,random_background,154173,501,,28,0.671,0.10707
+MAFG,blood B cell,random_82034572,random_background,106837,501,,15,0.629,0.05652
+MAFG,blood B cell,random_81787591,random_background,-140144,501,,0,0.0,0.0
+MAFG,blood B cell,random_82066656,random_background,138921,501,,16,0.513,0.0594
+MAFG,blood B cell,random_81694657,random_background,-233078,501,,15,0.637,0.05795
+MAFG,blood memory B cell,de_novo_184177,de_novo,-224617,1763,0.39080846,56,0.667,0.00637
+MAFG,blood memory B cell,de_novo_184182,de_novo,-193984,659,0.35370705,20,0.619,0.04039
+MAFG,blood memory B cell,de_novo_184190,de_novo,-94975,2242,0.4940374,41,0.673,0.0056
+MAFG,blood memory B cell,de_novo_184192,de_novo,-67020,1926,0.44963017,62,0.673,0.00862
+MAFG,blood memory B cell,de_novo_184193,de_novo,-58243,328,0.30231136,30,0.687,0.04244
+MAFG,blood memory B cell,de_novo_184197,de_novo,-36240,1882,0.52310264,84,0.782,0.01238
+MAFG,blood memory B cell,de_novo_184199,de_novo,-25360,1402,0.43447274,64,0.786,0.01932
+MAFG,blood memory B cell,de_novo_184200,de_novo,-16412,1272,0.33240283,79,0.83,0.00894
+MAFG,blood memory B cell,de_novo_184201,de_novo,-9715,1052,0.3235349,72,0.772,0.00905
+MAFG,blood memory B cell,de_novo_184203,de_novo,-1103,723,0.49580365,17,0.645,0.00358
+MAFG,blood memory B cell,de_novo_184204,de_novo,420,1484,0.4983775,53,0.733,0.00626
+MAFG,blood memory B cell,de_novo_184205,de_novo,9423,1065,0.35347033,53,0.733,0.01005
+MAFG,blood memory B cell,de_novo_184208,de_novo,32020,947,0.29226747,77,0.772,0.00933
+MAFG,blood memory B cell,de_novo_184209,de_novo,33661,419,0.3046702,74,0.802,0.01275
+MAFG,blood memory B cell,de_novo_184221,de_novo,95455,1645,0.37559387,47,0.713,0.00599
+MAFG,blood memory B cell,de_novo_184222,de_novo,103210,1556,0.3201596,61,0.703,0.00912
+MAFG,blood memory B cell,de_novo_184223,de_novo,104371,402,0.29178044,48,0.786,0.01437
+MAFG,blood memory B cell,de_novo_184226,de_novo,123900,1603,0.39172128,79,0.814,0.01362
+MAFG,blood memory B cell,de_novo_184227,de_novo,137692,1796,0.39371896,56,0.737,0.00949
+MAFG,blood memory B cell,control_184176,control,-244060,1606,0.37836897,53,0.681,0.00556
+MAFG,blood memory B cell,control_184178,control,-216017,2433,0.4785882,27,0.597,0.00441
+MAFG,blood memory B cell,control_184179,control,-205309,388,0.02521336,4,0.637,0.00922
+MAFG,blood memory B cell,control_184180,control,-203956,242,0.049276136,9,0.457,0.0153
+MAFG,blood memory B cell,control_184181,control,-203193,385,-0.11786738,9,0.455,0.02131
+MAFG,blood memory B cell,control_184183,control,-192257,1268,0.27917725,15,0.673,0.01671
+MAFG,blood memory B cell,control_184184,control,-186235,1828,0.08204747,22,0.655,0.05778
+MAFG,blood memory B cell,control_184185,control,-134847,794,-0.042286567,0,0.497,3e-05
+MAFG,blood memory B cell,control_184186,control,-134027,272,0.006641589,15,0.575,0.05091
+MAFG,blood memory B cell,control_184187,control,-133290,361,0.034724288,7,0.519,0.01831
+MAFG,blood memory B cell,control_184188,control,-118743,323,0.11760829,13,0.663,0.03208
+MAFG,blood memory B cell,control_184189,control,-106012,799,0.16780119,16,0.647,0.04447
+MAFG,blood memory B cell,control_184191,control,-86417,240,0.0489334,22,0.653,0.06534
+MAFG,blood memory B cell,control_184194,control,-57386,1127,0.26931387,20,0.599,0.00489
+MAFG,blood memory B cell,control_184195,control,-56061,1201,0.28695273,60,0.721,0.00725
+MAFG,blood memory B cell,control_184196,control,-48598,381,0.14087528,4,0.397,0.01313
+MAFG,blood memory B cell,control_184198,control,-33676,221,-0.013288878,14,0.509,0.04309
+MAFG,blood memory B cell,control_184202,control,-2895,539,0.063645825,11,0.629,0.03318
+MAFG,blood memory B cell,control_184206,control,14037,308,0.16889179,21,0.661,0.03798
+MAFG,blood memory B cell,control_184207,control,21122,237,-0.035043757,12,0.627,0.03197
+MAFG,blood memory B cell,control_184210,control,39583,2012,0.12205677,16,0.659,0.01691
+MAFG,blood memory B cell,control_184211,control,49578,1918,0.36707592,42,0.713,0.00452
+MAFG,blood memory B cell,control_184212,control,56009,474,-0.09881876,17,0.589,0.0506
+MAFG,blood memory B cell,control_184213,control,57313,209,0.025316808,17,0.607,0.05932
+MAFG,blood memory B cell,control_184214,control,63612,203,-0.005862278,11,0.635,0.03936
+MAFG,blood memory B cell,control_184215,control,64119,297,0.11056432,21,0.657,0.06955
+MAFG,blood memory B cell,control_184216,control,73633,479,0.036581628,16,0.657,0.04931
+MAFG,blood memory B cell,control_184217,control,75679,233,0.04154772,17,0.575,0.06107
+MAFG,blood memory B cell,control_184218,control,76136,349,-0.035927758,29,0.613,0.10228
+MAFG,blood memory B cell,control_184219,control,92291,311,0.0835807,21,0.675,0.03028
+MAFG,blood memory B cell,control_184220,control,93493,425,-0.020870734,12,0.629,0.01847
+MAFG,blood memory B cell,control_184224,control,109686,1160,0.24284099,64,0.758,0.00767
+MAFG,blood memory B cell,control_184225,control,111338,375,0.07078597,13,0.491,0.03982
+MAFG,blood memory B cell,control_184228,control,147672,485,-0.08483599,19,0.541,0.03897
+MAFG,blood memory B cell,control_184229,control,150341,565,0.008967027,17,0.635,0.05981
+MAFG,blood memory B cell,control_184230,control,152589,270,0.05831093,22,0.649,0.07848
+MAFG,blood memory B cell,control_184231,control,170592,2609,0.37650964,82,0.802,0.00717
+MAFG,blood memory B cell,control_184232,control,178629,1496,0.18832347,15,0.623,0.00382
+MAFG,blood memory B cell,control_184233,control,179812,350,0.0008084513,21,0.643,0.07109
+MAFG,blood memory B cell,control_184234,control,192612,425,-0.106407486,13,0.437,0.04274
+MAFG,blood memory B cell,control_184235,control,194583,522,0.011648614,16,0.623,0.03862
+MAFG,blood memory B cell,control_184236,control,199510,1671,-0.095565245,23,0.593,0.08304
+MAFG,blood memory B cell,control_184237,control,205625,224,-0.044663735,4,0.427,0.01277
+MAFG,blood memory B cell,control_184238,control,226245,669,0.20666513,12,0.609,0.01616
+MAFG,blood memory B cell,control_184239,control,232392,199,0.020086944,7,0.469,0.02519
+MAFG,blood memory B cell,control_184240,control,242902,399,-0.12884964,14,0.525,0.02948
+MAFG,blood memory B cell,random_82104794,random_background,177059,501,,19,0.575,0.06952
+MAFG,blood memory B cell,random_82025781,random_background,98046,501,,17,0.645,0.06312
+MAFG,blood memory B cell,random_82033874,random_background,106139,501,,23,0.687,0.08287
+MAFG,blood memory B cell,random_81869942,random_background,-57793,501,,26,0.643,0.04096
+MAFG,blood memory B cell,random_82122924,random_background,195189,501,,7,0.509,0.02423
+MAFG,blood memory B cell,random_81737880,random_background,-189855,501,,8,0.561,0.02646
+MAFG,blood memory B cell,random_81968787,random_background,41052,501,,13,0.477,0.03607
+MAFG,blood memory B cell,random_82042972,random_background,115237,501,,13,0.559,0.04627
+MAFG,blood memory B cell,random_82107484,random_background,179749,501,,18,0.635,0.0608
+MAFG,blood memory B cell,random_81940926,random_background,13191,501,,24,0.639,0.08519
+MAFG,blood memory B cell,random_81862915,random_background,-64820,501,,13,0.475,0.04806
+MAFG,blood memory B cell,random_81829006,random_background,-98729,501,,13,0.647,0.04701
+MAFG,blood memory B cell,random_81887651,random_background,-40084,501,,8,0.563,0.02986
+MAFG,blood memory B cell,random_81920365,random_background,-7370,501,,5,0.513,0.01793
+MAFG,blood memory B cell,random_82041585,random_background,113850,501,,13,0.485,0.0402
+MAFG,blood memory B cell,random_82130380,random_background,202645,501,,9,0.515,0.03277
+MAFG,blood memory B cell,random_81705544,random_background,-222191,501,,13,0.527,0.04955
+MAFG,blood memory B cell,random_82153562,random_background,225827,501,,7,0.497,0.02151
+MAFG,blood memory B cell,random_81944042,random_background,16307,501,,17,0.511,0.05267
+MAFG,blood memory B cell,random_81853747,random_background,-73988,501,,17,0.565,0.06434
+MAFG,blood memory B cell,random_82017609,random_background,89874,501,,11,0.601,0.03563
+MAFG,blood memory B cell,random_81964951,random_background,37216,501,,10,0.449,0.03319
+MAFG,blood memory B cell,random_81800059,random_background,-127676,501,,9,0.451,0.03114
+MAFG,blood memory B cell,random_81835055,random_background,-92680,501,,29,0.627,0.10184
+MAFG,blood memory B cell,random_82041943,random_background,114208,501,,14,0.493,0.04928
+MAFG,blood memory B cell,random_81976798,random_background,49063,501,,21,0.631,0.02079
+MAFG,blood memory B cell,random_81930033,random_background,2298,501,,17,0.679,0.0475
+MAFG,blood memory B cell,random_81843402,random_background,-84333,501,,15,0.565,0.05377
+MAFG,blood memory B cell,random_82063352,random_background,135617,501,,9,0.623,0.03342
+MAFG,blood memory B cell,random_81871345,random_background,-56390,501,,74,0.776,0.00943
+MAFG,blood memory B cell,random_81838336,random_background,-89399,501,,17,0.537,0.05825
+MAFG,blood memory B cell,random_82130790,random_background,203055,501,,8,0.547,0.02798
+MAFG,blood memory B cell,random_81804909,random_background,-122826,501,,39,0.711,0.0285
+MAFG,blood memory B cell,random_81785778,random_background,-141957,501,,0,0.0,0.0
+MAFG,blood memory B cell,random_82039166,random_background,111431,501,,12,0.479,0.03627
+MAFG,blood memory B cell,random_81991827,random_background,64092,501,,21,0.651,0.06731
+MAFG,blood memory B cell,random_81692849,random_background,-234886,501,,17,0.521,0.06367
+MAFG,blood memory B cell,random_81711303,random_background,-216432,501,,15,0.607,0.01613
+MAFG,blood memory B cell,random_81863811,random_background,-63924,501,,5,0.513,0.01772
+MAFG,blood memory B cell,random_82100805,random_background,173070,501,,27,0.633,0.09815
+MAFG,blood memory B cell,random_81876147,random_background,-51588,501,,11,0.455,0.04048
+MAFG,blood memory B cell,random_82077108,random_background,149373,501,,12,0.553,0.03889
+MAFG,blood memory B cell,random_81832244,random_background,-95491,501,,18,0.557,0.01152
+MAFG,blood memory B cell,random_81792132,random_background,-135603,501,,0,0.0,0.0
+MAFG,blood memory B cell,random_82079497,random_background,151762,501,,33,0.633,0.12816
+MAFG,blood memory B cell,random_82123615,random_background,195880,501,,5,0.355,0.01856
+MAFG,blood memory B cell,random_81708849,random_background,-218886,501,,14,0.609,0.05153
+MAFG,blood memory B cell,random_81698063,random_background,-229672,501,,9,0.515,0.03251
+MAFG,blood memory B cell,random_82016841,random_background,89106,501,,16,0.681,0.05961
+MAFG,blood memory B cell,random_81842468,random_background,-85267,501,,16,0.527,0.05944
+MAFG,blood memory B cell,random_81966053,random_background,38318,501,,25,0.593,0.07696
+MAFG,blood memory B cell,random_81745779,random_background,-181956,501,,0,0.0,0.0
+MAFG,blood memory B cell,random_82115059,random_background,187324,501,,9,0.581,0.03258
+MAFG,blood memory B cell,random_81901897,random_background,-25838,501,,31,0.679,0.02921
+MAFG,blood memory B cell,random_82133245,random_background,205510,501,,6,0.475,0.02155
+MAFG,blood memory B cell,random_82081908,random_background,154173,501,,28,0.671,0.10587
+MAFG,blood memory B cell,random_82034572,random_background,106837,501,,15,0.629,0.05421
+MAFG,blood memory B cell,random_81787591,random_background,-140144,501,,0,0.0,0.0
+MAFG,blood memory B cell,random_82066656,random_background,138921,501,,16,0.513,0.05813
+MAFG,blood memory B cell,random_81694657,random_background,-233078,501,,15,0.637,0.05577
+GAPDH_promoter,blood B cell,anchor_GAPDH_promoter,anchor_cpg_island,0,501,,51,0.689,0.00562
+GAPDH_promoter,blood B cell,random_6570986,random_background,36469,501,,6,0.497,0.02318
+GAPDH_promoter,blood B cell,random_6484856,random_background,-49661,501,,2,0.431,0.00584
+GAPDH_promoter,blood B cell,random_6792915,random_background,258398,501,,9,0.573,0.00788
+GAPDH_promoter,blood B cell,random_6377656,random_background,-156861,501,,7,0.545,0.02381
+GAPDH_promoter,blood B cell,random_6766838,random_background,232321,501,,78,0.804,0.00913
+GAPDH_promoter,blood B cell,random_6321590,random_background,-212927,501,,22,0.529,0.08196
+GAPDH_promoter,blood B cell,random_6598602,random_background,64085,501,,8,0.497,0.03006
+GAPDH_promoter,blood B cell,random_6576312,random_background,41795,501,,11,0.513,0.0414
+GAPDH_promoter,blood B cell,random_6742083,random_background,207566,501,,13,0.527,0.04634
+GAPDH_promoter,blood B cell,random_6429781,random_background,-104736,501,,9,0.355,0.03257
+GAPDH_promoter,blood B cell,random_6743711,random_background,209194,501,,10,0.467,0.03641
+GAPDH_promoter,blood B cell,random_6624003,random_background,89486,501,,6,0.487,0.02124
+GAPDH_promoter,blood B cell,random_6737635,random_background,203118,501,,9,0.511,0.03393
+GAPDH_promoter,blood B cell,random_6378178,random_background,-156339,501,,1,0.389,0.0038
+GAPDH_promoter,blood B cell,random_6668877,random_background,134360,501,,8,0.453,0.03065
+GAPDH_promoter,blood B cell,random_6764543,random_background,230026,501,,11,0.591,0.00366
+GAPDH_promoter,blood B cell,random_6299657,random_background,-234860,501,,13,0.521,0.0152
+GAPDH_promoter,blood B cell,random_6464335,random_background,-70182,501,,9,0.523,0.0329
+GAPDH_promoter,blood B cell,random_6605543,random_background,71026,501,,7,0.493,0.00449
+GAPDH_promoter,blood B cell,random_6329260,random_background,-205257,501,,47,0.673,0.17063
+GAPDH_promoter,blood B cell,random_6539752,random_background,5235,501,,15,0.539,0.0536
+GAPDH_promoter,blood B cell,random_6601690,random_background,67173,501,,3,0.437,0.01199
+GAPDH_promoter,blood B cell,random_6671866,random_background,137349,501,,6,0.451,0.02231
+GAPDH_promoter,blood B cell,random_6756760,random_background,222243,501,,15,0.519,0.05029
+GAPDH_promoter,blood B cell,random_6487599,random_background,-46918,501,,11,0.437,0.04285
+GAPDH_promoter,blood B cell,random_6503495,random_background,-31022,501,,14,0.493,0.05304
+GAPDH_promoter,blood B cell,random_6521099,random_background,-13418,501,,5,0.443,0.01918
+GAPDH_promoter,blood B cell,random_6771034,random_background,236517,501,,9,0.567,0.03159
+GAPDH_promoter,blood B cell,random_6376221,random_background,-158296,501,,11,0.621,0.03824
+GAPDH_promoter,blood B cell,random_6534462,random_background,-55,501,,49,0.677,0.00543
+GAPDH_promoter,blood B cell,random_6300300,random_background,-234217,501,,7,0.435,0.02255
+GAPDH_promoter,blood B cell,random_6495614,random_background,-38903,501,,4,0.395,0.01502
+GAPDH_promoter,blood B cell,random_6766208,random_background,231691,501,,35,0.677,0.00524
+GAPDH_promoter,blood B cell,random_6597062,random_background,62545,501,,14,0.483,0.05256
+GAPDH_promoter,blood B cell,random_6456271,random_background,-78246,501,,6,0.403,0.02248
+GAPDH_promoter,blood B cell,random_6792109,random_background,257592,501,,13,0.577,0.02307
+GAPDH_promoter,blood B cell,random_6588500,random_background,53983,501,,7,0.477,0.02557
+GAPDH_promoter,blood B cell,random_6768097,random_background,233580,501,,12,0.575,0.04154
+GAPDH_promoter,blood B cell,random_6282870,random_background,-251647,501,,4,0.469,0.01498
+GAPDH_promoter,blood B cell,random_6513728,random_background,-20789,501,,7,0.467,0.02608
+GAPDH_promoter,blood B cell,random_6708789,random_background,174272,501,,12,0.577,0.04227
+GAPDH_promoter,blood B cell,random_6668610,random_background,134093,501,,6,0.465,0.02246
+GAPDH_promoter,blood B cell,random_6486385,random_background,-48132,501,,15,0.521,0.05569
+GAPDH_promoter,blood B cell,random_6533176,random_background,-1341,501,,5,0.599,0.00735
+GAPDH_promoter,blood B cell,random_6493019,random_background,-41498,501,,20,0.533,0.00518
+GAPDH_promoter,blood B cell,random_6549767,random_background,15250,501,,19,0.617,0.06938
+GAPDH_promoter,blood B cell,random_6394168,random_background,-140349,501,,8,0.527,0.02815
+GAPDH_promoter,blood B cell,random_6683207,random_background,148690,501,,6,0.459,0.02181
+GAPDH_promoter,blood B cell,random_6314804,random_background,-219713,501,,4,0.545,0.01434
+GAPDH_promoter,blood B cell,random_6490113,random_background,-44404,501,,8,0.423,0.02886
+GAPDH_promoter,blood B cell,random_6421021,random_background,-113496,501,,7,0.385,0.02484
+GAPDH_promoter,blood B cell,random_6656515,random_background,121998,501,,8,0.433,0.02642
+GAPDH_promoter,blood B cell,random_6664221,random_background,129704,501,,7,0.465,0.02604
+GAPDH_promoter,blood B cell,random_6644372,random_background,109855,501,,8,0.517,0.01069
+GAPDH_promoter,blood B cell,random_6755362,random_background,220845,501,,8,0.435,0.02942
+GAPDH_promoter,blood B cell,random_6759312,random_background,224795,501,,15,0.491,0.05491
+GAPDH_promoter,blood B cell,random_6370443,random_background,-164074,501,,7,0.597,0.02579
+GAPDH_promoter,blood B cell,random_6334171,random_background,-200346,501,,5,0.515,0.01772
+GAPDH_promoter,blood B cell,random_6343238,random_background,-191279,501,,11,0.517,0.03904
+GAPDH_promoter,blood B cell,random_6653670,random_background,119153,501,,2,0.395,0.0075
+GAPDH_promoter,blood memory B cell,anchor_GAPDH_promoter,anchor_cpg_island,0,501,,51,0.689,0.00625
+GAPDH_promoter,blood memory B cell,random_6570986,random_background,36469,501,,6,0.497,0.02237
+GAPDH_promoter,blood memory B cell,random_6484856,random_background,-49661,501,,2,0.431,0.00485
+GAPDH_promoter,blood memory B cell,random_6792915,random_background,258398,501,,9,0.573,0.0066
+GAPDH_promoter,blood memory B cell,random_6377656,random_background,-156861,501,,7,0.545,0.02114
+GAPDH_promoter,blood memory B cell,random_6766838,random_background,232321,501,,78,0.804,0.00891
+GAPDH_promoter,blood memory B cell,random_6321590,random_background,-212927,501,,22,0.529,0.07901
+GAPDH_promoter,blood memory B cell,random_6598602,random_background,64085,501,,8,0.497,0.02978
+GAPDH_promoter,blood memory B cell,random_6576312,random_background,41795,501,,11,0.513,0.04162
+GAPDH_promoter,blood memory B cell,random_6742083,random_background,207566,501,,13,0.527,0.0406
+GAPDH_promoter,blood memory B cell,random_6429781,random_background,-104736,501,,9,0.355,0.02889
+GAPDH_promoter,blood memory B cell,random_6743711,random_background,209194,501,,10,0.467,0.03454
+GAPDH_promoter,blood memory B cell,random_6624003,random_background,89486,501,,6,0.487,0.02182
+GAPDH_promoter,blood memory B cell,random_6737635,random_background,203118,501,,9,0.511,0.03342
+GAPDH_promoter,blood memory B cell,random_6378178,random_background,-156339,501,,1,0.389,0.00364
+GAPDH_promoter,blood memory B cell,random_6668877,random_background,134360,501,,8,0.453,0.03025
+GAPDH_promoter,blood memory B cell,random_6764543,random_background,230026,501,,11,0.591,0.00348
+GAPDH_promoter,blood memory B cell,random_6299657,random_background,-234860,501,,13,0.521,0.00724
+GAPDH_promoter,blood memory B cell,random_6464335,random_background,-70182,501,,9,0.523,0.0305
+GAPDH_promoter,blood memory B cell,random_6605543,random_background,71026,501,,7,0.493,0.00366
+GAPDH_promoter,blood memory B cell,random_6329260,random_background,-205257,501,,47,0.673,0.16509
+GAPDH_promoter,blood memory B cell,random_6539752,random_background,5235,501,,15,0.539,0.0448
+GAPDH_promoter,blood memory B cell,random_6601690,random_background,67173,501,,3,0.437,0.01135
+GAPDH_promoter,blood memory B cell,random_6671866,random_background,137349,501,,6,0.451,0.02214
+GAPDH_promoter,blood memory B cell,random_6756760,random_background,222243,501,,15,0.519,0.04535
+GAPDH_promoter,blood memory B cell,random_6487599,random_background,-46918,501,,11,0.437,0.04198
+GAPDH_promoter,blood memory B cell,random_6503495,random_background,-31022,501,,14,0.493,0.05246
+GAPDH_promoter,blood memory B cell,random_6521099,random_background,-13418,501,,5,0.443,0.01831
+GAPDH_promoter,blood memory B cell,random_6771034,random_background,236517,501,,9,0.567,0.02925
+GAPDH_promoter,blood memory B cell,random_6376221,random_background,-158296,501,,11,0.621,0.03497
+GAPDH_promoter,blood memory B cell,random_6534462,random_background,-55,501,,49,0.677,0.006
+GAPDH_promoter,blood memory B cell,random_6300300,random_background,-234217,501,,7,0.435,0.01867
+GAPDH_promoter,blood memory B cell,random_6495614,random_background,-38903,501,,4,0.395,0.01467
+GAPDH_promoter,blood memory B cell,random_6766208,random_background,231691,501,,35,0.677,0.0053
+GAPDH_promoter,blood memory B cell,random_6597062,random_background,62545,501,,14,0.483,0.05287
+GAPDH_promoter,blood memory B cell,random_6456271,random_background,-78246,501,,6,0.403,0.02225
+GAPDH_promoter,blood memory B cell,random_6792109,random_background,257592,501,,13,0.577,0.0239
+GAPDH_promoter,blood memory B cell,random_6588500,random_background,53983,501,,7,0.477,0.02526
+GAPDH_promoter,blood memory B cell,random_6768097,random_background,233580,501,,12,0.575,0.03792
+GAPDH_promoter,blood memory B cell,random_6282870,random_background,-251647,501,,4,0.469,0.01431
+GAPDH_promoter,blood memory B cell,random_6513728,random_background,-20789,501,,7,0.467,0.02529
+GAPDH_promoter,blood memory B cell,random_6708789,random_background,174272,501,,12,0.577,0.03757
+GAPDH_promoter,blood memory B cell,random_6668610,random_background,134093,501,,6,0.465,0.02245
+GAPDH_promoter,blood memory B cell,random_6486385,random_background,-48132,501,,15,0.521,0.05421
+GAPDH_promoter,blood memory B cell,random_6533176,random_background,-1341,501,,5,0.599,0.00525
+GAPDH_promoter,blood memory B cell,random_6493019,random_background,-41498,501,,20,0.533,0.00473
+GAPDH_promoter,blood memory B cell,random_6549767,random_background,15250,501,,19,0.617,0.06837
+GAPDH_promoter,blood memory B cell,random_6394168,random_background,-140349,501,,8,0.527,0.02635
+GAPDH_promoter,blood memory B cell,random_6683207,random_background,148690,501,,6,0.459,0.02131
+GAPDH_promoter,blood memory B cell,random_6314804,random_background,-219713,501,,4,0.545,0.01251
+GAPDH_promoter,blood memory B cell,random_6490113,random_background,-44404,501,,8,0.423,0.02724
+GAPDH_promoter,blood memory B cell,random_6421021,random_background,-113496,501,,7,0.385,0.02303
+GAPDH_promoter,blood memory B cell,random_6656515,random_background,121998,501,,8,0.433,0.02387
+GAPDH_promoter,blood memory B cell,random_6664221,random_background,129704,501,,7,0.465,0.02502
+GAPDH_promoter,blood memory B cell,random_6644372,random_background,109855,501,,8,0.517,0.00833
+GAPDH_promoter,blood memory B cell,random_6755362,random_background,220845,501,,8,0.435,0.02764
+GAPDH_promoter,blood memory B cell,random_6759312,random_background,224795,501,,15,0.491,0.05132
+GAPDH_promoter,blood memory B cell,random_6370443,random_background,-164074,501,,7,0.597,0.02404
+GAPDH_promoter,blood memory B cell,random_6334171,random_background,-200346,501,,5,0.515,0.01651
+GAPDH_promoter,blood memory B cell,random_6343238,random_background,-191279,501,,11,0.517,0.03585
+GAPDH_promoter,blood memory B cell,random_6653670,random_background,119153,501,,2,0.395,0.00735
+ACTB_promoter,blood B cell,anchor_ACTB_promoter,anchor_cpg_island,0,501,,64,0.715,0.00632
+ACTB_promoter,blood B cell,random_5775304,random_background,244703,501,,4,0.409,0.01364
+ACTB_promoter,blood B cell,random_5752984,random_background,222383,501,,4,0.439,0.01547
+ACTB_promoter,blood B cell,random_5618134,random_background,87533,501,,10,0.517,0.03745
+ACTB_promoter,blood B cell,random_5774057,random_background,243456,501,,6,0.407,0.01643
+ACTB_promoter,blood B cell,random_5723765,random_background,193164,501,,9,0.413,0.03584
+ACTB_promoter,blood B cell,random_5278108,random_background,-252493,501,,8,0.489,0.02805
+ACTB_promoter,blood B cell,random_5332494,random_background,-198107,501,,23,0.629,0.08915
+ACTB_promoter,blood B cell,random_5719798,random_background,189197,501,,1,0.321,0.00362
+ACTB_promoter,blood B cell,random_5313307,random_background,-217294,501,,33,0.699,0.12593
+ACTB_promoter,blood B cell,random_5780961,random_background,250360,501,,49,0.645,0.00642
+ACTB_promoter,blood B cell,random_5700930,random_background,170329,501,,7,0.501,0.02132
+ACTB_promoter,blood B cell,random_5768481,random_background,237880,501,,5,0.421,0.01798
+ACTB_promoter,blood B cell,random_5457928,random_background,-72673,501,,12,0.529,0.00493
+ACTB_promoter,blood B cell,random_5347857,random_background,-182744,501,,15,0.529,0.05693
+ACTB_promoter,blood B cell,random_5539375,random_background,8774,501,,7,0.607,0.02543
+ACTB_promoter,blood B cell,random_5776504,random_background,245903,501,,18,0.489,0.06227
+ACTB_promoter,blood B cell,random_5461518,random_background,-69083,501,,8,0.507,0.02982
+ACTB_promoter,blood B cell,random_5733479,random_background,202878,501,,4,0.309,0.01386
+ACTB_promoter,blood B cell,random_5470160,random_background,-60441,501,,25,0.655,0.09175
+ACTB_promoter,blood B cell,random_5698328,random_background,167727,501,,7,0.457,0.02486
+ACTB_promoter,blood B cell,random_5389904,random_background,-140697,501,,12,0.547,0.04506
+ACTB_promoter,blood B cell,random_5520188,random_background,-10413,501,,9,0.493,0.034
+ACTB_promoter,blood B cell,random_5440511,random_background,-90090,501,,10,0.529,0.0369
+ACTB_promoter,blood B cell,random_5391357,random_background,-139244,501,,9,0.561,0.03306
+ACTB_promoter,blood B cell,random_5734910,random_background,204309,501,,11,0.479,0.0416
+ACTB_promoter,blood B cell,random_5687665,random_background,157064,501,,0,0.399,6e-05
+ACTB_promoter,blood B cell,random_5343118,random_background,-187483,501,,14,0.479,0.0527
+ACTB_promoter,blood B cell,random_5750958,random_background,220357,501,,7,0.453,0.02623
+ACTB_promoter,blood B cell,random_5775642,random_background,245041,501,,7,0.479,0.0237
+ACTB_promoter,blood B cell,random_5408921,random_background,-121680,501,,5,0.481,0.01807
+ACTB_promoter,blood B cell,random_5492321,random_background,-38280,501,,14,0.627,0.03444
+ACTB_promoter,blood B cell,random_5550858,random_background,20257,501,,8,0.583,0.03014
+ACTB_promoter,blood B cell,random_5612335,random_background,81734,501,,4,0.509,0.01463
+ACTB_promoter,blood B cell,random_5500815,random_background,-29786,501,,47,0.699,0.18081
+ACTB_promoter,blood B cell,random_5347854,random_background,-182747,501,,15,0.531,0.05693
+ACTB_promoter,blood B cell,random_5754854,random_background,224253,501,,7,0.493,0.02631
+ACTB_promoter,blood B cell,random_5630511,random_background,99910,501,,5,0.503,0.01805
+ACTB_promoter,blood B cell,random_5291534,random_background,-239067,501,,13,0.605,0.04677
+ACTB_promoter,blood B cell,random_5694130,random_background,163529,501,,4,0.371,0.00759
+ACTB_promoter,blood B cell,random_5651311,random_background,120710,501,,8,0.451,0.02989
+ACTB_promoter,blood B cell,random_5365811,random_background,-164790,501,,17,0.497,0.06247
+ACTB_promoter,blood B cell,random_5590108,random_background,59507,501,,11,0.605,0.02578
+ACTB_promoter,blood B cell,random_5531471,random_background,870,501,,15,0.635,0.00394
+ACTB_promoter,blood B cell,random_5285215,random_background,-245386,501,,14,0.645,0.03318
+ACTB_promoter,blood B cell,random_5752971,random_background,222370,501,,4,0.443,0.01547
+ACTB_promoter,blood B cell,random_5644658,random_background,114057,501,,4,0.437,0.01461
+ACTB_promoter,blood B cell,random_5431860,random_background,-98741,501,,8,0.517,0.02869
+ACTB_promoter,blood B cell,random_5278777,random_background,-251824,501,,9,0.447,0.0317
+ACTB_promoter,blood B cell,random_5317947,random_background,-212654,501,,11,0.503,0.04153
+ACTB_promoter,blood B cell,random_5664809,random_background,134208,501,,9,0.539,0.03379
+ACTB_promoter,blood B cell,random_5348156,random_background,-182445,501,,9,0.561,0.03411
+ACTB_promoter,blood B cell,random_5537239,random_background,6638,501,,9,0.513,0.0334
+ACTB_promoter,blood B cell,random_5738042,random_background,207441,501,,5,0.409,0.01908
+ACTB_promoter,blood B cell,random_5753858,random_background,223257,501,,13,0.447,0.04695
+ACTB_promoter,blood B cell,random_5409856,random_background,-120745,501,,18,0.459,0.06621
+ACTB_promoter,blood B cell,random_5304838,random_background,-225763,501,,9,0.533,0.03272
+ACTB_promoter,blood B cell,random_5527933,random_background,-2668,501,,19,0.567,0.03461
+ACTB_promoter,blood B cell,random_5708184,random_background,177583,501,,7,0.421,0.02661
+ACTB_promoter,blood B cell,random_5595457,random_background,64856,501,,7,0.553,0.00789
+ACTB_promoter,blood B cell,random_5305155,random_background,-225446,501,,12,0.603,0.0444
+ACTB_promoter,blood memory B cell,anchor_ACTB_promoter,anchor_cpg_island,0,501,,64,0.715,0.00597
+ACTB_promoter,blood memory B cell,random_5775304,random_background,244703,501,,4,0.409,0.01291
+ACTB_promoter,blood memory B cell,random_5752984,random_background,222383,501,,4,0.439,0.01478
+ACTB_promoter,blood memory B cell,random_5618134,random_background,87533,501,,10,0.517,0.03666
+ACTB_promoter,blood memory B cell,random_5774057,random_background,243456,501,,6,0.407,0.01714
+ACTB_promoter,blood memory B cell,random_5723765,random_background,193164,501,,9,0.413,0.03561
+ACTB_promoter,blood memory B cell,random_5278108,random_background,-252493,501,,8,0.489,0.02401
+ACTB_promoter,blood memory B cell,random_5332494,random_background,-198107,501,,23,0.629,0.08845
+ACTB_promoter,blood memory B cell,random_5719798,random_background,189197,501,,1,0.321,0.00345
+ACTB_promoter,blood memory B cell,random_5313307,random_background,-217294,501,,33,0.699,0.12464
+ACTB_promoter,blood memory B cell,random_5780961,random_background,250360,501,,49,0.645,0.00594
+ACTB_promoter,blood memory B cell,random_5700930,random_background,170329,501,,7,0.501,0.01613
+ACTB_promoter,blood memory B cell,random_5768481,random_background,237880,501,,5,0.421,0.0175
+ACTB_promoter,blood memory B cell,random_5457928,random_background,-72673,501,,12,0.529,0.01043
+ACTB_promoter,blood memory B cell,random_5347857,random_background,-182744,501,,15,0.529,0.05624
+ACTB_promoter,blood memory B cell,random_5539375,random_background,8774,501,,7,0.607,0.02361
+ACTB_promoter,blood memory B cell,random_5776504,random_background,245903,501,,18,0.489,0.05808
+ACTB_promoter,blood memory B cell,random_5461518,random_background,-69083,501,,8,0.507,0.02899
+ACTB_promoter,blood memory B cell,random_5733479,random_background,202878,501,,4,0.309,0.01237
+ACTB_promoter,blood memory B cell,random_5470160,random_background,-60441,501,,25,0.655,0.08651
+ACTB_promoter,blood memory B cell,random_5698328,random_background,167727,501,,7,0.457,0.02236
+ACTB_promoter,blood memory B cell,random_5389904,random_background,-140697,501,,12,0.547,0.04489
+ACTB_promoter,blood memory B cell,random_5520188,random_background,-10413,501,,9,0.493,0.03361
+ACTB_promoter,blood memory B cell,random_5440511,random_background,-90090,501,,10,0.529,0.03519
+ACTB_promoter,blood memory B cell,random_5391357,random_background,-139244,501,,9,0.561,0.03273
+ACTB_promoter,blood memory B cell,random_5734910,random_background,204309,501,,11,0.479,0.04119
+ACTB_promoter,blood memory B cell,random_5687665,random_background,157064,501,,0,0.399,3e-05
+ACTB_promoter,blood memory B cell,random_5343118,random_background,-187483,501,,14,0.479,0.0524
+ACTB_promoter,blood memory B cell,random_5750958,random_background,220357,501,,7,0.453,0.02577
+ACTB_promoter,blood memory B cell,random_5775642,random_background,245041,501,,7,0.479,0.02097
+ACTB_promoter,blood memory B cell,random_5408921,random_background,-121680,501,,5,0.481,0.01636
+ACTB_promoter,blood memory B cell,random_5492321,random_background,-38280,501,,14,0.627,0.03605
+ACTB_promoter,blood memory B cell,random_5550858,random_background,20257,501,,8,0.583,0.02913
+ACTB_promoter,blood memory B cell,random_5612335,random_background,81734,501,,4,0.509,0.01348
+ACTB_promoter,blood memory B cell,random_5500815,random_background,-29786,501,,47,0.699,0.18101
+ACTB_promoter,blood memory B cell,random_5347854,random_background,-182747,501,,15,0.531,0.05624
+ACTB_promoter,blood memory B cell,random_5754854,random_background,224253,501,,7,0.493,0.02607
+ACTB_promoter,blood memory B cell,random_5630511,random_background,99910,501,,5,0.503,0.01779
+ACTB_promoter,blood memory B cell,random_5291534,random_background,-239067,501,,13,0.605,0.03926
+ACTB_promoter,blood memory B cell,random_5694130,random_background,163529,501,,4,0.371,0.00441
+ACTB_promoter,blood memory B cell,random_5651311,random_background,120710,501,,8,0.451,0.02946
+ACTB_promoter,blood memory B cell,random_5365811,random_background,-164790,501,,17,0.497,0.05955
+ACTB_promoter,blood memory B cell,random_5590108,random_background,59507,501,,11,0.605,0.02087
+ACTB_promoter,blood memory B cell,random_5531471,random_background,870,501,,15,0.635,0.00298
+ACTB_promoter,blood memory B cell,random_5285215,random_background,-245386,501,,14,0.645,0.02792
+ACTB_promoter,blood memory B cell,random_5752971,random_background,222370,501,,4,0.443,0.01478
+ACTB_promoter,blood memory B cell,random_5644658,random_background,114057,501,,4,0.437,0.01378
+ACTB_promoter,blood memory B cell,random_5431860,random_background,-98741,501,,8,0.517,0.027
+ACTB_promoter,blood memory B cell,random_5278777,random_background,-251824,501,,9,0.447,0.02871
+ACTB_promoter,blood memory B cell,random_5317947,random_background,-212654,501,,11,0.503,0.04093
+ACTB_promoter,blood memory B cell,random_5664809,random_background,134208,501,,9,0.539,0.0331
+ACTB_promoter,blood memory B cell,random_5348156,random_background,-182445,501,,9,0.561,0.03353
+ACTB_promoter,blood memory B cell,random_5537239,random_background,6638,501,,9,0.513,0.03237
+ACTB_promoter,blood memory B cell,random_5738042,random_background,207441,501,,5,0.409,0.01895
+ACTB_promoter,blood memory B cell,random_5753858,random_background,223257,501,,13,0.447,0.04639
+ACTB_promoter,blood memory B cell,random_5409856,random_background,-120745,501,,18,0.459,0.06148
+ACTB_promoter,blood memory B cell,random_5304838,random_background,-225763,501,,9,0.533,0.03099
+ACTB_promoter,blood memory B cell,random_5527933,random_background,-2668,501,,19,0.567,0.02422
+ACTB_promoter,blood memory B cell,random_5708184,random_background,177583,501,,7,0.421,0.02589
+ACTB_promoter,blood memory B cell,random_5595457,random_background,64856,501,,7,0.553,0.00718
+ACTB_promoter,blood memory B cell,random_5305155,random_background,-225446,501,,12,0.603,0.04128
