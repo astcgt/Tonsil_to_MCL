@@ -1,0 +1,32 @@
+[91] AlphaGenome 2 連線建立（金鑰未輸出）
+[91] === Part 1：新生元件在正常 B 細胞的預測可及性 ===
+[91]   SLC7A11 / blood B cell: 新生 5 個、對照 20 個
+[91]   SLC7A11 / blood naive B cell: 新生 5 個、對照 20 個
+[91]   SLC7A11 / blood memory B cell: 新生 5 個、對照 20 個
+[91]   MAFG / blood B cell: 新生 19 個、對照 40 個
+[91]   MAFG / blood naive B cell: 新生 19 個、對照 40 個
+[91]   MAFG / blood memory B cell: 新生 19 個、對照 40 個
+[91] 
+=== Part 1：正常 B 細胞中的預測可及性 ===
+[91]   MAFG      blood B cell         新生 0.8886 (n=19) vs 對照 0.0432 (n=40)  比值 20.58×  p=2.56e-05
+[91]   MAFG      blood memory B cell  新生 0.9067 (n=19) vs 對照 0.0380 (n=40)  比值 23.84×  p=2.38e-05
+[91]   MAFG      blood naive B cell   新生 0.8936 (n=19) vs 對照 0.0348 (n=40)  比值 25.67×  p=3.17e-05
+[91]   SLC7A11   blood B cell         新生 0.0719 (n=5) vs 對照 0.0266 (n=20)  比值 2.70×  p=0.488
+[91]   SLC7A11   blood memory B cell  新生 0.1624 (n=5) vs 對照 0.0424 (n=20)  比值 3.83×  p=0.408
+[91]   SLC7A11   blood naive B cell   新生 0.3029 (n=5) vs 對照 0.0372 (n=20)  比值 8.13×  p=0.303
+[91] 
+=== Part 2/3：MARE 核心的 in-silico 飽和突變 ===
+[91] HMOX1 上游 ±12kb 找到 5 個 TRE 核心: [(35372020, '-'), (35372078, '-'), (35372107, '-'), (35375252, '-'), (35377157, '-')]
+[91]   ISM SLC7A11_el_138406332: chr4:138406316-138406355 (39 bp) 在 SLC7A11 的 500 kb 窗內
+Traceback (most recent call last):
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/scripts/91_alphagenome.py", line 230, in <module>
+    part23()
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/scripts/91_alphagenome.py", line 194, in part23
+    allrows += ism_site(label, gene, chrom, pos, st)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/scripts/91_alphagenome.py", line 171, in ism_site
+    val = float(np.nanmean(X[:, obs]))
+                           ~^^^^^^^^
+IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+[91] Part 2/3 失敗: IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices
+[91] DONE

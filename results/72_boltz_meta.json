@@ -1,0 +1,58 @@
+{
+ "CTRL_POS_MafG_NRF2": {
+  "kind": "陽性對照(天然 NRF2)",
+  "blen": 108
+ },
+ "mafg_dna_block_90_2_model_1_m4": {
+  "kind": "阻斷 DNA 結合",
+  "blen": 90,
+  "hotspot": 18,
+  "iface": 131,
+  "seq": "LAAGGSVDTEKLAELQKKLEEMELELAKMQQELAELQKELEKLQKELAEAEAEMKAAGIPAKLSEEERARLLHWAALVEAPLHRVRRRPL"
+ },
+ "mafg_dna_block_90_0_model_3_m5": {
+  "kind": "阻斷 DNA 結合",
+  "blen": 90,
+  "hotspot": 22,
+  "iface": 128,
+  "seq": "LELGLTLPVSPEVLALEKKLAEMEAKLAKLQQELAELQKELEKLEKELAEWKETSEKEEAALEAEVAALIANPPEEIPEEPGIIPAEAAK"
+ },
+ "mafg_dna_block_90_1_model_0_m1": {
+  "kind": "阻斷 DNA 結合",
+  "blen": 90,
+  "hotspot": 21,
+  "iface": 132,
+  "seq": "LEAGDLEGYKRLQEEIAALKPELEKLEAELEKMQQELAEKKQKLEEVEKALADSEGSTKAALEAEAERRRAADDAEFAKEPLPEGDGSRR"
+ },
+ "mafg_dimer_block_70_2_model_3_m1": {
+  "kind": "阻斷二聚",
+  "blen": 70,
+  "hotspot": 16,
+  "iface": 116,
+  "seq": "NPELAALFPEPKIETDEAKVEELKQKLAEVEANPRVDGLSLVSSRIIADEEGNGRVIGVAQLGDTTVRIE"
+ },
+ "mafg_dna_block_90_2_model_0_m3": {
+  "kind": "阻斷 DNA 結合",
+  "blen": 90,
+  "hotspot": 18,
+  "iface": 135,
+  "seq": "ELGLRTLTPEDVAELKALEAKVAEMKLELDKLEQELAELQQQLEELQKQLAEAEKELEKLKKLEEEEKKAEEKAKELQEQLEAKGLPAVP"
+ },
+ "mafg_dimer_block_90_2_model_2_m0": {
+  "kind": "阻斷二聚",
+  "blen": 90,
+  "hotspot": 20,
+  "iface": 124,
+  "seq": "EALGLSSAAIEAELAALEPKLKALEAELEKLQQELAEKKKELEKVQQELAKHEEEIKAEEPELEELLKPKPDPEAEEEAERLYRERLRRE"
+ },
+ "CTRL_NEG_scram1": {
+  "kind": "陰性對照(打散)",
+  "blen": 90,
+  "seq": "TDQKELAAKGELEVAEEVKQLAEAHRPEKAAKRHLVGLQMERLPESLLRLAGKRMQLEIEREEPLALEWLLALALQKEKAEKEALEASMA"
+ },
+ "CTRL_NEG_scram2": {
+  "kind": "陰性對照(打散)",
+  "blen": 90,
+  "seq": "VKAEELAAELELSLINAPLKLEAKLKMLELPLQKTKEEVAPIKALLLPESLGEEGPEEAPKEEQAKEAEIKAEETAQAEAWIPLLEEEVA"
+ }
+}

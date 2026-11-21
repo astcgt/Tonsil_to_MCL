@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>扣除正常分化後的被套細胞淋巴瘤調控異常</title>
+<style>
+  .viz-root{
+    color-scheme: light;
+    --surface-1:#fcfcfb; --surface-2:#f4f3f0; --line:#e3e2dd;
+    --text-primary:#0b0b0b; --text-secondary:#52514e; --text-muted:#86857e;
+    --series-1:#2a78d6;  /* blue  — 上升 / 主序列 */
+    --series-2:#eb6834;  /* orange — 第二序列 */
+    --div-neg:#e34948;   /* red   — 下降（發散配色的另一極） */
+    --div-mid:#f0efec;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])) .viz-root{
+      color-scheme: dark;
+      --surface-1:#1a1a19; --surface-2:#232321; --line:#3a3a37;
+      --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8d84;
+      --series-1:#3987e5; --series-2:#d95926; --div-neg:#e66767; --div-mid:#383835;
+    }
+  }
+  :root[data-theme="dark"] .viz-root{
+    color-scheme: dark;
+    --surface-1:#1a1a19; --surface-2:#232321; --line:#3a3a37;
+    --text-primary:#f0efec; --text-secondary:#c3c2b7; --text-muted:#8e8d84;
+    --series-1:#3987e5; --series-2:#d95926; --div-neg:#e66767; --div-mid:#383835;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--surface-1);}
+  .viz-root{
+    font-family:-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+    background:var(--surface-1); color:var(--text-primary);
+    padding:28px 22px 60px; max-width:1180px; margin:0 auto;
+  }
+  h1{font-size:23px;font-weight:650;margin:0 0 6px;letter-spacing:-.01em}
+  .sub{color:var(--text-secondary);font-size:14px;margin:0 0 4px;line-height:1.65}
+  .meta{color:var(--text-muted);font-size:12.5px;margin:10px 0 26px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(480px,1fr));gap:22px}
+  .card{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px}
+  .card.wide{grid-column:1/-1}
+  .ct{font-size:15px;font-weight:620;margin:0 0 3px}
+  .cs{font-size:12.5px;color:var(--text-secondary);margin:0 0 14px;line-height:1.6}
+  .legend{display:flex;gap:16px;align-items:center;margin:0 0 10px;font-size:12px;color:var(--text-secondary)}
+  .sw{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px}
+  svg{display:block;width:100%;overflow:visible}
+  .lbl{font-size:11.5px;fill:var(--text-secondary)}
+  .lbl-k{font-size:11.5px;fill:var(--text-primary);font-weight:560}
+  .val{font-size:11px;fill:var(--text-secondary)}
+  .ax{stroke:var(--line);stroke-width:1}
+  .gl{stroke:var(--line);stroke-width:1;stroke-dasharray:2 3;opacity:.7}
+  .bar{cursor:pointer}
+  .bar:hover{filter:brightness(1.12)}
+  .tt{position:fixed;pointer-events:none;background:var(--surface-1);border:1px solid var(--line);
+      border-radius:8px;padding:8px 11px;font-size:12px;color:var(--text-primary);
+      box-shadow:0 6px 20px rgba(0,0,0,.14);opacity:0;transition:opacity .09s;z-index:50;max-width:280px;line-height:1.55}
+  details{margin-top:12px}
+  summary{font-size:12px;color:var(--text-secondary);cursor:pointer;user-select:none}
+  table{border-collapse:collapse;width:100%;font-size:12px;margin-top:9px}
+  th,td{text-align:left;padding:4px 9px 4px 0;border-bottom:1px solid var(--line);color:var(--text-secondary)}
+  th{color:var(--text-primary);font-weight:600}
+  td.n{text-align:right;font-variant-numeric:tabular-nums}
+  .note{font-size:12px;color:var(--text-muted);margin-top:12px;line-height:1.65}
+  .flow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.75;
+        color:var(--text-secondary);white-space:pre;overflow-x:auto}
+</style>
+</head>
+<body>
+<div class="viz-root" data-palette="#2a78d6,#eb6834,#e34948">
+
+<h1>扣除正常分化後，被套細胞淋巴瘤剩下的調控異常</h1>
+<p class="sub">
+把每顆腫瘤細胞對位到「它本來該長成的那種正常 B 細胞」，相減之後剩下的訊號。
+參考集為人類扁桃腺細胞圖譜的 46,216 顆正常 B 細胞（6 位捐贈者、47 種分化狀態、多體學）。
+</p>
+<p class="meta">
+腫瘤細胞 19,975 顆（2 位病人）｜檢體內非腫瘤 B 細胞 819 顆作為陰性對照
+（其平均殘差 0.0128，僅腫瘤的 49%）｜所有比較皆為同檢體內配對、且要求兩位病人方向一致
+</p>
+
+<div class="grid">
+
+  <!-- ① 對位 -->
+  <div class="card">
+    <p class="ct">① 腫瘤細胞對位到哪些正常分化狀態</p>
+    <p class="cs">87% 落在「非類別轉換記憶 B 細胞」，其餘在生發中心預備態——與文獻對傳統型被套細胞淋巴瘤細胞起源的認知一致。</p>
+    <svg id="c1"></svg>
+    <details><summary>資料表</summary><div id="t1"></div></details>
+  </div>
+
+  <!-- ② TF -->
+  <div class="card">
+    <p class="ct">② 最異常的轉錄因子調控程式</p>
+    <p class="cs">737 個轉錄因子中，被壓制最極端的前四名全屬同一個複合體：第二類抗原呈現的主控機器。橫軸為同檢體內「腫瘤 − 非腫瘤」的活性差。</p>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--series-1)"></span>腫瘤中活性上升</span>
+      <span><span class="sw" style="background:var(--div-neg)"></span>腫瘤中活性下降</span>
+    </div>
+    <svg id="c2"></svg>
+    <details><summary>資料表</summary><div id="t2"></div></details>
+  </div>
+
+  <!-- ③ Borzoi -->
+  <div class="card">
+    <p class="ct">③ 序列模型確認：只有一段元件說了算</p>
+    <p class="cs">用 Borzoi 做 in-silico 刪除（打散該段序列再預測）。CIITA 基因座上八段候選元件中，只有 B 細胞專用的啟動子 III 有決定性影響。</p>
+    <svg id="c3"></svg>
+    <details><summary>資料表</summary><div id="t3"></div></details>
+  </div>
+
+  <!-- ④ MHC-II -->
+  <div class="card">
+    <p class="ct">④ 下游：抗原呈現基因整組被壓制</p>
+    <p class="cs">全部 36,591 個基因依殘差排序，被壓制的名次（數字越小＝越被壓制）。</p>
+    <svg id="c4"></svg>
+    <details><summary>資料表</summary><div id="t4"></div></details>
+  </div>
+
+  <!-- ⑤ motif -->
+  <div class="card">
+    <p class="ct">⑤ 開關兩側的結合序列（長度＋GC 配對背景）</p>
+    <p class="cs">被關掉的區域富集八聚體／POU 與 MEF2 位點（B 細胞身分的招牌）；被打開的區域富集 AP-1／BATF 位點。橫軸為相對配對背景的富集倍數。</p>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--div-neg)"></span>在「被關掉」的區域富集</span>
+      <span><span class="sw" style="background:var(--series-1)"></span>在「被打開」的區域富集</span>
+    </div>
+    <svg id="c5"></svg>
+    <details><summary>資料表</summary><div id="t5"></div></details>
+  </div>
+
+  <!-- ⑥ DepMap -->
+  <div class="card">
+    <p class="ct">⑥ 腫瘤的弱點：細胞株的選擇性依賴</p>
+    <p class="cs">DepMap 中被套細胞淋巴瘤細胞株相對其他 1,175 株的選擇性依賴（z 分數越負＝越專屬）。IRF4 是全庫最強的一個。</p>
+    <svg id="c6"></svg>
+    <details><summary>資料表</summary><div id="t6"></div></details>
+  </div>
+
+  <!-- 機制流程 -->
+  <div class="card wide">
+    <p class="ct">機制總結</p>
+    <div class="flow">
+   【被關掉的一側】                               【被打開的一側】
+
+   POU2F2 / POU2AF1 活性下降                      AP-1（JUN / FOS / FOSL2）活性上升
+   MEF2C、PAX5 一起下降                            BATF ↔ IRF4 複合體
+            │                                               │
+            ▼                                               ▼
+   八聚體依賴的調控元件關閉                         AP-1 / BATF 元件新生開放
+            │                                               │
+            ▼                                               │
+   CIITA 啟動子 III 失去可及性                              │
+   chr16:10,876,429–10,877,713                             │
+            │                                               ▼
+            ▼                                     腫瘤對 IRF4 產生強烈依賴
+   CIITA 表現下降 → RFX 複合體無事可做                （DepMap z = −3.19）
+            │
+            ▼
+   第二類抗原呈現分子整組消失
+            │
+            ▼
+   【結果】輔助型 T 細胞看不見腫瘤 ＝ 免疫逃脫</div>
+    <p class="note">
+      獨立佐證：16 號染色體沒有拷貝數缺失（inferCNV 顯示甚至微幅增加），CIITA 也沒有突變——
+      所以這是純粹的 cis 調控／表觀層次異常。
+      另一方面，DepMap 八株被套細胞淋巴瘤細胞株中，REC-1 帶有 RFXAP 的無義突變 p.E228Ter，
+      用基因層次的方式打斷了同一條路徑。
+    </p>
+  </div>
+
+</div>
+
+<div class="tt" id="tt"></div>
+</div>
+
+<script>
+const D = {"tf_down": [{"name": "ZXDC", "m102": -1.15, "m413": -0.75, "mean": -0.95}, {"name": "FOXE1", "m102": -0.66, "m413": -1.42, "mean": -1.04}, {"name": "HSF2", "m102": -1.32, "m413": -0.83, "mean": -1.07}, {"name": "KLF17", "m102": -1.72, "m413": -0.49, "mean": -1.11}, {"name": "ZFX", "m102": -1.3, "m413": -1.21, "mean": -1.25}, {"name": "RFX1", "m102": -1.52, "m413": -1.35, "mean": -1.44}, {"name": "HIVEP2", "m102": -1.52, "m413": -1.44, "mean": -1.48}, {"name": "ZBTB4", "m102": -1.16, "m413": -2.23, "mean": -1.7}, {"name": "CIITA", "m102": -2.39, "m413": -2.01, "mean": -2.2}, {"name": "RFXANK", "m102": -3.26, "m413": -2.61, "mean": -2.93}, {"name": "RFX5", "m102": -3.26, "m413": -2.65, "mean": -2.96}, {"name": "RFXAP", "m102": -3.4, "m413": -2.64, "mean": -3.02}], "tf_up": [{"name": "TRPS1", "m102": 1.16, "m413": 1.46, "mean": 1.31}, {"name": "PIN1", "m102": 1.06, "m413": 1.32, "mean": 1.19}, {"name": "ZNF24", "m102": 1.18, "m413": 1.07, "mean": 1.12}, {"name": "HIVEP1", "m102": 0.93, "m413": 1.06, "mean": 0.99}, {"name": "SIX1", "m102": 0.71, "m413": 1.22, "mean": 0.96}, {"name": "VHL", "m102": 0.88, "m413": 0.96, "mean": 0.92}, {"name": "TBR1", "m102": 0.95, "m413": 0.75, "mean": 0.85}, {"name": "E4F1", "m102": 1.32, "m413": 0.32, "mean": 0.82}, {"name": "ZIC1", "m102": 0.98, "m413": 0.63, "mean": 0.81}, {"name": "UBTF", "m102": 0.54, "m413": 0.97, "mean": 0.76}], "mhc_rank": [{"name": "HLA-DPB1", "rank": 5, "resid": -0.917}, {"name": "HLA-DPA1", "rank": 18, "resid": -0.668}, {"name": "HLA-DRB1", "rank": 28, "resid": -0.585}, {"name": "HLA-DRA", "rank": 54, "resid": -0.491}, {"name": "HLA-DQB1", "rank": 72, "resid": -0.452}, {"name": "HLA-DQA1", "rank": 254, "resid": -0.261}, {"name": "CIITA", "rank": 91, "resid": -0.418}, {"name": "CD74", "rank": 209, "resid": -0.291}, {"name": "B2M", "rank": 115, "resid": -0.38}, {"name": "HLA-C", "rank": 86, "resid": -0.424}], "top_up_genes": [{"name": "MSR1", "resid": 1.73, "obs": 2.23, "exp": 0.02}, {"name": "ZNF804A", "resid": 1.66, "obs": 3.14, "exp": 0.91}, {"name": "ROR1", "resid": 1.58, "obs": 2.12, "exp": 0.2}, {"name": "ABCA6", "resid": 1.43, "obs": 1.74, "exp": 0.06}, {"name": "AUTS2", "resid": 1.22, "obs": 3.04, "exp": 1.9}, {"name": "H3F3B", "resid": 1.2, "obs": 2.38, "exp": 0.78}, {"name": "PTPRJ", "resid": 1.13, "obs": 2.18, "exp": 0.79}, {"name": "MAST4", "resid": 1.09, "obs": 2.14, "exp": 0.57}, {"name": "CCND1", "resid": 1.05, "obs": 1.41, "exp": 0.03}, {"name": "TMEM163", "resid": 0.97, "obs": 1.54, "exp": 0.51}], "borzoi_ciita": [{"name": "pIII 啟動子本體", "rna": -3.62, "dnase": -4.95, "atac": -1.33, "obs": -1.23}, {"name": "ALL_elements", "rna": -3.44, "dnase": -5.1, "atac": -1.7, "obs": null}, {"name": "遠端上游 -25 kb", "rna": -0.23, "dnase": -0.06, "atac": 0.01, "obs": -1.21}, {"name": "基因內 +35 kb", "rna": -0.22, "dnase": 0.3, "atac": -0.0, "obs": -1.84}, {"name": "pI 上游 -1.5 kb（喪失最強）", "rna": -0.2, "dnase": 0.01, "atac": 0.01, "obs": -2.3}, {"name": "基因內 +14 kb", "rna": -0.04, "dnase": -0.06, "atac": 0.02, "obs": -1.09}, {"name": "遠端上游 -21 kb", "rna": -0.02, "dnase": -0.01, "atac": -0.0, "obs": -1.54}, {"name": "遠端上游 -30 kb", "rna": 0.12, "dnase": -0.08, "atac": 0.01, "obs": -1.24}, {"name": "pI/pIII 之間", "rna": 0.98, "dnase": -0.03, "atac": -0.13, "obs": -1.12}], "motif_lost": [{"name": "POU5F1", "fold": 1.53, "fg": 0.515, "bg": 0.336}, {"name": "POU2F3", "fold": 1.87, "fg": 0.319, "bg": 0.171}, {"name": "POU5F1B", "fold": 1.64, "fg": 0.414, "bg": 0.252}, {"name": "POU3F1", "fold": 1.71, "fg": 0.253, "bg": 0.148}, {"name": "MEF2A", "fold": 1.5, "fg": 0.28, "bg": 0.187}, {"name": "POU2F1", "fold": 1.43, "fg": 0.293, "bg": 0.205}, {"name": "SNAI3", "fold": 1.39, "fg": 0.306, "bg": 0.22}, {"name": "Ptf1A", "fold": 1.3, "fg": 0.407, "bg": 0.314}], "motif_gain": [{"name": "FOSL1::JUNB", "fold": 1.81, "fg": 0.155, "bg": 0.086}, {"name": "FOS::JUN", "fold": 1.94, "fg": 0.121, "bg": 0.062}, {"name": "FOSL1::JUN", "fold": 1.89, "fg": 0.127, "bg": 0.067}, {"name": "FOSL2::JUN", "fold": 1.89, "fg": 0.127, "bg": 0.067}, {"name": "FOS::JUND", "fold": 1.92, "fg": 0.119, "bg": 0.062}, {"name": "FOSL2", "fold": 1.78, "fg": 0.137, "bg": 0.077}, {"name": "FOS::JUNB", "fold": 1.99, "fg": 0.104, "bg": 0.052}, {"name": "FOSL2::JUND", "fold": 1.99, "fg": 0.104, "bg": 0.052}], "depmap": [{"name": "DEPDC5", "eff": -0.62, "other": 0.02, "z": -3.39}, {"name": "CD74", "eff": -0.31, "other": 0.02, "z": -3.33}, {"name": "CCDC88C", "eff": -0.38, "other": -0.03, "z": -3.25}, {"name": "IRF4", "eff": -1.32, "other": -0.12, "z": -3.19}, {"name": "SBF1", "eff": -0.29, "other": 0.09, "z": -2.98}, {"name": "CD79A", "eff": -0.27, "other": 0.14, "z": -2.89}, {"name": "SLC7A11", "eff": -0.44, "other": 0.07, "z": -2.89}, {"name": "CD79B", "eff": -0.5, "other": -0.05, "z": -2.86}, {"name": "NFKB2", "eff": -0.62, "other": -0.09, "z": -2.76}, {"name": "GCLM", "eff": -0.44, "other": -0.04, "z": -2.74}], "matched_states": [{"name": "ncsMBC", "n": 18127}, {"name": "GC-commited NBC", "n": 847}, {"name": "Early GC-commited NBC", "n": 763}, {"name": "Reactivated proliferative MBCs", "n": 225}, {"name": "csMBC", "n": 160}, {"name": "csMBC FCRL4/5+", "n": 91}, {"name": "DZ non proliferative", "n": 68}, {"name": "Precursor MBCs", "n": 68}], "meta": {"n_ref": 46216, "n_states": 47, "n_donors": 6, "n_tumor": 19975, "n_nontumor": 819, "resid_tumor": 0.0259, "resid_nontumor": 0.0128}};
+const tt = document.getElementById('tt');
+const show = (e, html) => { tt.innerHTML = html; tt.style.opacity = 1;
+  tt.style.left = Math.min(e.clientX + 14, innerWidth - 300) + 'px';
+  tt.style.top  = (e.clientY + 14) + 'px'; };
+const hide = () => tt.style.opacity = 0;
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+
+function hbar(svgId, rows, opt){
+  const o = Object.assign({labelW:150, rowH:24, gap:2, valFmt:v=>v, pad:{t:8,r:58,b:26,l:0},
+                           diverging:false, color:'var(--series-1)', unit:''}, opt);
+  const svg = document.getElementById(svgId);
+  const W = svg.clientWidth || 520;
+  const H = o.pad.t + rows.length*o.rowH + o.pad.b;
+  const plotX = o.labelW, plotW = W - o.labelW - o.pad.r;
+  const vals = rows.map(r=>r.v);
+  let min = Math.min(0, ...vals), max = Math.max(0, ...vals);
+  const span = (max-min)||1;
+  const x = v => plotX + (v-min)/span*plotW;
+  const zero = x(0);
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">`;
+  // 網格
+  const ticks = 5;
+  for(let i=0;i<=ticks;i++){
+    const v = min + span*i/ticks, px = x(v);
+    s += `<line class="gl" x1="${px}" y1="${o.pad.t}" x2="${px}" y2="${o.pad.t+rows.length*o.rowH}"/>`;
+    s += `<text class="val" x="${px}" y="${H-10}" text-anchor="middle">${o.valFmt(v)}</text>`;
+  }
+  s += `<line class="ax" x1="${zero}" y1="${o.pad.t}" x2="${zero}" y2="${o.pad.t+rows.length*o.rowH}"/>`;
+  rows.forEach((r,i)=>{
+    const y = o.pad.t + i*o.rowH + o.gap/2;
+    const h = o.rowH - o.gap - 6;
+    const col = r.color || (o.diverging ? (r.v<0?'var(--div-neg)':'var(--series-1)') : o.color);
+    const x0 = Math.min(zero, x(r.v)), w = Math.max(2, Math.abs(x(r.v)-zero));
+    s += `<text class="${r.bold?'lbl-k':'lbl'}" x="${plotX-9}" y="${y+h/2+4}" text-anchor="end">${esc(r.k)}</text>`;
+    s += `<rect class="bar" x="${x0}" y="${y}" width="${w}" height="${h}" rx="4" fill="${col}"
+            data-tip="${esc(r.tip||'')}"/>`;
+    const lx = r.v<0 ? x0-6 : x0+w+6, anc = r.v<0?'end':'start';
+    s += `<text class="val" x="${lx}" y="${y+h/2+4}" text-anchor="${anc}">${o.valFmt(r.v)}${o.unit}</text>`;
+  });
+  s += `</svg>`;
+  svg.outerHTML = s;
+  document.querySelectorAll(`svg rect.bar`).forEach(el=>{
+    if(el.__b) return; el.__b=1;
+    el.addEventListener('mousemove', e=>show(e, el.dataset.tip));
+    el.addEventListener('mouseleave', hide);
+  });
+}
+function table(id, cols, rows){
+  let h = '<table><thead><tr>' + cols.map(c=>`<th>${esc(c[0])}</th>`).join('') + '</tr></thead><tbody>';
+  rows.forEach(r=>{ h += '<tr>' + cols.map(c=>{
+      const v = c[1](r); const num = typeof v === 'number';
+      return `<td class="${num?'n':''}">${esc(v)}</td>`; }).join('') + '</tr>'; });
+  document.getElementById(id).innerHTML = h + '</tbody></table>';
+}
+
+// ① 對位
+{
+  const rows = D.matched_states.map(d=>({k:d.name, v:d.n,
+    tip:`<b>${esc(d.name)}</b><br>腫瘤細胞 ${d.n.toLocaleString()} 顆<br>占 ${(100*d.n/19975).toFixed(1)}%`}));
+  hbar('c1', rows, {labelW:188, valFmt:v=>v>=1000?(v/1000).toFixed(0)+'k':v.toFixed(0), pad:{t:8,r:52,b:26,l:0}});
+  table('t1', [['正常分化狀態',r=>r.name],['細胞數',r=>r.n],['占比 %',r=>(100*r.n/19975).toFixed(1)]], D.matched_states);
+}
+// ② TF
+{
+  const key = new Set(['CIITA','RFX5','RFXAP','RFXANK']);
+  const all = D.tf_down.concat(D.tf_up);
+  const rows = all.map(d=>({k:d.name, v:d.mean, bold:key.has(d.name),
+    tip:`<b>${esc(d.name)}</b><br>病人 M102：${d.m102>0?'+':''}${d.m102}<br>病人 M413：${d.m413>0?'+':''}${d.m413}<br>平均：${d.mean>0?'+':''}${d.mean}`}));
+  hbar('c2', rows, {labelW:92, diverging:true, rowH:21, valFmt:v=>v.toFixed(1)});
+  table('t2', [['轉錄因子',r=>r.name],['M102',r=>r.m102],['M413',r=>r.m413],['平均',r=>r.mean]], all);
+}
+// ③ Borzoi
+{
+  const d3 = D.borzoi_ciita.filter(d=>d.name!=='ALL_elements');
+  const rows = d3.map(d=>({k:d.name, v:d.rna,
+    tip:`<b>${esc(d.name)}</b><br>預測 RNA 變化：${d.rna} log2FC<br>預測 DNase 變化：${d.dnase}<br>實測 ATAC 變化：${d.obs ?? '—'}`}));
+  hbar('c3', rows, {labelW:170, diverging:true, rowH:23, valFmt:v=>v.toFixed(1)});
+  table('t3', [['元件',r=>r.name],['預測 RNA log2FC',r=>r.rna],['預測 DNase',r=>r.dnase],['實測 ATAC log2FC',r=>r.obs ?? '—']], d3);
+}
+// ④ MHC-II 排名
+{
+  const rows = D.mhc_rank.map(d=>({k:d.name, v:d.rank, color:'var(--div-neg)',
+    tip:`<b>${esc(d.name)}</b><br>被壓制排名第 ${d.rank} 名（共 36,591 個基因）<br>殘差 ${d.resid}`}));
+  hbar('c4', rows, {labelW:98, rowH:23, color:'var(--div-neg)', valFmt:v=>v.toFixed(0), unit:''});
+  table('t4', [['基因',r=>r.name],['被壓制排名',r=>r.rank],['殘差',r=>r.resid]], D.mhc_rank);
+}
+// ⑤ motif
+{
+  const L = D.motif_lost.map(d=>({k:d.name+'（關）', v:d.fold, color:'var(--div-neg)',
+    tip:`<b>${esc(d.name)}</b><br>在被關掉的區域：${(100*d.fg).toFixed(1)}%<br>配對背景：${(100*d.bg).toFixed(1)}%<br>富集 ${d.fold}×`}));
+  const G = D.motif_gain.slice(0,6).map(d=>({k:d.name+'（開）', v:d.fold, color:'var(--series-1)',
+    tip:`<b>${esc(d.name)}</b><br>在被打開的區域：${(100*d.fg).toFixed(1)}%<br>配對背景：${(100*d.bg).toFixed(1)}%<br>富集 ${d.fold}×`}));
+  hbar('c5', L.concat(G), {labelW:142, rowH:21, valFmt:v=>v.toFixed(1), unit:'×'});
+  table('t5', [['結合序列',r=>r.name],['前景命中率',r=>r.fg],['背景命中率',r=>r.bg],['富集倍數',r=>r.fold]],
+        D.motif_lost.map(x=>Object.assign({},x,{name:x.name+'（關）'}))
+          .concat(D.motif_gain.map(x=>Object.assign({},x,{name:x.name+'（開）'}))));
+}
+// ⑥ DepMap
+{
+  const rows = D.depmap.map(d=>({k:d.name, v:d.z, bold:d.name==='IRF4', color:'var(--div-neg)',
+    tip:`<b>${esc(d.name)}</b><br>MCL 細胞株 gene effect：${d.eff}<br>其他 1,175 株平均：${d.other}<br>選擇性 z = ${d.z}`}));
+  hbar('c6', rows, {labelW:96, rowH:23, color:'var(--div-neg)', valFmt:v=>v.toFixed(1)});
+  table('t6', [['基因',r=>r.name],['MCL gene effect',r=>r.eff],['其他細胞株',r=>r.other],['選擇性 z',r=>r.z]], D.depmap);
+}
+</script>
+</body>
+</html>

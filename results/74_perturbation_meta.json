@@ -1,0 +1,240 @@
+{
+ "BASE_MafG_NRF2": {
+  "exp": "基準",
+  "desc": "野生型 MafG–NRF2"
+ },
+ "PT_K53A": {
+  "exp": "點突變",
+  "desc": "MafG K53A（dna）",
+  "pos": 53,
+  "wt": "K",
+  "mt": "A",
+  "esm_llr": -13.750527381896973
+ },
+ "PT_K53R_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG K53R（ESM 最偏好的替代）",
+  "pos": 53,
+  "wt": "K",
+  "mt": "R",
+  "esm_llr": -4.772645473480225
+ },
+ "PT_K60A": {
+  "exp": "點突變",
+  "desc": "MafG K60A（dna）",
+  "pos": 60,
+  "wt": "K",
+  "mt": "A",
+  "esm_llr": -10.988396644592283
+ },
+ "PT_K60R_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG K60R（ESM 最偏好的替代）",
+  "pos": 60,
+  "wt": "K",
+  "mt": "R",
+  "esm_llr": -9.250555038452148
+ },
+ "PT_N61A": {
+  "exp": "點突變",
+  "desc": "MafG N61A（dna）",
+  "pos": 61,
+  "wt": "N",
+  "mt": "A",
+  "esm_llr": -11.742140769958496
+ },
+ "PT_N61S_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG N61S（ESM 最偏好的替代）",
+  "pos": 61,
+  "wt": "N",
+  "mt": "S",
+  "esm_llr": -9.84434700012207
+ },
+ "PT_Y64A": {
+  "exp": "點突變",
+  "desc": "MafG Y64A（dna）",
+  "pos": 64,
+  "wt": "Y",
+  "mt": "A",
+  "esm_llr": -10.556052207946776
+ },
+ "PT_Y64F_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG Y64F（ESM 最偏好的替代）",
+  "pos": 64,
+  "wt": "Y",
+  "mt": "F",
+  "esm_llr": -5.350189208984375
+ },
+ "PT_R69A": {
+  "exp": "點突變",
+  "desc": "MafG R69A（dna）",
+  "pos": 69,
+  "wt": "R",
+  "mt": "A",
+  "esm_llr": -11.975834846496582
+ },
+ "PT_R69K_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG R69K（ESM 最偏好的替代）",
+  "pos": 69,
+  "wt": "R",
+  "mt": "K",
+  "esm_llr": -8.196134567260742
+ },
+ "PT_R56A": {
+  "exp": "點突變",
+  "desc": "MafG R56A（dna）",
+  "pos": 56,
+  "wt": "R",
+  "mt": "A",
+  "esm_llr": -13.541529655456545
+ },
+ "PT_R56K_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG R56K（ESM 最偏好的替代）",
+  "pos": 56,
+  "wt": "R",
+  "mt": "K",
+  "esm_llr": -6.554441452026367
+ },
+ "PT_R57A": {
+  "exp": "點突變",
+  "desc": "MafG R57A（dna）",
+  "pos": 57,
+  "wt": "R",
+  "mt": "A",
+  "esm_llr": -13.170326232910156
+ },
+ "PT_R57Q_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG R57Q（ESM 最偏好的替代）",
+  "pos": 57,
+  "wt": "R",
+  "mt": "Q",
+  "esm_llr": -8.65117359161377
+ },
+ "PT_A65A": {
+  "exp": "點突變",
+  "desc": "MafG A65A（dna）",
+  "pos": 65,
+  "wt": "A",
+  "mt": "A",
+  "esm_llr": null
+ },
+ "PT_A65V_esmbest": {
+  "exp": "點突變",
+  "desc": "MafG A65V（ESM 最偏好的替代）",
+  "pos": 65,
+  "wt": "A",
+  "mt": "V",
+  "esm_llr": -5.517107009887695
+ },
+ "PH_T58D": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG T58D（模擬磷酸化）",
+  "pos": 58,
+  "wt": "T",
+  "mt": "D"
+ },
+ "PH_T58E": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG T58E（模擬磷酸化）",
+  "pos": 58,
+  "wt": "T",
+  "mt": "E"
+ },
+ "PH_Y64D": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG Y64D（模擬磷酸化）",
+  "pos": 64,
+  "wt": "Y",
+  "mt": "D"
+ },
+ "PH_Y64E": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG Y64E（模擬磷酸化）",
+  "pos": 64,
+  "wt": "Y",
+  "mt": "E"
+ },
+ "PH_S67D": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG S67D（模擬磷酸化）",
+  "pos": 67,
+  "wt": "S",
+  "mt": "D"
+ },
+ "PH_S67E": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG S67E（模擬磷酸化）",
+  "pos": 67,
+  "wt": "S",
+  "mt": "E"
+ },
+ "PH_Y111D": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG Y111D（模擬磷酸化）",
+  "pos": 111,
+  "wt": "Y",
+  "mt": "D"
+ },
+ "PH_Y111E": {
+  "exp": "磷酸化擬態",
+  "desc": "MafG Y111E（模擬磷酸化）",
+  "pos": 111,
+  "wt": "Y",
+  "mt": "E"
+ },
+ "ADD_binder_WT": {
+  "exp": "增加序列",
+  "desc": "原始結合劑（基準）",
+  "blen": 90
+ },
+ "ADD_degron_VHL_ODD_Cterm": {
+  "exp": "增加序列-降解標籤",
+  "desc": "結合劑 + VHL_ODD（接在 C 端）",
+  "blen": 118
+ },
+ "ADD_degron_VHL_ODD_Nterm": {
+  "exp": "增加序列-降解標籤",
+  "desc": "結合劑 + VHL_ODD（接在 N 端）",
+  "blen": 118
+ },
+ "ADD_degron_SPOP_SBC_Cterm": {
+  "exp": "增加序列-降解標籤",
+  "desc": "結合劑 + SPOP_SBC（接在 C 端）",
+  "blen": 106
+ },
+ "ADD_degron_SPOP_SBC_Nterm": {
+  "exp": "增加序列-降解標籤",
+  "desc": "結合劑 + SPOP_SBC（接在 N 端）",
+  "blen": 106
+ },
+ "ADD_degron_KEAP1_ETGE_Cterm": {
+  "exp": "增加序列-降解標籤",
+  "desc": "結合劑 + KEAP1_ETGE（接在 C 端）",
+  "blen": 113
+ },
+ "ADD_degron_KEAP1_ETGE_Nterm": {
+  "exp": "增加序列-降解標籤",
+  "desc": "結合劑 + KEAP1_ETGE（接在 N 端）",
+  "blen": 113
+ },
+ "ADD_NLS_link0": {
+  "exp": "增加序列-核定位訊號",
+  "desc": "SV40 NLS + 0 aa linker + 結合劑",
+  "blen": 97
+ },
+ "ADD_NLS_link4": {
+  "exp": "增加序列-核定位訊號",
+  "desc": "SV40 NLS + 4 aa linker + 結合劑",
+  "blen": 101
+ },
+ "ADD_NLS_link12": {
+  "exp": "增加序列-核定位訊號",
+  "desc": "SV40 NLS + 12 aa linker + 結合劑",
+  "blen": 109
+ }
+}

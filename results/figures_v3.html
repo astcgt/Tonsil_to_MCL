@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCL：從調控重接線到蛋白質層級藥物設計</title>
+<style>
+.viz-root{color-scheme:light;--surface-1:#fcfcfb;--surface-2:#f4f3f0;--line:#e3e2dd;
+ --text-primary:#0b0b0b;--text-secondary:#52514e;--text-muted:#86857e;
+ --series-1:#2a78d6;--series-2:#eb6834;--div-neg:#e34948;}
+@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])) .viz-root{color-scheme:dark;
+ --surface-1:#1a1a19;--surface-2:#232321;--line:#3a3a37;--text-primary:#f0efec;--text-secondary:#c3c2b7;
+ --text-muted:#8e8d84;--series-1:#3987e5;--series-2:#d95926;--div-neg:#e66767;}}
+:root[data-theme="dark"] .viz-root{color-scheme:dark;--surface-1:#1a1a19;--surface-2:#232321;--line:#3a3a37;
+ --text-primary:#f0efec;--text-secondary:#c3c2b7;--text-muted:#8e8d84;--series-1:#3987e5;--series-2:#d95926;--div-neg:#e66767;}
+*{box-sizing:border-box}body{margin:0;background:var(--surface-1)}
+.viz-root{font-family:-apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;
+ background:var(--surface-1);color:var(--text-primary);padding:28px 22px 60px;max-width:1200px;margin:0 auto}
+h1{font-size:23px;font-weight:650;margin:0 0 6px}h2{font-size:17px;font-weight:620;margin:30px 0 12px;
+ padding-bottom:7px;border-bottom:1px solid var(--line)}
+.sub{color:var(--text-secondary);font-size:14px;margin:0 0 4px;line-height:1.65}
+.meta{color:var(--text-muted);font-size:12.5px;margin:10px 0 10px;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(460px,1fr));gap:20px}
+.card{background:var(--surface-2);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px}
+.card.wide{grid-column:1/-1}
+.ct{font-size:15px;font-weight:620;margin:0 0 3px}
+.cs{font-size:12.5px;color:var(--text-secondary);margin:0 0 14px;line-height:1.6}
+.legend{display:flex;gap:16px;align-items:center;margin:0 0 10px;font-size:12px;color:var(--text-secondary);flex-wrap:wrap}
+.sw{width:11px;height:11px;border-radius:3px;display:inline-block;margin-right:6px;vertical-align:-1px}
+svg{display:block;width:100%;overflow:visible}
+.lbl{font-size:11.5px;fill:var(--text-secondary)}.lbl-k{font-size:11.5px;fill:var(--text-primary);font-weight:600}
+.val{font-size:11px;fill:var(--text-secondary)}
+.ax{stroke:var(--line);stroke-width:1}.gl{stroke:var(--line);stroke-width:1;stroke-dasharray:2 3;opacity:.7}
+.bar{cursor:pointer}.bar:hover{filter:brightness(1.12)}
+.err{stroke:var(--text-secondary);stroke-width:1.5;opacity:.75}
+.tt{position:fixed;pointer-events:none;background:var(--surface-1);border:1px solid var(--line);border-radius:8px;
+ padding:8px 11px;font-size:12px;color:var(--text-primary);box-shadow:0 6px 20px rgba(0,0,0,.14);
+ opacity:0;transition:opacity .09s;z-index:50;max-width:300px;line-height:1.55}
+details{margin-top:12px}summary{font-size:12px;color:var(--text-secondary);cursor:pointer}
+table{border-collapse:collapse;width:100%;font-size:12px;margin-top:9px}
+th,td{text-align:left;padding:4px 9px 4px 0;border-bottom:1px solid var(--line);color:var(--text-secondary)}
+th{color:var(--text-primary);font-weight:600}td.n{text-align:right;font-variant-numeric:tabular-nums}
+.note{font-size:12px;color:var(--text-muted);margin-top:12px;line-height:1.7}
+.flow{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;line-height:1.75;
+ color:var(--text-secondary);white-space:pre;overflow-x:auto}
+.seq{font-family:ui-monospace,Menlo,monospace;font-size:11.5px;word-break:break-all;
+ background:var(--surface-1);border:1px solid var(--line);border-radius:6px;padding:8px 10px;margin:6px 0 2px;color:var(--text-primary)}
+</style></head><body><div class="viz-root" data-palette="#2a78d6,#eb6834,#e34948">
+
+<h1>MCL：從調控重接線到蛋白質層級藥物設計</h1>
+<p class="sub">正常分化配對 → RNA+ATAC 聯合 GRN → 癌症特異重接線 → AlphaGenome 2 外部驗證 → 蛋白質擾動 → 生成式藥物設計與評估</p>
+<p class="meta">正常參考 46,216 顆 B 細胞 / 47 分化狀態 ｜ 腫瘤 19,975 顆 ｜ peak–基因配對 217,705 組 ｜
+ESM-2 飽和突變 60,000+ 變異 ｜ Boltz-2 共摺疊 110 個複合體 / 159 次預測<br>AlphaGenome 2：500 kb 窗基線比較 + 6 個 MARE 位點全飽和 in-silico 突變</p>
+
+<h2>一、蛋白質層級：演化約束與結構介面獨立收斂</h2>
+<div class="grid">
+ <div class="card"><p class="ct">① 介面殘基的演化約束百分位</p>
+  <p class="cs">ESM-2 算出每個位置的約束度；數值越小代表越不能突變。全蛋白質基準是 50。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>結構介面殘基</span>
+   <span><span class="sw" style="background:var(--text-muted)"></span>其餘殘基</span></div>
+  <svg id="c1"></svg>
+  <p class="note">MafG：Mann-Whitney <b>p = 8.3×10⁻¹¹</b>｜FSP1：<b>p = 2.1×10⁻¹¹</b>。
+   兩個完全獨立的資訊來源（序列演化 vs 晶體結構）指向同一組殘基。</p></div>
+
+ <div class="card"><p class="ct">② 抗藥性逃逸空間</p>
+  <p class="cs">介面殘基上「模型認為可接受」的突變比例（LLR &gt; −2）。越低代表腫瘤越難靠突變逃脫。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--div-neg)"></span>介面殘基</span>
+   <span><span class="sw" style="background:var(--text-muted)"></span>全蛋白質</span></div>
+  <svg id="c2"></svg>
+  <p class="note">MafG 介面逃逸空間只有全蛋白質的 <b>1/4</b>（10.5% vs 42.4%）。
+   逃逸突變集中在 A94、Q82、M100、K101 這幾個位置。</p></div>
+
+ <div class="card wide"><p class="ct">③ 點突變擾動：MafG–NRF2 白胺酸拉鍊介面</p>
+  <p class="cs">界面距離誤差相對野生型的變化（越大代表界面被破壞越嚴重）。無關表面對照應該接近 0。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--div-neg)"></span>介面突變</span>
+   <span><span class="sw" style="background:var(--text-muted)"></span>無關表面對照</span></div>
+  <svg id="c3"></svg>
+  <p class="note">四個拉鍊殘基（L79A / K83A / N97A / L93A）比對照高 8–160 倍。
+   <b>但整組檢定 p = 0.095 未達顯著</b>（13 vs 3，統計力不足）。
+   同一批實驗中，蛋白質–DNA 介面的突變完全測不到（Δ 範圍僅 −0.005 ~ +0.027，
+   即使是 ESM 判定致命的 K60D）。</p></div>
+</div>
+
+<h2>二、藥物設計與評估</h2>
+<div class="grid">
+ <div class="card wide"><p class="ct">④ MafG 結合劑：5 次 diffusion 取樣的 ipTM（誤差線為標準差）</p>
+  <p class="cs">單次取樣不可靠（同一設計曾跑出 0.759 與 0.320），所以每個複合體跑 5 次取平均。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>設計</span>
+   <span><span class="sw" style="background:var(--series-2)"></span>陽性對照（天然 NRF2）</span>
+   <span><span class="sw" style="background:var(--div-neg)"></span>陰性對照（序列打散）</span></div>
+  <svg id="c4"></svg>
+  <p class="note">設計品 vs 陰性對照 Mann-Whitney <b>p = 3.5×10⁻⁴</b>（30 vs 10 個取樣點）。
+   <b>4/6 個設計超過天然 NRF2 複合體。</b>
+   注意 70 aa 的設計（最底下）其實是失敗的——與陰性對照無法區分。</p>
+  <div class="seq">最佳候選（90 aa，ipTM 0.790 ± 0.015）<br>LAAGGSVDTEKLAELQKKLEEMELELAKMQQELAELQKELEKLQKELAEAEAEMKAAGIPAKLSEEERARLLHWAALVEAPLHRVRRRPL</div>
+ </div>
+
+ <div class="card"><p class="ct">⑤ FSP1 結合劑：失敗，而且原因可量化</p>
+  <p class="cs">給了晶體結構當模板後標的摺疊正常（pLDDT 0.84），但沒有任何設計贏過亂序對照。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>設計</span>
+   <span><span class="sw" style="background:var(--div-neg)"></span>陰性對照</span></div>
+  <svg id="c5"></svg></div>
+
+ <div class="card"><p class="ct">⑥ 原因：標的表面的溶劑可及性</p>
+  <p class="cs">相對可及表面積 (RSA) 中位數。迷你蛋白質只能接觸暴露的表面。</p>
+  <svg id="c6"></svg>
+  <p class="note"><b>通用設計準則</b>：演化約束＋結構介面能找到「功能核心」，
+   但能不能被蛋白質藥物接觸是<b>獨立的第三個條件</b>。
+   深埋口袋 = 小分子的領域；暴露介面 = 迷你蛋白質的領域。</p></div>
+
+ <div class="card wide"><p class="ct">⑦ 增加序列：三元降解劑複合體</p>
+  <p class="cs">MafG ←→ 結合劑–linker–degron ←→ E3 連接酶。兩個界面都要夠高，降解劑才成立。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>融合體 ↔ MafG</span>
+   <span><span class="sw" style="background:var(--series-2)"></span>融合體 ↔ E3 連接酶</span></div>
+  <svg id="c7"></svg>
+  <p class="note">降解標籤接 <b>N 端</b>、用 <b>KEAP1 的 ETGE</b>、linker 9–18 aa 最佳。
+   VHL_ODD 全數失敗（0.11–0.14）——它需要脯胺酸羥化才能被 VHL 辨認，模型正確反映了這點。
+   巧合的是，MCL 因 NRF2 路徑活躍，<b>KEAP1 本來就大量存在</b>，等於腫瘤自備降解機器。
+   但融合後對 KEAP1 的 ipTM（0.38–0.42）遠低於單獨 ETGE 肽（0.957），linker 仍需最佳化。</p></div>
+</div>
+
+<h2>三、AlphaGenome 2 外部驗證（兩件失敗、一件成功）</h2>
+<div class="grid">
+ <div class="card wide"><p class="ct">⑧ 基線可及性比較 —— ❌ 失敗：peak 寬度混淆</p>
+  <p class="cs">「新生元件在正常 B 細胞裡被預測成開放還是關閉？」左邊是看起來很漂亮的原始比較，
+   右邊是拿寬度相當的對照之後的真相。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>新生元件</span>
+   <span><span class="sw" style="background:var(--text-muted)"></span>一般對照</span>
+   <span><span class="sw" style="background:var(--series-2)"></span>最寬 10 個對照（有效控制）</span></div>
+  <svg id="c8"></svg>
+  <p class="note">peak 寬度 vs 預測可及性 Spearman <b>+0.74</b>，而新生元件比對照寬 <b>3.5 倍</b>
+   （1,402 bp vs 406 bp, p = 0.0014）。改用固定 501 bp 提取<b>並沒有解決</b>——
+   寬度相關性仍是 +0.74，因為寬度本身就是「元件有多強」的代理。<br>
+   唯一有效的控制是拿寬度相當的對照：<b>MAFG 0.55×（反轉）p = 0.57；SLC7A11 0.62× p = 0.37</b>
+   → <b>效應完全消失，這條路不提供任何證據。</b>
+   我原本據此寫的「MAFG 元件本來就開著」已撤回。</p>
+ </div>
+
+ <div class="card wide"><p class="ct">⑨ MARE 核心全飽和 in-silico 突變 —— ✅ 成功</p>
+  <p class="cs">改問因果：把 TRE/MARE 打掉，模型預測的<b>基因表現</b>會不會變？
+   每個位點 39 bp 全飽和突變，<b>同窗格的非 motif 位置就是內部對照</b>——
+   這個設計天生免疫於上圖的寬度混淆。縱軸是 motif 位置效應 ÷ 周邊位置效應。</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>達顯著（Bonferroni）</span>
+   <span><span class="sw" style="background:var(--series-2)"></span>陽性對照</span>
+   <span><span class="sw" style="background:var(--text-muted)"></span>未達顯著</span></div>
+  <svg id="c9"></svg>
+  <p class="note"><b>① 陽性對照成立，所以陰性結果可解讀。</b>
+   HMOX1 是教科書等級的 NRF2/small-Maf 標的，拿到 p_bonf = 8×10⁻³。
+   而且它上游三個 TGACTCA <b>只有一個</b>顯著 → 讀出有選擇性，不是看到 motif 就給分。
+   （這正是 Borzoi 那次缺的東西。）<br>
+   <b>② MAFG 自己的啟動子 MARE 得到獨立確認</b>（3.14–3.19×，p_bonf ≈ 1–3×10⁻⁴，
+   兩種 motif 定義與兩種細胞條件都成立）。這補強了全報告最弱的一環：
+   MafG 是樞紐論證的核心，但先前所有證據都來自同樣那兩位病人。
+   現在外部模型說 <code>chr17:81,926,966</code> 的 TGACTCAGC 是功能性元件
+   → <b>MafG 受 MARE 自我調控</b>，打掉 MafG 會同時削弱整個迴路。<br>
+   <b>③ SLC7A11 的兩個遠端元件校正後不顯著</b>，換個 motif 定義結論就翻 → 不能當證據。
+   它們在 ATAC 讀出上倒是顯著的（p_bonf = 7×10⁻⁴ / 3×10⁻³），
+   即「影響局部開放」有訊號、「影響 SLC7A11 表現」沒有。
+   這與重接線模型方向一致，<b>但方向一致不等於證據</b>——
+   訓練資料沒有 MCL 的模型測不到 MCL 才有的連線，本來就是預期中的事。</p>
+ </div>
+</div>
+
+<h2>四、機制總結</h2>
+<div class="card wide">
+<div class="flow">
+ 【調控層】MCL 全基因組打開 TRE/MARE 元件（核心序列 TGACTCA）
+          ├─ AP-1 家族富集 1.28–1.42×（GC 分層校正後，padj <1e-4）
+          ├─ BACH1 富集 1.38×（padj 2e-4）
+          └─ 同時失守：POU/八聚體家族 0.70–0.85×
+                      │
+                      ▼
+ 【下游】  SLC7A11 五個全新調控元件（正常期望表現 0.001 → 腫瘤 0.206）
+          胱胺酸輸入 → 穀胱甘肽合成 → 鐵死亡防禦  全套開啟
+                      │
+                      ▼
+ 【依賴】  SLC7A11 z=−2.89 ｜ GCLM −2.74 ｜ FSP1 −2.60 ｜ SLC3A2 −2.18 ｜ GCLC −1.65
+                      │
+                      ▼
+ 【樞紐】  MafG —— BACH1 與 NRF2 在 MARE 上共用的必要夥伴
+                      │
+          ┌───────────┴───────────┐
+          ▼                       ▼
+ 【蛋白質藥物】90 aa 迷你結合劑      【核酸藥物】SLC7A11 / FSP1 的
+  ipTM 0.790±0.015，超過天然 NRF2     反義寡核苷酸與小干擾 RNA
+  ＋ N 端 KEAP1-ETGE 降解標籤         （全轉錄組脫靶篩選，0 脫靶基因）</div>
+<p class="note">文獻查證（PubMed 2026-11-21）：<b>"system xc−" + mantle cell lymphoma = 0 篇</b>；
+ MAFG = 0；SLC3A2 = 0；AIFM2/FSP1 = 0；MAFK = 0；SLC7A11 = 1。
+ 對照（已被新穎性篩選排除）：CCND1 = 393、ATM = 134、ROR1 = 32、IRF4 = 16。<br>
+ 這條軸線<b>沒有突變驅動</b>：非編碼區突變密度僅背景 1.10×；21 個軸線基因在 22 位病人的全基因組定序中
+ <b>0 個編碼突變</b>（同一份資料在已知 driver 抓到 50 個，參考鹼基 100% 相符）。</p>
+</div>
+
+<div class="tt" id="tt"></div></div>
+<script>
+const D={"boltz_cal": [{"name": "dimer_block_90_2m_2_m0", "kind": "設計", "iptm": 0.816, "iplddt": 0.953, "ipde": 0.57}, {"name": "dna_block_90_2m_1_m4", "kind": "設計", "iptm": 0.803, "iplddt": 0.898, "ipde": 0.713}, {"name": "CTRL_POS_MafG_NRF2", "kind": "陽性對照", "iptm": 0.761, "iplddt": 0.95, "ipde": 0.715}, {"name": "dimer_block_70_2m_3_m1", "kind": "設計", "iptm": 0.759, "iplddt": 0.636, "ipde": 3.544}, {"name": "dna_block_90_1m_0_m1", "kind": "設計", "iptm": 0.758, "iplddt": 0.908, "ipde": 0.927}, {"name": "dna_block_90_2m_0_m3", "kind": "設計", "iptm": 0.73, "iplddt": 0.766, "ipde": 3.402}, {"name": "dna_block_90_0m_3_m5", "kind": "設計", "iptm": 0.629, "iplddt": 0.736, "ipde": 3.198}, {"name": "CTRL_NEG_scram2", "kind": "陰性對照", "iptm": 0.565, "iplddt": 0.722, "ipde": 4.869}, {"name": "CTRL_NEG_scram1", "kind": "陰性對照", "iptm": 0.517, "iplddt": 0.568, "ipde": 7.167}], "constraint": {"MAFG": {"iface_median": 17.3, "other_median": 59.6, "n_iface": 34}, "AIFM2": {"iface_median": 26.5, "other_median": 56.3, "n_iface": 64}}, "escape": {"MAFG": {"iface_tolerated_pct": 10.5, "all_tolerated_pct": 42.4}, "AIFM2": {"iface_tolerated_pct": 4.4, "all_tolerated_pct": 17.1}}, "perturb_nrf2": [{"name": "L79A", "d_ipde": 2.54, "ctrl": false}, {"name": "K83A", "d_ipde": 1.77, "ctrl": false}, {"name": "N97A", "d_ipde": 1.63, "ctrl": false}, {"name": "L93A", "d_ipde": 1.34, "ctrl": false}, {"name": "Q82A", "d_ipde": 0.727, "ctrl": false}, {"name": "Q75A", "d_ipde": 0.655, "ctrl": false}, {"name": "L86A", "d_ipde": 0.468, "ctrl": false}, {"name": "E89A", "d_ipde": 0.459, "ctrl": false}, {"name": "M100A", "d_ipde": 0.347, "ctrl": false}, {"name": "V30A", "d_ipde": 0.107, "ctrl": true}, {"name": "Q115A", "d_ipde": 0.104, "ctrl": true}, {"name": "Y111D", "d_ipde": 0.095, "ctrl": false}, {"name": "Q87A", "d_ipde": -0.066, "ctrl": false}, {"name": "E80A", "d_ipde": -0.134, "ctrl": false}, {"name": "S45A", "d_ipde": -0.174, "ctrl": true}, {"name": "Y111E", "d_ipde": -0.334, "ctrl": false}], "perturb_dna_range": {"min": -0.0048, "max": 0.027}, "added_seq": [{"name": "SPOP_SBC(C )", "d_iptm": -0.019, "ipde": 0.755}, {"name": "SPOP_SBC(N )", "d_iptm": -0.025, "ipde": 0.725}, {"name": "KEAP1_ETGE(N )", "d_iptm": -0.029, "ipde": 1.426}, {"name": "VHL_ODD(N )", "d_iptm": -0.031, "ipde": 1.739}, {"name": "NLS+4 aa linker + 結合劑", "d_iptm": -0.032, "ipde": 0.803}, {"name": "NLS+0 aa linker + 結合劑", "d_iptm": -0.036, "ipde": 0.886}, {"name": "NLS+12 aa linker + 結合劑", "d_iptm": -0.051, "ipde": 1.268}, {"name": "KEAP1_ETGE(C )", "d_iptm": -0.08, "ipde": 1.722}, {"name": "VHL_ODD(C )", "d_iptm": -0.102, "ipde": 2.514}], "motif_gc": [{"name": "JUN", "enr": 1.316, "dir": "gain"}, {"name": "FOSL1", "enr": 1.421, "dir": "gain"}, {"name": "YY2", "enr": 1.265, "dir": "gain"}, {"name": "FOS::JUND", "enr": 1.362, "dir": "gain"}, {"name": "FOSL2", "enr": 1.282, "dir": "gain"}, {"name": "FOSB::JUNB", "enr": 1.309, "dir": "gain"}, {"name": "NRF1", "enr": 1.398, "dir": "gain"}, {"name": "SP3", "enr": 1.226, "dir": "gain"}, {"name": "POU2F3", "enr": 0.696, "dir": "lost"}, {"name": "POU5F1", "enr": 0.831, "dir": "lost"}, {"name": "POU3F4", "enr": 0.815, "dir": "lost"}, {"name": "POU5F1B", "enr": 0.815, "dir": "lost"}, {"name": "POU2F1", "enr": 0.815, "dir": "lost"}, {"name": "POU3F1", "enr": 0.837, "dir": "lost"}], "boltz_final": [{"name": "R1·dna_block_90_2m_1_m4", "kind": "設計", "mean": 0.79, "sd": 0.015, "ipde": 0.8}, {"name": "R1·dna_block_90_1m_0_m1", "kind": "設計", "mean": 0.752, "sd": 0.007, "ipde": 0.91}, {"name": "R2·zeroescape_90_0m_0_m4", "kind": "設計", "mean": 0.748, "sd": 0.017, "ipde": 1.74}, {"name": "R2·zeroescape_90_1m_0_m1", "kind": "設計", "mean": 0.736, "sd": 0.034, "ipde": 2.11}, {"name": "天然 NRF2", "kind": "陽性對照", "mean": 0.713, "sd": 0.01, "ipde": 1.08}, {"name": "R1·dna_block_90_0m_3_m5", "kind": "設計", "mean": 0.558, "sd": 0.086, "ipde": 4.99}, {"name": "亂序對照1", "kind": "陰性對照", "mean": 0.475, "sd": 0.123, "ipde": 10.14}, {"name": "亂序對照2", "kind": "陰性對照", "mean": 0.392, "sd": 0.116, "ipde": 9.59}, {"name": "R1·dimer_block_70_2m_3_m1", "kind": "設計", "mean": 0.391, "sd": 0.072, "ipde": 10.62}], "fsp1": [{"name": "亂序對照1", "kind": "陰性對照", "mean": 0.58, "sd": 0.05}, {"name": "nadpm_3_m0", "kind": "設計", "mean": 0.491, "sd": 0.017}, {"name": "nadpm_2_m3", "kind": "設計", "mean": 0.417, "sd": 0.082}, {"name": "亂序對照2", "kind": "陰性對照", "mean": 0.357, "sd": 0.026}, {"name": "pocketmouthm_0_m1", "kind": "設計", "mean": 0.336, "sd": 0.037}, {"name": "nadpm_1_m3", "kind": "設計", "mean": 0.329, "sd": 0.048}], "sasa": [{"name": "MafG DNA 結合區（成功）", "rsa": 0.486, "buried": 0, "total": 11}, {"name": "FSP1 NADP 口袋", "rsa": 0.253, "buried": 3, "total": 13}, {"name": "FSP1 口袋入口", "rsa": 0.086, "buried": 9, "total": 13}], "ternary": [{"name": "ETGE 肽+KEAP1（二元基準）", "ab": null, "bc": 0.957}, {"name": "結合劑+MafG（二元基準）", "ab": 0.811, "bc": null}, {"name": "ETGE N端 linker9", "ab": 0.817, "bc": 0.38}, {"name": "ETGE N端 linker18", "ab": 0.811, "bc": 0.417}, {"name": "ETGE C端 linker18", "ab": 0.777, "bc": 0.346}, {"name": "ETGE C端 linker9", "ab": 0.776, "bc": 0.24}, {"name": "VHL_ODD N端 linker9", "ab": 0.814, "bc": 0.126}, {"name": "VHL_ODD C端 linker9", "ab": 0.777, "bc": 0.14}], "alphagenome": [{"gene": "MAFG", "cond": "B", "novel": 1.23952, "ctrl": 0.04173, "ratio": 29.706, "p": 2.2144768730079104e-05, "ctrl_w": 2.25769, "ratio_w": 0.549, "p_w": 0.566279574045329, "n_novel": 19, "n_ctrl": 40}, {"gene": "MAFG", "cond": "memory B", "novel": 0.99885, "ctrl": 0.03412, "ratio": 29.272, "p": 2.059760582897777e-05, "ctrl_w": 1.88003, "ratio_w": 0.531, "p_w": 0.8364205468225865, "n_novel": 19, "n_ctrl": 40}, {"gene": "MAFG", "cond": "naive B", "novel": 0.89435, "ctrl": 0.03352, "ratio": 26.681, "p": 2.2144768730079104e-05, "ctrl_w": 1.73265, "ratio_w": 0.516, "p_w": 0.730753334722013, "n_novel": 19, "n_ctrl": 40}, {"gene": "SLC7A11", "cond": "B", "novel": 0.0637, "ctrl": 0.02432, "ratio": 2.619, "p": 0.4466779597214379, "ctrl_w": 0.1027, "ratio_w": 0.62, "p_w": 0.3709623709623709, "n_novel": 5, "n_ctrl": 20}, {"gene": "SLC7A11", "cond": "memory B", "novel": 0.14154, "ctrl": 0.0282, "ratio": 5.02, "p": 0.335554300771692, "ctrl_w": 0.10483, "ratio_w": 1.35, "p_w": 1.0, "n_novel": 5, "n_ctrl": 20}, {"gene": "SLC7A11", "cond": "naive B", "novel": 0.26497, "ctrl": 0.02931, "ratio": 9.04, "p": 0.271786184829663, "ctrl_w": 0.19555, "ratio_w": 1.355, "p_w": 0.9530469530469532, "n_novel": 5, "n_ctrl": 20}], "ag_ism": [{"name": "MAFG 啟動子 −769bp / naive B", "ratio": 3.19, "p_bonf": 0.0003118536944648, "sig": true, "ctrl": false}, {"name": "MAFG 啟動子 −769bp / B", "ratio": 3.14, "p_bonf": 0.0001267690589624, "sig": true, "ctrl": false}, {"name": "HMOX1 ARE①(陽性對照) / B", "ratio": 2.18, "p_bonf": 0.0080404232188301, "sig": true, "ctrl": true}, {"name": "SLC7A11 +106kb / naive B", "ratio": 1.84, "p_bonf": 0.1698001305986916, "sig": false, "ctrl": false}, {"name": "SLC7A11 +164kb / B", "ratio": 1.63, "p_bonf": 0.180177262446394, "sig": false, "ctrl": false}, {"name": "SLC7A11 +106kb / B", "ratio": 1.37, "p_bonf": 1.0, "sig": false, "ctrl": false}, {"name": "HMOX1 ARE② / naive B", "ratio": 1.28, "p_bonf": 1.0, "sig": false, "ctrl": true}, {"name": "HMOX1 ARE③ / naive B", "ratio": 1.25, "p_bonf": 1.0, "sig": false, "ctrl": true}, {"name": "SLC7A11 +164kb / naive B", "ratio": 1.21, "p_bonf": 1.0, "sig": false, "ctrl": false}, {"name": "HMOX1 ARE③ / B", "ratio": 0.9, "p_bonf": 1.0, "sig": false, "ctrl": true}]};const tt=document.getElementById('tt');
+const show=(e,h)=>{tt.innerHTML=h;tt.style.opacity=1;tt.style.left=Math.min(e.clientX+14,innerWidth-320)+'px';tt.style.top=(e.clientY+14)+'px';};
+const hide=()=>tt.style.opacity=0;
+const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+function hbar(id,rows,o){o=Object.assign({labelW:150,rowH:24,pad:{t:8,r:66,b:26},fmt:v=>v,color:'var(--series-1)',unit:'',err:false},o);
+ const svg=document.getElementById(id);const W=svg.clientWidth||500;const H=o.pad.t+rows.length*o.rowH+o.pad.b;
+ const px=o.labelW,pw=W-o.labelW-o.pad.r;
+ const all=rows.flatMap(r=>[r.v,(r.v||0)+(r.sd||0)]);let mn=Math.min(0,...all),mx=Math.max(0,...all);
+ const sp=(mx-mn)||1;const x=v=>px+(v-mn)/sp*pw;const z=x(0);
+ let s=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">`;
+ for(let i=0;i<=5;i++){const v=mn+sp*i/5,p=x(v);
+  s+=`<line class="gl" x1="${p}" y1="${o.pad.t}" x2="${p}" y2="${o.pad.t+rows.length*o.rowH}"/>`;
+  s+=`<text class="val" x="${p}" y="${H-10}" text-anchor="middle">${o.fmt(v)}</text>`;}
+ s+=`<line class="ax" x1="${z}" y1="${o.pad.t}" x2="${z}" y2="${o.pad.t+rows.length*o.rowH}"/>`;
+ rows.forEach((r,i)=>{const y=o.pad.t+i*o.rowH+1,h=o.rowH-8;
+  const col=r.color||o.color;const x0=Math.min(z,x(r.v)),w=Math.max(2,Math.abs(x(r.v)-z));
+  s+=`<text class="${r.bold?'lbl-k':'lbl'}" x="${px-9}" y="${y+h/2+4}" text-anchor="end">${esc(r.k)}</text>`;
+  s+=`<rect class="bar" x="${x0}" y="${y}" width="${w}" height="${h}" rx="4" fill="${col}" data-tip="${esc(r.tip||'')}"/>`;
+  if(o.err&&r.sd){const a=x(r.v-r.sd),b=x(r.v+r.sd),cy=y+h/2;
+   s+=`<line class="err" x1="${a}" y1="${cy}" x2="${b}" y2="${cy}"/><line class="err" x1="${a}" y1="${cy-4}" x2="${a}" y2="${cy+4}"/><line class="err" x1="${b}" y1="${cy-4}" x2="${b}" y2="${cy+4}"/>`;}
+  s+=`<text class="val" x="${x0+w+(o.err&&r.sd?14:6)}" y="${y+h/2+4}">${o.fmt(r.v)}${o.unit}</text>`;});
+ svg.outerHTML=s+'</svg>';
+ document.querySelectorAll('svg rect.bar').forEach(el=>{if(el.__b)return;el.__b=1;
+  el.addEventListener('mousemove',e=>show(e,el.dataset.tip));el.addEventListener('mouseleave',hide);});}
+function gbar(id,groups,series,o){o=Object.assign({labelW:160,rowH:34,pad:{t:8,r:62,b:26},fmt:v=>v},o);
+ const svg=document.getElementById(id);const W=svg.clientWidth||500;const H=o.pad.t+groups.length*o.rowH+o.pad.b;
+ const px=o.labelW,pw=W-o.labelW-o.pad.r;
+ const all=groups.flatMap(g=>series.map(s=>g[s.key]).filter(v=>v!=null));
+ let mn=Math.min(0,...all),mx=Math.max(0,...all);const sp=(mx-mn)||1;const x=v=>px+(v-mn)/sp*pw;const z=x(0);
+ let s=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img">`;
+ for(let i=0;i<=5;i++){const v=mn+sp*i/5,p=x(v);
+  s+=`<line class="gl" x1="${p}" y1="${o.pad.t}" x2="${p}" y2="${o.pad.t+groups.length*o.rowH}"/>`;
+  s+=`<text class="val" x="${p}" y="${H-10}" text-anchor="middle">${o.fmt(v)}</text>`;}
+ s+=`<line class="ax" x1="${z}" y1="${o.pad.t}" x2="${z}" y2="${o.pad.t+groups.length*o.rowH}"/>`;
+ groups.forEach((g,i)=>{const bh=(o.rowH-8)/series.length-2;
+  s+=`<text class="lbl" x="${px-9}" y="${o.pad.t+i*o.rowH+o.rowH/2+4}" text-anchor="end">${esc(g.k)}</text>`;
+  series.forEach((se,j)=>{const v=g[se.key];if(v==null)return;const y=o.pad.t+i*o.rowH+4+j*(bh+2);
+   const x0=Math.min(z,x(v)),w=Math.max(2,Math.abs(x(v)-z));
+   s+=`<rect class="bar" x="${x0}" y="${y}" width="${w}" height="${bh}" rx="4" fill="${se.color}" data-tip="${esc(g.tip||'')}"/>`;
+   s+=`<text class="val" x="${x0+w+5}" y="${y+bh/2+4}">${o.fmt(v)}</text>`;});});
+ svg.outerHTML=s+'</svg>';
+ document.querySelectorAll('svg rect.bar').forEach(el=>{if(el.__b)return;el.__b=1;
+  el.addEventListener('mousemove',e=>show(e,el.dataset.tip));el.addEventListener('mouseleave',hide);});}
+
+gbar('c1',Object.entries(D.constraint).map(([g,v])=>({k:g+`（${v.n_iface} 殘基）`,a:v.iface_median,b:v.other_median,
+ tip:`<b>${g}</b><br>介面殘基約束百分位：${v.iface_median}<br>其餘殘基：${v.other_median}<br>（全蛋白質基準 50）`})),
+ [{key:'a',color:'var(--series-1)'},{key:'b',color:'var(--text-muted)'}],{fmt:v=>v.toFixed(0),labelW:140});
+gbar('c2',Object.entries(D.escape).map(([g,v])=>({k:g,a:v.iface_tolerated_pct,b:v.all_tolerated_pct,
+ tip:`<b>${g}</b><br>介面可容忍突變：${v.iface_tolerated_pct}%<br>全蛋白質：${v.all_tolerated_pct}%`})),
+ [{key:'a',color:'var(--div-neg)'},{key:'b',color:'var(--text-muted)'}],{fmt:v=>v.toFixed(0)+'%',labelW:90});
+hbar('c3',D.perturb_nrf2.map(d=>({k:d.name,v:d.d_ipde,bold:!d.ctrl&&d.d_ipde>1,
+ color:d.ctrl?'var(--text-muted)':'var(--div-neg)',
+ tip:`<b>MafG ${esc(d.name)}</b><br>Δ界面距離誤差 ${d.d_ipde>0?'+':''}${d.d_ipde} Å${d.ctrl?'<br>（無關表面對照）':''}`})),
+ {labelW:80,rowH:21,fmt:v=>v.toFixed(1),unit:' Å'});
+hbar('c4',D.boltz_final.map(d=>({k:d.name,v:d.mean,sd:d.sd,bold:d.kind!=='設計',
+ color:d.kind==='設計'?'var(--series-1)':(d.kind==='陽性對照'?'var(--series-2)':'var(--div-neg)'),
+ tip:`<b>${esc(d.name)}</b><br>ipTM ${d.mean} ± ${d.sd}<br>界面距離誤差 ${d.ipde} Å`})),
+ {labelW:220,rowH:26,fmt:v=>v.toFixed(2),err:true});
+hbar('c5',D.fsp1.map(d=>({k:d.name,v:d.mean,sd:d.sd,bold:d.kind!=='設計',
+ color:d.kind==='設計'?'var(--series-1)':'var(--div-neg)',
+ tip:`<b>${esc(d.name)}</b><br>ipTM ${d.mean} ± ${d.sd}`})),{labelW:140,rowH:24,fmt:v=>v.toFixed(2),err:true});
+hbar('c6',D.sasa.map(d=>({k:d.name,v:d.rsa,bold:d.buried===0,
+ color:d.buried===0?'var(--series-1)':'var(--div-neg)',
+ tip:`<b>${esc(d.name)}</b><br>RSA 中位數 ${d.rsa}<br>埋藏殘基 ${d.buried}/${d.total}`})),
+ {labelW:170,rowH:26,fmt:v=>v.toFixed(2)});
+gbar('c8',D.alphagenome.map(d=>({k:`${d.gene} / ${d.cond}`,a:d.novel,b:d.ctrl,c:d.ctrl_w,
+ tip:`<b>${esc(d.gene)}</b> — ${esc(d.cond)} 細胞<br>新生元件 ${d.novel.toFixed(3)}（n=${d.n_novel}）<br>一般對照 ${d.ctrl.toFixed(3)}（n=${d.n_ctrl}）→ ${d.ratio}× p=${d.p.toExponential(1)}<br><b>最寬10對照 ${d.ctrl_w.toFixed(3)} → ${d.ratio_w}× p=${d.p_w.toFixed(2)}</b>`})),
+ [{key:'a',color:'var(--series-1)'},{key:'b',color:'var(--text-muted)'},{key:'c',color:'var(--series-2)'}],
+ {fmt:v=>v.toFixed(1),labelW:170,rowH:38});
+hbar('c9',D.ag_ism.map(d=>({k:d.name,v:d.ratio,bold:d.sig,
+ color:d.ctrl?'var(--series-2)':(d.sig?'var(--series-1)':'var(--text-muted)'),
+ tip:`<b>${esc(d.name)}</b><br>motif 位置效應 / 周邊位置效應 = ${d.ratio}×<br>Bonferroni p = ${d.p_bonf<0.001?d.p_bonf.toExponential(1):d.p_bonf.toFixed(3)}<br>${d.sig?'✅ 達顯著':'未達顯著'}`})),
+ {labelW:215,rowH:24,fmt:v=>v.toFixed(2),unit:'×'});
+gbar('c7',D.ternary.map(d=>({k:d.name,a:d.ab,b:d.bc,
+ tip:`<b>${esc(d.name)}</b><br>融合體↔MafG: ${d.ab==null?'—':d.ab}<br>融合體↔E3: ${d.bc==null?'—':d.bc}`})),
+ [{key:'a',color:'var(--series-1)'},{key:'b',color:'var(--series-2)'}],{fmt:v=>v.toFixed(2),labelW:190,rowH:32});
+</script></body></html>

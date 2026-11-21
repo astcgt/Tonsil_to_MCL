@@ -1,0 +1,41 @@
+# MAFG 可成藥表面（來源 PDB 7X5E，鏈 A = MafG）
+## 介面1 MafG-NRF2 二聚體
+75,Q,3.73,dimer
+76,K,3.13,dimer
+79,L,3.61,dimer
+80,E,3.93,dimer
+82,Q,3.74,dimer
+83,K,3.08,dimer
+86,L,3.76,dimer
+87,Q,4.16,dimer
+89,E,2.70,dimer
+90,V,3.52,dimer
+93,L,3.63,dimer
+94,A,3.89,dimer
+97,N,2.98,dimer
+100,M,3.07,dimer
+101,K,4.15,dimer
+104,L,3.76,dimer
+107,L,4.11,dimer
+108,R,3.62,dimer
+111,Y,3.36,dimer
+## 介面2 MafG-DNA
+34,V,3.41,dna
+53,K,4.11,dna
+56,R,2.85,dna
+57,R,2.85,dna
+58,T,2.67,dna
+60,K,4.29,dna
+61,N,3.29,dna
+62,R,2.97,dna
+64,Y,2.28,dna
+65,A,3.76,dna
+67,S,4.28,dna
+68,C,3.77,dna
+69,R,2.85,dna
+71,K,4.19,dna
+72,R,3.34,dna
+
+# RFdiffusion 熱點
+dimer_hotspots=A75,A76,A79,A82,A83,A86,A89,A90,A93,A97,A100,A104,A108,A111
+dna_hotspots=A34,A56,A57,A58,A61,A62,A64,A69,A72

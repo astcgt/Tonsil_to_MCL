@@ -1,0 +1,522 @@
+{
+ "tf_down": [
+  {
+   "name": "ZXDC",
+   "m102": -1.15,
+   "m413": -0.75,
+   "mean": -0.95
+  },
+  {
+   "name": "FOXE1",
+   "m102": -0.66,
+   "m413": -1.42,
+   "mean": -1.04
+  },
+  {
+   "name": "HSF2",
+   "m102": -1.32,
+   "m413": -0.83,
+   "mean": -1.07
+  },
+  {
+   "name": "KLF17",
+   "m102": -1.72,
+   "m413": -0.49,
+   "mean": -1.11
+  },
+  {
+   "name": "ZFX",
+   "m102": -1.3,
+   "m413": -1.21,
+   "mean": -1.25
+  },
+  {
+   "name": "RFX1",
+   "m102": -1.52,
+   "m413": -1.35,
+   "mean": -1.44
+  },
+  {
+   "name": "HIVEP2",
+   "m102": -1.52,
+   "m413": -1.44,
+   "mean": -1.48
+  },
+  {
+   "name": "ZBTB4",
+   "m102": -1.16,
+   "m413": -2.23,
+   "mean": -1.7
+  },
+  {
+   "name": "CIITA",
+   "m102": -2.39,
+   "m413": -2.01,
+   "mean": -2.2
+  },
+  {
+   "name": "RFXANK",
+   "m102": -3.26,
+   "m413": -2.61,
+   "mean": -2.93
+  },
+  {
+   "name": "RFX5",
+   "m102": -3.26,
+   "m413": -2.65,
+   "mean": -2.96
+  },
+  {
+   "name": "RFXAP",
+   "m102": -3.4,
+   "m413": -2.64,
+   "mean": -3.02
+  }
+ ],
+ "tf_up": [
+  {
+   "name": "TRPS1",
+   "m102": 1.16,
+   "m413": 1.46,
+   "mean": 1.31
+  },
+  {
+   "name": "PIN1",
+   "m102": 1.06,
+   "m413": 1.32,
+   "mean": 1.19
+  },
+  {
+   "name": "ZNF24",
+   "m102": 1.18,
+   "m413": 1.07,
+   "mean": 1.12
+  },
+  {
+   "name": "HIVEP1",
+   "m102": 0.93,
+   "m413": 1.06,
+   "mean": 0.99
+  },
+  {
+   "name": "SIX1",
+   "m102": 0.71,
+   "m413": 1.22,
+   "mean": 0.96
+  },
+  {
+   "name": "VHL",
+   "m102": 0.88,
+   "m413": 0.96,
+   "mean": 0.92
+  },
+  {
+   "name": "TBR1",
+   "m102": 0.95,
+   "m413": 0.75,
+   "mean": 0.85
+  },
+  {
+   "name": "E4F1",
+   "m102": 1.32,
+   "m413": 0.32,
+   "mean": 0.82
+  },
+  {
+   "name": "ZIC1",
+   "m102": 0.98,
+   "m413": 0.63,
+   "mean": 0.81
+  },
+  {
+   "name": "UBTF",
+   "m102": 0.54,
+   "m413": 0.97,
+   "mean": 0.76
+  }
+ ],
+ "mhc_rank": [
+  {
+   "name": "HLA-DPB1",
+   "rank": 5,
+   "resid": -0.917
+  },
+  {
+   "name": "HLA-DPA1",
+   "rank": 18,
+   "resid": -0.668
+  },
+  {
+   "name": "HLA-DRB1",
+   "rank": 28,
+   "resid": -0.585
+  },
+  {
+   "name": "HLA-DRA",
+   "rank": 54,
+   "resid": -0.491
+  },
+  {
+   "name": "HLA-DQB1",
+   "rank": 72,
+   "resid": -0.452
+  },
+  {
+   "name": "HLA-DQA1",
+   "rank": 254,
+   "resid": -0.261
+  },
+  {
+   "name": "CIITA",
+   "rank": 91,
+   "resid": -0.418
+  },
+  {
+   "name": "CD74",
+   "rank": 209,
+   "resid": -0.291
+  },
+  {
+   "name": "B2M",
+   "rank": 115,
+   "resid": -0.38
+  },
+  {
+   "name": "HLA-C",
+   "rank": 86,
+   "resid": -0.424
+  }
+ ],
+ "top_up_genes": [
+  {
+   "name": "MSR1",
+   "resid": 1.73,
+   "obs": 2.23,
+   "exp": 0.02
+  },
+  {
+   "name": "ZNF804A",
+   "resid": 1.66,
+   "obs": 3.14,
+   "exp": 0.91
+  },
+  {
+   "name": "ROR1",
+   "resid": 1.58,
+   "obs": 2.12,
+   "exp": 0.2
+  },
+  {
+   "name": "ABCA6",
+   "resid": 1.43,
+   "obs": 1.74,
+   "exp": 0.06
+  },
+  {
+   "name": "AUTS2",
+   "resid": 1.22,
+   "obs": 3.04,
+   "exp": 1.9
+  },
+  {
+   "name": "H3F3B",
+   "resid": 1.2,
+   "obs": 2.38,
+   "exp": 0.78
+  },
+  {
+   "name": "PTPRJ",
+   "resid": 1.13,
+   "obs": 2.18,
+   "exp": 0.79
+  },
+  {
+   "name": "MAST4",
+   "resid": 1.09,
+   "obs": 2.14,
+   "exp": 0.57
+  },
+  {
+   "name": "CCND1",
+   "resid": 1.05,
+   "obs": 1.41,
+   "exp": 0.03
+  },
+  {
+   "name": "TMEM163",
+   "resid": 0.97,
+   "obs": 1.54,
+   "exp": 0.51
+  }
+ ],
+ "borzoi_ciita": [
+  {
+   "name": "pIII 啟動子本體",
+   "rna": -3.62,
+   "dnase": -4.95,
+   "atac": -1.33,
+   "obs": -1.23
+  },
+  {
+   "name": "ALL_elements",
+   "rna": -3.44,
+   "dnase": -5.1,
+   "atac": -1.7,
+   "obs": null
+  },
+  {
+   "name": "遠端上游 -25 kb",
+   "rna": -0.23,
+   "dnase": -0.06,
+   "atac": 0.01,
+   "obs": -1.21
+  },
+  {
+   "name": "基因內 +35 kb",
+   "rna": -0.22,
+   "dnase": 0.3,
+   "atac": -0.0,
+   "obs": -1.84
+  },
+  {
+   "name": "pI 上游 -1.5 kb（喪失最強）",
+   "rna": -0.2,
+   "dnase": 0.01,
+   "atac": 0.01,
+   "obs": -2.3
+  },
+  {
+   "name": "基因內 +14 kb",
+   "rna": -0.04,
+   "dnase": -0.06,
+   "atac": 0.02,
+   "obs": -1.09
+  },
+  {
+   "name": "遠端上游 -21 kb",
+   "rna": -0.02,
+   "dnase": -0.01,
+   "atac": -0.0,
+   "obs": -1.54
+  },
+  {
+   "name": "遠端上游 -30 kb",
+   "rna": 0.12,
+   "dnase": -0.08,
+   "atac": 0.01,
+   "obs": -1.24
+  },
+  {
+   "name": "pI/pIII 之間",
+   "rna": 0.98,
+   "dnase": -0.03,
+   "atac": -0.13,
+   "obs": -1.12
+  }
+ ],
+ "motif_lost": [
+  {
+   "name": "POU5F1",
+   "fold": 1.53,
+   "fg": 0.515,
+   "bg": 0.336
+  },
+  {
+   "name": "POU2F3",
+   "fold": 1.87,
+   "fg": 0.319,
+   "bg": 0.171
+  },
+  {
+   "name": "POU5F1B",
+   "fold": 1.64,
+   "fg": 0.414,
+   "bg": 0.252
+  },
+  {
+   "name": "POU3F1",
+   "fold": 1.71,
+   "fg": 0.253,
+   "bg": 0.148
+  },
+  {
+   "name": "MEF2A",
+   "fold": 1.5,
+   "fg": 0.28,
+   "bg": 0.187
+  },
+  {
+   "name": "POU2F1",
+   "fold": 1.43,
+   "fg": 0.293,
+   "bg": 0.205
+  },
+  {
+   "name": "SNAI3",
+   "fold": 1.39,
+   "fg": 0.306,
+   "bg": 0.22
+  },
+  {
+   "name": "Ptf1A",
+   "fold": 1.3,
+   "fg": 0.407,
+   "bg": 0.314
+  }
+ ],
+ "motif_gain": [
+  {
+   "name": "FOSL1::JUNB",
+   "fold": 1.81,
+   "fg": 0.155,
+   "bg": 0.086
+  },
+  {
+   "name": "FOS::JUN",
+   "fold": 1.94,
+   "fg": 0.121,
+   "bg": 0.062
+  },
+  {
+   "name": "FOSL1::JUN",
+   "fold": 1.89,
+   "fg": 0.127,
+   "bg": 0.067
+  },
+  {
+   "name": "FOSL2::JUN",
+   "fold": 1.89,
+   "fg": 0.127,
+   "bg": 0.067
+  },
+  {
+   "name": "FOS::JUND",
+   "fold": 1.92,
+   "fg": 0.119,
+   "bg": 0.062
+  },
+  {
+   "name": "FOSL2",
+   "fold": 1.78,
+   "fg": 0.137,
+   "bg": 0.077
+  },
+  {
+   "name": "FOS::JUNB",
+   "fold": 1.99,
+   "fg": 0.104,
+   "bg": 0.052
+  },
+  {
+   "name": "FOSL2::JUND",
+   "fold": 1.99,
+   "fg": 0.104,
+   "bg": 0.052
+  }
+ ],
+ "depmap": [
+  {
+   "name": "DEPDC5",
+   "eff": -0.62,
+   "other": 0.02,
+   "z": -3.39
+  },
+  {
+   "name": "CD74",
+   "eff": -0.31,
+   "other": 0.02,
+   "z": -3.33
+  },
+  {
+   "name": "CCDC88C",
+   "eff": -0.38,
+   "other": -0.03,
+   "z": -3.25
+  },
+  {
+   "name": "IRF4",
+   "eff": -1.32,
+   "other": -0.12,
+   "z": -3.19
+  },
+  {
+   "name": "SBF1",
+   "eff": -0.29,
+   "other": 0.09,
+   "z": -2.98
+  },
+  {
+   "name": "CD79A",
+   "eff": -0.27,
+   "other": 0.14,
+   "z": -2.89
+  },
+  {
+   "name": "SLC7A11",
+   "eff": -0.44,
+   "other": 0.07,
+   "z": -2.89
+  },
+  {
+   "name": "CD79B",
+   "eff": -0.5,
+   "other": -0.05,
+   "z": -2.86
+  },
+  {
+   "name": "NFKB2",
+   "eff": -0.62,
+   "other": -0.09,
+   "z": -2.76
+  },
+  {
+   "name": "GCLM",
+   "eff": -0.44,
+   "other": -0.04,
+   "z": -2.74
+  }
+ ],
+ "matched_states": [
+  {
+   "name": "ncsMBC",
+   "n": 18127
+  },
+  {
+   "name": "GC-commited NBC",
+   "n": 847
+  },
+  {
+   "name": "Early GC-commited NBC",
+   "n": 763
+  },
+  {
+   "name": "Reactivated proliferative MBCs",
+   "n": 225
+  },
+  {
+   "name": "csMBC",
+   "n": 160
+  },
+  {
+   "name": "csMBC FCRL4/5+",
+   "n": 91
+  },
+  {
+   "name": "DZ non proliferative",
+   "n": 68
+  },
+  {
+   "name": "Precursor MBCs",
+   "n": 68
+  }
+ ],
+ "meta": {
+  "n_ref": 46216,
+  "n_states": 47,
+  "n_donors": 6,
+  "n_tumor": 19975,
+  "n_nontumor": 819,
+  "resid_tumor": 0.0259,
+  "resid_nontumor": 0.0128
+ }
+}

@@ -1,0 +1,38 @@
+[_compat] 已為 csr_array, csc_array, coo_array, lil_array, dia_array, bsr_array, dok_array 補上 getnnz()
+[_compat] 已修補 scanpy 的 kNN 連續性問題
+[92] 連線建立（金鑰未輸出）
+[92] 建立 基因符號 → Ensembl 對照表 ...
+[92]   61,267 個基因
+[92] 原始計數矩陣對齊後: (20794, 36601)
+[92] 
+=== M413: 每組 256 顆（腫瘤池 9974、正常池 790）===
+[92]   條件矩陣: (256, 23433) / (256, 23433)
+[92]   embedding 診斷: 組間距離 0.107 / 組內平均散度 0.176 → 分離度 0.61
+[92]     SLC7A11/tumour 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92]     SLC7A11/normal 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92]     MAFG/tumour 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92]     MAFG/normal 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92] 
+=== M102: 每組 29 顆（腫瘤池 10001、正常池 29）===
+[92]   條件矩陣: (29, 23433) / (29, 23433)
+[92]   embedding 診斷: 組間距離 0.097 / 組內平均散度 0.160 → 分離度 0.61
+[92]     SLC7A11/tumour 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92]     SLC7A11/normal 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92]     MAFG/tumour 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92]     MAFG/normal 失敗: ValueError: Cannot specify both `condition` and `cell_conditioning`.
+[92] 
+======================================================================
+[92] === 結果：同一段 DNA，只換細胞狀態（腫瘤 vs 同檢體配對正常）===
+Traceback (most recent call last):
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/scripts/92_ag_cellcond.py", line 204, in <module>
+    for (donor, gene, track), s in df.groupby(["donor", "gene", "track"]):
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/env/tonsilmcl/lib/python3.11/site-packages/pandas/core/frame.py", line 9210, in groupby
+    return DataFrameGroupBy(
+           ^^^^^^^^^^^^^^^^^
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/env/tonsilmcl/lib/python3.11/site-packages/pandas/core/groupby/groupby.py", line 1331, in __init__
+    grouper, exclusions, obj = get_grouper(
+                               ^^^^^^^^^^^^
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/env/tonsilmcl/lib/python3.11/site-packages/pandas/core/groupby/grouper.py", line 1043, in get_grouper
+    raise KeyError(gpr)
+KeyError: 'donor'

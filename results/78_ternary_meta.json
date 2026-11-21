@@ -1,0 +1,74 @@
+{
+ "BIN_binder_MafG": {
+  "kind": "二元基準",
+  "desc": "結合劑 + MafG"
+ },
+ "BIN_ETGE_KEAP1": {
+  "kind": "二元基準",
+  "desc": "ETGE 肽 + KEAP1 Kelch"
+ },
+ "TER_KEAP1_ETGE_Cterm_L9": {
+  "kind": "三元降解劑",
+  "degron": "KEAP1_ETGE",
+  "term": "C",
+  "linker": 9,
+  "desc": "MafG + 結合劑-KEAP1_ETGE(C端, linker 9aa) + KEAP1 Kelch",
+  "blen": 113
+ },
+ "TER_KEAP1_ETGE_Cterm_L18": {
+  "kind": "三元降解劑",
+  "degron": "KEAP1_ETGE",
+  "term": "C",
+  "linker": 18,
+  "desc": "MafG + 結合劑-KEAP1_ETGE(C端, linker 18aa) + KEAP1 Kelch",
+  "blen": 122
+ },
+ "TER_KEAP1_ETGE_Nterm_L9": {
+  "kind": "三元降解劑",
+  "degron": "KEAP1_ETGE",
+  "term": "N",
+  "linker": 9,
+  "desc": "MafG + 結合劑-KEAP1_ETGE(N端, linker 9aa) + KEAP1 Kelch",
+  "blen": 113
+ },
+ "TER_KEAP1_ETGE_Nterm_L18": {
+  "kind": "三元降解劑",
+  "degron": "KEAP1_ETGE",
+  "term": "N",
+  "linker": 18,
+  "desc": "MafG + 結合劑-KEAP1_ETGE(N端, linker 18aa) + KEAP1 Kelch",
+  "blen": 122
+ },
+ "TER_VHL_ODD_Cterm_L9": {
+  "kind": "三元降解劑",
+  "degron": "VHL_ODD",
+  "term": "C",
+  "linker": 9,
+  "desc": "MafG + 結合劑-VHL_ODD(C端, linker 9aa) + VHL",
+  "blen": 118
+ },
+ "TER_VHL_ODD_Cterm_L18": {
+  "kind": "三元降解劑",
+  "degron": "VHL_ODD",
+  "term": "C",
+  "linker": 18,
+  "desc": "MafG + 結合劑-VHL_ODD(C端, linker 18aa) + VHL",
+  "blen": 127
+ },
+ "TER_VHL_ODD_Nterm_L9": {
+  "kind": "三元降解劑",
+  "degron": "VHL_ODD",
+  "term": "N",
+  "linker": 9,
+  "desc": "MafG + 結合劑-VHL_ODD(N端, linker 9aa) + VHL",
+  "blen": 118
+ },
+ "TER_VHL_ODD_Nterm_L18": {
+  "kind": "三元降解劑",
+  "degron": "VHL_ODD",
+  "term": "N",
+  "linker": 18,
+  "desc": "MafG + 結合劑-VHL_ODD(N端, linker 18aa) + VHL",
+  "blen": 127
+ }
+}

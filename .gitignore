@@ -1,0 +1,57 @@
+# ============================================================================
+#  排除優先：先全部擋掉大型與敏感目錄，再用白名單放行
+#  Exclusion first: block all large and sensitive directories, then allow-list
+# ============================================================================
+
+# --- 機密：絕不進版本控制 / Secrets: never commit ---
+.secrets/
+*.key
+*_key
+.env
+
+# --- 原始資料與環境（體積過大，且含受管制的人類基因體資料）---
+# --- Raw data and environments (too large; contain controlled human genomic data) ---
+data/
+env/
+models/
+logs/
+third_party/
+
+# --- 結構預測與設計的中間產物（數萬個 cif/npz/pdb）---
+# --- Intermediate structure files (tens of thousands of cif/npz/pdb) ---
+results/**/
+*.cif
+*.cif.gz
+*.npz
+*.pdb
+*.h5ad
+*.fa
+*.fasta
+*.pml
+
+# --- 個體層級資料：不得散布 / Individual-level data: not redistributable ---
+# 每顆細胞的表格（含細胞條碼與捐贈者編號）
+results/14_*
+results/15_mcl_obs.csv
+results/15_match_weights.csv.gz
+results/19_delta_tf_activity_cells.csv.gz
+results/20_*
+results/42_zenodo_*
+# 每位病人的體細胞突變位點（chrom/pos/ref/alt）
+results/54_mutations_in_peaks.csv.gz
+results/54_peak_mutation_recurrence.csv
+results/70_axis_coding_mutations.csv
+results/09_depmap_mcl_mutations.csv
+
+# --- 體積過大（GitHub 建議單檔 < 50 MB）/ Too large for git ---
+results/22_atac_diff.csv
+results/22_atac_pseudobulk.csv.gz
+results/26_peak_annotated.csv
+results/15_normal_state_pseudobulk.csv
+results/95_pioneer2_axis.tsv.gz
+
+# --- 本機設定 / Local config ---
+.claude/settings.local.json
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

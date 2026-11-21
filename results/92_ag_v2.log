@@ -1,0 +1,17 @@
+[_compat] 已為 csr_array, csc_array, coo_array, lil_array, dia_array, bsr_array, dok_array 補上 getnnz()
+[_compat] 已修補 scanpy 的 kNN 連續性問題
+[92] 連線建立（金鑰未輸出）
+[92] 建立 基因符號 → Ensembl 對照表 ...
+[92]   61,267 個基因
+[92] 原始計數矩陣對齊後: (20794, 36601)
+[92] 
+=== M413: 每組 256 顆（腫瘤池 9974、正常池 790）===
+[92]   條件矩陣: (256, 23433) / (256, 23433)
+[92]   embedding 診斷: 組間中心距離 0.107 / 組內平均散度 0.176 → 比值 0.61
+[92]     置換檢定 p = 0.0004998（2000 次）｜ 單細胞分類 5-fold AUC = 0.957
+[92]     SLC7A11 / sc_atac: 元件中位 log2FC +1.096 | 全域對照 +0.132
+Traceback (most recent call last):
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/scripts/92_ag_cellcond.py", line 180, in <module>
+    res = t0.resolution
+          ^^^^^^^^^^^^^
+AttributeError: 'GeneExpressionData' object has no attribute 'resolution'

@@ -1,0 +1,850 @@
+{
+ "ipsae": [
+  {
+   "name": "Design A (90 aa)",
+   "kind": "design",
+   "ipsae": 0.6308,
+   "ipsae_mean": 0.61102,
+   "ipsae_sd": 0.0196447702964428,
+   "iptm": 0.78978,
+   "ipae": 6.9746,
+   "plddt": 0.9019,
+   "npass": 4
+  },
+  {
+   "name": "Design B (90 aa)",
+   "kind": "design",
+   "ipsae": 0.6282,
+   "ipsae_mean": 0.60038,
+   "ipsae_sd": 0.0232545049399035,
+   "iptm": 0.74824,
+   "ipae": 8.476600000000001,
+   "plddt": 0.89436,
+   "npass": 4
+  },
+  {
+   "name": "Design C (90 aa)",
+   "kind": "design",
+   "ipsae": 0.603,
+   "ipsae_mean": 0.5948,
+   "ipsae_sd": 0.008169149282514,
+   "iptm": 0.75208,
+   "ipae": 6.8708,
+   "plddt": 0.91454,
+   "npass": 3
+  },
+  {
+   "name": "Design D (90 aa)",
+   "kind": "design",
+   "ipsae": 0.5595,
+   "ipsae_mean": 0.49466,
+   "ipsae_sd": 0.062112341768766,
+   "iptm": 0.73648,
+   "ipae": 8.164,
+   "plddt": 0.92226,
+   "npass": 3
+  },
+  {
+   "name": "Native NRF2 (positive control)",
+   "kind": "positive",
+   "ipsae": 0.5392,
+   "ipsae_mean": 0.5190400000000001,
+   "ipsae_sd": 0.0133771446878622,
+   "iptm": 0.71272,
+   "ipae": 9.1624,
+   "plddt": 0.9368,
+   "npass": 3
+  },
+  {
+   "name": "Design E (90 aa)",
+   "kind": "design",
+   "ipsae": 0.3668,
+   "ipsae_mean": 0.17922,
+   "ipsae_sd": 0.1238589802961416,
+   "iptm": 0.5583199999999999,
+   "ipae": 12.6678,
+   "plddt": 0.76606,
+   "npass": 1
+  },
+  {
+   "name": "Scrambled 1 (negative control)",
+   "kind": "negative",
+   "ipsae": 0.0762,
+   "ipsae_mean": 0.0198,
+   "ipsae_sd": 0.0320491029515648,
+   "iptm": 0.4747,
+   "ipae": 17.437599999999996,
+   "plddt": 0.65206,
+   "npass": 0
+  },
+  {
+   "name": "Scrambled 2 (negative control)",
+   "kind": "negative",
+   "ipsae": 0.0131,
+   "ipsae_mean": 0.00262,
+   "ipsae_sd": 0.0058584981010494,
+   "iptm": 0.39202,
+   "ipae": 19.6036,
+   "plddt": 0.57948,
+   "npass": 0
+  },
+  {
+   "name": "Design F (70 aa)",
+   "kind": "design",
+   "ipsae": 0.0121,
+   "ipsae_mean": 0.00924,
+   "ipsae_sd": 0.0052026916110797,
+   "iptm": 0.3911,
+   "ipae": 19.015,
+   "plddt": 0.64256,
+   "npass": 0
+  }
+ ],
+ "cellcond": [
+  {
+   "donor": "M102",
+   "gene": "MAFG",
+   "novel": 0.008,
+   "ctrl": 0.045,
+   "n_novel": 19,
+   "n_ctrl": 46,
+   "p": 0.9491887507568622
+  },
+  {
+   "donor": "M413",
+   "gene": "MAFG",
+   "novel": 0.005,
+   "ctrl": 0.005,
+   "n_novel": 19,
+   "n_ctrl": 46,
+   "p": 0.6699984661237163
+  },
+  {
+   "donor": "M102",
+   "gene": "SLC7A11",
+   "novel": 0.979,
+   "ctrl": 0.35,
+   "n_novel": 5,
+   "n_ctrl": 20,
+   "p": 1.8821757952192734e-05
+  },
+  {
+   "donor": "M413",
+   "gene": "SLC7A11",
+   "novel": 1.096,
+   "ctrl": 0.254,
+   "n_novel": 5,
+   "n_ctrl": 20,
+   "p": 0.0007905138339920949
+  }
+ ],
+ "encoder": [
+  {
+   "donor": "M413",
+   "n": 256,
+   "auc": 0.9566,
+   "p": 0.0004997501249375
+  },
+  {
+   "donor": "M102",
+   "n": 29,
+   "auc": 0.9256,
+   "p": 0.0004997501249375
+  }
+ ],
+ "depmap": [
+  {
+   "gene": "SLC7A11",
+   "z": -2.89,
+   "mcl": -0.441,
+   "other": 0.073
+  },
+  {
+   "gene": "GCLM",
+   "z": -2.74,
+   "mcl": -0.443,
+   "other": -0.04
+  },
+  {
+   "gene": "AIFM2",
+   "z": -2.6,
+   "mcl": -0.316,
+   "other": 0.006
+  },
+  {
+   "gene": "SLC3A2",
+   "z": -2.18,
+   "mcl": -1.108,
+   "other": -0.495
+  },
+  {
+   "gene": "GCLC",
+   "z": -1.65,
+   "mcl": -0.384,
+   "other": -0.066
+  },
+  {
+   "gene": "GSS",
+   "z": -1.32,
+   "mcl": -0.083,
+   "other": 0.114
+  },
+  {
+   "gene": "GPX4",
+   "z": -0.89,
+   "mcl": -1.297,
+   "other": -0.831
+  }
+ ],
+ "pubmed": [
+  {
+   "term": "system xc- + MCL",
+   "n": 0
+  },
+  {
+   "term": "MAFG + MCL",
+   "n": 0
+  },
+  {
+   "term": "SLC3A2 + MCL",
+   "n": 0
+  },
+  {
+   "term": "AIFM2/FSP1 + MCL",
+   "n": 0
+  },
+  {
+   "term": "MAFK + MCL",
+   "n": 0
+  },
+  {
+   "term": "SLC7A11 + MCL",
+   "n": 1
+  },
+  {
+   "term": "IRF4 + MCL",
+   "n": 16
+  },
+  {
+   "term": "ROR1 + MCL",
+   "n": 32
+  },
+  {
+   "term": "ATM + MCL",
+   "n": 134
+  },
+  {
+   "term": "CCND1 + MCL",
+   "n": 393
+  }
+ ],
+ "boltz_cal": [
+  {
+   "name": "dimer_block_90_2m_2_m0",
+   "kind": "設計",
+   "iptm": 0.816,
+   "iplddt": 0.953,
+   "ipde": 0.57
+  },
+  {
+   "name": "dna_block_90_2m_1_m4",
+   "kind": "設計",
+   "iptm": 0.803,
+   "iplddt": 0.898,
+   "ipde": 0.713
+  },
+  {
+   "name": "CTRL_POS_MafG_NRF2",
+   "kind": "陽性對照",
+   "iptm": 0.761,
+   "iplddt": 0.95,
+   "ipde": 0.715
+  },
+  {
+   "name": "dimer_block_70_2m_3_m1",
+   "kind": "設計",
+   "iptm": 0.759,
+   "iplddt": 0.636,
+   "ipde": 3.544
+  },
+  {
+   "name": "dna_block_90_1m_0_m1",
+   "kind": "設計",
+   "iptm": 0.758,
+   "iplddt": 0.908,
+   "ipde": 0.927
+  },
+  {
+   "name": "dna_block_90_2m_0_m3",
+   "kind": "設計",
+   "iptm": 0.73,
+   "iplddt": 0.766,
+   "ipde": 3.402
+  },
+  {
+   "name": "dna_block_90_0m_3_m5",
+   "kind": "設計",
+   "iptm": 0.629,
+   "iplddt": 0.736,
+   "ipde": 3.198
+  },
+  {
+   "name": "CTRL_NEG_scram2",
+   "kind": "陰性對照",
+   "iptm": 0.565,
+   "iplddt": 0.722,
+   "ipde": 4.869
+  },
+  {
+   "name": "CTRL_NEG_scram1",
+   "kind": "陰性對照",
+   "iptm": 0.517,
+   "iplddt": 0.568,
+   "ipde": 7.167
+  }
+ ],
+ "constraint": {
+  "MAFG": {
+   "iface_median": 17.3,
+   "other_median": 59.6,
+   "n_iface": 34
+  },
+  "AIFM2": {
+   "iface_median": 26.5,
+   "other_median": 56.3,
+   "n_iface": 64
+  }
+ },
+ "escape": {
+  "MAFG": {
+   "iface_tolerated_pct": 10.5,
+   "all_tolerated_pct": 42.4
+  },
+  "AIFM2": {
+   "iface_tolerated_pct": 4.4,
+   "all_tolerated_pct": 17.1
+  }
+ },
+ "perturb_nrf2": [
+  {
+   "name": "L79A",
+   "d_ipde": 2.54,
+   "ctrl": false
+  },
+  {
+   "name": "K83A",
+   "d_ipde": 1.77,
+   "ctrl": false
+  },
+  {
+   "name": "N97A",
+   "d_ipde": 1.63,
+   "ctrl": false
+  },
+  {
+   "name": "L93A",
+   "d_ipde": 1.34,
+   "ctrl": false
+  },
+  {
+   "name": "Q82A",
+   "d_ipde": 0.727,
+   "ctrl": false
+  },
+  {
+   "name": "Q75A",
+   "d_ipde": 0.655,
+   "ctrl": false
+  },
+  {
+   "name": "L86A",
+   "d_ipde": 0.468,
+   "ctrl": false
+  },
+  {
+   "name": "E89A",
+   "d_ipde": 0.459,
+   "ctrl": false
+  },
+  {
+   "name": "M100A",
+   "d_ipde": 0.347,
+   "ctrl": false
+  },
+  {
+   "name": "V30A",
+   "d_ipde": 0.107,
+   "ctrl": true
+  },
+  {
+   "name": "Q115A",
+   "d_ipde": 0.104,
+   "ctrl": true
+  },
+  {
+   "name": "Y111D",
+   "d_ipde": 0.095,
+   "ctrl": false
+  },
+  {
+   "name": "Q87A",
+   "d_ipde": -0.066,
+   "ctrl": false
+  },
+  {
+   "name": "E80A",
+   "d_ipde": -0.134,
+   "ctrl": false
+  },
+  {
+   "name": "S45A",
+   "d_ipde": -0.174,
+   "ctrl": true
+  },
+  {
+   "name": "Y111E",
+   "d_ipde": -0.334,
+   "ctrl": false
+  }
+ ],
+ "perturb_dna_range": {
+  "min": -0.0048,
+  "max": 0.027
+ },
+ "added_seq": [
+  {
+   "name": "SPOP_SBC(C )",
+   "d_iptm": -0.019,
+   "ipde": 0.755
+  },
+  {
+   "name": "SPOP_SBC(N )",
+   "d_iptm": -0.025,
+   "ipde": 0.725
+  },
+  {
+   "name": "KEAP1_ETGE(N )",
+   "d_iptm": -0.029,
+   "ipde": 1.426
+  },
+  {
+   "name": "VHL_ODD(N )",
+   "d_iptm": -0.031,
+   "ipde": 1.739
+  },
+  {
+   "name": "NLS+4 aa linker + 結合劑",
+   "d_iptm": -0.032,
+   "ipde": 0.803
+  },
+  {
+   "name": "NLS+0 aa linker + 結合劑",
+   "d_iptm": -0.036,
+   "ipde": 0.886
+  },
+  {
+   "name": "NLS+12 aa linker + 結合劑",
+   "d_iptm": -0.051,
+   "ipde": 1.268
+  },
+  {
+   "name": "KEAP1_ETGE(C )",
+   "d_iptm": -0.08,
+   "ipde": 1.722
+  },
+  {
+   "name": "VHL_ODD(C )",
+   "d_iptm": -0.102,
+   "ipde": 2.514
+  }
+ ],
+ "motif_gc": [
+  {
+   "name": "JUN",
+   "enr": 1.316,
+   "dir": "gain"
+  },
+  {
+   "name": "FOSL1",
+   "enr": 1.421,
+   "dir": "gain"
+  },
+  {
+   "name": "YY2",
+   "enr": 1.265,
+   "dir": "gain"
+  },
+  {
+   "name": "FOS::JUND",
+   "enr": 1.362,
+   "dir": "gain"
+  },
+  {
+   "name": "FOSL2",
+   "enr": 1.282,
+   "dir": "gain"
+  },
+  {
+   "name": "FOSB::JUNB",
+   "enr": 1.309,
+   "dir": "gain"
+  },
+  {
+   "name": "NRF1",
+   "enr": 1.398,
+   "dir": "gain"
+  },
+  {
+   "name": "SP3",
+   "enr": 1.226,
+   "dir": "gain"
+  },
+  {
+   "name": "POU2F3",
+   "enr": 0.696,
+   "dir": "lost"
+  },
+  {
+   "name": "POU5F1",
+   "enr": 0.831,
+   "dir": "lost"
+  },
+  {
+   "name": "POU3F4",
+   "enr": 0.815,
+   "dir": "lost"
+  },
+  {
+   "name": "POU5F1B",
+   "enr": 0.815,
+   "dir": "lost"
+  },
+  {
+   "name": "POU2F1",
+   "enr": 0.815,
+   "dir": "lost"
+  },
+  {
+   "name": "POU3F1",
+   "enr": 0.837,
+   "dir": "lost"
+  }
+ ],
+ "boltz_final": [
+  {
+   "name": "R1·dna_block_90_2m_1_m4",
+   "kind": "設計",
+   "mean": 0.79,
+   "sd": 0.015,
+   "ipde": 0.8
+  },
+  {
+   "name": "R1·dna_block_90_1m_0_m1",
+   "kind": "設計",
+   "mean": 0.752,
+   "sd": 0.007,
+   "ipde": 0.91
+  },
+  {
+   "name": "R2·zeroescape_90_0m_0_m4",
+   "kind": "設計",
+   "mean": 0.748,
+   "sd": 0.017,
+   "ipde": 1.74
+  },
+  {
+   "name": "R2·zeroescape_90_1m_0_m1",
+   "kind": "設計",
+   "mean": 0.736,
+   "sd": 0.034,
+   "ipde": 2.11
+  },
+  {
+   "name": "天然 NRF2",
+   "kind": "陽性對照",
+   "mean": 0.713,
+   "sd": 0.01,
+   "ipde": 1.08
+  },
+  {
+   "name": "R1·dna_block_90_0m_3_m5",
+   "kind": "設計",
+   "mean": 0.558,
+   "sd": 0.086,
+   "ipde": 4.99
+  },
+  {
+   "name": "亂序對照1",
+   "kind": "陰性對照",
+   "mean": 0.475,
+   "sd": 0.123,
+   "ipde": 10.14
+  },
+  {
+   "name": "亂序對照2",
+   "kind": "陰性對照",
+   "mean": 0.392,
+   "sd": 0.116,
+   "ipde": 9.59
+  },
+  {
+   "name": "R1·dimer_block_70_2m_3_m1",
+   "kind": "設計",
+   "mean": 0.391,
+   "sd": 0.072,
+   "ipde": 10.62
+  }
+ ],
+ "fsp1": [
+  {
+   "name": "scrambled control 1",
+   "kind": "control",
+   "mean": 0.58,
+   "sd": 0.05
+  },
+  {
+   "name": "NADP pocket design 1",
+   "kind": "design",
+   "mean": 0.491,
+   "sd": 0.017
+  },
+  {
+   "name": "NADP pocket design 2",
+   "kind": "design",
+   "mean": 0.417,
+   "sd": 0.082
+  },
+  {
+   "name": "scrambled control 2",
+   "kind": "control",
+   "mean": 0.357,
+   "sd": 0.026
+  },
+  {
+   "name": "pocket mouth design",
+   "kind": "design",
+   "mean": 0.336,
+   "sd": 0.037
+  },
+  {
+   "name": "NADP pocket design 3",
+   "kind": "design",
+   "mean": 0.329,
+   "sd": 0.048
+  }
+ ],
+ "sasa": [
+  {
+   "name": "MafG DNA face (design worked)",
+   "rsa": 0.486,
+   "buried": 0,
+   "total": 11
+  },
+  {
+   "name": "FSP1 NADP pocket",
+   "rsa": 0.253,
+   "buried": 3,
+   "total": 13
+  },
+  {
+   "name": "FSP1 pocket mouth",
+   "rsa": 0.086,
+   "buried": 9,
+   "total": 13
+  }
+ ],
+ "ternary": [
+  {
+   "name": "bare ETGE peptide + KEAP1 (reference)",
+   "ab": null,
+   "bc": 0.957
+  },
+  {
+   "name": "binder + MafG (reference)",
+   "ab": 0.811,
+   "bc": null
+  },
+  {
+   "name": "ETGE at N-term, 9 aa linker",
+   "ab": 0.817,
+   "bc": 0.38
+  },
+  {
+   "name": "ETGE at N-term, 18 aa linker",
+   "ab": 0.811,
+   "bc": 0.417
+  },
+  {
+   "name": "ETGE at C-term, 18 aa linker",
+   "ab": 0.777,
+   "bc": 0.346
+  },
+  {
+   "name": "ETGE at C-term, 9 aa linker",
+   "ab": 0.776,
+   "bc": 0.24
+  },
+  {
+   "name": "VHL tag at N-term, 9 aa linker",
+   "ab": 0.814,
+   "bc": 0.126
+  },
+  {
+   "name": "VHL tag at C-term, 9 aa linker",
+   "ab": 0.777,
+   "bc": 0.14
+  }
+ ],
+ "alphagenome": [
+  {
+   "gene": "MAFG",
+   "cond": "B",
+   "novel": 1.23952,
+   "ctrl": 0.04173,
+   "ratio": 29.706,
+   "p": 2.2144768730079104e-05,
+   "ctrl_w": 2.25769,
+   "ratio_w": 0.549,
+   "p_w": 0.566279574045329,
+   "n_novel": 19,
+   "n_ctrl": 40
+  },
+  {
+   "gene": "MAFG",
+   "cond": "memory B",
+   "novel": 0.99885,
+   "ctrl": 0.03412,
+   "ratio": 29.272,
+   "p": 2.059760582897777e-05,
+   "ctrl_w": 1.88003,
+   "ratio_w": 0.531,
+   "p_w": 0.8364205468225865,
+   "n_novel": 19,
+   "n_ctrl": 40
+  },
+  {
+   "gene": "MAFG",
+   "cond": "naive B",
+   "novel": 0.89435,
+   "ctrl": 0.03352,
+   "ratio": 26.681,
+   "p": 2.2144768730079104e-05,
+   "ctrl_w": 1.73265,
+   "ratio_w": 0.516,
+   "p_w": 0.730753334722013,
+   "n_novel": 19,
+   "n_ctrl": 40
+  },
+  {
+   "gene": "SLC7A11",
+   "cond": "B",
+   "novel": 0.0637,
+   "ctrl": 0.02432,
+   "ratio": 2.619,
+   "p": 0.4466779597214379,
+   "ctrl_w": 0.1027,
+   "ratio_w": 0.62,
+   "p_w": 0.3709623709623709,
+   "n_novel": 5,
+   "n_ctrl": 20
+  },
+  {
+   "gene": "SLC7A11",
+   "cond": "memory B",
+   "novel": 0.14154,
+   "ctrl": 0.0282,
+   "ratio": 5.02,
+   "p": 0.335554300771692,
+   "ctrl_w": 0.10483,
+   "ratio_w": 1.35,
+   "p_w": 1.0,
+   "n_novel": 5,
+   "n_ctrl": 20
+  },
+  {
+   "gene": "SLC7A11",
+   "cond": "naive B",
+   "novel": 0.26497,
+   "ctrl": 0.02931,
+   "ratio": 9.04,
+   "p": 0.271786184829663,
+   "ctrl_w": 0.19555,
+   "ratio_w": 1.355,
+   "p_w": 0.9530469530469532,
+   "n_novel": 5,
+   "n_ctrl": 20
+  }
+ ],
+ "ag_ism": [
+  {
+   "name": "MAFG promoter, -769 bp / naive B",
+   "ratio": 3.19,
+   "p_bonf": 0.0003118536944648,
+   "sig": true,
+   "ctrl": false
+  },
+  {
+   "name": "MAFG promoter, -769 bp / B",
+   "ratio": 3.14,
+   "p_bonf": 0.0001267690589624,
+   "sig": true,
+   "ctrl": false
+  },
+  {
+   "name": "HMOX1 site 1 (control) / B",
+   "ratio": 2.18,
+   "p_bonf": 0.0080404232188301,
+   "sig": true,
+   "ctrl": true
+  },
+  {
+   "name": "SLC7A11 +106 kb / naive B",
+   "ratio": 1.84,
+   "p_bonf": 0.1698001305986916,
+   "sig": false,
+   "ctrl": false
+  },
+  {
+   "name": "SLC7A11 +164 kb / B",
+   "ratio": 1.63,
+   "p_bonf": 0.180177262446394,
+   "sig": false,
+   "ctrl": false
+  },
+  {
+   "name": "SLC7A11 +106 kb / B",
+   "ratio": 1.37,
+   "p_bonf": 1.0,
+   "sig": false,
+   "ctrl": false
+  },
+  {
+   "name": "HMOX1 site 2 / naive B",
+   "ratio": 1.28,
+   "p_bonf": 1.0,
+   "sig": false,
+   "ctrl": true
+  },
+  {
+   "name": "HMOX1 site 3 / naive B",
+   "ratio": 1.25,
+   "p_bonf": 1.0,
+   "sig": false,
+   "ctrl": true
+  },
+  {
+   "name": "SLC7A11 +164 kb / naive B",
+   "ratio": 1.21,
+   "p_bonf": 1.0,
+   "sig": false,
+   "ctrl": false
+  },
+  {
+   "name": "HMOX1 site 3 / B",
+   "ratio": 0.9,
+   "p_bonf": 1.0,
+   "sig": false,
+   "ctrl": true
+  }
+ ]
+}

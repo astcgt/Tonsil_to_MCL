@@ -1,0 +1,7 @@
+[95] 檔案 9,991,839,205 bytes，切成 160 段（每段約 62 MB），10 個 worker，峰值磁碟約 627 MB
+[95] 過濾對象：35 個 UniProt ID
+Traceback (most recent call last):
+  File "/raid/jupyter-alz.ee09/Tonsil_MCL_diff/scripts/95_pioneer2.py", line 129, in <module>
+    f"命中 {len(allhits):,} 行 | {tb/1e6/max(el,1):.0f} MB/s | {el/60:.1f} 分")
+                ^^^^^^^
+NameError: name 'allhits' is not defined

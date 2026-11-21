@@ -1,0 +1,365 @@
+{
+ "axis_dep": [
+  {
+   "name": "SLC7A11",
+   "mcl": -0.441,
+   "other": 0.073,
+   "z": -2.89
+  },
+  {
+   "name": "GCLM",
+   "mcl": -0.443,
+   "other": -0.04,
+   "z": -2.74
+  },
+  {
+   "name": "AIFM2",
+   "mcl": -0.316,
+   "other": 0.006,
+   "z": -2.6
+  },
+  {
+   "name": "SLC3A2",
+   "mcl": -1.108,
+   "other": -0.495,
+   "z": -2.18
+  },
+  {
+   "name": "GCLC",
+   "mcl": -0.384,
+   "other": -0.066,
+   "z": -1.65
+  },
+  {
+   "name": "GPX4",
+   "mcl": -1.297,
+   "other": -0.831,
+   "z": -0.89
+  },
+  {
+   "name": "GSR",
+   "mcl": -0.101,
+   "other": -0.024,
+   "z": -0.62
+  },
+  {
+   "name": "TXNRD1",
+   "mcl": -0.31,
+   "other": -0.47,
+   "z": 0.38
+  }
+ ],
+ "slc7a11_elements": [
+  {
+   "name": "-19 kb",
+   "dist": -19140,
+   "r_n": 0.015,
+   "r_t": 0.388,
+   "atac_normal": 0.57,
+   "atac_mcl": 2.27,
+   "lfc": 1.7,
+   "coord": "chr4:138,222,944-138,223,474"
+  },
+  {
+   "name": "+99 kb",
+   "dist": 99572,
+   "r_n": -0.073,
+   "r_t": 0.51,
+   "atac_normal": 1.5,
+   "atac_mcl": 2.33,
+   "lfc": 0.83,
+   "coord": "chr4:138,341,498-138,342,345"
+  },
+  {
+   "name": "+105 kb",
+   "dist": 105913,
+   "r_n": -0.043,
+   "r_t": 0.339,
+   "atac_normal": 0.18,
+   "atac_mcl": 0.63,
+   "lfc": 0.45,
+   "coord": "chr4:138,348,035-138,348,490"
+  },
+  {
+   "name": "+150 kb",
+   "dist": 150466,
+   "r_n": -0.025,
+   "r_t": 0.421,
+   "atac_normal": 0.25,
+   "atac_mcl": 1.77,
+   "lfc": 1.52,
+   "coord": "chr4:138,392,601-138,393,029"
+  },
+  {
+   "name": "+163 kb",
+   "dist": 163971,
+   "r_n": -0.059,
+   "r_t": 0.326,
+   "atac_normal": 0.35,
+   "atac_mcl": 1.46,
+   "lfc": 1.11,
+   "coord": "chr4:138,406,192-138,406,449"
+  }
+ ],
+ "maf_family": [
+  {
+   "name": "MAFG",
+   "gained": 19,
+   "lost": 0,
+   "resid": 0.052
+  },
+  {
+   "name": "MAFF",
+   "gained": 6,
+   "lost": 0,
+   "resid": 0.034
+  },
+  {
+   "name": "BACH2",
+   "gained": 5,
+   "lost": 16,
+   "resid": 0.476
+  },
+  {
+   "name": "BACH1",
+   "gained": 5,
+   "lost": 0,
+   "resid": 0.242
+  },
+  {
+   "name": "MAFK",
+   "gained": 5,
+   "lost": 0,
+   "resid": 0.037
+  },
+  {
+   "name": "NFE2L2",
+   "gained": 4,
+   "lost": 0,
+   "resid": 0.162
+  }
+ ],
+ "novelty": [
+  {
+   "name": "AIFM2",
+   "n_mcl": 0,
+   "evidence": 0.87
+  },
+  {
+   "name": "ATM",
+   "n_mcl": 134,
+   "evidence": 0.7
+  },
+  {
+   "name": "CCND1",
+   "n_mcl": 393,
+   "evidence": 1.23
+  },
+  {
+   "name": "CD79A",
+   "n_mcl": 37,
+   "evidence": 1.15
+  },
+  {
+   "name": "CIITA",
+   "n_mcl": 2,
+   "evidence": 2.66
+  },
+  {
+   "name": "DEPDC5",
+   "n_mcl": 0,
+   "evidence": 1.27
+  },
+  {
+   "name": "EBF1",
+   "n_mcl": 2,
+   "evidence": 1.07
+  },
+  {
+   "name": "GCLM",
+   "n_mcl": 2,
+   "evidence": 0.94
+  },
+  {
+   "name": "IRF4",
+   "n_mcl": 16,
+   "evidence": 2.0
+  },
+  {
+   "name": "MSR1",
+   "n_mcl": 0,
+   "evidence": 1.91
+  },
+  {
+   "name": "NFKB2",
+   "n_mcl": 2,
+   "evidence": 1.33
+  },
+  {
+   "name": "RELB",
+   "n_mcl": 0,
+   "evidence": 1.49
+  },
+  {
+   "name": "ROR1",
+   "n_mcl": 32,
+   "evidence": 1.65
+  },
+  {
+   "name": "SLC7A11",
+   "n_mcl": 1,
+   "evidence": 1.16
+  },
+  {
+   "name": "SYK",
+   "n_mcl": 26,
+   "evidence": 1.5
+  },
+  {
+   "name": "TBC1D22A",
+   "n_mcl": 0,
+   "evidence": 1.55
+  },
+  {
+   "name": "TRPS1",
+   "n_mcl": 0,
+   "evidence": 2.0
+  },
+  {
+   "name": "ZNF804A",
+   "n_mcl": 0,
+   "evidence": 2.64
+  }
+ ],
+ "rewiring_summary": {
+  "total_pairs": 217705,
+  "gained": 2572,
+  "lost": 3845
+ },
+ "top_gained_genes": [
+  {
+   "name": "FCRL5",
+   "n": 29
+  },
+  {
+   "name": "HDAC5",
+   "n": 27
+  },
+  {
+   "name": "FCRL3",
+   "n": 24
+  },
+  {
+   "name": "IKZF3",
+   "n": 24
+  },
+  {
+   "name": "FOXK2",
+   "n": 23
+  },
+  {
+   "name": "MAFG",
+   "n": 19
+  },
+  {
+   "name": "ACTG1",
+   "n": 16
+  },
+  {
+   "name": "KLF6",
+   "n": 16
+  },
+  {
+   "name": "SP2",
+   "n": 16
+  },
+  {
+   "name": "RAB40B",
+   "n": 16
+  },
+  {
+   "name": "SLC52A1",
+   "n": 16
+  },
+  {
+   "name": "GATAD2B",
+   "n": 16
+  }
+ ],
+ "top_lost_genes": [
+  {
+   "name": "SPRED2",
+   "n": 38
+  },
+  {
+   "name": "TCL6",
+   "n": 32
+  },
+  {
+   "name": "BCL6",
+   "n": 30
+  },
+  {
+   "name": "PID1",
+   "n": 26
+  },
+  {
+   "name": "CADPS",
+   "n": 24
+  },
+  {
+   "name": "FGD6",
+   "n": 24
+  },
+  {
+   "name": "CTCFL",
+   "n": 24
+  },
+  {
+   "name": "LPP",
+   "n": 24
+  },
+  {
+   "name": "LINC00698",
+   "n": 23
+  },
+  {
+   "name": "PHLPP1",
+   "n": 22
+  },
+  {
+   "name": "RFTN1",
+   "n": 22
+  },
+  {
+   "name": "MAML3",
+   "n": 22
+  }
+ ],
+ "mut_density": [
+  {
+   "name": "新生連結",
+   "v": 72.07
+  },
+  {
+   "name": "斷裂連結",
+   "v": 59.92
+  },
+  {
+   "name": "其餘被檢定",
+   "v": 65.27
+  },
+  {
+   "name": "未被檢定",
+   "v": 77.28
+  }
+ ],
+ "meta": {
+  "n_ref": 46216,
+  "n_states": 47,
+  "n_tumor": 19975,
+  "n_peaks": 215204,
+  "n_metacell_n": 1015,
+  "n_metacell_t": 998
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "CTRL_POS_NRF2": {
+  "kind": "陽性對照",
+  "blen": 108
+ },
+ "R1_mafg_dna_block_90_2_model_1_m4": {
+  "kind": "第一輪·阻斷DNA結合",
+  "blen": 90,
+  "hotspot": 18,
+  "seq": "LAAGGSVDTEKLAELQKKLEEMELELAKMQQELAELQKELEKLQKELAEAEAEMKAAGIPAKLSEEERARLLHWAALVEAPLHRVRRRPL"
+ },
+ "R1_mafg_dna_block_90_0_model_3_m5": {
+  "kind": "第一輪·阻斷DNA結合",
+  "blen": 90,
+  "hotspot": 22,
+  "seq": "LELGLTLPVSPEVLALEKKLAEMEAKLAKLQQELAELQKELEKLEKELAEWKETSEKEEAALEAEVAALIANPPEEIPEEPGIIPAEAAK"
+ },
+ "R1_mafg_dna_block_90_1_model_0_m1": {
+  "kind": "第一輪·阻斷DNA結合",
+  "blen": 90,
+  "hotspot": 21,
+  "seq": "LEAGDLEGYKRLQEEIAALKPELEKLEAELEKMQQELAEKKQKLEEVEKALADSEGSTKAALEAEAERRRAADDAEFAKEPLPEGDGSRR"
+ },
+ "R1_mafg_dimer_block_70_2_model_3_m1": {
+  "kind": "第一輪·阻斷二聚",
+  "blen": 70,
+  "hotspot": 16,
+  "seq": "NPELAALFPEPKIETDEAKVEELKQKLAEVEANPRVDGLSLVSSRIIADEEGNGRVIGVAQLGDTTVRIE"
+ },
+ "R2_mafg_zeroescape_90_0_model_0_m4": {
+  "kind": "第二輪·零逃逸熱點",
+  "blen": 90,
+  "hotspot": 12,
+  "seq": "LAAGLPVTGLEELAELKAQLEKMQAELDKMQQELAEKKEELAKVEKELAAHKEEEAKTLPEVDARLAALEADPSRATEEELNAPPVSAEE"
+ },
+ "R2_mafg_zeroescape_90_1_model_0_m1": {
+  "kind": "第二輪·零逃逸熱點",
+  "blen": 90,
+  "hotspot": 7,
+  "seq": "LELGDEETYKRLQEEIAKMKPVLEKMEAELEKMQQELAELQQQLEKVEQELAKHEEEIAKEEPALEKELKEAEEQIKKLTEQLAKATFPP"
+ },
+ "CTRL_NEG_1": {
+  "kind": "陰性對照(打散)",
+  "blen": 90
+ },
+ "CTRL_NEG_2": {
+  "kind": "陰性對照(打散)",
+  "blen": 90
+ }
+}
