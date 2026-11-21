@@ -88,7 +88,7 @@ LAAGGSVDTEKLAELQKKLEEMELELAKMQQELAELQKELEKLQKELAEAEAEMKAAGIPAKLSEEERARLLHWAALVEA
 
 ### What we rejected
 
-17 hypotheses were tested and dropped. Three were our own first conclusions. The full table is in the report and the showcase page.
+29 hypotheses and traps were tested and dropped. Several were our own first conclusions, and four of those were retracted after this repository went public. The full table is in the report and the showcase page.
 
 Three separate artefacts came from the same cause: a foreground group and a background group that differ in length or base composition — motif length, then GC content, then peak width. Each one produced a beautiful and false result.
 
@@ -98,6 +98,7 @@ Three separate artefacts came from the same cause: a foreground group and a back
 - **`MAFG` elements gain coupling but lose openness.** We have no explanation. Our first explanation came from the width artefact and was retracted.
 - **Delivery is out of scope by design.** A 90-residue protein does not cross a membrane by itself. Every design here assumes it reaches the nucleus.
 - **The structure model cannot score single mutations on a protein–DNA interface.** 0 of 24 mutations passed the noise floor; the baseline is saturated.
+- **It cannot rank them on a protein–protein interface either.** An orthogonal binding-energy model, calibrated against measured energies, gives a ranking that does not correlate with ours (Spearman +0.17, p = 0.58). Use the co-folding score for which positions sit in the interface, not for which mutation is worse.
 
 ---
 
@@ -170,7 +171,7 @@ AP-1 與 BACH1 家族成員彼此冗餘，但都需要同一個夥伴：**MafG**
 
 ### 被推翻的假設
 
-17 個假設被檢定後放棄，其中三個是我們自己最初的結論。完整表格在報告與展示頁。
+29 個假設與陷阱被檢定後放棄，其中好幾個是我們自己最初的結論，而且有四個是在這個倉庫公開之後才撤回的。完整表格在報告與展示頁。
 
 三個獨立的假象來自同一個原因：前景組與背景組在長度或鹼基組成上不同 —— 先是 motif 長度，再是 GC 含量，最後是 peak 寬度。每一次都產生漂亮但錯誤的結果。
 
@@ -180,6 +181,7 @@ AP-1 與 BACH1 家族成員彼此冗餘，但都需要同一個夥伴：**MafG**
 - **`MAFG` 元件獲得協同性卻失去開放度。** 目前沒有解釋。我們最初的解釋來自寬度假象，已撤回。
 - **藥物動力學依設計排除在範圍外。** 90 殘基的蛋白質無法自行穿過細胞膜，所有設計都預設可到達細胞核。
 - **結構模型無法評分蛋白質–DNA 介面上的單點突變。** 24 個突變 0 個超過雜訊地板，基線已飽和。
+- **蛋白質–蛋白質介面也不能用它排名。** 用實測結合能校準過的正交模型重跑，排名與我們的互不相關（Spearman +0.17, p = 0.58）。共摺疊分數只能說「哪些位置在介面上」，不能說「哪個突變比較嚴重」。
 
 ---
 
@@ -282,9 +284,9 @@ If this work is useful, please cite the primary data sources above — above all
 ## Repository layout / 倉庫結構
 
 ```
-scripts/     73 analysis scripts, numbered in execution order
-             73 個分析腳本，依執行順序編號
-results/     Aggregate results: CSV and JSON (57 MB)
+scripts/     74 analysis scripts, numbered in execution order
+             74 個分析腳本，依執行順序編號
+results/     Aggregate results: CSV and JSON (59 MB)
              彙總結果：CSV 與 JSON
 docs/        Tool status notes, API application steps
              工具現況備忘、API 申請步驟
