@@ -248,21 +248,89 @@ We ran three tests. Two failed and one succeeded. We report all three.</p>
  </div>
 </div>
 
-<div class="card wide" style="margin-top:20px"><p class="ct">What the two successful tests mean together</p>
-<p class="note" style="margin-top:4px">The two arms of the circuit now have <b>independent external support, from two different and
-appropriate methods</b>:</p>
+<p class="lede" style="margin-top:26px"><b>Two more tests, with two other outputs of the same model.</b>
+The link from an element to its gene rested on correlation alone, and the furthest element sits 164 kb away.
+If a domain boundary stood between them, that correlation would be false. So we asked two new questions:
+can the elements reach the promoter in three dimensions, and are they locked shut by DNA methylation?</p>
+<p class="zhline">元件與基因的連結原本只靠相關性，最遠的元件在 164 kb 外。這裡問兩件事：三維空間碰得到啟動子嗎？元件是不是被甲基化鎖著？</p>
+
+<div class="tiles">
+ <div class="tile"><div class="n">21</div><div class="l">contact maps, all of them measured rather than imputed</div><div class="s">6 lymphoblastoid lines &middot; 9 primary blood types &middot; 6 non-blood lines</div></div>
+ <div class="tile"><div class="n">1.00</div><div class="l">rank of the +164 kb element among all pairs at its distance</div><div class="s">in every one of the six lymphoblastoid lines</div></div>
+ <div class="tile"><div class="n">0.21</div><div class="l">methylation of the five elements in normal B cells</div><div class="s">their neighbours read 0.67, the genome reads 0.90</div></div>
+</div>
+
+<div class="grid">
+ <div class="card"><p class="ct">The distal elements sit nearer the promoter than chance allows</p>
+  <p class="cs">Contact always falls with distance, so a raw value says nothing.
+  We therefore score each element against every other pair of positions at the same distance.
+  A score of 1.00 means the element has the strongest contact of all pairs at its distance.</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>Lymphoblastoid lines (6)</span>
+   <span><span class="sw" style="background:var(--series-2)"></span>Primary blood cells (9)</span>
+   <span><span class="sw" style="background:var(--series-3)"></span>Non-blood lines (6)</span></div>
+  <svg id="f15"></svg>
+  <p class="note">The four distal elements rank at the top in the lymphoblastoid lines, and no domain
+  boundary lies between them and the promoter. <b>But the non-blood lines agree.</b>
+  So the three-dimensional scaffold is general, not a property of this cancer or of B cells.
+  <b>The elements were already wired to the gene. MCL did not build the wiring.</b></p>
+  <p class="zhline">遠端元件在淋巴母細胞株裡全部排在最前面，中間沒有邊界。但非血液細胞也一樣 &mdash; 這個三維骨架是組成性的，不是癌症造的。</p>
+  <details><summary>Show the numbers</summary><div id="t15"></div></details></div>
+
+ <div class="card"><p class="ct">One gene survives the confound check. The other does not</p>
+  <p class="cs">A strong peak is easy to call correlated and easy to predict as high-contact.
+  So peak strength alone could produce the result above. We measured the openness of every peak
+  in 46,216 normal B cells and put that measurement into the test as a covariate.
+  The bars show how strong the evidence stays. Longer is stronger.</p>
+  <div class="legend"><span><span class="sw" style="background:var(--neutral)"></span>Corrected for width and distance only</span>
+   <span><span class="sw" style="background:var(--series-1)"></span>Plus measured openness</span></div>
+  <svg id="f16"></svg>
+  <p class="note"><b>MAFG fails.</b> Its elements are 22 times more open than their controls, and the
+  correction removes the result in all 21 maps. <b>We retract it.</b>
+  <b>SLC7A11 holds.</b> Its elements are exactly as closed as their controls (0.0018 against 0.0019),
+  so there is nothing for the correction to remove.</p>
+  <p class="zhline">MAFG 的訊號被可及性解釋掉，21 個圖全部失效，已撤回。SLC7A11 的元件和對照一樣關著，所以校正拿不走它。</p>
+  <details><summary>Show the numbers</summary><div id="t16"></div></details></div>
+
+ <div class="card wide"><p class="ct">The elements are not locked. They are open-ready and still shut</p>
+  <p class="cs">If the elements were silenced by methylation, a demethylating drug could switch this
+  circuit on &mdash; and those drugs are used in blood cancers. That would be a clinical warning, so we tested it.
+  The two grey bars are calibration: a CpG-island promoter must read near zero, and random genome must read near one.
+  Both do, which is what makes the rest of the chart readable.</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>Measured category</span>
+   <span><span class="sw" style="background:var(--neutral)"></span>Calibration anchor</span></div>
+  <svg id="f17"></svg>
+  <p class="note"><b>The hypothesis is wrong, and that is good news.</b> The five elements already read 0.21,
+  far below their own neighbours at 0.67 and the genome at 0.90.
+  Nothing holds them shut except the absence of a transcription factor.
+  So a demethylating drug is not a route into this circuit, and not a risk either.
+  <b>Honest limit:</b> these elements carry only one to three CpG positions each, so each value rests on very few
+  measurements, and two of the five sit in a middle band near 0.5.</p>
+  <p class="zhline">假設錯了，而這是好消息：元件已經去甲基化（0.21），卻仍然關著。擋住它們的只有「缺少轉錄因子」。但每個元件只有 1&ndash;3 個 CpG，精度低。</p>
+  <details><summary>Show the numbers</summary><div id="t17"></div></details></div>
+</div>
+
+<div class="card wide" style="margin-top:20px"><p class="ct">What the four tests mean together</p>
+<p class="note" style="margin-top:4px">Four tests have now run, with four different outputs of the same model.
+The balance of evidence between the two arms has <b>changed</b>:</p>
 <ul>
-<li><b>SLC7A11 enhancers</b> &mdash; supported by the cell-state test, in two patients. Not supported by the mutation scan.
-That is expected. A model trained on normal tissue cannot see a link that only cancer makes.</li>
-<li><b>MAFG promoter site</b> &mdash; supported by the mutation scan, with a working positive control.
-Not supported by the cell-state test. That is also consistent: this element is already open in normal cells,
-so the tumour state does not open it further.</li>
+<li><b>SLC7A11 enhancers &mdash; now two independent supports.</b> The cell-state test raises all five elements
+in both patients, and the contact test puts them nearer the promoter than chance allows, which survives correction
+for width, distance and measured openness. Not supported by the mutation scan, which is expected:
+a model trained on normal tissue cannot see a link that only cancer makes.</li>
+<li><b>MAFG promoter site &mdash; now one support, and one retraction.</b> The mutation scan supports it,
+with a working positive control. The cell-state test does not, which is consistent, because this element
+is already open in normal cells. The contact test appeared to support it and <b>we retracted that</b>:
+the signal was peak openness, not position.</li>
+<li><b>A mechanism for the SLC7A11 arm.</b> The elements are already wired to the gene in three dimensions,
+and already unmethylated, yet as closed as peaks that do nothing.
+<b>The one missing part is the transcription factor.</b> That is why a genome-wide opening of one seven-letter
+site can land on this gene, and it puts the leverage on the factor or the transporter &mdash; not on an epigenetic drug.</li>
 </ul>
 <p class="note"><b>Honest limit.</b> The cell-state test feeds the tumour transcriptome to the model.
 That transcriptome already contains the result of the circuit being on.
 So the test is independent of our chromatin data, but it is not independent of our hypothesis.
 The specificity is the part that is hard to explain away: the signal lands on the five elements we named, and not on the other twenty peaks beside them.</p>
-<p class="zhline">兩條線各有外部支持，但方法不同：SLC7A11 靠細胞狀態測試（兩位病人）；MAFG 靠飽和突變（含有效陽性對照）。</p>
+<p class="zhline">證據天平已翻轉：SLC7A11 有兩項獨立外部支持（細胞狀態 + 接觸圖）；MAFG 只剩飽和突變一項，接觸圖那項已撤回。元件「線接好、鎖沒上、門關著」，缺的只有轉錄因子。</p>
 </div>
 <h2>5. The target at the protein level<span class="zh">蛋白質層級的標的</span></h2>
 <p class="lede">AP-1 and BACH1 have many members, and the members replace each other.
@@ -390,9 +458,12 @@ Motif length, then GC content, then peak width. Each one produced a beautiful an
 <ol>
 <li><b>Two patients.</b> No third patient-derived MCL multiome exists in public data. We checked.
 The cell-state test repeats across both patients, which helps, but two is still two.</li>
-<li><b>MAFG elements gain coupling and lose openness.</b> We have no explanation.
-Our first explanation came from the width artefact and we retracted it.
-The next step is a direct comparison of the same sequence under tumour and normal cell states, which test 3 now makes possible.</li>
+<li><b>MAFG elements gain coupling and lose openness.</b> Part of this is now explained, and part is not.
+<b>Explained:</b> these elements are CpG-island elements. They read 0.03 for methylation and are open in
+7 to 11 percent of normal B cells, so they cannot open much further. They change how they are used, not whether they are on.
+<b>Not explained:</b> why openness falls instead of staying level. And the coupling itself failed two chromatin tests
+&mdash; co-openness with the promoter does not rise, and element openness does not track MAFG output in the same nucleus.
+So the coupling at MAFG has RNA evidence only.</li>
 <li><b>The structure model cannot score single mutations on a protein-DNA interface.</b>
 Published benchmarks agree, and our own data confirms it.
 The right tools are dedicated energy models. ThermoMPNN ships a matched environment and needs no new download.</li>
@@ -420,7 +491,12 @@ const REJ=[
 ["Interface mutations as a group beat the controls","Mann-Whitney, 14 against 3","<b>Was underpowered, then corrected.</b> Our first grouping wrongly counted the unchanged protein and two chemical mimics as mutations. The pre-planned grouping gives p = 0.030"],
 ["AlphaGenome shows that the MAFG elements are already open (20.6&times;, p = 2.6&times;10<sup>-5</sup>)","width-matched control","<b>Rejected, after we had written the wrong explanation.</b> Width and prediction correlate at +0.74, and our elements are 3.5&times; wider. Matched: 0.55&times;, p = 0.57"],
 ["A fixed 501 bp window repairs the width problem","re-ran the whole test at fixed width","<b>Rejected.</b> The correlation stayed at +0.74 and the raw ratio grew to 29.7&times;. Width is a proxy for element strength"],
-["The mutation effect is confined to the seven-letter core","effect profile position by position","<b>Partly rejected.</b> Only 2 of the top 7 positions sit in the core. The strongest sit 8 to 9 bases outside. The claim must widen to a 20 to 30 base region"]];
+["The mutation effect is confined to the seven-letter core","effect profile position by position","<b>Partly rejected.</b> Only 2 of the top 7 positions sit in the core. The strongest sit 8 to 9 bases outside. The claim must widen to a 20 to 30 base region"],
+["The MAFG elements touch their promoter more than their neighbours","21 contact maps, with measured openness added as a covariate","<b>Retracted.</b> The elements are 22&times; more open than the controls, and openness tracks the contact score. After the correction, 0 of 21 maps keep the effect. The same correction leaves SLC7A11 unchanged"],
+["An average over a 501 bp window is a valid methylation readout","calibration anchors","<b>Our own readout error.</b> The output carries one value per base, and only CpG positions hold it. A window average dilutes it by the non-CpG bases: the genome background read 0.007 instead of 0.90, which inverts the answer"],
+["The elements are held shut by methylation, so a demethylating drug would open them","CpG positions only, two assays, two cell types","<b>Rejected.</b> The elements read 0.21 against 0.67 for their neighbours and 0.90 for background. They are open-ready and still shut. The clinical concern is removed"],
+["The gained coupling at MAFG has a counterpart in chromatin","tumour cells against 790 non-tumour B cells from the same sample","<b>Rejected.</b> Co-openness with the promoter does not rise (p = 0.58), and element detection moves 0.076 to 0.069. Coupling at MAFG has RNA evidence only"],
+["Rank residuals give a valid partial correlation for a binary track","the control peaks, scored the same way","<b>Our own statistical error.</b> After a rank transform a binary track holds two values, so the residual keeps the covariate's own shape. Both variables share it, which forced the correlation to +0.71 and above. The controls scoring just as high, at p = 0 exactly, exposed it. Logistic regression replaces it, and the effect is gone (p = 0.40)"]];
 
 const tt=document.getElementById('tt');
 const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
@@ -479,6 +555,9 @@ function gbar(id,groups,series,o){
   s+=`<line class="gl" x1="${p}" y1="${o.padT}" x2="${p}" y2="${o.padT+groups.length*o.rowH}"/>`;
   s+=`<text class="val" x="${p}" y="${H-11}" text-anchor="middle">${o.logx?lab:o.fmt(tv)}</text>`;}
  s+=`<line class="ax" x1="${z}" y1="${o.padT}" x2="${z}" y2="${o.padT+groups.length*o.rowH}"/>`;
+ if(o.thr!=null){const tx=x(o.thr);
+  s+=`<line class="thr" x1="${tx}" y1="${o.padT-4}" x2="${tx}" y2="${o.padT+groups.length*o.rowH+2}"/>`;
+  s+=`<text class="thrlbl" x="${tx}" y="${o.padT-8}" text-anchor="middle">${esc(o.thrLabel||'')}</text>`;}
  groups.forEach((g,i)=>{
   s+=`<text class="lbl" x="${px-10}" y="${o.padT+i*o.rowH+o.rowH/2+4}" text-anchor="end">${esc(g.k)}</text>`;
   series.forEach((se,j)=>{const v=g[se.key]; if(v==null||isNaN(v))return;
@@ -605,6 +684,39 @@ gbar('f14',D.ternary.map(d=>({k:TN[d.name]||d.name,a:d.ab,b:d.bc,
  tip:`<b>${esc(TN[d.name]||d.name)}</b><br>to MafG: ${d.ab==null?'not applicable':d.ab}<br>to the E3 enzyme: ${d.bc==null?'not applicable':d.bc}`})),
  [{key:'a',color:'var(--series-1)'},{key:'b',color:'var(--series-2)'}],
  {fmt:v=>v.toFixed(2),labelW:262,rowH:32});
+
+/* ---- Figures 15-17. Contact maps and methylation ---- */
+Object.assign(D, {"contact_pct": [{"k": "-19 kb", "dist": -19140, "LCL": 0.644, "blood": 0.45, "nonblood": 0.718}, {"k": "+100 kb", "dist": 99572, "LCL": 0.99, "blood": 0.811, "nonblood": 0.88}, {"k": "+106 kb", "dist": 105913, "LCL": 0.941, "blood": 0.661, "nonblood": 0.911}, {"k": "+150 kb", "dist": 150466, "LCL": 0.991, "blood": 0.568, "nonblood": 0.835}, {"k": "+164 kb", "dist": 163971, "LCL": 1.0, "blood": 0.657, "nonblood": 0.891}], "contact_adj": [{"gene": "MAFG", "group": "LCL", "n": 6, "nsig_wd": 4, "nsig_wda": 0, "p_wd": 6.085750627443675e-06, "p_wda": 0.05145016043794343}, {"gene": "MAFG", "group": "blood", "n": 9, "nsig_wd": 9, "nsig_wda": 0, "p_wd": 3.777832516031246e-12, "p_wda": 7.498401320701937e-05}, {"gene": "MAFG", "group": "nonblood", "n": 6, "nsig_wd": 5, "nsig_wda": 0, "p_wd": 3.283739516293392e-06, "p_wda": 0.014133239214893676}, {"gene": "SLC7A11", "group": "LCL", "n": 6, "nsig_wd": 3, "nsig_wda": 4, "p_wd": 9.537189075136362e-06, "p_wda": 6.183780113225935e-06}, {"gene": "SLC7A11", "group": "blood", "n": 9, "nsig_wd": 5, "nsig_wda": 5, "p_wd": 3.0078355806393648e-05, "p_wda": 8.972525452948839e-05}, {"gene": "SLC7A11", "group": "nonblood", "n": 6, "nsig_wd": 5, "nsig_wda": 4, "p_wd": 3.6032202358450114e-07, "p_wda": 9.559463879076416e-07}], "methyl": [{"k": "CpG-island promoter anchor", "v": 0.019, "n": 2, "cpg": 57, "anchor": true}, {"k": "SLC7A11 de novo elements", "v": 0.206, "n": 5, "cpg": 3, "anchor": false}, {"k": "SLC7A11 non-rewired peaks", "v": 0.673, "n": 20, "cpg": 3, "anchor": false}, {"k": "MAFG de novo elements", "v": 0.032, "n": 19, "cpg": 57, "anchor": false}, {"k": "MAFG non-rewired peaks", "v": 0.743, "n": 46, "cpg": 16, "anchor": false}, {"k": "Random genomic background", "v": 0.899, "n": 320, "cpg": 7, "anchor": true}]});
+
+const CG={LCL:'Lymphoblastoid lines (6)',blood:'Primary blood cells (9)',nonblood:'Non-blood lines (6)'};
+gbar('f15',D.contact_pct.map(d=>({k:d.k,L:d.LCL,B:d.blood,N:d.nonblood,
+ tip:`<b>Element at ${esc(d.k)}</b><br>Lymphoblastoid lines: ${d.LCL}<br>Primary blood cells: ${d.blood}`
+     +`<br>Non-blood lines: ${d.nonblood}<br><span style="opacity:.75">Rank among all position pairs at the same distance. 1.00 is the top.</span>`})),
+ [{key:'L',color:'var(--series-1)'},{key:'B',color:'var(--series-2)'},{key:'N',color:'var(--series-3)'}],
+ {fmt:v=>v.toFixed(2),labelW:86,rowH:42});
+table('t15',[{t:'Element',k:'k'},{t:'Distance to the gene',k:'d',n:1},{t:'Lymphoblastoid',k:'a',n:1},
+ {t:'Primary blood',k:'b',n:1},{t:'Non-blood',k:'c',n:1}],
+ D.contact_pct.map(d=>({k:d.k,d:(d.dist/1000).toFixed(1)+' kb',a:d.LCL.toFixed(3),b:d.blood.toFixed(3),c:d.nonblood.toFixed(3)})));
+
+const nl10=p=>-Math.log10(Math.max(p,1e-300));
+gbar('f16',D.contact_adj.map(d=>({k:`${d.gene} \u00b7 ${CG[d.group].split(' (')[0]}`,
+ a:nl10(d.p_wd),b:nl10(d.p_wda),
+ tip:`<b>${esc(d.gene)} &middot; ${esc(CG[d.group])}</b><br>Width and distance only: p = ${fmtp(d.p_wd)} (${d.nsig_wd} of ${d.n} maps)`
+     +`<br>Plus measured openness: p = ${fmtp(d.p_wda)} (${d.nsig_wda} of ${d.n} maps)`})),
+ [{key:'a',color:'var(--neutral)'},{key:'b',color:'var(--series-1)'}],
+ {fmt:v=>v.toFixed(1),labelW:206,rowH:36,padT:18,thr:nl10(0.05),thrLabel:'p = 0.05'});
+table('t16',[{t:'Gene',k:'g'},{t:'Cell group',k:'c'},{t:'Maps',k:'n',n:1},
+ {t:'p, width and distance',k:'a',n:1},{t:'p, plus openness',k:'b',n:1},{t:'Maps that keep the effect',k:'s'}],
+ D.contact_adj.map(d=>({g:d.gene,c:CG[d.group],n:d.n,a:fmtp(d.p_wd),b:fmtp(d.p_wda),
+  s:`${d.nsig_wd} &rarr; ${d.nsig_wda}`})));
+
+hbar('f17',D.methyl.map(d=>({k:d.k,v:d.v,color:d.anchor?'var(--neutral)':'var(--series-1)',
+ tip:`<b>${esc(d.k)}</b><br>Methylation: ${d.v}<br>Regions: ${d.n}<br>CpG positions per region (median): ${d.cpg}`
+     +(d.anchor?'<br><span style="opacity:.75">Calibration anchor</span>':'')})),
+ {fmt:v=>v.toFixed(2),labelW:232,rowH:28});
+table('t17',[{t:'Category',k:'k'},{t:'Methylation (0 to 1)',k:'v',n:1},{t:'Regions',k:'n',n:1},
+ {t:'CpG positions per region',k:'c',n:1},{t:'Role',k:'r'}],
+ D.methyl.map(d=>({k:d.k,v:d.v.toFixed(3),n:d.n,c:d.cpg,r:d.anchor?'calibration anchor':'measured'})));
 
 /* ---- Rejected hypotheses table ---- */
 table('trej',[{t:'#',k:'i',n:1},{t:'Hypothesis or trap',k:'h'},{t:'How we tested it',k:'t'},{t:'Outcome',k:'o'}],
