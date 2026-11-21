@@ -59,3 +59,34 @@
 - `RFdiffusion → ProteinMPNN → nrbennet/dl_binder_design`（注意是單 t 的 `nrbennet`）。RFdiffusion 的 conda env 是 CUDA 11.1，**建議直接用 Docker image**。
 - 新平台 **RosettaCommons Foundry**：`pip install "rc-foundry[all]"`，含 RFdiffusion3/ProteinMPNN/LigandMPNN，BSD-3 含權重，安裝體驗好很多。
 - **BindCraft 時間是最大瓶頸**：第三方估計單張 A100 上每個通過 filter 的設計約 34 小時，官方建議產出 ≥100 個 → 單卡數週等級。**本專案不採用全量 BindCraft**，改走 RFdiffusion 小批量 + 嚴格 in-silico 篩選。
+
+## 第三方資料的授權狀態（決定能不能轉載）
+
+| 來源 | 授權 | 我們怎麼處理 |
+|---|---|---|
+| AlphaFold 3 文件 `docs/input.md` | **Apache-2.0**（第 1 條把 documentation 算在 Work 內；第 4 條要求附授權副本與保留出處） | 逐字轉載於 `af3_input.md`，檔首加出處標註，授權全文放 `licenses/` |
+| **PIONEER2 介面資料集** | **沒有授權聲明**（2026-11-22 查證） | **不轉載。** 只公開腳本 `scripts/95_pioneer2.py`，由使用者自行從原始 URL 重建 |
+
+### PIONEER2 的查證紀錄（2026-11-22）
+
+檔案來源：`https://pioneer2.yulab.org/static/PIONEER2_interactome_wide_interfaces.txt`
+（由 `scripts/95_pioneer2.py` 串流下載並過濾，衍生子集 `results/95_pioneer2_axis.tsv.gz`，37 MB）
+
+讀過的頁面與結果：
+
+| 頁面 | 狀態 | 有授權嗎 |
+|---|---|---|
+| `pioneer2.yulab.org/` | 200 | 無。導覽列只有 Home / Download / About / Help，沒有 Terms 或 License 連結 |
+| `/downloads` | 200 | 無。只描述檔案內容（352,124 個實驗偵測到的二元交互作用），未附任何條款 |
+| `/about` | 200 | 無。只有「Version 1, May 2026」、聯絡信箱 `weill-pioneer@cornell.edu`、頁尾 `© Yu Lab` |
+| `/help` | 200 | 無 |
+| `/terms`、`/download` | 404 | 不存在 |
+| 資料檔本身 | — | 衍生檔表頭只有欄位名，**沒有嵌入的授權或引用要求**；原始檔已不在本機 |
+
+也找不到論文、Zenodo 或 GitHub 等有條款的其他發布點，網站亦未要求特定引用格式。
+
+**結論**：沒有授權聲明 → 預設著作權（保留所有權利）→ 在 CC BY 4.0 的公開倉庫裡轉載衍生子集
+需要權利人許可。因此**不放進任何公開倉庫**。
+要取得該檔，執行 `scripts/95_pioneer2.py`，它會從上述原始 URL 重新下載並重建同一個子集。
+
+若將來要公開那個檔案，正確做法是先寫信給 `weill-pioneer@cornell.edu` 取得書面許可或他們的授權條款。

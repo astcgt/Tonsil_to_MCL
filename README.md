@@ -303,6 +303,12 @@ tables, the prepared target surfaces, and every co-folding and design output, wh
 recompute each interface metric reported here without re-running the pipeline.
 超出本倉庫體積預算的彙總表與結構預測放在上面那個 Hugging Face 倉庫，可用來重算報告裡的每個界面指標。
 
+**Not redistributed / 刻意未轉載**：`results/95_pioneer2_axis.tsv.gz` is a derived subset of the
+PIONEER2 interface dataset. That dataset states **no licence** on any of its pages (checked
+2026-11-22, see `docs/TOOLING_NOTES.md`), so it defaults to all rights reserved and we do not
+republish it here or on Hugging Face. Run `scripts/95_pioneer2.py` to rebuild it from the original
+source. PIONEER2 的介面資料集**沒有授權聲明**，所以我們不轉載衍生檔；用該腳本可自行重建。
+
 **License / 授權**：CC BY 4.0 (`LICENSE`). Use freely, including commercially, with attribution.
 可自由使用（含商業用途），但須標注來源。
 
