@@ -7,6 +7,7 @@
 <p align="center">
   <a href="#english">🇬🇧 <b>English</b></a> &nbsp;·&nbsp;
   <a href="#中文">🇹🇼 <b>中文</b></a> &nbsp;·&nbsp;
+  <a href="https://huggingface.co/ast-atp/Tonsil_to_MCL">🤗 <b>Data &amp; structures</b></a> &nbsp;·&nbsp;
   <a href="#data-sources--資料來源">📚 <b>Data sources / 資料來源</b></a> &nbsp;·&nbsp;
   <a href="#ethics--data-use--倫理與資料使用">⚖️ <b>Ethics / 倫理</b></a>
 </p>
@@ -295,6 +296,15 @@ af3_input.md THIRD-PARTY: verbatim copy of AlphaFold 3 docs/input.md
              (Google DeepMind, Apache-2.0) — see the header in that file
              第三方：AlphaFold 3 docs/input.md 的逐字複本，出處見該檔檔首
 ```
+
+**Large files / 大型檔案**：the tables and structure predictions that exceed this repository's
+size budget live at <https://huggingface.co/ast-atp/Tonsil_to_MCL> — peak-level and pseudobulk
+tables, the prepared target surfaces, and every co-folding and design output, which is enough to
+recompute each interface metric reported here without re-running the pipeline.
+超出本倉庫體積預算的彙總表與結構預測放在上面那個 Hugging Face 倉庫，可用來重算報告裡的每個界面指標。
+
+**License / 授權**：CC BY 4.0 (`LICENSE`). Use freely, including commercially, with attribution.
+可自由使用（含商業用途），但須標注來源。
 
 **Third-party content / 第三方內容**：`af3_input.md` is not our work. It is a
 verbatim copy of `docs/input.md` from
