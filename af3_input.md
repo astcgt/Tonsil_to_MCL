@@ -1,3 +1,29 @@
+<!--
+  ============================================================================
+  THIRD-PARTY FILE / 第三方檔案 —— 以下內容不是本專案撰寫的
+  ============================================================================
+
+  來源 / Source:
+    google-deepmind/alphafold3, docs/input.md
+    https://github.com/google-deepmind/alphafold3/blob/main/docs/input.md
+
+  著作權 / Copyright:  Google DeepMind
+  授權 / License:      Apache License 2.0
+                       https://github.com/google-deepmind/alphafold3/blob/main/LICENSE
+                       授權副本見 licenses/AlphaFold3-LICENSE-Apache-2.0.txt
+                       License copy: licenses/AlphaFold3-LICENSE-Apache-2.0.txt
+
+  修改 / Modifications:
+    無。這是逐字複本，只在檔首加上這段出處標註。
+    None. Verbatim copy; only this provenance header was added.
+
+  為什麼在這裡 / Why it is here:
+    AlphaFold 3 的 JSON 輸入格式參考，供本專案的結構預測步驟使用。
+    Reference for the AlphaFold 3 JSON input format, used by this project's
+    structure-prediction steps.
+  ============================================================================
+-->
+
 # AlphaFold 3 Input
 
 This is documentation for the AlphaFold 3 JSON input format. If you are looking

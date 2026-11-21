@@ -287,9 +287,21 @@ results/     Aggregate results: CSV and JSON (57 MB)
              彙總結果：CSV 與 JSON
 docs/        Tool status notes, API application steps
              工具現況備忘、API 申請步驟
-REPORT_v3.md Full report with every rejected hypothesis (786 lines, Chinese)
-             完整報告，含所有被推翻的假設（786 行，中文）
+licenses/    Licenses of third-party files redistributed here
+             本倉庫轉載的第三方檔案的授權副本
+REPORT_v3.md Full report with every rejected hypothesis (Chinese)
+             完整報告，含所有被推翻的假設（中文）
+af3_input.md THIRD-PARTY: verbatim copy of AlphaFold 3 docs/input.md
+             (Google DeepMind, Apache-2.0) — see the header in that file
+             第三方：AlphaFold 3 docs/input.md 的逐字複本，出處見該檔檔首
 ```
+
+**Third-party content / 第三方內容**：`af3_input.md` is not our work. It is a
+verbatim copy of `docs/input.md` from
+[google-deepmind/alphafold3](https://github.com/google-deepmind/alphafold3),
+© Google DeepMind, redistributed under the Apache License 2.0 (copy in
+`licenses/`). Everything else in this repository is our own.
+`af3_input.md` 不是本專案的產出，是上述檔案的逐字複本，依 Apache-2.0 轉載。
 
 ### Key scripts / 關鍵腳本
 
