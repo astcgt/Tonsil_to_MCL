@@ -60,6 +60,32 @@
 - 新平台 **RosettaCommons Foundry**：`pip install "rc-foundry[all]"`，含 RFdiffusion3/ProteinMPNN/LigandMPNN，BSD-3 含權重，安裝體驗好很多。
 - **BindCraft 時間是最大瓶頸**：第三方估計單張 A100 上每個通過 filter 的設計約 34 小時，官方建議產出 ≥100 個 → 單卡數週等級。**本專案不採用全量 BindCraft**，改走 RFdiffusion 小批量 + 嚴格 in-silico 篩選。
 
+### 結合 ΔΔG（StaB-ddG）—— 已安裝並驗證（2026-11-22）
+- **授權 MIT，權重 6.7 MB 直接 commit 在 repo 裡**（`model_ckpts/stabddg.pt`，沒有會失效的雲端連結）。
+  推論用的是 `stabddg.pt`；`stability_finetuned.pt` 是中間產物（摺疊穩定性），**不要拿去當結合 ΔΔG**。
+- **不要照 `environment.yaml` 建新環境。** 它把 `torch==2.6.0` 寫成沒有 index-url 的裸 pip 需求，
+  而 torch 2.6.0 只有 cu118 與 cu124 → 會無聲裝到 cu124。
+  README 另寫了一條路：**用現成的 PyTorch 環境，補裝 `tqdm scipy wandb pandas` 就好**。
+  本專案的 `env/protdes`（torch 2.5.1+cu121、pandas、numpy、tqdm、biopython 都有）
+  **一個套件都沒裝**就能跑：
+
+  ```bash
+  PYTHONPATH=third_party/StaB-ddG CUDA_VISIBLE_DEVICES=3 \
+    env/protdes/bin/python run_stabddg.py --pdb_path examples/one_mutation/1AO7.pdb \
+    --mutation EA63Q,QD30V,KA66A --chains ABC_DE
+  ```
+- **安裝正確性有現成的參考值**：repo 裡 commit 了作者自己的 `examples/one_mutation/1AO7_output/output.csv`。
+  我們跑出 **0.97510684**，作者的檔案是 **0.97507936** → 小數第五位一致。
+  任何環境問題都會在這裡現形，所以**先跑這個再跑自己的結構**。
+- 兩個硬性輸入要求：**每條鏈的殘基編號必須從 1 開始**（`stabddg/utils.py` 有 `renumber_pdb`），
+  而且 `#Pdb` 欄位的格式是 `<檔名>_<鏈組1>_<鏈組2>`（用最後兩個底線切，檔名本身可以有底線）。
+  野生型胺基酸對不上會被 `ppi_dataset.py` 的 `assert mut_seq[mut_pos] == wt_aa` 當場抓到。
+- 只讀主鏈 N/CA/C/O，所以**核酸鏈要自己移除**（會被當成缺口）。
+- 速度：36 個突變 ×（20 MC × 3 trials）在一張 A100 上約 5 分半；
+  191 個位置的丙胺酸掃描因為共用同一個結構，只要 96 秒。
+- **HERMES**（同類的第二意見）有個致命陷阱：`_bi` 是結合、`_st` 是摺疊穩定性，
+  而 repo 內附的 `trained_models/` **只有 `_st`**。結合用的權重在 5.1 GB 的 Zenodo 壓縮檔裡。
+
 ## 第三方資料的授權狀態（決定能不能轉載）
 
 | 來源 | 授權 | 我們怎麼處理 |

@@ -364,9 +364,10 @@ We then asked which parts of MafG a drug should touch.</p>
   <p class="note">The MafG interface accepts 10.5% of substitutions. The whole protein accepts 42.4%.
   That is <b>one quarter of the room</b>. Escape mutations concentrate at four positions only:
   A94, Q82, M100 and K101.<br>
-  <b>One conflict to flag.</b> The language model calls Q82 free to change.
-  The structure model says that Q82A damages the interface by 6.4 standard deviations.
-  Do not drop or keep such a position on one model alone.</p></div>
+  <b>One conflict, now resolved.</b> The language model calls Q82 free to change.
+  The co-folding model said that Q82A damages the interface by 6.4 standard deviations.
+  A third method, which computes binding energy, gives Q82A <b>0.35 kcal/mol</b> &mdash;
+  the level of an unrelated-surface control. <b>The language model was right here.</b></p></div>
 
  <div class="card wide"><p class="ct">Figure 10. Point mutations at the dimer interface</p>
   <p class="cs">The bars show how much each mutation damages the interface, in units of the noise of the method.
@@ -379,9 +380,70 @@ We then asked which parts of MafG a drug should touch.</p>
   <p class="note">Four zipper residues stand far above the noise: L79A at 22&sigma;, K83A at 15&sigma;,
   N97A at 14&sigma; and L93A at 12&sigma;. The three controls stay below 1.5&sigma;.
   As a group, 9 of 11 interface mutations pass 3&sigma;, and 0 of 3 controls do (p = 0.030).<br>
+  <b>This ranking is now superseded. Read the next two charts before you use it.</b>
+  A binding-energy model, calibrated against measured energies, keeps L79A, L93A and N97A
+  but drops <b>K83A to 12th of 13</b>. The two rankings do not correlate.
+  <b>Use this chart for which positions sit in the interface, not for which mutation is worse.</b><br>
   <b>Where this method fails.</b> The same approach on the protein-DNA interface returns nothing at all.
   All 24 mutations stay inside the noise, including charge reversals that should be lethal.
   The baseline score is saturated at 0.965. <b>That readout has zero information, not weak information.</b></p></div>
+
+ <div class="card wide"><p class="ct">A model of a different kind re-scores the same mutations</p>
+  <p class="cs">The chart above uses a co-folding confidence score. That score measures whether the model
+  can build the interface, not how strongly the two proteins hold each other.
+  This chart uses a binding-energy model instead: it reads the energy from inverse folding and a
+  thermodynamic cycle, and it was calibrated against <b>measured</b> binding energies on a split that
+  separates related structures. Bars show the energy cost of each change. Longer is more damaging.
+  The structure here is the crystal structure of the real MafG&ndash;NRF2 pair, not a prediction.</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>Dimer-interface mutation</span>
+   <span><span class="sw" style="background:var(--neutral)"></span>Unrelated-surface control</span></div>
+  <svg id="f18"></svg>
+  <p class="note"><b>L79A leads both methods.</b> The three zipper leucines L79, L86 and L93 sit exactly
+  seven residues apart, which is the core of a leucine zipper, and this model ranks them 1st, 4th and 2nd.
+  <b>K83A falls to 0.34 kcal/mol</b> &mdash; 1.4 times the unrelated-surface control, and one eighth of L79A.
+  <b>Three checks ran before we read any of this.</b> Reverse mutations on the mutant backbone cancel the
+  forward values to 0.046 kcal/mol. The second copy of the pair in the same crystal gives r = 0.953.
+  The 103 residues that sit more than 10 &angst; from the partner never exceed 0.152 kcal/mol.
+  <b>Honest limit:</b> the DNA was removed, because this method reads protein against protein only.</p>
+  <p class="zhline">換一個歸納偏差完全不同的方法（結合能，非共摺疊信心分數）重跑同一批突變：L79A 兩法都第一，但 K83A 掉到 0.34 kcal/mol，只有無關表面對照的 1.4 倍。</p>
+  <details><summary>Show the numbers</summary><div id="t18"></div></details></div>
+
+ <div class="card wide"><p class="ct">The two readouts do not agree on which mutation matters</p>
+  <p class="cs">Both methods rank the same 13 mutations. The bars show the rank each method gives.
+  Rank 1 is the most damaging. Short bars are therefore the serious mutations.
+  A pair of bars of similar length means the methods agree about that mutation.</p>
+  <div class="legend"><span><span class="sw" style="background:var(--neutral)"></span>Co-folding score (interface distance error)</span>
+   <span><span class="sw" style="background:var(--series-1)"></span>Binding energy</span></div>
+  <svg id="f19"></svg>
+  <p class="note"><b>The rankings are unrelated:</b> Spearman +0.17 (p = 0.58) against the distance error,
+  and &minus;0.09 (p = 0.78) against the confidence score.
+  The co-folding score misses L86A, E89A and E80A, and for two of them it reports the interface as
+  <b>better</b> after the change. Removing a core side chain does not move the backbone, and that score
+  measures the backbone. <b>What does not change:</b> both methods agree that the dimer face as a whole
+  beats the unrelated surface. Here that holds at p = 3.8&times;10<sup>-6</sup>.
+  <b>So the position-level result stands. Only the per-mutation ranking falls.</b></p>
+  <p class="zhline">兩個排名互不相關（&rho; = +0.17, p = 0.58）。位置層級的結論不受影響，倒下的只有「哪個突變比較嚴重」。</p>
+  <details><summary>Show the numbers</summary><div id="t19"></div></details></div>
+
+ <div class="card wide"><p class="ct">The whole interface, scanned: an epitope a drug can cover</p>
+  <p class="cs">All 191 positions of the two chains share one structure, so the scan costs 96 seconds.
+  Each bar is one position changed to alanine. We keep the positions above 1.0 kcal/mol, which is the
+  usual threshold for a hotspot and about seven times the noise floor of this run.
+  The scan is a separate run with its own random draws, so a shared mutation reads a little differently
+  here: L79 gives 3.03 against 2.87 in the chart above.</p>
+  <div class="legend"><span><span class="sw" style="background:var(--series-1)"></span>MafG &mdash; the target</span>
+   <span><span class="sw" style="background:var(--series-2)"></span>NRF2 &mdash; the partner to copy</span></div>
+  <svg id="f20"></svg>
+  <p class="note"><b>The hotspots form one continuous stretch on each chain:</b> MafG 69&ndash;107 and
+  NRF2 514&ndash;553. So a competitive blocker must cover MafG 69&ndash;107, and the surface worth copying
+  is NRF2 514&ndash;553. The method was never told where the interface is, and it still marked
+  <b>all five leucines</b> of the zipper register (L79, L86, L93, L104, L107).
+  <b>The one honest doubt, and what it costs to settle.</b> Six of the 25 hotspots, marked &dagger;,
+  bury no surface at all and sit 5.4 to 8.3 &angst; from the partner. They are either second-shell
+  electrostatics or model artefacts. Settling those six with a physics method costs about
+  60 to 90 CPU hours, against 240 for the whole set. <b>That is the whole remaining bill.</b></p>
+  <p class="zhline">191 個位置全掃：熱點在 MafG 連成 69&ndash;107、NRF2 連成 514&ndash;553，給出具體的目標表位。25 個熱點裡有 6 個埋藏面積為零，這 6 個才值得花 Rosetta 的 CPU 小時。</p>
+  <details><summary>Show the numbers</summary><div id="t20"></div></details></div>
 </div>
 
 <h2>6. The drug design<span class="zh">藥物設計</span></h2>
@@ -496,7 +558,11 @@ const REJ=[
 ["An average over a 501 bp window is a valid methylation readout","calibration anchors","<b>Our own readout error.</b> The output carries one value per base, and only CpG positions hold it. A window average dilutes it by the non-CpG bases: the genome background read 0.007 instead of 0.90, which inverts the answer"],
 ["The elements are held shut by methylation, so a demethylating drug would open them","CpG positions only, two assays, two cell types","<b>Rejected.</b> The elements read 0.21 against 0.67 for their neighbours and 0.90 for background. They are open-ready and still shut. The clinical concern is removed"],
 ["The gained coupling at MAFG has a counterpart in chromatin","tumour cells against 790 non-tumour B cells from the same sample","<b>Rejected.</b> Co-openness with the promoter does not rise (p = 0.58), and element detection moves 0.076 to 0.069. Coupling at MAFG has RNA evidence only"],
-["Rank residuals give a valid partial correlation for a binary track","the control peaks, scored the same way","<b>Our own statistical error.</b> After a rank transform a binary track holds two values, so the residual keeps the covariate's own shape. Both variables share it, which forced the correlation to +0.71 and above. The controls scoring just as high, at p = 0 exactly, exposed it. Logistic regression replaces it, and the effect is gone (p = 0.40)"]];
+["Rank residuals give a valid partial correlation for a binary track","the control peaks, scored the same way","<b>Our own statistical error.</b> After a rank transform a binary track holds two values, so the residual keeps the covariate's own shape. Both variables share it, which forced the correlation to +0.71 and above. The controls scoring just as high, at p = 0 exactly, exposed it. Logistic regression replaces it, and the effect is gone (p = 0.40)"],
+["A co-folding confidence score can rank how bad each mutation is","the same 13 interface mutations, re-scored with a binding-energy model calibrated on measured energies","<b>Rejected.</b> The two rankings do not correlate: Spearman +0.17 (p = 0.58) against the distance error and &minus;0.09 (p = 0.78) against the confidence score. K83A moves from 2nd to 12th of 13. The confidence score misses three zipper residues and reports two of them as improved. The position-level result survives, at p = 3.8&times;10<sup>-6</sup>"],
+["The Q82 conflict means the language model is not sensitive enough","a third method, which computes binding energy","<b>Decided for the language model.</b> Q82A costs 0.35 kcal/mol, the level of an unrelated-surface control. The co-folding readout was the outlier"],
+["The new binding energies are only interface burial in disguise","buried surface area and side-chain volume as covariates","<b>True across the protein, false inside the interface.</b> Across all 36 mutations the correlation with buried area is +0.78 (p = 2.2&times;10<sup>-8</sup>), which is simply whether the residue sits in the interface. Inside the interface it is +0.27 (p = 0.37), and side-chain volume gives 0.00. N97 and M100 bury 84 and 78 &angst;&sup2; yet cost 1.16 and 0.31; E80 and E89 bury almost nothing yet cost 1.29 and 1.49"],
+["Installing the binding-energy model needs a pinned CUDA build of PyTorch","the alternative path in the project README, with the environment we already had","<b>Not needed.</b> It runs unchanged on our existing environment, with nothing installed, and reproduces the author's own reference output to five decimal places. The version trap exists only for people who build the supplied environment file"]];
 
 const tt=document.getElementById('tt');
 const esc=s=>String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
@@ -717,6 +783,47 @@ hbar('f17',D.methyl.map(d=>({k:d.k,v:d.v,color:d.anchor?'var(--neutral)':'var(--
 table('t17',[{t:'Category',k:'k'},{t:'Methylation (0 to 1)',k:'v',n:1},{t:'Regions',k:'n',n:1},
  {t:'CpG positions per region',k:'c',n:1},{t:'Role',k:'r'}],
  D.methyl.map(d=>({k:d.k,v:d.v.toFixed(3),n:d.n,c:d.cpg,r:d.anchor?'calibration anchor':'measured'})));
+
+Object.assign(D, {"ddg": [{"k": "L79A", "role": "zipper core", "v": 2.87, "sd": 0.092, "ef": 3.128, "ipde": 2.54, "iptm": -0.072, "rs": 1, "ri": 1, "dsasa": 83.6, "dist": 3.61, "ctrl": false}, {"k": "L93A", "role": "zipper core", "v": 1.559, "sd": 0.069, "ef": 1.509, "ipde": 1.34, "iptm": -0.018, "rs": 2, "ri": 4, "dsasa": 71.3, "dist": 3.63, "ctrl": false}, {"k": "E89A", "role": "", "v": 1.492, "sd": 0.062, "ef": 2.006, "ipde": 0.459, "iptm": -0.007, "rs": 3, "ri": 8, "dsasa": 31.5, "dist": 2.7, "ctrl": false}, {"k": "L86A", "role": "zipper core", "v": 1.455, "sd": 0.092, "ef": 2.347, "ipde": 0.468, "iptm": 0.027, "rs": 4, "ri": 7, "dsasa": 79.7, "dist": 3.76, "ctrl": false}, {"k": "E80A", "role": "", "v": 1.285, "sd": 0.063, "ef": 2.249, "ipde": -0.134, "iptm": 0.036, "rs": 5, "ri": 12, "dsasa": 17.8, "dist": 3.93, "ctrl": false}, {"k": "N97A", "role": "", "v": 1.162, "sd": 0.005, "ef": 1.317, "ipde": 1.63, "iptm": -0.045, "rs": 6, "ri": 3, "dsasa": 84.2, "dist": 2.98, "ctrl": false}, {"k": "Y111D", "role": "phospho-mimic", "v": 0.985, "sd": 0.059, "ef": 0.796, "ipde": 0.095, "iptm": -0.027, "rs": 7, "ri": 10, "dsasa": 79.8, "dist": 3.36, "ctrl": false}, {"k": "Y111E", "role": "phospho-mimic", "v": 0.973, "sd": 0.039, "ef": 0.709, "ipde": -0.334, "iptm": 0.029, "rs": 8, "ri": 13, "dsasa": 79.8, "dist": 3.36, "ctrl": false}, {"k": "Q87A", "role": "", "v": 0.553, "sd": 0.044, "ef": 0.388, "ipde": -0.066, "iptm": 0.031, "rs": 9, "ri": 11, "dsasa": 16.7, "dist": 4.16, "ctrl": false}, {"k": "Q75A", "role": "", "v": 0.409, "sd": 0.058, "ef": 0.277, "ipde": 0.655, "iptm": -0.008, "rs": 10, "ri": 6, "dsasa": 32.5, "dist": 3.73, "ctrl": false}, {"k": "Q82A", "role": "", "v": 0.354, "sd": 0.092, "ef": 0.332, "ipde": 0.727, "iptm": -0.051, "rs": 11, "ri": 5, "dsasa": 21.3, "dist": 3.74, "ctrl": false}, {"k": "K83A", "role": "", "v": 0.338, "sd": 0.032, "ef": 0.364, "ipde": 1.77, "iptm": -0.025, "rs": 12, "ri": 2, "dsasa": 66.2, "dist": 3.08, "ctrl": false}, {"k": "M100A", "role": "", "v": 0.307, "sd": 0.066, "ef": 0.429, "ipde": 0.347, "iptm": -0.002, "rs": 13, "ri": 9, "dsasa": 78.1, "dist": 3.07, "ctrl": false}, {"k": "Q115A", "role": "unrelated surface", "v": 0.244, "sd": 0.011, "ef": 0.178, "ipde": 0.104, "iptm": 0.012, "rs": null, "ri": null, "dsasa": 0.0, "dist": 7.33, "ctrl": true}], "hot": [{"chain": "MafG", "res": "L79", "v": 3.028, "sd": 0.029, "dist": 3.61, "dsasa": 83.6}, {"chain": "NRF2", "res": "L525", "v": 2.279, "sd": 0.061, "dist": 3.72, "dsasa": 86.5}, {"chain": "MafG", "res": "E78", "v": 2.249, "sd": 0.085, "dist": 5.83, "dsasa": 0.0}, {"chain": "NRF2", "res": "K538", "v": 2.058, "sd": 0.081, "dist": 5.7, "dsasa": 0.0}, {"chain": "MafG", "res": "K92", "v": 1.852, "sd": 0.074, "dist": 6.57, "dsasa": 0.0}, {"chain": "NRF2", "res": "E524", "v": 1.841, "sd": 0.195, "dist": 6.04, "dsasa": 0.0}, {"chain": "NRF2", "res": "E526", "v": 1.758, "sd": 0.109, "dist": 3.69, "dsasa": 22.8}, {"chain": "MafG", "res": "L93", "v": 1.547, "sd": 0.039, "dist": 3.63, "dsasa": 71.3}, {"chain": "NRF2", "res": "L532", "v": 1.523, "sd": 0.063, "dist": 3.63, "dsasa": 94.7}, {"chain": "MafG", "res": "E89", "v": 1.491, "sd": 0.09, "dist": 2.7, "dsasa": 31.5}, {"chain": "MafG", "res": "L86", "v": 1.386, "sd": 0.068, "dist": 3.76, "dsasa": 79.7}, {"chain": "MafG", "res": "L104", "v": 1.329, "sd": 0.034, "dist": 3.76, "dsasa": 74.8}, {"chain": "MafG", "res": "E80", "v": 1.329, "sd": 0.182, "dist": 3.93, "dsasa": 17.8}, {"chain": "MafG", "res": "R69", "v": 1.279, "sd": 0.045, "dist": 6.95, "dsasa": 0.0}, {"chain": "NRF2", "res": "L553", "v": 1.219, "sd": 0.027, "dist": 3.57, "dsasa": 102.4}, {"chain": "NRF2", "res": "R515", "v": 1.215, "sd": 0.031, "dist": 5.4, "dsasa": 7.2}, {"chain": "MafG", "res": "E96", "v": 1.192, "sd": 0.076, "dist": 5.48, "dsasa": 4.3}, {"chain": "NRF2", "res": "L539", "v": 1.177, "sd": 0.023, "dist": 2.98, "dsasa": 76.6}, {"chain": "NRF2", "res": "L529", "v": 1.173, "sd": 0.05, "dist": 3.61, "dsasa": 89.4}, {"chain": "MafG", "res": "K101", "v": 1.172, "sd": 0.015, "dist": 4.15, "dsasa": 9.7}, {"chain": "MafG", "res": "V90", "v": 1.157, "sd": 0.045, "dist": 3.52, "dsasa": 68.7}, {"chain": "NRF2", "res": "L550", "v": 1.14, "sd": 0.036, "dist": 3.76, "dsasa": 59.2}, {"chain": "MafG", "res": "L107", "v": 1.121, "sd": 0.01, "dist": 4.11, "dsasa": 59.2}, {"chain": "MafG", "res": "N97", "v": 1.109, "sd": 0.026, "dist": 2.98, "dsasa": 84.2}, {"chain": "NRF2", "res": "C514", "v": 1.084, "sd": 0.24, "dist": 8.28, "dsasa": 0.0}]});
+
+/* ---- Orthogonal binding energy (StaB-ddG) ---- */
+const ddgTip=d=>`<b>${esc(d.k)}</b>${d.role?' &middot; '+esc(d.role):''}`
+ +`<br>Binding energy cost: ${d.v} kcal/mol (SD of 3 runs ${d.sd})`
+ +`<br>Second copy in the same crystal: ${d.ef}`
+ +`<br>Distance to the partner chain: ${d.dist} &angst;`
+ +`<br>Surface buried on binding: ${d.dsasa} &angst;&sup2;`
+ +(d.rs?`<br>Rank by energy: ${d.rs} of 13<br>Rank by co-folding distance error: ${d.ri} of 13`
+       :`<br><span style="opacity:.75">Unrelated-surface control</span>`);
+hbar('f18',D.ddg.map(d=>({k:d.k+(d.role?' · '+d.role:''),v:d.v,sd:d.sd,bold:!d.ctrl&&d.v>=1,
+ color:d.ctrl?'var(--neutral)':'var(--series-1)',tip:ddgTip(d)})),
+ {fmt:v=>v.toFixed(2),err:true,labelW:170,rowH:27,padT:20,padR:92,thr:1,thrLabel:'hotspot 1.0'});
+table('t18',[{t:'Mutation',k:'k'},{t:'Binding energy (kcal/mol)',k:'v',n:1},{t:'SD of 3 runs',k:'s',n:1},
+ {t:'Second crystal copy',k:'e',n:1},{t:'Distance to partner (Å)',k:'d',n:1},
+ {t:'Surface buried (Å²)',k:'b',n:1},{t:'Rank: energy / distance error',k:'r'}],
+ D.ddg.map(d=>({k:d.k+(d.role?' · '+d.role:''),v:d.v.toFixed(3),s:d.sd.toFixed(3),e:d.ef.toFixed(3),
+  d:d.dist.toFixed(2),b:d.dsasa.toFixed(1),r:d.rs?`${d.rs} / ${d.ri}`:'control'})));
+
+gbar('f19',D.ddg.filter(d=>d.rs).map(d=>({k:d.k,a:d.ri,b:d.rs,
+ tip:`<b>${esc(d.k)}</b><br>Rank by co-folding distance error: ${d.ri} of 13 (&Delta; = ${d.ipde} &angst;)`
+     +`<br>Rank by binding energy: ${d.rs} of 13 (${d.v} kcal/mol)`
+     +`<br><span style="opacity:.75">Rank 1 is the most damaging.</span>`})),
+ [{key:'a',color:'var(--neutral)'},{key:'b',color:'var(--series-1)'}],
+ {fmt:v=>v.toFixed(0),labelW:62,rowH:32,padR:56});
+table('t19',[{t:'Mutation',k:'k'},{t:'Rank by binding energy',k:'a',n:1},{t:'Rank by distance error',k:'b',n:1},
+ {t:'Binding energy (kcal/mol)',k:'v',n:1},{t:'Distance error (Å)',k:'i',n:1},{t:'Rank change',k:'c'}],
+ D.ddg.filter(d=>d.rs).map(d=>({k:d.k,a:d.rs,b:d.ri,v:d.v.toFixed(3),i:d.ipde.toFixed(3),
+  c:d.ri===d.rs?'none':(d.ri>d.rs?`up ${d.ri-d.rs}`:`down ${d.rs-d.ri}`)})));
+
+hbar('f20',D.hot.map(d=>({k:`${d.chain} ${d.res}`+(d.dsasa===0?' †':''),v:d.v,sd:d.sd,
+ bold:d.dsasa===0,color:d.chain==='MafG'?'var(--series-1)':'var(--series-2)',
+ tip:`<b>${esc(d.chain)} ${esc(d.res)} to alanine</b><br>Binding energy cost: ${d.v} kcal/mol (SD ${d.sd})`
+     +`<br>Distance to the partner chain: ${d.dist} &angst;<br>Surface buried on binding: ${d.dsasa} &angst;&sup2;`
+     +(d.dsasa===0?'<br><span style="opacity:.75">&dagger; buries no surface &mdash; needs a physics check</span>':'')})),
+ {fmt:v=>v.toFixed(2),err:true,labelW:112,rowH:24,padT:20,padR:92,thr:1,thrLabel:'hotspot 1.0'});
+table('t20',[{t:'Chain',k:'c'},{t:'Position',k:'p'},{t:'Binding energy (kcal/mol)',k:'v',n:1},
+ {t:'SD of 3 runs',k:'s',n:1},{t:'Distance to partner (Å)',k:'d',n:1},{t:'Surface buried (Å²)',k:'b',n:1}],
+ D.hot.map(d=>({c:d.chain,p:d.res,v:d.v.toFixed(3),s:d.sd.toFixed(3),d:d.dist.toFixed(2),
+  b:d.dsasa.toFixed(1)})));
 
 /* ---- Rejected hypotheses table ---- */
 table('trej',[{t:'#',k:'i',n:1},{t:'Hypothesis or trap',k:'h'},{t:'How we tested it',k:'t'},{t:'Outcome',k:'o'}],
