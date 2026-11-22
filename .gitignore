@@ -29,6 +29,11 @@ results/**/
 *.fasta
 *.pml
 
+# 展示頁的圖（向量檔與一個動畫，體積小）/ Figures for the showcase page
+!results/figs/
+!results/figs/*.svg
+!results/figs/*.gif
+
 # --- 個體層級資料：不得散布 / Individual-level data: not redistributable ---
 # 每顆細胞的表格（含細胞條碼與捐贈者編號）
 results/14_*

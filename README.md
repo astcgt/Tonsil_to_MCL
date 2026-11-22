@@ -12,6 +12,18 @@
   <a href="#ethics--data-use--倫理與資料使用">⚖️ <b>Ethics / 倫理</b></a>
 </p>
 
+<p align="center">
+  <img src="results/figs/mafg_rotation.gif" width="240"
+       alt="One turn of the MafG dimer on its DNA site. The orange partner is NRF2 from crystal structure 7X5E; the green one is the designed 90-residue binder, superposed on the same MafG chain.">
+</p>
+<p align="center"><sub>
+The target, turning. MafG (blue) on its DNA site (grey, the TGACTCA core in green), first with its
+natural partner NRF2 from crystal structure 7X5E (orange), then with our designed 90-residue binder
+(green), superposed on the same MafG chain.<br>
+標的的樣子：MafG（藍）坐在 DNA 位點上（灰，TGACTCA 核心為綠），先是晶體結構裡的天然夥伴
+NRF2（橘），再換成我們設計的 90 胺基酸結合劑（綠）。
+</sub></p>
+
 ---
 
 <a name="english"></a>
@@ -284,10 +296,12 @@ If this work is useful, please cite the primary data sources above — above all
 ## Repository layout / 倉庫結構
 
 ```
-scripts/     74 analysis scripts, numbered in execution order
-             74 個分析腳本，依執行順序編號
+scripts/     78 analysis scripts, numbered in execution order
+             78 個分析腳本，依執行順序編號
 results/     Aggregate results: CSV and JSON (59 MB)
              彙總結果：CSV 與 JSON
+results/figs/ Figures for the showcase page: structures, locus and motifs (SVG, GIF)
+             展示頁的圖：結構、基因座、motif
 docs/        Tool status notes, API application steps
              工具現況備忘、API 申請步驟
 licenses/    Licenses of third-party files redistributed here
