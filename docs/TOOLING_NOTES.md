@@ -86,6 +86,24 @@
 - **HERMES**（同類的第二意見）有個致命陷阱：`_bi` 是結合、`_st` 是摺疊穩定性，
   而 repo 內附的 `trained_models/` **只有 `_st`**。結合用的權重在 5.1 GB 的 Zenodo 壓縮檔裡。
 
+## 這台機器沒有瀏覽器 —— 圖表怎麼「真的看過」（2026-11-22）
+
+`results/showcase.html` 的圖是執行期由頁面自己的 JS 畫出來的 SVG，機器上沒有
+chromium／firefox／playwright，所以無法開頁面檢查版面。可行的替代路徑（已實際用過）：
+
+1. **用 stub DOM 把圖產生出來**：node 只需要 `document.getElementById` 回傳
+   `{clientWidth, set outerHTML}`，以及 `querySelectorAll` 回傳 `[]`，就能跑完整段 `<script>`
+   並收走每張圖的 SVG 字串。寬度要照實際版面給（寬卡 1100、半寬卡 522）。
+2. **光柵化**：`python3 -m venv --system-site-packages` 後 `pip install cairosvg`（本機
+   `find_library('cairo')` 有東西，純 pip 就裝得起來，不必動 conda）。cairosvg **不套用 CSS class**，
+   所以要先把 `class="lbl"` 之類換成 presentation attribute，並把 `var(--x)` 換成實際色碼。
+3. **量測取代目測**：用 matplotlib 的 `TextPath` 量每個 `<text>` 的實際寬度，檢查
+   (a) 有沒有超出畫布、(b) 任兩段文字有沒有重疊。DejaVu 比 Helvetica 寬約 5%，所以這個檢查偏保守。
+
+本次就是靠這條路抓到三個真的錯：數值標籤壓在誤差棒帽子上、f13 最長的列標籤被切掉、
+以及 `esc()` 沒有轉義雙引號 —— tooltip 裡的 `<span style="opacity:.75">` 會把 `data-tip="…"` 屬性提早關掉。
+**注意：這條路只驗 SVG，不驗 HTML/CSS 版面**（grid、字體、卡片間距仍然沒有工具可看）。
+
 ## 第三方資料的授權狀態（決定能不能轉載）
 
 | 來源 | 授權 | 我們怎麼處理 |
