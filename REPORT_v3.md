@@ -29,6 +29,14 @@ Bonferroni p ≈ 1–3×10⁻⁴，含有效的陽性對照）——
 Boltz-2 共摺疊（每個複合體五次 diffusion 取樣）的 ipTM 達到 **0.790 ± 0.015**，
 **超過天然 MafG–NRF2 複合體的 0.713 ± 0.010**，對亂序陰性對照 p = 3.5×10⁻⁴。
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/overview.dark.svg">
+    <img src="results/figs/overview.light.svg" width="880" alt="四格研究設計圖：a 同一顆細胞核的 RNA 與開放染色質；b 腫瘤細胞對位到同分化程度的正常狀態；c 剩下的訊號指向 TGACTCA 與 SLC7A11 的五個新生元件；d 讀取該位點的蛋白質與設計的結合劑。">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 1 ｜ 這份報告量什麼、做出什麼。</b><b>a</b> 同一顆細胞核同時給 RNA 與開放染色質（multiome）；<b>b</b> 每顆腫瘤細胞先對位到分化程度相同的正常狀態，再把實測減掉推算；<b>c</b> 殘餘訊號指向七個字母的位點與 <code>SLC7A11</code> 的五個新生元件；<b>d</b> 讀取該位點的蛋白質 MafG，左為共結晶 7X5E、右為設計的 90 胺基酸結合劑。d 由真實座標繪製，a–c 為示意。全部由 <code>scripts/103_figures.py</code> 產生。</sub></p>
+
 ---
 
 ## 一、你的框架 × 執行狀態
@@ -73,6 +81,14 @@ Boltz-2 共摺疊（每個複合體五次 diffusion 取樣）的 ipTM 達到 **0
 
 五個元件**同時**從「關著」變「打開」、從「與基因無關」變「顯著相關」。
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/locus_slc7a11.dark.svg">
+    <img src="results/figs/locus_slc7a11.light.svg" width="740" alt="SLC7A11 基因座 270 kb 視窗：基因模型、正常與腫瘤兩軌的所有 peak，以及每個新生元件連到啟動子的弧線。">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 2 ｜ <code>SLC7A11</code> 基因座的全貌。</b>基因由啟動子往左轉錄（箭頭，GENCODE v44）。流程在這個 270 kb 視窗裡叫出來的 peak 全部畫出：五個新生元件標藍，其餘標灰；兩軌分別是正常 B 細胞與 MCL 的 pseudobulk log₂ CPM。上方弧線是 2.7 節的接觸排名 —— 每個元件對啟動子的接觸，在「同距離的所有位置配對」中排第幾（6 條 B 淋巴母細胞株的中位數，1.00 代表同距離中最強）。一張圖同時看到：序列上最遠 164 kb、空間上排在最前面、而且只有腫瘤打開它們。</sub></p>
+
 **(b) 上游 MAF/BACH 家族：只有新生、沒有斷裂**
 
 | TF | 新生連結 | 斷裂連結 |
@@ -107,6 +123,14 @@ MARE（Maf 識別元件）的核心序列就是 TRE —— **TGACTCA**，也正�
 共結晶 7X5E 中 NRF2–MafG 實際結合的 DNA 是 `TTGCTGACTCATCAT`，
 中間清楚可見 `TGACTCA`。所以「AP-1 富集」與「BACH1/MAF 富集」是同一件事：
 **MCL 新打開的染質富含 TRE/MARE 元件**。
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/motif.dark.svg">
+    <img src="results/figs/motif.light.svg" width="720" alt="AP-1 與 small Maf 的 JASPAR 資訊量 logo，以及晶體結構 7X5E 裡帶有 TGACTCA 核心的 DNA 雙股。">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 3 ｜ 兩個家族讀的是同一段核心。</b><b>a</b>、<b>b</b> JASPAR 2024 的資訊量 logo（字母高度＝該位置被要求的程度）；<b>c</b> 共結晶 7X5E 裡的 DNA 雙股，<code>TGACTCA</code> 核心標綠，鹼基配對是用「讓兩股互補的位移量」決定，C1′–C1′ 距離落在 10.1–11.0 Å。</sub></p>
 
 ### 2.3 下游：連續五個成員都是 MCL 選擇性依賴
 
@@ -360,6 +384,14 @@ MAFG 的元件更徹底：甲基化 0.032 vs 對照 0.743，等於 CpG 島性質
 ---
 
 ## 三、蛋白質層：擾動實驗
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/structures.dark.svg">
+    <img src="results/figs/structures.light.svg" width="800" alt="MafG 介面的三種看法：晶體結構、每個位置的結合能成本、設計的結合劑落在同一面。">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 4 ｜ 同一個介面的三種看法。</b><b>a</b> 共結晶 7X5E：MafG（藍）與 NRF2（橘）以白胺酸拉鍊互握，下方夾住 DNA（灰，<code>TGACTCA</code> 核心綠）；<b>b</b> 3.5 節 191 個位置的丙胺酸掃描，每個位置拿掉側鏈要付的結合能 —— 灰＝幾乎不要錢，深藍＞2 kcal mol⁻¹，成本集中在拉鍊上，那就是結合劑必須蓋住的表位；<b>c</b> 設計的 90 胺基酸結合劑（綠）落在同一面。a、b 是晶體座標；c 的結合劑是 Boltz-2 預測，以 MafG 疊合（99 殘基，RMSD 0.98 Å）。</sub></p>
 
 ### 3.1 ESM-2 全飽和突變掃描
 
@@ -724,6 +756,11 @@ R69A 還有一個獨立的警訊：兩份拷貝給 1.19 與 2.16，是全表最�
 ---
 
 ## 四、藥物設計與評估
+
+<p align="center">
+  <img src="results/figs/mafg_rotation.gif" width="260" alt="MafG 在 DNA 位點上旋轉一圈，前半圈的夥伴是晶體裡的 NRF2，後半圈換成設計的結合劑。">
+</p>
+<p align="center"><sub><b>圖 5 ｜ 標的轉一圈。</b>MafG（藍）坐在它的 DNA 位點上（灰，<code>TGACTCA</code> 核心綠）。前半圈的夥伴是共結晶 7X5E 裡的天然 NRF2（橘），後半圈換成我們設計的 90 胺基酸結合劑（綠），以同一條 MafG 疊合。DNA 在兩半圈都留著，所以看得見結合劑和它重疊 —— 預測的複合體裡其實沒有 DNA，最近距離 2.2 Å，而「把 DNA 擠掉」正是這一族設計的機制。</sub></p>
 
 ### 4.1 蛋白質結合劑：完整流程與多次取樣校準
 
@@ -1224,6 +1261,8 @@ MafG 69–107（14 個熱點）、NRF2 514–553（11 個熱點）。
 | **MafG 協同性的染色質檢定（陰性）** | `results/101_coaccess.csv`、`101_expr_strat.csv` |
 | **正交結合 ΔΔG（StaB-ddG）** | `results/102_stabddg.csv`、`102_summary.json`、`102_resmap.csv` |
 | **MafG–NRF2 界面丙胺酸掃描（191 位）** | `results/102_alascan.csv`、`102_alascan_summary.json` |
-| **互動式圖表（本報告配圖）** | `results/figures_v3.html` |
-| 圖表原始數值 | `results/figure_data_v3.json` |
+| **互動式展示頁（25 張圖，含結構與動畫）** | `results/showcase.html` |
+| **本報告與 README 的配圖（向量檔與動畫）** | `results/figs/*.svg`、`results/figs/mafg_rotation.gif` |
+| **配圖產生腳本（由座標與表格直接繪製）** | `scripts/103_figures.py` |
+| 早期的互動式圖表 | `results/figures_v3.html`、`results/figure_data_v3.json` |
 | 工具狀態與 API 申請步驟 | `docs/TOOLING_NOTES.md` |
