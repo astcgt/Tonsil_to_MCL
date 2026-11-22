@@ -54,9 +54,25 @@ This project asks a different question: **how does an MCL cell differ from the n
 5. Test with external models, then design a drug
 ```
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/overview.dark.svg">
+    <img src="results/figs/overview.light.svg" width="880" alt="Four-panel study design. a, one nucleus gives both RNA and open chromatin. b, each tumour cell is matched to a normal state at the same stage of development. c, what remains points at TGACTCA and five new elements at SLC7A11. d, the protein that reads the site, with its natural partner and with a designed binder.">
+  </picture>
+</p>
+<p align="center"><sub><b>Fig. 1 — What the study measures and what it builds.</b> <b>a</b>, Both readouts come from the same nucleus. <b>b</b>, Each tumour cell is compared with the normal state at its own stage of development. <b>c</b>, What remains is a seven-letter site and five new elements at <code>SLC7A11</code>. <b>d</b>, The protein that reads the site, drawn from real coordinates.<br><b>圖 1 — 這項研究量什麼、做出什麼。</b>a 同一顆細胞核同時給 RNA 與開放染色質；b 每顆腫瘤細胞和分化程度相同的正常細胞比；c 剩下的訊號指向 TGACTCA 與 <code>SLC7A11</code> 的五個新生元件；d 讀取那個位點的蛋白質，由真實座標繪製。</sub></p>
+
 ### What we found
 
 The strongest remaining signal is not a known cancer gene. It is a seven-letter piece of DNA: **TGACTCA** — the landing site for the AP-1 and small Maf protein families.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/motif.dark.svg">
+    <img src="results/figs/motif.light.svg" width="720" alt="Sequence logos for AP-1 and small Maf from JASPAR 2024, and the same TGACTCA core in the DNA of crystal structure 7X5E.">
+  </picture>
+</p>
+<p align="center"><sub><b>Fig. 2 — The seven-letter site.</b> Information-content logos for the two families (JASPAR 2024), and the same core in the DNA of crystal structure 7X5E.</sub></p>
 
 | Finding | Evidence |
 |---|---|
@@ -69,6 +85,14 @@ The strongest remaining signal is not a known cancer gene. It is a seven-letter 
 
 The pathway runs in one line: cystine enters the cell → the cell builds glutathione → glutathione plus FSP1 blocks ferroptosis.
 **The tumour does not keep this pathway by accident. It lives on it.**
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/locus_slc7a11.dark.svg">
+    <img src="results/figs/locus_slc7a11.light.svg" width="740" alt="The SLC7A11 locus over 270 kb: the gene model, every chromatin peak in normal and in tumour cells, and an arc per new element carrying its distance-matched contact rank.">
+  </picture>
+</p>
+<p align="center"><sub><b>Fig. 3 — The <code>SLC7A11</code> locus.</b> Every peak the pipeline calls in a 270 kb window, in normal and in tumour cells. The five new elements are blue. Each arc carries that element's contact rank against all position pairs at the same distance, as the median of six B-cell lines.</sub></p>
 
 ### External validation
 
@@ -85,6 +109,14 @@ All of the above comes from the same two patients, which is a weakness. We ran t
 The AP-1 and BACH1 families are redundant, but they all need the same partner at the site: **MafG**.
 
 Evolutionary constraint (a protein language model) and the crystal interface converge on the same residues — two completely different kinds of evidence (`MAFG` p = 8.3×10⁻¹¹). Those positions also leave little room to escape: the interface accepts 10.5% of substitutions against 42.4% for the whole protein.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/structures.dark.svg">
+    <img src="results/figs/structures.light.svg" width="800" alt="Three views of the MafG interface: the crystal structure with NRF2 and DNA, the binding energy cost per position, and the designed binder on the same face.">
+  </picture>
+</p>
+<p align="center"><sub><b>Fig. 4 — The same interface, three ways.</b> <b>a</b>, Crystal structure 7X5E: MafG (blue) and NRF2 (orange) on the DNA. <b>b</b>, The cost of removing each side chain, from the 191-position alanine scan. <b>c</b>, The designed 90-residue binder (green) on the same face. Panels a and b are crystal coordinates; the binder is a prediction, superposed on the crystal MafG.</sub></p>
 
 The best design is a **90-residue mini-protein** that passes **all four wet-lab-calibrated filters**, thresholds derived from 3,766 binders tested in the laboratory:
 
@@ -141,9 +173,25 @@ Three separate artefacts came from the same cause: a foreground group and a back
 5. 用外部模型驗證，然後設計藥物
 ```
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/overview.dark.svg">
+    <img src="results/figs/overview.light.svg" width="880" alt="Four-panel study design. a, one nucleus gives both RNA and open chromatin. b, each tumour cell is matched to a normal state at the same stage of development. c, what remains points at TGACTCA and five new elements at SLC7A11. d, the protein that reads the site, with its natural partner and with a designed binder.">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 1 — 這項研究量什麼、做出什麼。</b>a 同一顆細胞核同時給 RNA 與開放染色質；b 每顆腫瘤細胞和分化程度相同的正常細胞比；c 剩下的訊號指向 TGACTCA 與 <code>SLC7A11</code> 的五個新生元件；d 讀取那個位點的蛋白質，由真實座標繪製。</sub></p>
+
 ### 發現
 
 最強的殘餘訊號不是任何已知癌症基因，而是一段 7 個字母的 DNA：**TGACTCA** —— AP-1 與 small Maf 家族的落腳點。
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/motif.dark.svg">
+    <img src="results/figs/motif.light.svg" width="720" alt="Sequence logos for AP-1 and small Maf from JASPAR 2024, and the same TGACTCA core in the DNA of crystal structure 7X5E.">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 2 — 七個字母的位點。</b>兩個家族的資訊量 logo（JASPAR 2024），以及晶體結構 7X5E 裡帶著同一段核心的 DNA。</sub></p>
 
 | 發現 | 證據 |
 |---|---|
@@ -156,6 +204,14 @@ Three separate artefacts came from the same cause: a foreground group and a back
 
 路徑是一條線：胱胺酸進入細胞 → 細胞合成穀胱甘肽 → 穀胱甘肽加上 FSP1 阻擋鐵死亡。
 **腫瘤不是順便開著這條路，它靠這條路活著。**
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/locus_slc7a11.dark.svg">
+    <img src="results/figs/locus_slc7a11.light.svg" width="740" alt="The SLC7A11 locus over 270 kb: the gene model, every chromatin peak in normal and in tumour cells, and an arc per new element carrying its distance-matched contact rank.">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 3 — <code>SLC7A11</code> 基因座。</b>270 kb 視窗裡所有 peak，正常與腫瘤各一軌；五個新生元件標藍。弧線高度是該元件在「同距離所有配對」中的接觸排名（6 條 B 細胞株中位數）。</sub></p>
 
 ### 外部驗證
 
@@ -172,6 +228,14 @@ Three separate artefacts came from the same cause: a foreground group and a back
 AP-1 與 BACH1 家族成員彼此冗餘，但都需要同一個夥伴：**MafG**。
 
 演化約束（蛋白質語言模型）與晶體介面收斂到同一組殘基 —— 兩種完全不同的證據（`MAFG` p = 8.3×10⁻¹¹）。這些位置也幾乎沒有逃逸空間：介面只接受 10.5% 的取代，全蛋白質平均是 42.4%。
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="results/figs/structures.dark.svg">
+    <img src="results/figs/structures.light.svg" width="800" alt="Three views of the MafG interface: the crystal structure with NRF2 and DNA, the binding energy cost per position, and the designed binder on the same face.">
+  </picture>
+</p>
+<p align="center"><sub><b>圖 4 — 同一個介面的三種看法。</b>a 晶體結構 7X5E：MafG（藍）與 NRF2（橘）坐在 DNA 上；b 每個位置拿掉側鏈要付的結合能（191 位丙胺酸掃描）；c 設計的 90 胺基酸結合劑（綠）落在同一面。a、b 是晶體座標，c 的結合劑是預測後疊合上去的。</sub></p>
 
 最佳設計是一個 **90 殘基的迷你蛋白質**，通過**全部四個濕實驗校準門檻**（門檻取自 3,766 個實驗測試過的結合劑）：
 

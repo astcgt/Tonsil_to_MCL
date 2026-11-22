@@ -936,6 +936,14 @@ def main():
         with open(os.path.join(FIGS, name), "w") as fh:
             fh.write(svg)
         print("%-22s %6.1f kB" % (name, len(svg) / 1024))
+        # Markdown cannot resolve the page's colour variables, so write one
+        # file per mode for README.md and the report to point at.
+        for mode in ("light", "dark"):
+            flat = resolve(svg, mode)
+            flat = flat.replace("<svg ", '<svg style="background:%s" '
+                                % THEME[mode]["--surface-2"], 1)
+            with open(os.path.join(FIGS, name.replace(".svg", ".%s.svg" % mode)), "w") as fh:
+                fh.write(flat)
     print("MafG superposition: %d residues, RMSD %.2f A" % (cx.n_match, cx.fit_rmsd))
     try:
         import cairosvg  # noqa: F401
