@@ -96,7 +96,7 @@ The pathway runs in one line: cystine enters the cell → the cell builds glutat
 
 ### External validation
 
-All of the above comes from the same two patients, which is a weakness. We ran three tests with AlphaGenome 2 (trained on normal tissue only). Two failed and one succeeded; all three are reported.
+All of the above comes from the same two patients, which is a weakness. We ran three tests with AlphaGenome 2 (trained on normal tissue only). One failed and two succeeded; all three are reported.
 
 | Test | Result |
 |---|---|
@@ -230,7 +230,7 @@ fits on five A4 pages.
 
 ### 外部驗證
 
-以上全部來自同樣兩位病人，這是弱點。我們用 AlphaGenome 2（只學過正常組織）做了三個測試，兩個失敗、一個成功，三個都報告。
+以上全部來自同樣兩位病人，這是弱點。我們用 AlphaGenome 2（只學過正常組織）做了三個測試，一個失敗、兩個成功，三個都報告。
 
 | 測試 | 結果 |
 |---|---|
