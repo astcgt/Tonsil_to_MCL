@@ -23,13 +23,15 @@
 results/95_pioneer2_axis.tsv.gz  只含我們 35 個蛋白質參與的交互作用
 results/95_pioneer2_stats.csv    逐段統計（可核對覆蓋率）
 """
-import os, sys, gzip, io, json, subprocess, time
+import os, sys, gzip, io, json, subprocess, tempfile, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import pandas as pd
 
 BASE = "/raid/jupyter-alz.ee09/Tonsil_to_MCL"
 RES = f"{BASE}/results"
-TMP = "/tmp/claude-1024/-raid-jupyter-alz-ee09-Tonsil-MCL-diff/68eb5611-a288-4796-b5bb-04ec412611a0/scratchpad/p2chunks"
+# 分段下載的暫存目錄。這些分段加起來約 9.3 GB，所以放在暫存區而非倉庫裡；
+# 要指到別的磁碟時用環境變數 P2_CHUNK_DIR 覆寫。
+TMP = os.environ.get("P2_CHUNK_DIR") or os.path.join(tempfile.gettempdir(), "p2chunks")
 URL = "https://pioneer2.yulab.org/static/PIONEER2_interactome_wide_interfaces.txt"
 TOTAL = 9991839205
 NCHUNK = 160

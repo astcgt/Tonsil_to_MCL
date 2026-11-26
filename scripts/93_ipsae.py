@@ -226,7 +226,7 @@ df["kind"] = df.design.map(lambda s: KIND.get(s, "設計"))
 # benchmark 做法：每個設計取多 seed 的 ipSAE_min 最大值
 g = df.groupby(["design", "kind"]).agg(
     n=("ipsae_min", "size"),
-    ipsae_min_max=("ipsae_min", "max"),       # Anthropic 報告的做法
+    ipsae_min_max=("ipsae_min", "max"),       # 報告值：多 seed 取最佳
     ipsae_min_mean=("ipsae_min", "mean"),
     ipsae_min_sd=("ipsae_min", "std"),
     iptm_mean=("iptm", "mean"), iptm_sd=("iptm", "std"),

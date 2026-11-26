@@ -56,7 +56,6 @@ results/15_normal_state_pseudobulk.csv
 results/95_pioneer2_axis.tsv.gz
 
 # --- 本機設定 / Local config ---
-.claude/settings.local.json
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
