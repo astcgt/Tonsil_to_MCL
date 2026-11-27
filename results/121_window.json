@@ -1,0 +1,881 @@
+{
+  "depmap": {
+    "AIFM2": {
+      "n_lines": 1178,
+      "median_all": 0.01585,
+      "mean_all": 0.00556,
+      "frac_dependent_all": 0.00594,
+      "n_mcl": 3,
+      "median_mcl": -0.26006,
+      "frac_dependent_mcl": 0.33333,
+      "delta_mcl_minus_rest": -0.27596,
+      "mwu_p_mcl_more_dependent": 0.00016,
+      "min_lineage_median": -0.08833,
+      "min_lineage": "Lymphoid"
+    },
+    "BACH1": {
+      "n_lines": 1178,
+      "median_all": 0.06266,
+      "mean_all": 0.05783,
+      "frac_dependent_all": 0.00424,
+      "n_mcl": 3,
+      "median_mcl": 0.18924,
+      "frac_dependent_mcl": 0.0,
+      "delta_mcl_minus_rest": 0.12662,
+      "mwu_p_mcl_more_dependent": 0.92461,
+      "min_lineage_median": 0.00302,
+      "min_lineage": "Skin"
+    },
+    "BCL2": {
+      "n_lines": 1178,
+      "median_all": -0.00453,
+      "mean_all": -0.03667,
+      "frac_dependent_all": 0.02801,
+      "n_mcl": 3,
+      "median_mcl": -0.18527,
+      "frac_dependent_mcl": 0.0,
+      "delta_mcl_minus_rest": -0.18082,
+      "mwu_p_mcl_more_dependent": 0.09143,
+      "min_lineage_median": -0.14911,
+      "min_lineage": "Lymphoid"
+    },
+    "BTK": {
+      "n_lines": 1178,
+      "median_all": 0.03741,
+      "mean_all": 0.0325,
+      "frac_dependent_all": 0.00424,
+      "n_mcl": 3,
+      "median_mcl": -0.16958,
+      "frac_dependent_mcl": 0.33333,
+      "delta_mcl_minus_rest": -0.207,
+      "mwu_p_mcl_more_dependent": 0.05263,
+      "min_lineage_median": -0.00363,
+      "min_lineage": "Lymphoid"
+    },
+    "CCND1": {
+      "n_lines": 1178,
+      "median_all": -0.8446,
+      "mean_all": -0.98191,
+      "frac_dependent_all": 0.64856,
+      "n_mcl": 3,
+      "median_mcl": -1.52417,
+      "frac_dependent_mcl": 1.0,
+      "delta_mcl_minus_rest": -0.68179,
+      "mwu_p_mcl_more_dependent": 0.13183,
+      "min_lineage_median": -1.60717,
+      "min_lineage": "Peripheral Nervous System"
+    },
+    "GCLC": {
+      "n_lines": 1178,
+      "median_all": -0.02312,
+      "mean_all": -0.06722,
+      "frac_dependent_all": 0.03565,
+      "n_mcl": 3,
+      "median_mcl": -0.29086,
+      "frac_dependent_mcl": 0.33333,
+      "delta_mcl_minus_rest": -0.2679,
+      "mwu_p_mcl_more_dependent": 0.00251,
+      "min_lineage_median": -0.39828,
+      "min_lineage": "Lymphoid"
+    },
+    "GCLM": {
+      "n_lines": 1178,
+      "median_all": -0.02662,
+      "mean_all": -0.04119,
+      "frac_dependent_all": 0.01528,
+      "n_mcl": 3,
+      "median_mcl": -0.52154,
+      "frac_dependent_mcl": 0.66667,
+      "delta_mcl_minus_rest": -0.49525,
+      "mwu_p_mcl_more_dependent": 0.00744,
+      "min_lineage_median": -0.20135,
+      "min_lineage": "Lymphoid"
+    },
+    "MAFF": {
+      "n_lines": 1178,
+      "median_all": -0.17679,
+      "mean_all": -0.19137,
+      "frac_dependent_all": 0.02971,
+      "n_mcl": 3,
+      "median_mcl": -0.14593,
+      "frac_dependent_mcl": 0.33333,
+      "delta_mcl_minus_rest": 0.03097,
+      "mwu_p_mcl_more_dependent": 0.54707,
+      "min_lineage_median": -0.35854,
+      "min_lineage": "Skin"
+    },
+    "MAFG": {
+      "n_lines": 1178,
+      "median_all": -0.15685,
+      "mean_all": -0.16395,
+      "frac_dependent_all": 0.02462,
+      "n_mcl": 3,
+      "median_mcl": -0.11645,
+      "frac_dependent_mcl": 0.0,
+      "delta_mcl_minus_rest": 0.04116,
+      "mwu_p_mcl_more_dependent": 0.79063,
+      "min_lineage_median": -0.26857,
+      "min_lineage": "Liver"
+    },
+    "MAFK": {
+      "n_lines": 1178,
+      "median_all": -0.07887,
+      "mean_all": -0.08289,
+      "frac_dependent_all": 0.01104,
+      "n_mcl": 3,
+      "median_mcl": -0.09281,
+      "frac_dependent_mcl": 0.0,
+      "delta_mcl_minus_rest": -0.01402,
+      "mwu_p_mcl_more_dependent": 0.68098,
+      "min_lineage_median": -0.13474,
+      "min_lineage": "Cervix"
+    },
+    "NFE2L2": {
+      "n_lines": 1178,
+      "median_all": -0.18975,
+      "mean_all": -0.23562,
+      "frac_dependent_all": 0.09677,
+      "n_mcl": 3,
+      "median_mcl": 0.07808,
+      "frac_dependent_mcl": 0.0,
+      "delta_mcl_minus_rest": 0.2684,
+      "mwu_p_mcl_more_dependent": 0.99368,
+      "min_lineage_median": -0.33593,
+      "min_lineage": "Pleura"
+    },
+    "RAN": {
+      "n_lines": 1178,
+      "median_all": -3.91477,
+      "mean_all": -3.93309,
+      "frac_dependent_all": 1.0,
+      "n_mcl": 3,
+      "median_mcl": -3.92182,
+      "frac_dependent_mcl": 1.0,
+      "delta_mcl_minus_rest": -0.0072,
+      "mwu_p_mcl_more_dependent": 0.58489,
+      "min_lineage_median": -4.11127,
+      "min_lineage": "Esophagus/Stomach"
+    },
+    "RPL13A": {
+      "n_lines": 349,
+      "median_all": -1.89695,
+      "mean_all": -1.89508,
+      "frac_dependent_all": 1.0,
+      "n_mcl": 0,
+      "median_mcl": null,
+      "frac_dependent_mcl": null,
+      "delta_mcl_minus_rest": null,
+      "mwu_p_mcl_more_dependent": null,
+      "min_lineage_median": -2.01384,
+      "min_lineage": "Ovary/Fallopian Tube"
+    },
+    "SLC3A2": {
+      "n_lines": 1178,
+      "median_all": -0.46667,
+      "mean_all": -0.49623,
+      "frac_dependent_all": 0.44992,
+      "n_mcl": 3,
+      "median_mcl": -1.22867,
+      "frac_dependent_mcl": 1.0,
+      "delta_mcl_minus_rest": -0.7626,
+      "mwu_p_mcl_more_dependent": 0.00127,
+      "min_lineage_median": -0.66922,
+      "min_lineage": "Biliary Tract"
+    },
+    "SLC7A11": {
+      "n_lines": 1178,
+      "median_all": 0.08588,
+      "mean_all": 0.07209,
+      "frac_dependent_all": 0.01528,
+      "n_mcl": 3,
+      "median_mcl": -0.01592,
+      "frac_dependent_mcl": 0.33333,
+      "delta_mcl_minus_rest": -0.1021,
+      "mwu_p_mcl_more_dependent": 0.02372,
+      "min_lineage_median": 0.01751,
+      "min_lineage": "Peripheral Nervous System"
+    }
+  },
+  "lineage_median": {
+    "Biliary Tract": {
+      "AIFM2": 0.0188,
+      "BACH1": 0.0816,
+      "BCL2": -0.0129,
+      "BTK": 0.0581,
+      "CCND1": -1.2609,
+      "GCLC": 0.0145,
+      "GCLM": -0.01,
+      "MAFF": -0.15,
+      "MAFG": -0.1955,
+      "MAFK": -0.0987,
+      "NFE2L2": -0.2169,
+      "RAN": -3.8309,
+      "RPL13A": null,
+      "SLC3A2": -0.6692,
+      "SLC7A11": 0.1031
+    },
+    "Bladder/Urinary Tract": {
+      "AIFM2": 0.0296,
+      "BACH1": 0.0569,
+      "BCL2": 0.0251,
+      "BTK": 0.0319,
+      "CCND1": -0.9869,
+      "GCLC": 0.0219,
+      "GCLM": -0.0378,
+      "MAFF": -0.1834,
+      "MAFG": -0.1481,
+      "MAFK": -0.0643,
+      "NFE2L2": -0.2295,
+      "RAN": -3.8014,
+      "RPL13A": null,
+      "SLC3A2": -0.3993,
+      "SLC7A11": 0.0707
+    },
+    "Bone": {
+      "AIFM2": 0.0165,
+      "BACH1": 0.0426,
+      "BCL2": -0.0231,
+      "BTK": 0.0268,
+      "CCND1": -0.9907,
+      "GCLC": -0.0257,
+      "GCLM": -0.0252,
+      "MAFF": -0.1167,
+      "MAFG": -0.1411,
+      "MAFK": -0.0439,
+      "NFE2L2": -0.1614,
+      "RAN": -3.8998,
+      "RPL13A": -1.7919,
+      "SLC3A2": -0.3545,
+      "SLC7A11": 0.1339
+    },
+    "Bowel": {
+      "AIFM2": 0.0132,
+      "BACH1": 0.0669,
+      "BCL2": 0.0235,
+      "BTK": 0.0169,
+      "CCND1": -0.6907,
+      "GCLC": -0.0506,
+      "GCLM": -0.023,
+      "MAFF": -0.2005,
+      "MAFG": -0.1282,
+      "MAFK": -0.0885,
+      "NFE2L2": -0.1985,
+      "RAN": -4.0684,
+      "RPL13A": -1.9915,
+      "SLC3A2": -0.5178,
+      "SLC7A11": 0.1287
+    },
+    "Breast": {
+      "AIFM2": 0.0416,
+      "BACH1": 0.023,
+      "BCL2": 0.0059,
+      "BTK": 0.048,
+      "CCND1": -1.1778,
+      "GCLC": -0.0656,
+      "GCLM": -0.0287,
+      "MAFF": -0.1939,
+      "MAFG": -0.1766,
+      "MAFK": -0.0871,
+      "NFE2L2": -0.1847,
+      "RAN": -4.0875,
+      "RPL13A": -1.8224,
+      "SLC3A2": -0.5765,
+      "SLC7A11": 0.0759
+    },
+    "CNS/Brain": {
+      "AIFM2": 0.0534,
+      "BACH1": 0.0517,
+      "BCL2": 0.0017,
+      "BTK": 0.0573,
+      "CCND1": -0.6546,
+      "GCLC": -0.0065,
+      "GCLM": -0.0422,
+      "MAFF": -0.1653,
+      "MAFG": -0.1328,
+      "MAFK": -0.0881,
+      "NFE2L2": -0.2027,
+      "RAN": -3.8173,
+      "RPL13A": -1.9751,
+      "SLC3A2": -0.3523,
+      "SLC7A11": 0.0866
+    },
+    "Cervix": {
+      "AIFM2": 0.0105,
+      "BACH1": 0.0891,
+      "BCL2": -0.011,
+      "BTK": 0.0263,
+      "CCND1": -0.1588,
+      "GCLC": -0.0018,
+      "GCLM": -0.0365,
+      "MAFF": -0.2049,
+      "MAFG": -0.1435,
+      "MAFK": -0.1347,
+      "NFE2L2": -0.192,
+      "RAN": -3.8683,
+      "RPL13A": null,
+      "SLC3A2": -0.3781,
+      "SLC7A11": 0.1568
+    },
+    "Esophagus/Stomach": {
+      "AIFM2": 0.028,
+      "BACH1": 0.0723,
+      "BCL2": 0.0144,
+      "BTK": 0.0426,
+      "CCND1": -1.2528,
+      "GCLC": -0.026,
+      "GCLM": -0.0259,
+      "MAFF": -0.1465,
+      "MAFG": -0.1358,
+      "MAFK": -0.0914,
+      "NFE2L2": -0.2009,
+      "RAN": -4.1113,
+      "RPL13A": -1.7862,
+      "SLC3A2": -0.5163,
+      "SLC7A11": 0.1071
+    },
+    "Eye": {
+      "AIFM2": -0.0101,
+      "BACH1": 0.019,
+      "BCL2": -0.0159,
+      "BTK": 0.0728,
+      "CCND1": -1.4738,
+      "GCLC": 0.0519,
+      "GCLM": 0.0343,
+      "MAFF": -0.2024,
+      "MAFG": -0.2222,
+      "MAFK": -0.0563,
+      "NFE2L2": -0.2435,
+      "RAN": -3.9459,
+      "RPL13A": null,
+      "SLC3A2": -0.4223,
+      "SLC7A11": 0.0342
+    },
+    "Head and Neck": {
+      "AIFM2": 0.0137,
+      "BACH1": 0.0898,
+      "BCL2": 0.0087,
+      "BTK": 0.0148,
+      "CCND1": -0.8779,
+      "GCLC": 0.014,
+      "GCLM": -0.0247,
+      "MAFF": -0.174,
+      "MAFG": -0.1551,
+      "MAFK": -0.1068,
+      "NFE2L2": -0.2147,
+      "RAN": -3.9549,
+      "RPL13A": -1.9617,
+      "SLC3A2": -0.373,
+      "SLC7A11": 0.1271
+    },
+    "Kidney": {
+      "AIFM2": 0.021,
+      "BACH1": 0.025,
+      "BCL2": 0.0216,
+      "BTK": 0.0497,
+      "CCND1": -1.1057,
+      "GCLC": -0.0201,
+      "GCLM": 0.0032,
+      "MAFF": -0.1646,
+      "MAFG": -0.1796,
+      "MAFK": -0.067,
+      "NFE2L2": -0.2453,
+      "RAN": -3.8951,
+      "RPL13A": null,
+      "SLC3A2": -0.5292,
+      "SLC7A11": 0.0709
+    },
+    "Liver": {
+      "AIFM2": 0.0542,
+      "BACH1": 0.0796,
+      "BCL2": 0.0062,
+      "BTK": 0.0558,
+      "CCND1": -1.5477,
+      "GCLC": -0.0111,
+      "GCLM": -0.0279,
+      "MAFF": -0.1974,
+      "MAFG": -0.2686,
+      "MAFK": -0.038,
+      "NFE2L2": -0.2392,
+      "RAN": -3.7834,
+      "RPL13A": null,
+      "SLC3A2": -0.3579,
+      "SLC7A11": 0.0952
+    },
+    "Lung": {
+      "AIFM2": 0.0008,
+      "BACH1": 0.0672,
+      "BCL2": -0.0084,
+      "BTK": 0.0314,
+      "CCND1": -0.7001,
+      "GCLC": -0.0092,
+      "GCLM": 0.0069,
+      "MAFF": -0.1452,
+      "MAFG": -0.1488,
+      "MAFK": -0.0941,
+      "NFE2L2": -0.2362,
+      "RAN": -3.9066,
+      "RPL13A": -1.8414,
+      "SLC3A2": -0.5478,
+      "SLC7A11": 0.0837
+    },
+    "Lymphoid": {
+      "AIFM2": -0.0883,
+      "BACH1": 0.1125,
+      "BCL2": -0.1491,
+      "BTK": -0.0036,
+      "CCND1": -0.1344,
+      "GCLC": -0.3983,
+      "GCLM": -0.2014,
+      "MAFF": -0.1433,
+      "MAFG": -0.121,
+      "MAFK": -0.0506,
+      "NFE2L2": -0.1523,
+      "RAN": -3.8629,
+      "RPL13A": -1.9736,
+      "SLC3A2": -0.6191,
+      "SLC7A11": 0.021
+    },
+    "Myeloid": {
+      "AIFM2": -0.0078,
+      "BACH1": 0.1054,
+      "BCL2": -0.1149,
+      "BTK": 0.0614,
+      "CCND1": -0.1615,
+      "GCLC": -0.2833,
+      "GCLM": -0.1209,
+      "MAFF": -0.1597,
+      "MAFG": -0.2056,
+      "MAFK": -0.075,
+      "NFE2L2": -0.1408,
+      "RAN": -3.9454,
+      "RPL13A": null,
+      "SLC3A2": -0.4657,
+      "SLC7A11": 0.0484
+    },
+    "Ovary/Fallopian Tube": {
+      "AIFM2": 0.0023,
+      "BACH1": 0.0301,
+      "BCL2": 0.0205,
+      "BTK": 0.0446,
+      "CCND1": -0.6843,
+      "GCLC": -0.0125,
+      "GCLM": -0.0292,
+      "MAFF": -0.2538,
+      "MAFG": -0.1802,
+      "MAFK": -0.0766,
+      "NFE2L2": -0.2067,
+      "RAN": -4.0042,
+      "RPL13A": -2.0138,
+      "SLC3A2": -0.4953,
+      "SLC7A11": 0.0464
+    },
+    "Pancreas": {
+      "AIFM2": 0.0234,
+      "BACH1": 0.0808,
+      "BCL2": 0.0151,
+      "BTK": 0.025,
+      "CCND1": -1.2954,
+      "GCLC": -0.0033,
+      "GCLM": 0.0178,
+      "MAFF": -0.195,
+      "MAFG": -0.1776,
+      "MAFK": -0.1065,
+      "NFE2L2": -0.2273,
+      "RAN": -4.0763,
+      "RPL13A": -1.7213,
+      "SLC3A2": -0.5397,
+      "SLC7A11": 0.072
+    },
+    "Peripheral Nervous System": {
+      "AIFM2": 0.0318,
+      "BACH1": 0.0948,
+      "BCL2": -0.1432,
+      "BTK": 0.0199,
+      "CCND1": -1.6072,
+      "GCLC": -0.038,
+      "GCLM": 0.0091,
+      "MAFF": -0.1842,
+      "MAFG": -0.2315,
+      "MAFK": -0.0786,
+      "NFE2L2": -0.1284,
+      "RAN": -3.8818,
+      "RPL13A": -1.9073,
+      "SLC3A2": -0.3685,
+      "SLC7A11": 0.0175
+    },
+    "Pleura": {
+      "AIFM2": 0.0165,
+      "BACH1": 0.0731,
+      "BCL2": 0.0155,
+      "BTK": 0.0164,
+      "CCND1": -0.9796,
+      "GCLC": 0.0361,
+      "GCLM": 0.0192,
+      "MAFF": -0.1772,
+      "MAFG": -0.1002,
+      "MAFK": -0.1283,
+      "NFE2L2": -0.3359,
+      "RAN": -3.8273,
+      "RPL13A": null,
+      "SLC3A2": -0.4836,
+      "SLC7A11": 0.0892
+    },
+    "Prostate": {
+      "AIFM2": 0.0254,
+      "BACH1": 0.0346,
+      "BCL2": 0.0202,
+      "BTK": 0.077,
+      "CCND1": -0.6757,
+      "GCLC": -0.0095,
+      "GCLM": 0.036,
+      "MAFF": -0.2308,
+      "MAFG": -0.0656,
+      "MAFK": -0.0277,
+      "NFE2L2": -0.2497,
+      "RAN": -3.915,
+      "RPL13A": null,
+      "SLC3A2": -0.4813,
+      "SLC7A11": 0.0638
+    },
+    "Skin": {
+      "AIFM2": 0.0267,
+      "BACH1": 0.003,
+      "BCL2": -0.0263,
+      "BTK": 0.0592,
+      "CCND1": -1.472,
+      "GCLC": -0.0191,
+      "GCLM": -0.0343,
+      "MAFF": -0.3585,
+      "MAFG": -0.1598,
+      "MAFK": -0.0789,
+      "NFE2L2": -0.1466,
+      "RAN": -3.9263,
+      "RPL13A": null,
+      "SLC3A2": -0.3837,
+      "SLC7A11": 0.1007
+    },
+    "Soft Tissue": {
+      "AIFM2": 0.0427,
+      "BACH1": 0.0259,
+      "BCL2": -0.0177,
+      "BTK": 0.0447,
+      "CCND1": -0.8256,
+      "GCLC": 0.0002,
+      "GCLM": -0.017,
+      "MAFF": -0.1754,
+      "MAFG": -0.156,
+      "MAFK": -0.0695,
+      "NFE2L2": -0.1762,
+      "RAN": -3.7698,
+      "RPL13A": null,
+      "SLC3A2": -0.4457,
+      "SLC7A11": 0.0549
+    },
+    "Thyroid": {
+      "AIFM2": 0.0027,
+      "BACH1": 0.0757,
+      "BCL2": -0.0279,
+      "BTK": 0.0542,
+      "CCND1": -1.218,
+      "GCLC": 0.0164,
+      "GCLM": -0.0182,
+      "MAFF": -0.1926,
+      "MAFG": -0.216,
+      "MAFK": -0.0299,
+      "NFE2L2": -0.1913,
+      "RAN": -3.8298,
+      "RPL13A": null,
+      "SLC3A2": -0.5678,
+      "SLC7A11": 0.0237
+    },
+    "Uterus": {
+      "AIFM2": 0.0093,
+      "BACH1": 0.0699,
+      "BCL2": 0.0465,
+      "BTK": 0.0548,
+      "CCND1": -0.3452,
+      "GCLC": -0.0119,
+      "GCLM": -0.015,
+      "MAFF": -0.1336,
+      "MAFG": -0.1031,
+      "MAFK": -0.021,
+      "NFE2L2": -0.1537,
+      "RAN": -3.9369,
+      "RPL13A": null,
+      "SLC3A2": -0.3025,
+      "SLC7A11": 0.158
+    }
+  },
+  "mcl_lines": [
+    "JVM2",
+    "MAVER1",
+    "Z138"
+  ],
+  "lymphoid_nonmcl": {
+    "AIFM2": {
+      "n": 90,
+      "median": -0.0708216799712662,
+      "frac_dependent": 0.05555555555555555
+    },
+    "BACH1": {
+      "n": 90,
+      "median": 0.1111953993229816,
+      "frac_dependent": 0.0
+    },
+    "BCL2": {
+      "n": 90,
+      "median": -0.1487557700869377,
+      "frac_dependent": 0.17777777777777778
+    },
+    "BTK": {
+      "n": 90,
+      "median": 0.0018824631442735,
+      "frac_dependent": 0.044444444444444446
+    },
+    "CCND1": {
+      "n": 90,
+      "median": -0.12930882944940308,
+      "frac_dependent": 0.07777777777777778
+    },
+    "GCLC": {
+      "n": 90,
+      "median": -0.4016726579314306,
+      "frac_dependent": 0.35555555555555557
+    },
+    "GCLM": {
+      "n": 90,
+      "median": -0.1947769113751641,
+      "frac_dependent": 0.13333333333333333
+    },
+    "MAFF": {
+      "n": 90,
+      "median": -0.13900473541844705,
+      "frac_dependent": 0.0
+    },
+    "MAFG": {
+      "n": 90,
+      "median": -0.1255174485477318,
+      "frac_dependent": 0.022222222222222223
+    },
+    "MAFK": {
+      "n": 90,
+      "median": -0.0451937488317596,
+      "frac_dependent": 0.022222222222222223
+    },
+    "NFE2L2": {
+      "n": 90,
+      "median": -0.15475146803396617,
+      "frac_dependent": 0.022222222222222223
+    },
+    "RAN": {
+      "n": 90,
+      "median": -3.860994612490537,
+      "frac_dependent": 1.0
+    },
+    "RPL13A": {
+      "n": 14,
+      "median": -1.9736316513491423,
+      "frac_dependent": 0.15555555555555556
+    },
+    "SLC3A2": {
+      "n": 90,
+      "median": -0.6051033659323511,
+      "frac_dependent": 0.6777777777777778
+    },
+    "SLC7A11": {
+      "n": 90,
+      "median": 0.02225753029281565,
+      "frac_dependent": 0.12222222222222222
+    }
+  },
+  "bcell_nonmcl": {
+    "n_lines": 68,
+    "AIFM2": {
+      "median": -0.11928497666815249,
+      "frac_dependent": 0.058823529411764705
+    },
+    "BACH1": {
+      "median": 0.1111953993229816,
+      "frac_dependent": 0.0
+    },
+    "BCL2": {
+      "median": -0.11266600918660394,
+      "frac_dependent": 0.16176470588235295
+    },
+    "BTK": {
+      "median": -0.0130568110532027,
+      "frac_dependent": 0.04411764705882353
+    },
+    "CCND1": {
+      "median": -0.1203465685731637,
+      "frac_dependent": 0.04411764705882353
+    },
+    "GCLC": {
+      "median": -0.45960268082023836,
+      "frac_dependent": 0.39705882352941174
+    },
+    "GCLM": {
+      "median": -0.1947769113751641,
+      "frac_dependent": 0.14705882352941177
+    },
+    "MAFF": {
+      "median": -0.1284212701601132,
+      "frac_dependent": 0.0
+    },
+    "MAFG": {
+      "median": -0.1228091566042631,
+      "frac_dependent": 0.014705882352941176
+    },
+    "MAFK": {
+      "median": -0.06944195524741514,
+      "frac_dependent": 0.029411764705882353
+    },
+    "NFE2L2": {
+      "median": -0.14879695766887005,
+      "frac_dependent": 0.029411764705882353
+    },
+    "RAN": {
+      "median": -3.849915248657471,
+      "frac_dependent": 1.0
+    },
+    "RPL13A": {
+      "median": -2.060744966491256,
+      "frac_dependent": 0.1323529411764706
+    },
+    "SLC3A2": {
+      "median": -0.644834299871567,
+      "frac_dependent": 0.7058823529411765
+    },
+    "SLC7A11": {
+      "median": 0.0077895641816294004,
+      "frac_dependent": 0.16176470588235295
+    }
+  },
+  "paralog_redundancy": {
+    "MAFF": {
+      "n": 1103,
+      "spearman_MAFG_dependency_vs_expr": 0.04787413794803153,
+      "p": 0.11204286828928259,
+      "expr_median_log2tpm1": 3.456806149230474
+    },
+    "MAFK": {
+      "n": 1103,
+      "spearman_MAFG_dependency_vs_expr": 0.09355480674686656,
+      "p": 0.0018683978399992786,
+      "expr_median_log2tpm1": 4.038260575175349
+    },
+    "MAFG": {
+      "n": 1103,
+      "spearman_MAFG_dependency_vs_expr": -0.09681075947949422,
+      "p": 0.0012857413418851384,
+      "expr_median_log2tpm1": 4.138323004056484
+    }
+  },
+  "normal_tonsil_B": {
+    "MAFG": {
+      "normal_states_median": 0.034741681499999996,
+      "normal_states_max": 0.14090614,
+      "normal_states_argmax": "Early PC precursor",
+      "frac_states_expressed_gt0.1": 0.043478260869565216,
+      "ncsMBC": 0.02922302,
+      "tumour_observed": 0.08797533,
+      "tumour_expected": 0.033106886,
+      "tumour_residual": 0.054868322
+    },
+    "MAFF": {
+      "normal_states_median": 0.002584869,
+      "normal_states_max": 0.018625265,
+      "normal_states_argmax": "preMature IgM+ PC",
+      "frac_states_expressed_gt0.1": 0.0,
+      "ncsMBC": 0.0026089714,
+      "tumour_observed": 0.03866094,
+      "tumour_expected": 0.0026816982,
+      "tumour_residual": 0.03597928
+    },
+    "MAFK": {
+      "normal_states_median": 0.0177218205,
+      "normal_states_max": 0.0952948,
+      "normal_states_argmax": "MBC derived early PC precursor",
+      "frac_states_expressed_gt0.1": 0.0,
+      "ncsMBC": 0.016933696,
+      "tumour_observed": 0.051280092,
+      "tumour_expected": 0.0207126,
+      "tumour_residual": 0.03056754
+    },
+    "NFE2L2": {
+      "normal_states_median": 0.32263366,
+      "normal_states_max": 0.65506727,
+      "normal_states_argmax": "Early PC precursor",
+      "frac_states_expressed_gt0.1": 1.0,
+      "ncsMBC": 0.32471418,
+      "tumour_observed": 0.5247725,
+      "tumour_expected": 0.36965278,
+      "tumour_residual": 0.15511961
+    },
+    "BACH1": {
+      "normal_states_median": 0.8929488999999999,
+      "normal_states_max": 1.9513859,
+      "normal_states_argmax": "Early PC precursor",
+      "frac_states_expressed_gt0.1": 1.0,
+      "ncsMBC": 0.8682321,
+      "tumour_observed": 1.1474178,
+      "tumour_expected": 0.92057085,
+      "tumour_residual": 0.22685024
+    },
+    "SLC7A11": {
+      "normal_states_median": 0.00454777785,
+      "normal_states_max": 0.32414836,
+      "normal_states_argmax": "IgD PC precursor",
+      "frac_states_expressed_gt0.1": 0.08695652173913043,
+      "ncsMBC": 0.0006270329,
+      "tumour_observed": 0.20614183,
+      "tumour_expected": 0.00086882105,
+      "tumour_residual": 0.20527266
+    },
+    "SLC3A2": {
+      "normal_states_median": 0.16808990499999998,
+      "normal_states_max": 0.48192668,
+      "normal_states_argmax": "LZ proliferative",
+      "frac_states_expressed_gt0.1": 0.717391304347826,
+      "ncsMBC": 0.07956347,
+      "tumour_observed": 0.27239063,
+      "tumour_expected": 0.09464914,
+      "tumour_residual": 0.1777416
+    },
+    "GCLM": {
+      "normal_states_median": 0.041441167,
+      "normal_states_max": 0.12520072,
+      "normal_states_argmax": "IgM+ early PC precursor",
+      "frac_states_expressed_gt0.1": 0.021739130434782608,
+      "ncsMBC": 0.06399343,
+      "tumour_observed": 0.028630102,
+      "tumour_expected": 0.053151634,
+      "tumour_residual": -0.02452166
+    },
+    "GCLC": {
+      "normal_states_median": 0.09657966000000001,
+      "normal_states_max": 0.24266963,
+      "normal_states_argmax": "MBC derived PC precursor",
+      "frac_states_expressed_gt0.1": 0.45652173913043476,
+      "ncsMBC": 0.11114628,
+      "tumour_observed": 0.08411085,
+      "tumour_expected": 0.103702165,
+      "tumour_residual": -0.01959121
+    },
+    "AIFM2": {
+      "normal_states_median": 0.050858761,
+      "normal_states_max": 0.1289623,
+      "normal_states_argmax": "Transitional PB",
+      "frac_states_expressed_gt0.1": 0.043478260869565216,
+      "ncsMBC": 0.032455,
+      "tumour_observed": 0.02773979,
+      "tumour_expected": 0.033719443,
+      "tumour_residual": -0.005979629
+    }
+  },
+  "notes": {
+    "dep_cut": -0.5,
+    "caveat_depmap": "DepMap 皆為癌細胞株，非正常細胞；此處只能當『增生細胞的依賴性』代理",
+    "caveat_normal": "唯一真正的正常人類細胞是扁桃腺 B 細胞；本專案未取得任何正常非 B 組織資料"
+  }
+}

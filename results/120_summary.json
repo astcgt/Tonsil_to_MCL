@@ -1,0 +1,380 @@
+{
+  "n_states_annotated": 48,
+  "n_states_used_step15": 46,
+  "root_state": "NBC",
+  "k": 15,
+  "pca_var_explained": 0.30845919251441956,
+  "state_agreement_knn_vs_softmax_tumour": 0.9243554443053817,
+  "tumour": {
+    "n": 19975,
+    "dpt_median": 0.0481220334768295,
+    "dpt_q25": 0.0431296713650226,
+    "dpt_q75": 0.0514829419553279,
+    "knn_state_top": {
+      "ncsMBC": 19131,
+      "GC-commited NBC": 578,
+      "NBC": 80,
+      "Reactivated proliferative MBCs": 55,
+      "csMBC": 39,
+      "Precursor MBCs": 24
+    },
+    "knn_state_frac_median": 0.9333333333333333,
+    "umap_median": [
+      2.816549301147461,
+      1.2205848693847656
+    ]
+  },
+  "nontumour": {
+    "n": 819,
+    "dpt_median": 0.0790919810533523,
+    "dpt_q25": 0.052045682445168454,
+    "dpt_q75": 0.5279075503349304,
+    "knn_state_top": {
+      "ncsMBC": 221,
+      "csMBC": 155,
+      "csMBC FCRL4/5+": 77,
+      "DZ_LZ transition": 68,
+      "DZ non proliferative": 66,
+      "DZ late Sphase": 31
+    },
+    "knn_state_frac_median": 0.7333333333333333,
+    "umap_median": [
+      5.842358112335205,
+      0.5873423218727112
+    ]
+  },
+  "per_donor_tumour": {
+    "M102": {
+      "n": 10001,
+      "dpt_median": 0.0464640259742736,
+      "dpt_q25": 0.0388702638447284,
+      "dpt_q75": 0.0505048893392086,
+      "knn_state_top": {
+        "ncsMBC": 9518,
+        "GC-commited NBC": 340,
+        "NBC": 75,
+        "Reactivated proliferative MBCs": 35,
+        "Early GC-commited NBC": 13,
+        "csMBC": 8
+      },
+      "knn_state_frac_median": 0.8666666666666667,
+      "umap_median": [
+        2.8188014030456543,
+        1.4859539270401
+      ]
+    },
+    "M413": {
+      "n": 9974,
+      "dpt_median": 0.0491803660988807,
+      "dpt_q25": 0.0462522320449352,
+      "dpt_q75": 0.0537810027599334,
+      "knn_state_top": {
+        "ncsMBC": 9613,
+        "GC-commited NBC": 238,
+        "csMBC": 31,
+        "Precursor MBCs": 23,
+        "Reactivated proliferative MBCs": 20,
+        "DZ non proliferative": 8
+      },
+      "knn_state_frac_median": 1.0,
+      "umap_median": [
+        2.792891502380371,
+        1.068708896636963
+      ]
+    }
+  },
+  "ref_dpt_by_state": {
+    "NBC": 0.01599720958620305,
+    "Early GC-commited NBC": 0.01671501807868475,
+    "NBC early activation": 0.01782724075019355,
+    "NBC CD229+": 0.0244891662150621,
+    "NBC IFN-activated": 0.02864348795264955,
+    "GC-commited NBC": 0.0338562130928039,
+    "ncsMBC": 0.0385668128728866,
+    "Early MBC": 0.0552958212792873,
+    "csMBC": 0.056296210736036245,
+    "MBC FCRL5+": 0.0687446966767311,
+    "ncsMBC FCRL4/5+": 0.0745038390159607,
+    "csMBC FCRL4/5+": 0.1140529215335846,
+    "Proliferative NBC": 0.14398971945047373,
+    "preGC": 0.1461493447422981,
+    "GC DZ Noproli": 0.44926886260509485,
+    "LZ_DZ reentry commitment": 0.4537707865238189,
+    "Precursor MBCs": 0.4774674773216247,
+    "LZ": 0.4899932146072387,
+    "PC committed Light Zone GCBC": 0.5039524435997009,
+    "DZ_LZ transition": 0.5097349882125854,
+    "DZ non proliferative": 0.5237983763217926,
+    "DZ cell cycle exit": 0.5346921682357788,
+    "Transitional PB": 0.6044625043869019,
+    "DZ early Sphase": 0.606561541557312,
+    "LZ proliferative": 0.6281396746635437,
+    "Reactivated proliferative MBCs": 0.6314172744750977,
+    "PB": 0.6475475132465363,
+    "LZ_DZ transition": 0.6645169258117676,
+    "IgM+ early PC precursor": 0.6779752373695374,
+    "DZ late Sphase": 0.6976262331008911,
+    "MBC derived early PC precursor": 0.7085441946983337,
+    "Early PC precursor": 0.7281451225280762,
+    "Mature IgM+ PC": 0.7463738322257996,
+    "PB committed early PC precursor": 0.7507664561271667,
+    "MBC derived PC precursor": 0.7639259696006775,
+    "DZ early G2Mphase": 0.7643038630485535,
+    "Mature IgA+ PC": 0.7770842909812927,
+    "preMature IgM+ PC": 0.7781594097614288,
+    "DZ migratory PC precursor": 0.7840396761894226,
+    "DZ late G2Mphase": 0.7932146787643433,
+    "Short lived IgM+ PC": 0.798068106174469,
+    "IgD PC precursor": 0.8009368479251862,
+    "MBC derived IgA+ PC": 0.8071972727775574,
+    "preMature IgG+ PC": 0.8206674456596375,
+    "IgG+ PC precursor": 0.8249745965003967,
+    "IgM+ PC precursor": 0.8326967358589172,
+    "Mature IgG+ PC": 0.8420044183731079,
+    "MBC derived IgG+ PC": 0.8536252975463867
+  },
+  "ref_state_n": {
+    "NBC": 9294,
+    "Early GC-commited NBC": 452,
+    "NBC early activation": 5496,
+    "NBC CD229+": 467,
+    "NBC IFN-activated": 578,
+    "GC-commited NBC": 1611,
+    "ncsMBC": 6788,
+    "Early MBC": 111,
+    "csMBC": 5836,
+    "MBC FCRL5+": 755,
+    "ncsMBC FCRL4/5+": 591,
+    "csMBC FCRL4/5+": 1263,
+    "Proliferative NBC": 14,
+    "preGC": 118,
+    "GC DZ Noproli": 4,
+    "LZ_DZ reentry commitment": 351,
+    "Precursor MBCs": 448,
+    "LZ": 803,
+    "PC committed Light Zone GCBC": 206,
+    "DZ_LZ transition": 2007,
+    "DZ non proliferative": 1338,
+    "DZ cell cycle exit": 298,
+    "Transitional PB": 13,
+    "DZ early Sphase": 1031,
+    "LZ proliferative": 501,
+    "Reactivated proliferative MBCs": 561,
+    "PB": 84,
+    "LZ_DZ transition": 443,
+    "IgM+ early PC precursor": 19,
+    "DZ late Sphase": 1520,
+    "MBC derived early PC precursor": 13,
+    "Early PC precursor": 25,
+    "Mature IgM+ PC": 9,
+    "PB committed early PC precursor": 25,
+    "MBC derived PC precursor": 39,
+    "DZ early G2Mphase": 846,
+    "Mature IgA+ PC": 180,
+    "preMature IgM+ PC": 80,
+    "DZ migratory PC precursor": 18,
+    "DZ late G2Mphase": 839,
+    "Short lived IgM+ PC": 34,
+    "IgD PC precursor": 82,
+    "MBC derived IgA+ PC": 74,
+    "preMature IgG+ PC": 215,
+    "IgG+ PC precursor": 400,
+    "IgM+ PC precursor": 62,
+    "Mature IgG+ PC": 134,
+    "MBC derived IgG+ PC": 140
+  },
+  "ref_state_umap": {
+    "NBC": [
+      2.9431220293045044,
+      6.3373425006866455
+    ],
+    "Early GC-commited NBC": [
+      2.4013888835906982,
+      5.068763494491577
+    ],
+    "NBC early activation": [
+      3.0737773180007935,
+      5.9246132373809814
+    ],
+    "NBC CD229+": [
+      3.2824931144714355,
+      3.735737562179565
+    ],
+    "NBC IFN-activated": [
+      4.177339792251587,
+      3.7447822093963623
+    ],
+    "GC-commited NBC": [
+      2.2330124378204346,
+      3.572141170501709
+    ],
+    "ncsMBC": [
+      3.673633098602295,
+      1.8075575828552246
+    ],
+    "Early MBC": [
+      5.828338146209717,
+      3.4369263648986816
+    ],
+    "csMBC": [
+      6.2103986740112305,
+      0.619341254234314
+    ],
+    "MBC FCRL5+": [
+      7.263541221618652,
+      1.1992700099945068
+    ],
+    "ncsMBC FCRL4/5+": [
+      6.645810127258301,
+      3.34165620803833
+    ],
+    "csMBC FCRL4/5+": [
+      7.570648193359375,
+      3.032837390899658
+    ],
+    "Proliferative NBC": [
+      1.7910712957382202,
+      -7.3581461906433105
+    ],
+    "preGC": [
+      4.7253053188323975,
+      -6.7216644287109375
+    ],
+    "GC DZ Noproli": [
+      3.426382064819336,
+      -8.160404682159424
+    ],
+    "LZ_DZ reentry commitment": [
+      5.11220121383667,
+      -6.692602634429932
+    ],
+    "Precursor MBCs": [
+      5.772834777832031,
+      -7.79668927192688
+    ],
+    "LZ": [
+      5.62436580657959,
+      -7.001712322235107
+    ],
+    "PC committed Light Zone GCBC": [
+      6.9351160526275635,
+      -7.0310328006744385
+    ],
+    "DZ_LZ transition": [
+      6.022720813751221,
+      -7.821413040161133
+    ],
+    "DZ non proliferative": [
+      5.58087944984436,
+      -9.621452808380127
+    ],
+    "DZ cell cycle exit": [
+      4.529523134231567,
+      -9.10015058517456
+    ],
+    "Transitional PB": [
+      1.88330078125,
+      -7.545238494873047
+    ],
+    "DZ early Sphase": [
+      3.2343590259552,
+      -9.097822189331056
+    ],
+    "LZ proliferative": [
+      2.147451162338257,
+      -8.166213989257812
+    ],
+    "Reactivated proliferative MBCs": [
+      1.6160200834274292,
+      -7.701432704925537
+    ],
+    "PB": [
+      1.5050072073936462,
+      -7.586760759353638
+    ],
+    "LZ_DZ transition": [
+      2.06910252571106,
+      -8.479630470275879
+    ],
+    "IgM+ early PC precursor": [
+      9.934988021850586,
+      -8.73534107208252
+    ],
+    "DZ late Sphase": [
+      1.6305657625198364,
+      -9.466047763824463
+    ],
+    "MBC derived early PC precursor": [
+      11.170066833496094,
+      -9.109576225280762
+    ],
+    "Early PC precursor": [
+      9.793905258178713,
+      -8.772150039672852
+    ],
+    "Mature IgM+ PC": [
+      10.917242050170898,
+      -9.304574966430664
+    ],
+    "PB committed early PC precursor": [
+      9.931452751159668,
+      -8.659950256347656
+    ],
+    "MBC derived PC precursor": [
+      10.787124633789062,
+      -9.119869232177734
+    ],
+    "DZ early G2Mphase": [
+      0.1479568630456924,
+      -9.073140621185303
+    ],
+    "Mature IgA+ PC": [
+      11.525916576385498,
+      -9.161660194396973
+    ],
+    "preMature IgM+ PC": [
+      10.765946388244629,
+      -9.150053977966309
+    ],
+    "DZ migratory PC precursor": [
+      10.292803764343262,
+      -9.067437171936035
+    ],
+    "DZ late G2Mphase": [
+      -0.1629572510719299,
+      -8.422303199768066
+    ],
+    "Short lived IgM+ PC": [
+      10.524375915527344,
+      -9.143892288208008
+    ],
+    "IgD PC precursor": [
+      10.717811107635498,
+      -8.978139877319336
+    ],
+    "MBC derived IgA+ PC": [
+      11.341898441314697,
+      -9.081766128540039
+    ],
+    "preMature IgG+ PC": [
+      11.371726036071776,
+      -9.483325004577637
+    ],
+    "IgG+ PC precursor": [
+      10.50862979888916,
+      -9.236670017242432
+    ],
+    "IgM+ PC precursor": [
+      10.352848529815674,
+      -8.824196338653564
+    ],
+    "Mature IgG+ PC": [
+      11.543638229370117,
+      -9.548976421356201
+    ],
+    "MBC derived IgG+ PC": [
+      11.524495124816895,
+      -9.403806686401367
+    ]
+  }
+}
