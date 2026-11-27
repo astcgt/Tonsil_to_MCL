@@ -1,0 +1,60 @@
+{
+  "cohort": "GSE303064",
+  "n_samples": 19,
+  "P1_malignant_deeper": {
+    "rule": "每一個樣本的惡性組 UMI 中位數都高於嚴格非惡性組",
+    "umi_ratio_median": 1.4561255484306446,
+    "umi_ratio_range": [
+      1.0912261872819962,
+      2.557142857142857
+    ],
+    "genes_ratio_median": 1.2365666434054432,
+    "n_samples_above_1": 19,
+    "pass": true
+  },
+  "P2_confound_scales_with_depth_gap": {
+    "rule": "跨樣本 UMI 比值與 RPL13A delta 正相關且 p < 0.05",
+    "spearman_r": 0.7052631578947368,
+    "pvalue": 0.0007439957624920882,
+    "pass": true
+  },
+  "ubiquitous_gene_deltas": {
+    "RPL13A": {
+      "median": 0.42828989028930664,
+      "n_positive": 19,
+      "n": 19,
+      "wilcoxon_p": 3.814697265625e-06
+    },
+    "RPS6": {
+      "median": 0.4122498035430908,
+      "n_positive": 19,
+      "n": 19,
+      "wilcoxon_p": 3.814697265625e-06
+    },
+    "ACTB": {
+      "median": 0.3841085433959961,
+      "n_positive": 19,
+      "n": 19,
+      "wilcoxon_p": 3.814697265625e-06
+    },
+    "GAPDH": {
+      "median": 0.35035067796707153,
+      "n_positive": 19,
+      "n": 19,
+      "wilcoxon_p": 3.814697265625e-06
+    },
+    "TMSB4X": {
+      "median": 0.5550105571746826,
+      "n_positive": 19,
+      "n": 19,
+      "wilcoxon_p": 3.814697265625e-06
+    }
+  },
+  "consequences": {
+    "bias_direction": "讓惡性組的每個基因都偏高",
+    "step41_identity_module_down": "逆著偏誤成立，屬保守，結論不受威脅",
+    "any_positive_delta": "不可直接解讀，含步驟 230 的 GPX4 與 SLC3A2",
+    "step41_MHCII_no_trend": "可能是真實下降被偏誤抵銷，標為未決"
+  },
+  "verdict": "confound_confirmed"
+}

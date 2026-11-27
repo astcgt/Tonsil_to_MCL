@@ -1,0 +1,146 @@
+[_compat] 已為 csr_array, csc_array, coo_array, lil_array, dia_array, bsr_array, dok_array 補上 getnnz()
+[_compat] 已修補 scanpy 的 kNN 連續性問題
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S1：惡性 3029、嚴格非惡性 97 | SLC7A11 偵測率 0.003、delta +0.0033
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S2：惡性 2867、嚴格非惡性 309 | SLC7A11 偵測率 0.001、delta -0.0056
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S3：惡性 1638、嚴格非惡性 1407 | SLC7A11 偵測率 0.002、delta +0.0005
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S4：惡性 2814、嚴格非惡性 455 | SLC7A11 偵測率 0.000、delta +0.0005
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S5：惡性 1334、嚴格非惡性 636 | SLC7A11 偵測率 0.010、delta +0.0091
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S6：惡性 4514、嚴格非惡性 247 | SLC7A11 偵測率 0.019、delta -0.0046
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S7：惡性 3039、嚴格非惡性 283 | SLC7A11 偵測率 0.098、delta +0.0067
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S8：惡性 2115、嚴格非惡性 128 | SLC7A11 偵測率 0.037、delta +0.0125
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S9：惡性 3681、嚴格非惡性 417 | SLC7A11 偵測率 0.004、delta +0.0014
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S10：惡性 1309、嚴格非惡性 263 | SLC7A11 偵測率 0.018、delta +0.0159
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S11：B 細胞 105 顆 → 跳過
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S12：惡性 1540、嚴格非惡性 466 | SLC7A11 偵測率 0.000、delta +0.0000
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S13：惡性 2203、嚴格非惡性 231 | SLC7A11 偵測率 0.005、delta +0.0050
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S14：惡性 691、嚴格非惡性 412 | SLC7A11 偵測率 0.001、delta +0.0007
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S15：惡性 2242、嚴格非惡性 476 | SLC7A11 偵測率 0.005、delta +0.0023
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S16：惡性 1400、嚴格非惡性 778 | SLC7A11 偵測率 0.004、delta -0.0015
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S17：惡性 3295、嚴格非惡性 2029 | SLC7A11 偵測率 0.008、delta -0.0006
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S18：惡性 1718、嚴格非惡性 743 | SLC7A11 偵測率 0.001、delta -0.0003
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S19：惡性 931、嚴格非惡性 627 | SLC7A11 偵測率 0.002、delta +0.0029
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[230]   S20：惡性 6477、嚴格非惡性 277 | SLC7A11 偵測率 0.067、delta +0.0212
+[230] 
+可用樣本 19 個
+[230] 
+=== G0 可偵測性（事先門檻：≥ 5% 惡性細胞、≥ 10 個樣本）===
+[230]   SLC7A11 達標樣本 2 / 19 | 偵測率中位數 0.0043
+[230]   G0 未通過 → 本世代判 no_power，不下陰性結論
+[230] 
+=== R1 陽性對照（守門）===
+[230]   CCND1    median delta  +2.1814 | 19/19 同向 | padj 6.1e-05
+[230]   SOX11    median delta  +0.0902 | 18/19 同向 | padj 0.000122
+[230]   R1 通過
+[230] 
+=== R2 陰性對照（守門）===
+[230]   RPL13A   median delta  +0.4283 | padj 6.1e-05
+[230]   CD3E     median delta  +0.0022 | padj 1
+[230]   LYZ      median delta  +0.0017 | padj 0.25
+[230]   R2 未通過（['RPL13A']）→ 整支作廢
+[230] 
+=== 全基因盤：惡性 B − 同檢體內嚴格非惡性 B（log1p CP10K）===
+[230] gene      median_delta        同向       padj        偵測率中位
+[230] CCND1          +2.1814    19/19     6.1e-05       1.0000  陽對
+[230] RPL13A         +0.4283    19/19     6.1e-05       0.9247  陰對
+[230] GPX4           +0.1869    19/19     6.1e-05       0.5000  模組
+[230] SOX11          +0.0902    18/19    0.000122       0.1934  陽對
+[230] SLC3A2         +0.0622    17/19     0.00061       0.3159  模組
+[230] NAMPT          +0.0184    14/19       0.289       0.2185  槓桿
+[230] NAPRT          +0.0129    15/19       0.114       0.0800  槓桿
+[230] SCLY           +0.0117    15/19       0.173       0.0760  模組
+[230] GSS            +0.0098    17/19      0.0187       0.0449  模組
+[230] MAFG           +0.0053    14/19       0.577       0.0687  模組
+[230] CD3E           +0.0022    14/19           1       0.0192  陰對
+[230] LYZ            +0.0017    13/19        0.25       0.0026  陰對
+[230] SLC7A11        +0.0014    13/19       0.498       0.0043  ★標的
+[230] GCLM           +0.0013    11/19           1       0.0260  模組
+[230] AIFM2          +0.0002    10/19           1       0.0161  模組
+[230] GCLC           -0.0026     7/19           1       0.0534  模組
+[230] 
+=== R3 主要判定 ===
+[230]   SLC7A11 median delta +0.0014 | 13/19 同向（需 ≥ 15）| padj 0.498
+[230]   R3 未通過
+[230] 
+*** 判定：VOID_controls_failed ***
+[230] 
+→ results/230_external_module.json、230_external_gene_stats.csv、230_external_module_delta.csv、230_external_detection.csv

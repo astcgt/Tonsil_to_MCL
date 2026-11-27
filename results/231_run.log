@@ -1,0 +1,122 @@
+[_compat] 已為 csr_array, csc_array, coo_array, lil_array, dia_array, bsr_array, dok_array 補上 getnnz()
+[_compat] 已修補 scanpy 的 kNN 連續性問題
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S1：UMI 惡性 6663 vs 非惡性 3493（比值 1.91）| RPL13A delta +0.8880
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S2：UMI 惡性 4453 vs 非惡性 2995（比值 1.49）| RPL13A delta +0.4837
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S3：UMI 惡性 4400 vs 非惡性 3487（比值 1.26）| RPL13A delta +0.1712
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S4：UMI 惡性 4008 vs 非惡性 2349（比值 1.71）| RPL13A delta +0.6016
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S5：UMI 惡性 4314 vs 非惡性 2963（比值 1.46）| RPL13A delta +0.2814
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S6：UMI 惡性 6969 vs 非惡性 3939（比值 1.77）| RPL13A delta +0.9155
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S7：UMI 惡性 5896 vs 非惡性 4340（比值 1.36）| RPL13A delta +0.3389
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S8：UMI 惡性 5443 vs 非惡性 3960（比值 1.37）| RPL13A delta +0.6467
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S9：UMI 惡性 6269 vs 非惡性 5315（比值 1.18）| RPL13A delta +0.4283
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S10：UMI 惡性 4290 vs 非惡性 2791（比值 1.54）| RPL13A delta +0.4253
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S12：UMI 惡性 4067 vs 非惡性 3727（比值 1.09）| RPL13A delta +0.3051
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S13：UMI 惡性 5483 vs 非惡性 4337（比值 1.26）| RPL13A delta +0.4547
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S14：UMI 惡性 4765 vs 非惡性 3027（比值 1.57）| RPL13A delta +0.5408
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S15：UMI 惡性 5198 vs 非惡性 3314（比值 1.57）| RPL13A delta +0.5785
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S16：UMI 惡性 4290 vs 非惡性 3472（比值 1.24）| RPL13A delta +0.2297
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S17：UMI 惡性 2305 vs 非惡性 1872（比值 1.23）| RPL13A delta +0.1404
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S18：UMI 惡性 5348 vs 非惡性 4039（比值 1.32）| RPL13A delta +0.2847
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S19：UMI 惡性 4111 vs 非惡性 2648（比值 1.55）| RPL13A delta +0.1937
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+/raid/jupyter-alz.ee09/Tonsil_to_MCL/env/tonsilmcl/lib/python3.11/site-packages/anndata/_core/anndata.py:1884: UserWarning: Variable names are not unique. To make them unique, call `.var_names_make_unique`.
+  utils.warn_names_duplicates("var")
+[231]   S20：UMI 惡性 6802 vs 非惡性 2660（比值 2.56）| RPL13A delta +0.8775
+[231] 
+=== P1：惡性組是不是讀得比較深 ===
+[231]   UMI 比值中位 1.46（範圍 1.09–2.56）| 19/19 個樣本 > 1
+[231]   偵測基因數比值中位 1.24
+[231]   P1 通過
+[231] 
+=== P2：深度差越大，假訊號越大？ ===
+[231]   Spearman r = 0.705, p = 0.000744 → P2 通過
+[231] 
+=== 無所不在的對照基因，在這個切法下的 delta ===
+[231]   RPL13A   median  +0.4283 | 19/19 同向 | Wilcoxon p 3.81e-06
+[231]   RPS6     median  +0.4122 | 19/19 同向 | Wilcoxon p 3.81e-06
+[231]   ACTB     median  +0.3841 | 19/19 同向 | Wilcoxon p 3.81e-06
+[231]   GAPDH    median  +0.3504 | 19/19 同向 | Wilcoxon p 3.81e-06
+[231]   TMSB4X   median  +0.5550 | 19/19 同向 | Wilcoxon p 3.81e-06
+[231] 
+*** 判定：confound_confirmed ***
+[231]     `CCND1 == 0` 當非惡性組會順便挑出低深度細胞，CP10K 修不掉。
+[231]     這個切法的任何正向 delta 都不可直接解讀。
+[231] 
+→ results/231_depth_confound.json、231_depth_confound.csv
