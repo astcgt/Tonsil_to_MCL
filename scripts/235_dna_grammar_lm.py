@@ -187,20 +187,36 @@ def build_sets():
     return fgm.reset_index(drop=True), bgm.reset_index(drop=True), pk, fa
 
 
-def embed(seqs, tok, mod, torch, dev):
-    out = []
-    for a in range(0, len(seqs), BATCH):
-        blk = [center_crop(s) for s in seqs[a:a + BATCH]]
-        enc = tok(blk, return_tensors="pt", padding=True, truncation=True)
-        enc = {k: v.to(dev) for k, v in enc.items()}
-        with torch.no_grad():
-            h = mod(**enc, output_hidden_states=True).hidden_states[-1]
-            m = enc["attention_mask"].unsqueeze(-1).float()
-            v = (h * m).sum(1) / m.sum(1).clamp(min=1)
-        out.append(v.float().cpu().numpy())
-        if (a // BATCH) % 20 == 0:
-            log("  嵌入 %d / %d" % (a, len(seqs)))
-    return np.vstack(out)
+EMB_PY = f"{BASE}/env/esmfold/bin/python"
+EMB_SCRIPT = f"{BASE}/scripts/235b_embed.py"
+SCRATCH = os.environ.get("TONSILMCL_SCRATCH", "/var/tmp/tonsilmcl_scratch")
+
+
+def embed(seqs, tag):
+    """把序列交給 235b 在 env/esmfold 裡嵌入（那裡的 torch 夠新）。
+
+    為什麼走 subprocess 而不是直接 import：唯一有 torch >= 2.6 的環境沒有
+    pandas/sklearn，而有 pandas/sklearn 的環境 torch 太舊。裝套件會動到能用的環境，
+    所以刻意分段，各自在已具備條件的環境裡跑。"""
+    os.makedirs(SCRATCH, exist_ok=True)
+    src = f"{SCRATCH}/235_{tag}.txt"
+    dst = f"{SCRATCH}/235_{tag}.npy"
+    with open(src, "w") as fh:
+        for s in seqs:
+            fh.write(center_crop(s) + "\n")
+    log("  交給 235b 嵌入 %d 條（%s）…" % (len(seqs), tag))
+    import subprocess
+    r = subprocess.run([EMB_PY, "-I", EMB_SCRIPT, src, dst, str(BATCH)],
+                       capture_output=True, text=True)
+    for line in r.stdout.splitlines()[-3:]:
+        log("    " + line)
+    if r.returncode != 0:
+        log("    STDERR: " + r.stderr[-800:])
+        raise SystemExit("235b 嵌入失敗，中止")
+    Z = np.load(dst).astype(np.float32)
+    if len(Z) != len(seqs):
+        raise SystemExit("嵌入列數 %d 與輸入 %d 不符" % (len(Z), len(seqs)))
+    return Z
 
 
 def cv_auc(Z, y, folds=5, seed=0):
@@ -216,29 +232,6 @@ def cv_auc(Z, y, folds=5, seed=0):
 
 def main():
     fgm, bgm, pk, fa = build_sets()
-
-    import torch
-    from transformers import AutoTokenizer, EsmConfig, EsmForMaskedLM
-    dev = "cuda" if torch.cuda.is_available() else "cpu"
-    log("載入 %s 到 %s（HF_HOME=%s）" % (MODEL, dev, os.environ["HF_HOME"]))
-    # 這個 repo 的 config 帶 auto_map，指向它自己 vendored 的 modeling_esm.py。
-    # 用 AutoModel + trust_remote_code=True 會**執行從 HuggingFace 下載的程式碼**，
-    # 所以這裡刻意改用 transformers 內建的 EsmForMaskedLM（config 宣告的架構就是它），
-    # 完全不執行遠端程式碼。代價是必須自己確認權重對得上 ——
-    # 如果 vendored 版本與上游 ESM 有差異，載入會出現 missing/unexpected keys，
-    # 那樣算出來的嵌入就不可信，所以下面把它當硬性守門。
-    tok = AutoTokenizer.from_pretrained(MODEL)
-    mod = EsmForMaskedLM.from_pretrained(MODEL)
-    # 守門：確認沒有任何權重是隨機初始化的。from_pretrained 對不上的權重會留在
-    # 這個清單裡，而一個隨機初始化的 encoder 會產生看起來正常但毫無意義的嵌入。
-    cfg = EsmConfig.from_pretrained(MODEL)
-    n_par = sum(p.numel() for p in mod.parameters())
-    log("參數量 %.0f M｜hidden %d｜層數 %d"
-        % (n_par / 1e6, cfg.hidden_size, cfg.num_hidden_layers))
-    if n_par < 100e6:
-        raise SystemExit("參數量不符預期，中止")
-    mod = mod.to(dev).eval()
-    log("模型載入完成（未執行任何遠端程式碼，權重完全對位）")
 
     out = {"model": MODEL, "seqlen": SEQLEN,
            "n_fg": int(len(fgm)), "n_bg": int(len(bgm))}
@@ -265,7 +258,7 @@ def main():
     keep = [i for i, s in enumerate(ds) if len(s) > 50]
     ds = [ds[i] for i in keep]
     log("  近端 %d、遠端 %d" % (len(ps), len(ds)))
-    Zp = embed(ps + ds, tok, mod, torch, dev)
+    Zp = embed(ps + ds, "p1")
     yp = np.r_[np.ones(len(ps)), np.zeros(len(ds))]
     auc_p1 = cv_auc(Zp, yp)
     p1 = bool(auc_p1 >= P1_MIN_AUC)
@@ -284,7 +277,7 @@ def main():
 
     # ------------------------------------------------- 主檢定 ---
     log("\n=== 主檢定：腫瘤新開 vs 配對背景 ===")
-    Z = embed(list(fgm.seq) + list(bgm.seq), tok, mod, torch, dev)
+    Z = embed(list(fgm.seq) + list(bgm.seq), "main")
     y = np.r_[np.ones(len(fgm)), np.zeros(len(bgm))]
     auc = cv_auc(Z, y)
     np.save(f"{RES}/235_embeddings.npy", Z.astype(np.float16))
@@ -324,7 +317,7 @@ def main():
     log("  做雙核苷酸保留打亂並重新嵌入…")
     rs = np.random.default_rng(2)
     sh = [dinuc_shuffle(s, rs) for s in list(fgm.seq) + list(bgm.seq)]
-    Zs = embed(sh, tok, mod, torch, dev)
+    Zs = embed(sh, "shuffled")
     auc_sh = cv_auc(Zs, y)
     p4 = bool(auc_sh <= q95)
     out["P4_dinucleotide_shuffle"] = {

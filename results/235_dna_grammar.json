@@ -1,0 +1,39 @@
+{
+  "model": "InstaDeepAI/nucleotide-transformer-500m-human-ref",
+  "seqlen": 1000,
+  "n_fg": 2417,
+  "n_bg": 2417,
+  "P1_positive_control": {
+    "rule": "近端 vs 遠端 peak 的交叉驗證 AUC ≥ 0.85",
+    "n_proximal": 1200,
+    "n_distal": 1200,
+    "auc": 0.89055625,
+    "pass": true
+  },
+  "P2_composition_baseline": {
+    "rule": "語言模型 AUC 必須超過只用 GC + 寬度的基線",
+    "auc_gc_width": 0.47743760622634224,
+    "auc_lm": 0.5071228672780329,
+    "lm_beats_baseline": true
+  },
+  "P3_label_permutation": {
+    "rule": "觀測 AUC 必須超過置換虛無的 95 分位",
+    "n_perm": 200,
+    "null_mean": 0.49999697229783036,
+    "null_sd": 0.01167345969126416,
+    "null_q95": 0.5158976745364385,
+    "observed": 0.5071228672780329,
+    "empirical_p": 0.28,
+    "pass": false
+  },
+  "P4_dinucleotide_shuffle": {
+    "rule": "打亂後的 AUC 必須不超過置換虛無的 95 分位，否則模型讀的是組成",
+    "auc_shuffled": 0.5058718164621067,
+    "null_q95": 0.5158976745364385,
+    "pass": true
+  },
+  "main_test": {
+    "auc_lm": 0.5071228672780329
+  },
+  "verdict": "no_grammar_difference"
+}
