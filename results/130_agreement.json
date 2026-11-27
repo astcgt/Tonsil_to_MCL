@@ -1,0 +1,222 @@
+{
+  "definition": {
+    "agreement": "tumour_specific 排名進入前 5%（4012 個基因取前 201 名）",
+    "z": "tumour_specific / sd(mean_nontumour across genes)；與 agreement 是兩個不同的量，勿混用"
+  },
+  "n_genes": 4012,
+  "top_n": 201,
+  "methods": [
+    "A_gene_space",
+    "B_scvi_counterfactual",
+    "C_contrastivevi",
+    "D_latent_arithmetic"
+  ],
+  "n_agree_4of4": 25,
+  "n_agree_3of4": 66,
+  "n_agree_1of4": 280,
+  "agree_4of4_genes": [
+    "CCND1",
+    "CCDC88A",
+    "RGS12",
+    "SOX11",
+    "OSBPL3",
+    "AC010983.1",
+    "MYO6",
+    "LINC01374",
+    "LTBP1",
+    "KIAA1217",
+    "ETV6",
+    "ADAMTS6",
+    "WNT3",
+    "SVIL",
+    "AKAP6",
+    "PTPRK",
+    "TNFRSF21",
+    "RNF130",
+    "MTSS1",
+    "ARHGEF4",
+    "PLPP3",
+    "CARMIL1",
+    "AP000829.1",
+    "SGPP2",
+    "THSD7A"
+  ],
+  "panel_agreement": {
+    "SLC7A11": 3,
+    "SLC3A2": 1,
+    "GCLM": 0,
+    "GCLC": 1,
+    "AIFM2": 0,
+    "MAFG": 0,
+    "MAFF": 0,
+    "MAFK": 0,
+    "BACH1": 1,
+    "NFE2L2": 0,
+    "CCND1": 4,
+    "SOX11": 4
+  },
+  "panel_rank_per_method": {
+    "SLC7A11": {
+      "A_gene_space": 158,
+      "B_scvi_counterfactual": 150,
+      "C_contrastivevi": 414,
+      "D_latent_arithmetic": 53
+    },
+    "SLC3A2": {
+      "A_gene_space": 195,
+      "B_scvi_counterfactual": 649,
+      "C_contrastivevi": 751,
+      "D_latent_arithmetic": 630
+    },
+    "GCLM": {
+      "A_gene_space": 3582,
+      "B_scvi_counterfactual": 3409,
+      "C_contrastivevi": 3777,
+      "D_latent_arithmetic": 343
+    },
+    "GCLC": {
+      "A_gene_space": 3348,
+      "B_scvi_counterfactual": 1092,
+      "C_contrastivevi": 3649,
+      "D_latent_arithmetic": 90
+    },
+    "AIFM2": {
+      "A_gene_space": 1577,
+      "B_scvi_counterfactual": 2859,
+      "C_contrastivevi": 981,
+      "D_latent_arithmetic": 1972
+    },
+    "MAFG": {
+      "A_gene_space": 468,
+      "B_scvi_counterfactual": 729,
+      "C_contrastivevi": 1446,
+      "D_latent_arithmetic": 2961
+    },
+    "MAFF": {
+      "A_gene_space": 599,
+      "B_scvi_counterfactual": 918,
+      "C_contrastivevi": 1113,
+      "D_latent_arithmetic": 2467
+    },
+    "MAFK": {
+      "A_gene_space": 595,
+      "B_scvi_counterfactual": 768,
+      "C_contrastivevi": 1001,
+      "D_latent_arithmetic": 709
+    },
+    "BACH1": {
+      "A_gene_space": 156,
+      "B_scvi_counterfactual": 2923,
+      "C_contrastivevi": 2250,
+      "D_latent_arithmetic": 471
+    },
+    "NFE2L2": {
+      "A_gene_space": 213,
+      "B_scvi_counterfactual": 3670,
+      "C_contrastivevi": 658,
+      "D_latent_arithmetic": 684
+    },
+    "CCND1": {
+      "A_gene_space": 5,
+      "B_scvi_counterfactual": 26,
+      "C_contrastivevi": 2,
+      "D_latent_arithmetic": 34
+    },
+    "SOX11": {
+      "A_gene_space": 45,
+      "B_scvi_counterfactual": 43,
+      "C_contrastivevi": 35,
+      "D_latent_arithmetic": 96
+    }
+  },
+  "sensitivity_z": {
+    "A_gene_space": {
+      "noise_sd": 0.12931873610099656,
+      "n_z_gt3": 178,
+      "panel_z": {
+        "SLC7A11": 3.265289530943745,
+        "SLC3A2": 2.841273288272129,
+        "GCLM": -0.37650306803968364,
+        "GCLC": -0.1286586204305857,
+        "AIFM2": 0.04214481522102349,
+        "MAFG": 0.9884808340453074,
+        "MAFF": 0.6399879261133345,
+        "MAFK": 0.651981610534584,
+        "BACH1": 3.2845088897156502,
+        "NFE2L2": 2.679435705914017,
+        "CCND1": 15.512781257111902,
+        "SOX11": 6.764940095810219
+      },
+      "truth_z": {
+        "CCND1": 15.512781257111902,
+        "SOX11": 6.764940095810219
+      }
+    },
+    "B_scvi_counterfactual": {
+      "noise_sd": 0.044963630460484065,
+      "n_z_gt3": 96,
+      "panel_z": {
+        "SLC7A11": 2.3209295586188152,
+        "SLC3A2": 0.6224576438121338,
+        "GCLM": -0.4622088745550388,
+        "GCLC": 0.2007777744004106,
+        "AIFM2": -0.07415919231374053,
+        "MAFG": 0.5188104576831397,
+        "MAFF": 0.33191447964904236,
+        "MAFK": 0.4699000472845367,
+        "BACH1": -0.09272668675796723,
+        "NFE2L2": -0.9465975983973733,
+        "CCND1": 4.833383413852844,
+        "SOX11": 4.132391254295851
+      },
+      "truth_z": {
+        "CCND1": 4.833383413852844,
+        "SOX11": 4.132391254295851
+      }
+    },
+    "C_contrastivevi": {
+      "noise_sd": 0.25942533596858136,
+      "n_z_gt3": 54,
+      "panel_z": {
+        "SLC7A11": 0.8083742899298445,
+        "SLC3A2": 0.3700548573191865,
+        "GCLM": -1.2726419663326065,
+        "GCLC": -0.910141919907568,
+        "AIFM2": 0.21835737461907148,
+        "MAFG": 0.0743512649712506,
+        "MAFF": 0.15876735105814396,
+        "MAFK": 0.2063678162356324,
+        "BACH1": -0.006248673825765903,
+        "NFE2L2": 0.4484382724290492,
+        "CCND1": 6.840644920797323,
+        "SOX11": 3.51389336761455
+      },
+      "truth_z": {
+        "CCND1": 6.840644920797323,
+        "SOX11": 3.51389336761455
+      }
+    },
+    "D_latent_arithmetic": {
+      "noise_sd": 0.03741956806942394,
+      "n_z_gt3": 18,
+      "panel_z": {
+        "SLC7A11": 2.1671397647848187,
+        "SLC3A2": 0.2669477503493983,
+        "GCLM": 0.623883632004021,
+        "GCLC": 1.8302026985253845,
+        "AIFM2": -0.018620188117957782,
+        "MAFG": -0.21592018919318817,
+        "MAFF": -0.06625288806753096,
+        "MAFK": 0.1983280701198417,
+        "BACH1": 0.40818193319532453,
+        "NFE2L2": 0.21860883778340018,
+        "CCND1": 2.4773519981749033,
+        "SOX11": 1.773545873498306
+      },
+      "truth_z": {
+        "CCND1": 2.4773519981749033,
+        "SOX11": 1.773545873498306
+      }
+    }
+  }
+}
