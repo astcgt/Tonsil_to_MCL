@@ -1,0 +1,262 @@
+{
+  "model": "Human-GEM",
+  "cystine_exchange": "MAR09363",
+  "methionine_exchange": "MAR09042",
+  "n_bypass_closed": 46,
+  "bypass_closed": [
+    {
+      "id": "MAR08958",
+      "name": "Exchange of S-Sulfo-L-Cysteine"
+    },
+    {
+      "id": "MAR09065",
+      "name": "Exchange of cysteine"
+    },
+    {
+      "id": "MAR09374",
+      "name": "Exchange of 3-mercaptolactate-cysteine-disulfide"
+    },
+    {
+      "id": "MAR09853",
+      "name": "Exchange of homocysteine"
+    },
+    {
+      "id": "MAR10497",
+      "name": "Exchange of Alanyl-Arginyl-Cysteine"
+    },
+    {
+      "id": "MAR10522",
+      "name": "Exchange of Arginyl-Valyl-Cysteine"
+    },
+    {
+      "id": "MAR10525",
+      "name": "Exchange of Asparaginyl-Cysteinyl-Cysteine"
+    },
+    {
+      "id": "MAR10528",
+      "name": "Exchange of Asparaginyl-Phenylalanyl-Cysteine"
+    },
+    {
+      "id": "MAR10537",
+      "name": "Exchange of Aspartyl-Histidyl-Cysteine"
+    },
+    {
+      "id": "MAR10546",
+      "name": "Exchange of Cystyl-Cysteine"
+    },
+    {
+      "id": "MAR10573",
+      "name": "Exchange of Glycyl-Lysyl-Cysteine"
+    },
+    {
+      "id": "MAR10577",
+      "name": "Exchange of Histidyl-Arginyl-Cysteine"
+    },
+    {
+      "id": "MAR10580",
+      "name": "Exchange of Histidyl-Cystyl-Cysteine"
+    },
+    {
+      "id": "MAR10652",
+      "name": "Exchange of Prolyl-Arginyl-Cysteine"
+    },
+    {
+      "id": "MAR10653",
+      "name": "Exchange of Prolyl-Asparaginyl-Cysteine"
+    },
+    {
+      "id": "MAR10654",
+      "name": "Exchange of Prolyl-Cysteine"
+    },
+    {
+      "id": "MAR11821",
+      "name": "Exchange of N-acetyl-L-cysteine"
+    },
+    {
+      "id": "MAR11914",
+      "name": "Exchange of homocysteine-thiolactone"
+    },
+    {
+      "id": "MAR11916",
+      "name": "Exchange of gamma-glutamyl-cysteine"
+    },
+    {
+      "id": "MAR12659",
+      "name": "Exchange of cysteine-conjugate-acetaminophen"
+    },
+    {
+      "id": "MAR12686",
+      "name": "Exchange of acetaminophen-mercapturate-conjugate/N-acetyl-cysteine-acetaminophen"
+    },
+    {
+      "id": "MAR12632",
+      "name": "Exchange of acetaminophen-glutathione-conjugate"
+    },
+    {
+      "id": "MAR11301",
+      "name": "Exchange of L-Homocystine"
+    },
+    {
+      "id": "MAR12130",
+      "name": "Exchange of 5-S-Cysteinylglycine Dopa"
+    },
+    {
+      "id": "MAR09846",
+      "name": "Exchange of L-cystathionine"
+    },
+    {
+      "id": "MAR08963",
+      "name": "Exchange of hypotaurine"
+    },
+    {
+      "id": "MAR09418",
+      "name": "Exchange of taurine"
+    },
+    {
+      "id": "MAR12710",
+      "name": "Exchange of taurine conjugate of S-ibuprofen"
+    },
+    {
+      "id": "MAR04364",
+      "name": "Exchange of N-acetyl-seryl-aspartyl-lysyl-proline"
+    },
+    {
+      "id": "MAR04366",
+      "name": "Exchange of N-acetyl-seryl-aspartate"
+    },
+    {
+      "id": "MAR09246",
+      "name": "Exchange of N-acetylglucosamine"
+    },
+    {
+      "id": "MAR09689",
+      "name": "Exchange of N-acetyl-D-mannosamine"
+    },
+    {
+      "id": "MAR10198",
+      "name": "Exchange of N-acetylornithine"
+    },
+    {
+      "id": "MAR10207",
+      "name": "Exchange of N-acetylmethionine"
+    },
+    {
+      "id": "MAR10222",
+      "name": "Exchange of N-acetyl-L-alanine"
+    },
+    {
+      "id": "MAR10223",
+      "name": "Exchange of N-acetyl-L-asparagine"
+    },
+    {
+      "id": "MAR10264",
+      "name": "Exchange of N-acetyl-L-aspartate"
+    },
+    {
+      "id": "MAR10419",
+      "name": "Exchange of N-Acetylleucine"
+    },
+    {
+      "id": "MAR10430",
+      "name": "Exchange of N-acetyl-L-glutamate"
+    },
+    {
+      "id": "MAR11347",
+      "name": "Exchange of N-acetylgalactosamine"
+    },
+    {
+      "id": "MAR11348",
+      "name": "Exchange of N-acetylneuraminate"
+    },
+    {
+      "id": "MAR11461",
+      "name": "Exchange of N-Acetyl-Tyrosine"
+    },
+    {
+      "id": "MAR11475",
+      "name": "Exchange of N-Acetylvanilalanine"
+    },
+    {
+      "id": "MAR11904",
+      "name": "Exchange of formyl-N-acetyl-5-methoxykynurenamine"
+    },
+    {
+      "id": "MAR12104",
+      "name": "Exchange of CMP-N-acetylneuraminate"
+    },
+    {
+      "id": "MAR09432",
+      "name": "Exchange of thiosulfate"
+    }
+  ],
+  "growth_unconstrained": 138.5326986441912,
+  "ko_effect": {
+    "胱胺酸充裕 / 甲硫胺酸充裕": {
+      "CBS": 0.0,
+      "CTH": 0.0,
+      "FASN": 0.0,
+      "G6PD": 0.0,
+      "GCLC": 0.0,
+      "GCLM": 0.0,
+      "GPX4": 0.0,
+      "GSS": 0.0,
+      "MAT2A": 0.0,
+      "PGD": 0.0,
+      "SLC2A1": 0.0,
+      "SLC3A2": 0.0,
+      "SLC7A11": 0.0
+    },
+    "胱胺酸充裕 / 甲硫胺酸匱乏": {
+      "CBS": 0.0,
+      "CTH": 0.0,
+      "FASN": 0.0,
+      "G6PD": 0.0,
+      "GCLC": 0.0,
+      "GCLM": 0.0,
+      "GPX4": 0.0,
+      "GSS": 0.0,
+      "MAT2A": 0.0,
+      "PGD": 0.0,
+      "SLC2A1": 0.0,
+      "SLC3A2": 0.0,
+      "SLC7A11": 0.0
+    },
+    "胱胺酸匱乏 / 甲硫胺酸充裕": {
+      "CBS": 0.0,
+      "CTH": 0.0,
+      "FASN": 0.0,
+      "G6PD": 0.0,
+      "GCLC": 0.0,
+      "GCLM": 0.0,
+      "GPX4": 0.0,
+      "GSS": 0.0,
+      "MAT2A": 0.0,
+      "PGD": 0.0,
+      "SLC2A1": 0.0,
+      "SLC3A2": 0.0,
+      "SLC7A11": 0.0
+    },
+    "胱胺酸匱乏 / 甲硫胺酸匱乏": {
+      "CBS": 0.0,
+      "CTH": 0.0,
+      "FASN": 0.0,
+      "G6PD": 0.0,
+      "GCLC": 0.0,
+      "GCLM": 0.0,
+      "GPX4": 0.0,
+      "GSS": 0.0,
+      "MAT2A": 0.0,
+      "PGD": 0.0,
+      "SLC2A1": 0.0,
+      "SLC3A2": 0.0,
+      "SLC7A11": 0.0
+    }
+  },
+  "caveat": "FBA 為穩態化學計量；無動力學、氧化壓力與鐵死亡",
+  "slc7a11": {
+    "胱胺酸充裕 / 甲硫胺酸充裕": 0.0,
+    "胱胺酸充裕 / 甲硫胺酸匱乏": 0.0,
+    "胱胺酸匱乏 / 甲硫胺酸充裕": 0.0,
+    "胱胺酸匱乏 / 甲硫胺酸匱乏": 0.0
+  }
+}

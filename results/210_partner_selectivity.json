@@ -1,0 +1,80 @@
+{
+  "bsa_cut_A2": 5.0,
+  "n_residues": 99,
+  "footprint_sizes": {
+    "NRF2": 42,
+    "BACH1": 41,
+    "MAFG_homodimer": 42,
+    "D1_design": 53
+  },
+  "occlusion": {
+    "D1_design": {
+      "occl_BACH1": 0.8284674621308286,
+      "occl_NRF2": 0.8481799504820102,
+      "selectivity": -0.019712488351181667
+    },
+    "MAFG_homodimer": {
+      "occl_BACH1": 0.9965924797607968,
+      "occl_NRF2": 0.9426921456039614,
+      "selectivity": 0.05390033415683537
+    },
+    "NRF2_as_blocker": {
+      "occl_BACH1": 0.820766692053821,
+      "occl_NRF2": 0.9892140336090185,
+      "selectivity": -0.16844734155519747
+    }
+  },
+  "P3_permutation_null": {
+    "n_perm": 20000,
+    "null_mean": 0.00032353769656196283,
+    "null_sd": 0.048657838336214926,
+    "null_q95": 0.08014492281815253,
+    "observed": -0.019712488351181667,
+    "empirical_p": 0.65925,
+    "pass": false
+  },
+  "P1_design_prefers_BACH1": {
+    "S": -0.019712488351181667,
+    "pass": false
+  },
+  "P2_better_than_generic_zipper_binder": {
+    "S_design": -0.019712488351181667,
+    "S_homodimer": 0.05390033415683537,
+    "difference": -0.07361282250801704,
+    "pass": false
+  },
+  "P4_negative_control_direction": {
+    "S_NRF2_as_blocker": -0.16844734155519747,
+    "pass": true
+  },
+  "epitope_coverage": {
+    "BACH1_specific_positions": [
+      61,
+      64,
+      65,
+      68,
+      71,
+      115,
+      117,
+      118,
+      121
+    ],
+    "n_BACH1_specific_covered_by_D1": 6,
+    "n_BACH1_specific": 9,
+    "n_NRF2_specific_covered_by_D1": 0,
+    "n_NRF2_specific": 1,
+    "D1_bsa_on_BACH1_specific_A2": 139.98000000000002,
+    "D1_bsa_on_NRF2_specific_A2": 0.0
+  },
+  "summary": {
+    "passed": [
+      "P4_negative_control_direction"
+    ],
+    "failed": [
+      "P3_permutation_null",
+      "P1_design_prefers_BACH1",
+      "P2_better_than_generic_zipper_binder"
+    ],
+    "verdict": "not_worth_deepening"
+  }
+}

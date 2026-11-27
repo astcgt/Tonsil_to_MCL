@@ -1,0 +1,56 @@
+{
+  "n_fg": 2417,
+  "n_bg": 2417,
+  "P4_matching_sanity": {
+    "fg_width_median": 1000.0,
+    "bg_width_median": 997.0,
+    "fg_gc_median": 0.519857433808554,
+    "bg_gc_median": 0.5200553250345782,
+    "pass": true
+  },
+  "patterns": {
+    "ARE_full": {
+      "fg_cores": 16882,
+      "fg_hits": 1252,
+      "fg_ratio": 0.07416182916716028,
+      "bg_cores": 16835,
+      "bg_hits": 1261,
+      "bg_ratio": 0.0749034749034749,
+      "difference": -0.0007416457363146195,
+      "ratio_of_ratios": 0.9900986471285832
+    },
+    "control_pattern": {
+      "fg_cores": 16882,
+      "fg_hits": 540,
+      "fg_ratio": 0.031986731429925364,
+      "bg_cores": 16835,
+      "bg_hits": 494,
+      "bg_ratio": 0.029343629343629343,
+      "difference": 0.0026431020862960203,
+      "ratio_of_ratios": 1.090074136888246
+    }
+  },
+  "P2_label_permutation": {
+    "n_perm": 5000,
+    "null_mean": -2.094665241999386e-05,
+    "null_sd": 0.0029322079113877323,
+    "observed": -0.0007416457363146195,
+    "empirical_p_two_sided": 0.7962,
+    "pass": false
+  },
+  "P3_negative_control": {
+    "control_difference": 0.0026431020862960203,
+    "target_difference": -0.0007416457363146195,
+    "pass": false
+  },
+  "summary": {
+    "passed": [
+      "P4_matching_sanity"
+    ],
+    "failed": [
+      "P2_label_permutation",
+      "P3_negative_control"
+    ],
+    "verdict": "not_worth_deepening"
+  }
+}

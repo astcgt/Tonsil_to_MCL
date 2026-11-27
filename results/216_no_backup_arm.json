@@ -1,0 +1,76 @@
+{
+  "n_lines": 1103,
+  "n_B": 75,
+  "n_non_lymphoid": 1012,
+  "P1_AIFM2_low_in_B": {
+    "median_B": 2.596935142387232,
+    "median_non_lymphoid": 3.6117624393983334,
+    "p": 9.907190916415197e-07,
+    "pass": true
+  },
+  "P2_within_non_lymphoid": {
+    "all": {
+      "r": 0.16353444957993798,
+      "p": 4.711554632673076e-08,
+      "n": 1103
+    },
+    "non_lymphoid": {
+      "r": 0.14184704030122075,
+      "p": 5.9046179347293684e-06,
+      "n": 1012
+    },
+    "expected_sign": "正（AIFM2 高 → gene effect 較不負 → 較不依賴）",
+    "pass": true
+  },
+  "P3_empirical_null": {
+    "n_random_genes": 1000,
+    "null_mean": 0.007164968704434404,
+    "null_sd": 0.051829727157454986,
+    "null_q95": 0.09119183615289783,
+    "observed": 0.14184704030122075,
+    "empirical_p": 0.001,
+    "pass": true
+  },
+  "P4_negative_control": {
+    "r": 0.017164839286686412,
+    "p": 0.7780916393062893,
+    "pass": true
+  },
+  "P5_two_by_two_non_lymphoid": {
+    "AIFM2低×GPX4依賴": {
+      "n": 220,
+      "frac_SLC7A11_dependent": 0.00909090909090909,
+      "median_SLC7A11_effect": 0.05031337143254145
+    },
+    "AIFM2低×GPX4不依賴": {
+      "n": 33,
+      "frac_SLC7A11_dependent": 0.030303030303030304,
+      "median_SLC7A11_effect": 0.1260057771951954
+    },
+    "AIFM2高×GPX4依賴": {
+      "n": 471,
+      "frac_SLC7A11_dependent": 0.004246284501061571,
+      "median_SLC7A11_effect": 0.0882018125524057
+    },
+    "AIFM2高×GPX4不依賴": {
+      "n": 288,
+      "frac_SLC7A11_dependent": 0.003472222222222222,
+      "median_SLC7A11_effect": 0.10776590153925014
+    }
+  },
+  "P5_pass": {
+    "low_backup_median": 0.05031337143254145,
+    "high_backup_median": 0.10776590153925014,
+    "pass": true
+  },
+  "summary": {
+    "passed": [
+      "P1_AIFM2_low_in_B",
+      "P2_within_non_lymphoid",
+      "P3_empirical_null",
+      "P4_negative_control",
+      "P5_pass"
+    ],
+    "failed": []
+  }
+}

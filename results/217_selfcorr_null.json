@@ -1,0 +1,50 @@
+{
+  "n_random_genes": 594,
+  "median": -0.012299185443248001,
+  "mean": -0.010105816808849886,
+  "q25": -0.04953132408485099,
+  "q75": 0.027967394887530198,
+  "frac_positive": 0.41919191919191917,
+  "wilcoxon_p": 1.1589099233982353e-05,
+  "background_is_positive": false,
+  "focus_genes": {
+    "SLC7A11": {
+      "r_self": 0.1042503853749652,
+      "percentile_vs_random": 0.9595959595959596
+    },
+    "NAMPT": {
+      "r_self": 0.15279267783837447,
+      "percentile_vs_random": 0.9814814814814815
+    },
+    "NAPRT": {
+      "r_self": 0.005998169772381876,
+      "percentile_vs_random": 0.6144781144781145
+    },
+    "GPX4": {
+      "r_self": -0.053892904389575946,
+      "percentile_vs_random": 0.23232323232323232
+    },
+    "AIFM2": {
+      "r_self": 0.07799535900650688,
+      "percentile_vs_random": 0.9326599326599326
+    },
+    "SCLY": {
+      "r_self": -0.01790855633153796,
+      "percentile_vs_random": 0.4478114478114478
+    },
+    "GCLC": {
+      "r_self": 0.13459140430560815,
+      "percentile_vs_random": 0.9781144781144782
+    },
+    "GCLM": {
+      "r_self": 0.16621072150117033,
+      "percentile_vs_random": 0.9882154882154882
+    }
+  },
+  "P3_shuffled_control": {
+    "n": 200,
+    "median": -0.0038375481578305248,
+    "pass": true
+  },
+  "interpretation": "背景不為正"
+}

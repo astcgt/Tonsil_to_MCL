@@ -1,0 +1,322 @@
+{
+  "model": "Human-GEM",
+  "objective": "DM_GSH_c（不可逆 GSH 需求）",
+  "medium": "RPMI-1640（20 個成分）＋ 11 個自由無機物/氣體",
+  "n_exchanges_closed": 1623,
+  "n_thiol_exchanges_blocked": 49,
+  "context_specific_routes": [
+    {
+      "metabolite": "cystine",
+      "reaction": "MAR08687",
+      "gpr_symbols": "SLC3A1 and SLC7A6 and SLC7A9",
+      "pure_and": true,
+      "expression": {
+        "SLC3A1": {
+          "mcl": 0.017162917,
+          "normal_b": 0.027295025
+        },
+        "SLC7A6": {
+          "mcl": 0.38382104,
+          "normal_b": 0.36575156
+        },
+        "SLC7A9": {
+          "mcl": 0.004284576,
+          "normal_b": 0.0023355102
+        }
+      },
+      "absent_genes": [
+        "SLC3A1",
+        "SLC7A9"
+      ],
+      "action": "敲掉 SLC3A1/SLC7A9"
+    },
+    {
+      "metabolite": "cystine",
+      "reaction": "MAR04931",
+      "gpr_symbols": "SLC3A2 and SLC7A11",
+      "pure_and": true,
+      "expression": {
+        "SLC3A2": {
+          "mcl": 0.27239063,
+          "normal_b": 0.09464914
+        },
+        "SLC7A11": {
+          "mcl": 0.20614183,
+          "normal_b": 0.00086882105
+        }
+      },
+      "absent_genes": [],
+      "action": "—"
+    },
+    {
+      "metabolite": "cystine",
+      "reaction": "MAR06891",
+      "gpr_symbols": "SLC3A1 and SLC7A9",
+      "pure_and": true,
+      "expression": {
+        "SLC3A1": {
+          "mcl": 0.017162917,
+          "normal_b": 0.027295025
+        },
+        "SLC7A9": {
+          "mcl": 0.004284576,
+          "normal_b": 0.0023355102
+        }
+      },
+      "absent_genes": [
+        "SLC3A1",
+        "SLC7A9"
+      ],
+      "action": "敲掉 SLC3A1/SLC7A9"
+    },
+    {
+      "metabolite": "cystine",
+      "reaction": "MAR06892",
+      "gpr_symbols": "SLC3A1 and SLC7A9",
+      "pure_and": true,
+      "expression": {
+        "SLC3A1": {
+          "mcl": 0.017162917,
+          "normal_b": 0.027295025
+        },
+        "SLC7A9": {
+          "mcl": 0.004284576,
+          "normal_b": 0.0023355102
+        }
+      },
+      "absent_genes": [
+        "SLC3A1",
+        "SLC7A9"
+      ],
+      "action": "敲掉 SLC3A1/SLC7A9"
+    }
+  ],
+  "context_dropped_genes": [
+    "SLC3A1",
+    "SLC7A9"
+  ],
+  "absent_threshold_log1p_cp10k": 0.05,
+  "gates": {
+    "G1_stoichiometry": {
+      "observed": 0.5170000000000002,
+      "expected": 0.517,
+      "reasoning": "一個胱胺酸給兩個半胱胺酸，甲硫胺酸經轉硫途徑給一個",
+      "pass": true
+    },
+    "G2_failstop": {
+      "observed": 0.0,
+      "expected": 0.0,
+      "pass": true
+    },
+    "G3_no_sulfate_assimilation": {
+      "with_sulfate": 0.5169999999999999,
+      "without_sulfate": 0.5169999999999998,
+      "pass": true
+    },
+    "G4_slc7a11_is_required": {
+      "wt": 0.4159999999999995,
+      "slc7a11_ko": 0.0,
+      "reasoning": "胱胺酸是唯一硫來源、甲硫胺酸關閉時，xCT 應為唯一入口",
+      "pass": true
+    }
+  },
+  "transsulfuration_expression": {
+    "CBS": {
+      "mcl": 0.0003226068,
+      "normal_b": 0.00015240668
+    },
+    "CBSL": {
+      "mcl": 7.087095e-05,
+      "normal_b": 6.2005375e-07
+    },
+    "CTH": {
+      "mcl": 0.008952559,
+      "normal_b": 0.011195522
+    }
+  },
+  "transsulfuration_absent": [
+    "CBS",
+    "CBSL",
+    "CTH"
+  ],
+  "scenario_B_bcell_no_transsulfuration": [
+    {
+      "cystine_mM": 0.208,
+      "methionine_mM": 0.101,
+      "gsh_wt": 0.41599999999999987,
+      "gsh_ko_slc7a11": 0.0,
+      "frac_lost": 1.0
+    },
+    {
+      "cystine_mM": 0.208,
+      "methionine_mM": 0.0,
+      "gsh_wt": 0.41599999999999965,
+      "gsh_ko_slc7a11": 0.0,
+      "frac_lost": 1.0
+    },
+    {
+      "cystine_mM": 0.1,
+      "methionine_mM": 0.101,
+      "gsh_wt": 0.1999999999999999,
+      "gsh_ko_slc7a11": 0.0,
+      "frac_lost": 1.0
+    },
+    {
+      "cystine_mM": 0.1,
+      "methionine_mM": 0.0,
+      "gsh_wt": 0.2000000000000002,
+      "gsh_ko_slc7a11": 0.0,
+      "frac_lost": 1.0
+    },
+    {
+      "cystine_mM": 0.04,
+      "methionine_mM": 0.101,
+      "gsh_wt": 0.07999999999999997,
+      "gsh_ko_slc7a11": -1.0390014499335264e-17,
+      "frac_lost": 1.0000000000000002
+    },
+    {
+      "cystine_mM": 0.04,
+      "methionine_mM": 0.0,
+      "gsh_wt": 0.07999999999999997,
+      "gsh_ko_slc7a11": -1.0390014499335264e-17,
+      "frac_lost": 1.0000000000000002
+    },
+    {
+      "cystine_mM": 0.01,
+      "methionine_mM": 0.101,
+      "gsh_wt": 0.019999999999999993,
+      "gsh_ko_slc7a11": -2.597503624833816e-18,
+      "frac_lost": 1.0000000000000002
+    },
+    {
+      "cystine_mM": 0.01,
+      "methionine_mM": 0.0,
+      "gsh_wt": 0.019999999999999993,
+      "gsh_ko_slc7a11": -2.597503624833816e-18,
+      "frac_lost": 1.0000000000000002
+    }
+  ],
+  "scenario_C_free_cysteine": [
+    {
+      "free_cysteine_mM": 0.0,
+      "gsh_wt": 0.41599999999999987,
+      "gsh_ko_slc7a11": -4.550725058693687e-32,
+      "frac_lost": 1.0
+    },
+    {
+      "free_cysteine_mM": 0.005,
+      "gsh_wt": 0.4209999999999998,
+      "gsh_ko_slc7a11": 0.004999999999999999,
+      "frac_lost": 0.9881235154394299
+    },
+    {
+      "free_cysteine_mM": 0.02,
+      "gsh_wt": 0.43599999999999967,
+      "gsh_ko_slc7a11": 0.02,
+      "frac_lost": 0.9541284403669724
+    },
+    {
+      "free_cysteine_mM": 0.05,
+      "gsh_wt": 0.4659999999999998,
+      "gsh_ko_slc7a11": 0.049999999999999906,
+      "frac_lost": 0.8927038626609444
+    },
+    {
+      "free_cysteine_mM": 0.2,
+      "gsh_wt": 0.6159999999999998,
+      "gsh_ko_slc7a11": 0.19999999999999996,
+      "frac_lost": 0.6753246753246753
+    }
+  ],
+  "ko_frac_by_condition": {
+    "RPMI（DepMap 的條件）": {
+      "SLC7A11": -0.8046,
+      "SLC3A2": -0.8046,
+      "GCLC": -1.0,
+      "GCLM": -1.0,
+      "GSS": -1.0,
+      "GPX4": 0.0,
+      "AIFM2": null,
+      "CBS": -0.1954,
+      "CTH": -0.1954,
+      "MAT2A": 0.0,
+      "G6PD": 0.0,
+      "PGD": 0.0,
+      "SLC2A1": 0.0
+    },
+    "無胱胺酸 / 甲硫胺酸充裕": {
+      "SLC7A11": 0.0,
+      "SLC3A2": 0.0,
+      "GCLC": -1.0,
+      "GCLM": -1.0,
+      "GSS": -1.0,
+      "GPX4": 0.0,
+      "AIFM2": null,
+      "CBS": -1.0,
+      "CTH": -1.0,
+      "MAT2A": 0.0,
+      "G6PD": 0.0,
+      "PGD": 0.0,
+      "SLC2A1": 0.0
+    },
+    "胱胺酸充裕 / 無甲硫胺酸": {
+      "SLC7A11": -1.0,
+      "SLC3A2": -1.0,
+      "GCLC": -1.0,
+      "GCLM": -1.0,
+      "GSS": -1.0,
+      "GPX4": 0.0,
+      "AIFM2": null,
+      "CBS": 0.0,
+      "CTH": 0.0,
+      "MAT2A": 0.0,
+      "G6PD": 0.0,
+      "PGD": 0.0,
+      "SLC2A1": 0.0
+    }
+  },
+  "slc7a11_scan": {
+    "0.0": {
+      "0.208": 1.0,
+      "0.15": 1.0,
+      "0.1": 1.0,
+      "0.06": 1.0,
+      "0.04": 1.0,
+      "0.02": 1.0,
+      "0.01": 1.0,
+      "0.0": null
+    },
+    "0.02": {
+      "0.208": 0.9541,
+      "0.15": 0.9375,
+      "0.1": 0.9091,
+      "0.06": 0.8571,
+      "0.04": 0.8,
+      "0.02": 0.6667,
+      "0.01": 0.5,
+      "0.0": 0.0
+    },
+    "0.05": {
+      "0.208": 0.8927,
+      "0.15": 0.8571,
+      "0.1": 0.8,
+      "0.06": 0.7059,
+      "0.04": 0.6154,
+      "0.02": 0.4444,
+      "0.01": 0.2857,
+      "0.0": 0.0
+    },
+    "0.101": {
+      "0.208": 0.8046,
+      "0.15": 0.7481,
+      "0.1": 0.6645,
+      "0.06": 0.543,
+      "0.04": 0.442,
+      "0.02": 0.2837,
+      "0.01": 0.1653,
+      "0.0": 0.0
+    }
+  },
+  "caveat": "FBA 為穩態化學計量；無動力學、氧化壓力與鐵死亡。回答的是「何時成為化學計量瓶頸」，不是「細胞會不會死」。"
+}

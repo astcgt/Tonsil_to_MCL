@@ -1,0 +1,77 @@
+{
+  "n_lines": 1178,
+  "n_lymphoid": 93,
+  "n_Bcell": 83,
+  "P1_lineage_enrichment": {
+    "n_dependent": 349,
+    "n_Bcell_dependent": 76,
+    "odds_ratio": 32.69073783359497,
+    "fisher_p": 7.092723078068292e-35,
+    "n_matched_null_genes": 875,
+    "null_median_or": 1.2483912483912485,
+    "empirical_p": 0.006857142857142857,
+    "pass": true
+  },
+  "P2_expression_predicts_dependency": {
+    "all_lines": {
+      "n": 1103,
+      "r": 0.15279267783837447,
+      "p": 3.4203549207812573e-07
+    },
+    "non_lymphoid": {
+      "n": 1012,
+      "r": 0.14751540357030826,
+      "p": 2.443867256605735e-06
+    },
+    "expected_sign": "負（表現越高越依賴）",
+    "pass": false
+  },
+  "P3_mechanism_link": {
+    "per_gene": {
+      "NADK": -0.024408109176507677,
+      "G6PD": 0.11826563698042097,
+      "PGD": 0.2683101799056437,
+      "IDH1": -0.024517531719736946,
+      "ME1": -0.043707196417711765,
+      "NNT": -0.029487059365646037,
+      "GSR": 0.09367340121458362,
+      "TXNRD1": -0.06324638047371527,
+      "SLC7A11": 0.077987651013396,
+      "SLC3A2": 0.2851992991304787,
+      "GCLC": 0.4153994259221806,
+      "GCLM": 0.19420140242394274,
+      "AIFM2": 0.10595543936867405,
+      "GPX4": 0.035197872254935994,
+      "RPL13A": -0.0169017742459102,
+      "RPS6": 0.04354207893046797
+    },
+    "mean_NADPH": 0.03686036761841632,
+    "mean_axis": 0.18565684835226803,
+    "mean_negctrl": 0.013320152342278886,
+    "pass": true
+  },
+  "P4_negative_control": {
+    "mean_negctrl": 0.013320152342278886,
+    "mean_NADPH": 0.03686036761841632,
+    "pass": true
+  },
+  "P5_literature": {
+    "NAMPT AND mantle cell lymphoma": null,
+    "NAMPT AND ferroptosis": null,
+    "NAMPT AND lymphoma": null,
+    "NAMPT inhibitor clinical": null,
+    "SLC7A11 AND NAMPT": null,
+    "(reference) CCND1 AND MCL": null
+  },
+  "summary": {
+    "passed": [
+      "P1_lineage_enrichment",
+      "P3_mechanism_link",
+      "P4_negative_control"
+    ],
+    "failed": [
+      "P2_expression_predicts_dependency"
+    ]
+  },
+  "caveat": "NAMPT 普遍表現，臨床 NAMPT 抑制劑的已知毒性正來自這一點。4.3 倍窗口是對分化配對的正常 B 細胞而言，不是對全身而言。"
+}

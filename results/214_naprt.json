@@ -1,0 +1,80 @@
+{
+  "n_lines": 1103,
+  "n_Bcell": 81,
+  "n_non_lymphoid": 1012,
+  "P1_NAPRT_low_in_Bcell": {
+    "median_Bcell": 3.821710215034674,
+    "median_non_lymphoid": 4.671859024163609,
+    "mannwhitney_p": 0.00012261424608829409,
+    "frac_Bcell_below_1": 0.012345679012345678,
+    "frac_other_below_1": 0.021739130434782608,
+    "pass": true
+  },
+  "P2_all_lines": {
+    "n": 1103,
+    "spearman_r": -0.08562334600963575,
+    "p": 0.004431700170952688,
+    "expected_sign": "正（NAPRT 高 → 較不依賴 NAMPT）",
+    "pass": false
+  },
+  "P3_non_lymphoid": {
+    "n": 1012,
+    "spearman_r": -0.1351884553825808,
+    "p": 1.595187916981548e-05,
+    "expected_sign": "正（NAPRT 高 → 較不依賴 NAMPT）",
+    "pass": false
+  },
+  "P4_negative_control": {
+    "gene": "RPL13A",
+    "spearman_r": 0.027878733212760777,
+    "p": 0.6393056220410775,
+    "pass": true
+  },
+  "stratified": {
+    "threshold_log2tpm1": 1.0,
+    "n_naprt_low": 23,
+    "n_naprt_high": 1080,
+    "median_NAMPT_effect_low": -0.2488899798777569,
+    "median_NAMPT_effect_high": -0.2927359255047348,
+    "frac_dependent_low": 0.17391304347826086,
+    "frac_dependent_high": 0.3,
+    "mannwhitney_p": 0.5639829979021121
+  },
+  "P5_patient_level": {
+    "NAPRT": {
+      "mcl_observed": 0.0231896,
+      "normal_b_expected": 0.013639677,
+      "residual": 0.009549914
+    },
+    "NAMPT": {
+      "mcl_observed": 0.9365146,
+      "normal_b_expected": 0.21858676,
+      "residual": 0.71792865
+    },
+    "NMRK1": {
+      "mcl_observed": 0.056549147,
+      "normal_b_expected": 0.098369986,
+      "residual": -0.041820955
+    },
+    "QPRT": {
+      "mcl_observed": 0.0039408924,
+      "normal_b_expected": 0.0058513954,
+      "residual": -0.0019105133
+    },
+    "SLC7A11": {
+      "mcl_observed": 0.20614183,
+      "normal_b_expected": 0.00086882105,
+      "residual": 0.20527266
+    }
+  },
+  "summary": {
+    "passed": [
+      "P1_NAPRT_low_in_Bcell",
+      "P4_negative_control"
+    ],
+    "failed": [
+      "P2_all_lines",
+      "P3_non_lymphoid"
+    ]
+  }
+}

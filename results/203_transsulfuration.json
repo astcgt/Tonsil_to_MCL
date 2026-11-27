@@ -1,0 +1,62 @@
+{
+  "n_lines": 1103,
+  "n_lymphoid": 91,
+  "transsulfuration_genes_found": [
+    "CBS",
+    "CBSL",
+    "CTH"
+  ],
+  "P1_all_lines": {
+    "spearman_r": -0.02973287596312547,
+    "p": 0.3238533870533459,
+    "direction_expected": "正（表現越高越不依賴）",
+    "pass": false
+  },
+  "P2_non_lymphoid_only": {
+    "n": 1012,
+    "spearman_r": -0.05408989038512752,
+    "p": 0.08546202347331423,
+    "pass": false
+  },
+  "P2b_lymphoid_only": {
+    "n": 91,
+    "spearman_r": 0.12688326166587036,
+    "p": 0.23071935048455874
+  },
+  "ts_score_lymphoid_vs_other": {
+    "median_lymphoid": 2.2492783299995764,
+    "median_other": 2.898812152945392,
+    "mannwhitney_p_lymphoid_lower": 0.006570127695544911
+  },
+  "P3_empirical_null": {
+    "n_random_genes": 1999,
+    "null_mean_r": 0.015231156125833535,
+    "null_sd_r": 0.05486382093832665,
+    "null_q95": 0.1077719100873498,
+    "observed_r": -0.02973287596312547,
+    "empirical_p": 0.7893946973486743,
+    "pass": false
+  },
+  "P4_negative_control": {
+    "gene": "RPL13A",
+    "spearman_r": 0.05949965527430316,
+    "p": 0.31685467368940534,
+    "pass": false
+  },
+  "dependent_vs_rest": {
+    "n_dependent": 18,
+    "n_rest": 1085,
+    "median_ts_dependent": 2.3222740190311937,
+    "median_ts_rest": 2.8645691562646434,
+    "mannwhitney_p": 0.034384480791202696
+  },
+  "summary": {
+    "passed": [],
+    "failed": [
+      "P1_all_lines",
+      "P2_non_lymphoid_only",
+      "P3_empirical_null",
+      "P4_negative_control"
+    ]
+  }
+}
