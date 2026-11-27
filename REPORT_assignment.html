@@ -223,7 +223,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
   <p lang="en">Of 577 motifs tested, 54 are enriched among gained links after correction and 2 depleted. The enriched set is not a proliferation signature: it is one site, written from several directions — <b>TGACTCA</b>, the landing pad of the AP-1 and small-Maf families. <span class="gene">FOS::JUN</span> 1.39×, <span class="gene">FOS::JUNB</span> 1.38×, <span class="gene">FOS::JUND</span> 1.36×, <span class="gene">JUN</span> 1.32×, <span class="gene">FOSL1::JUN</span> 1.30×, and <span class="gene">BACH1</span> 1.38× (<i>p</i><sub>adj</sub> = 2.3 × 10<sup>−4</sup>). The other way, B-cell identity factors lose ground: <span class="gene">POU2F3</span> 0.70× (<i>p</i><sub>adj</sub> = 5 × 10<sup>−6</sup>) and <span class="gene">POU5F1</span> 0.83× (4 × 10<sup>−4</sup>), with seven further POU motifs at 0.75–0.88× that do not survive correction — a trend, not a result.</p>
   
 
-  <h3 lang="en">2.3 What the site switches on: a line, not a list</h3>
+  <h3 lang="en">2.3 What the site switches on: a connected pathway</h3>
   
 
   <p lang="en">The gene that gains most is <span class="gene">SLC7A11</span>, which acquires five regulatory elements absent from normal cells at the matched state (Fig. 4). What makes this more than one gene is that its pathway neighbours come with it, and the pathway is linear: cystine enters through system x<sub>c</sub><sup>−</sup> (<span class="gene">SLC7A11</span> + <span class="gene">SLC3A2</span>) → the cell builds glutathione (<span class="gene">GCLC</span>, <span class="gene">GCLM</span>) → glutathione plus FSP1 (<span class="gene">AIFM2</span>) blocks ferroptosis. In DepMap CRISPR screens, MCL lines are selectively dependent on five consecutive members of exactly that line.</p>
@@ -266,7 +266,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
   <h3 lang="en">2.5 An outside opinion, including the test we had to retract</h3>
   
 
-  <p lang="en">Everything so far comes from two patients, and no third patient-derived MCL multiome exists in public data. The honest move is to ask a model that has never seen our samples. We ran three tests: one failed, and cost us an earlier conclusion; two succeeded.</p>
+  <p lang="en">Everything so far comes from two patients, and no third patient-derived MCL multiome exists in public data. The appropriate test is therefore to ask a model that has never seen our samples. We ran three tests: one failed, and cost us an earlier conclusion; two succeeded.</p>
   
 
   <div class="pageno">2</div>
@@ -332,11 +332,11 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
     </tr></thead>
     <tbody>
       <tr><td><b><span lang="en">Designed binder, 90 aa</span></b></td>
-          <td class="n"><b>0.631</b></td><td class="n"><b>0.790</b> ± 0.015</td><td class="n">6.97 Å</td><td class="n">0.902</td><td class="n"><b>4 / 4</b></td></tr>
+          <td class="n"><b>0.611</b> ± 0.020</td><td class="n"><b>0.790</b> ± 0.015</td><td class="n">6.97 Å</td><td class="n">0.902</td><td class="n"><b>4 / 4</b></td></tr>
       <tr><td><span lang="en">Native NRF2 (positive control)</span></td>
-          <td class="n">0.539</td><td class="n">0.713 ± 0.010</td><td class="n">9.16 Å</td><td class="n">0.937</td><td class="n">3 / 4</td></tr>
+          <td class="n">0.519 ± 0.013</td><td class="n">0.713 ± 0.010</td><td class="n">9.16 Å</td><td class="n">0.937</td><td class="n">3 / 4</td></tr>
       <tr><td><span lang="en">Scrambled sequence (negative control)</span></td>
-          <td class="n">0.013–0.076</td><td class="n">0.39–0.47</td><td class="n">17–20 Å</td><td class="n">0.58–0.65</td><td class="n">0 / 4</td></tr>
+          <td class="n">0.003–0.020</td><td class="n">0.39–0.47</td><td class="n">17–20 Å</td><td class="n">0.58–0.65</td><td class="n">0 / 4</td></tr>
     </tbody>
   </table>
 
@@ -353,7 +353,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
   <h3 lang="en">2.8 What we rejected, and what we still cannot explain</h3>
   
 
-  <p lang="en">Twenty-nine hypotheses and traps were tested and dropped. Several were our own earlier conclusions, and four were retracted after the repository was public. The failures are more informative than the survivors, so they are listed with the same precision.</p>
+  <p lang="en">Sixty-two hypotheses and traps were tested and dropped. Several were our own earlier conclusions, and seven were retracted or corrected after the repository was public. The failures are more informative than the survivors, so they are listed with the same precision.</p>
   
 
   <table class="tight">
@@ -373,7 +373,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
     </tbody>
   </table>
 
-  <h3 lang="en">2.9 Honest limits</h3>
+  <h3 lang="en">2.9 Limitations</h3>
   
 
   <ul>

@@ -31,8 +31,8 @@ Almost every MCL study compares tumour cells with a normal B cell. MCL cells res
 so that comparison mostly measures development rather than cancer. This study compares each tumour
 cell with **the normal tonsil B cell at the same stage of development**, and asks what remains.
 
-What remains is not a known cancer gene. It is a seven-letter DNA site, `TGACTCA`, the landing site
-of the AP-1 and small Maf transcription factor families, and it leads to the cystine / glutathione /
+What remains is not a known cancer gene but a seven-letter DNA site, `TGACTCA`, the landing site of
+the AP-1 and small Maf transcription factor families. It leads to the cystine, glutathione and
 ferroptosis-defence pathway through `SLC7A11`.
 
 ## What is in this repository
@@ -52,12 +52,12 @@ ferroptosis-defence pathway through `SLC7A11`.
 | `22_atac_pseudobulk.csv.gz` | one per peak | accessibility per normal differentiation state and per tumour sample |
 | `15_normal_state_pseudobulk.csv` | one per normal differentiation state (46) | expression of every gene, used as the expectation that tumour cells are compared against |
 
-All four are **aggregate**: per-peak or per-state summaries. Per-cell tables, per-patient variant
-calls and raw data are deliberately **not** published in either repository.
+All four are aggregate: per-peak or per-state summaries. Per-cell tables, per-patient variant calls
+and raw data are deliberately not published in either repository.
 
-One further file is held back for a different reason. The study also used the **PIONEER2** protein
+One further file is held back for a different reason. The study also used the PIONEER2 protein
 interface dataset, and a filtered subset of it sits in the pipeline's outputs. That dataset states
-**no licence** on any page of its web server (checked 2026-11-22), so it defaults to all rights
+no licence on any page of its web server (checked 2026-11-22), so it defaults to all rights
 reserved and we do not republish it. The code repository's `scripts/95_pioneer2.py` rebuilds the
 subset from the original source, and `docs/TOOLING_NOTES.md` records what was checked.
 
@@ -87,19 +87,19 @@ so a reader can recompute ipSAE, ipTM, pDockQ, pDockQ2 and LIS from them directl
   (`SLC7A11` z = −2.89, `GCLM` −2.74, `AIFM2` −2.60, `SLC3A2` −2.18, `GCLC` −1.65).
 - The pathway carries no driver mutation: 1.10× background in non-coding regions, and 0 coding
   mutations across 21 pathway genes against 50 in known drivers from the same pipeline.
-- The five elements are **already wired and already unlocked, yet closed**: they sit in
+- The five elements are already wired and already unlocked, yet closed: they sit in
   contact-privileged positions relative to the promoter across 21 measured contact maps, they are
   relatively unmethylated in normal B cells (0.21 against 0.67 for neighbouring peaks and 0.90 for
   genomic background), and their accessibility is as low as peaks that do nothing. The missing part
   is the transcription factor, not chromatin licensing.
 - A 90-residue mini-protein against MafG passes all four wet-lab-calibrated filters and exceeds the
   native NRF2 partner on three of four metrics.
-- The MafG–NRF2 interface carries a **defined epitope**: a binding-energy model, calibrated against
+- The MafG–NRF2 interface carries a defined epitope: a binding-energy model, calibrated against
   measured energies on a homology-clean split, marks 14 hotspots on MafG spanning residues 69–107 and
   11 on NRF2 spanning 514–553, including every leucine of the zipper register. The same run
-  **overturned our own earlier per-mutation ranking**, which came from a co-folding confidence score.
+  overturned our own earlier per-mutation ranking, which came from a co-folding confidence score.
 
-## Honest limits
+## Limitations
 
 - **Two patients.** No third patient-derived MCL multiome exists in public data.
 - **Predictions, not measurements.** Every structure here is a model. No binding affinity,
@@ -109,8 +109,8 @@ so a reader can recompute ipSAE, ipTM, pDockQ, pDockQ2 and LIS from them directl
   signal was retracted after peak accessibility explained it, and its gained coupling failed two
   chromatin tests. Of the four interface residues we first called critical, only **L79** is ranked
   critical by two methods.
-- The study's own report lists **29 hypotheses that were tested and rejected**, including several of
-  the authors' own errors. Read that section before building on any single number here.
+- The study's own report lists 29 hypotheses that were tested and rejected, including several of the
+  authors' own errors. Read that section before building on any single number here.
 
 ## Provenance of the primary data
 
@@ -148,8 +148,8 @@ Licensed **CC BY 4.0**: use freely, including commercially, with attribution.
 大多是發育，不是癌症。這項研究改成把每顆腫瘤細胞和**分化程度完全相同的那顆正常扁桃體 B 細胞**比，
 再問剩下什麼。
 
-剩下的不是任何已知癌症基因，而是一段七個字母的 DNA 位點 `TGACTCA` —— AP-1 與 small Maf
-轉錄因子家族的落腳點 —— 並且經由 `SLC7A11` 通往胱胺酸／穀胱甘肽／鐵死亡防禦路徑。
+剩下的不是任何已知癌症基因，而是一段七個字母的 DNA 位點 `TGACTCA`，即 AP-1 與 small Maf
+轉錄因子家族的落腳點，並且經由 `SLC7A11` 通往胱胺酸、穀胱甘肽與鐵死亡防禦路徑。
 
 ### 這個倉庫有什麼
 
@@ -168,11 +168,11 @@ Licensed **CC BY 4.0**: use freely, including commercially, with attribution.
 | `22_atac_pseudobulk.csv.gz` | 一條 peak | 各正常分化狀態與各腫瘤樣本的可及性 |
 | `15_normal_state_pseudobulk.csv` | 一個正常分化狀態（46 個） | 每個基因的表現量，作為腫瘤細胞比較時的期望值 |
 
-這四份都是**彙總層級**：以 peak 或以狀態為單位的摘要。逐細胞表格、每位病人的變異位點與原始資料，
-兩個倉庫都刻意**不公開**。
+這四份都是彙總層級：以 peak 或以狀態為單位的摘要。逐細胞表格、每位病人的變異位點與原始資料，
+兩個倉庫都刻意不公開。
 
 另有一份檔案因為別的原因沒有公開。這項研究也用了 **PIONEER2** 蛋白質介面資料集，其篩選後的子集
-存在於流程輸出中。該資料集的網站任何一頁都**沒有標示授權**（查核日期 2026-11-22），依預設即為保留
+存在於流程輸出中。該資料集的網站任何一頁都沒有標示授權（查核日期 2026-11-22），依預設即為保留
 一切權利，因此我們不重新散布。程式碼倉庫的 `scripts/95_pioneer2.py` 可從原始來源重建該子集，
 `docs/TOOLING_NOTES.md` 記錄了查核過程。
 
@@ -199,16 +199,16 @@ ipSAE、ipTM、pDockQ、pDockQ2 與 LIS。
   （`SLC7A11` z = −2.89、`GCLM` −2.74、`AIFM2` −2.60、`SLC3A2` −2.18、`GCLC` −1.65）。
 - 這條路徑沒有驅動突變：非編碼區僅背景的 1.10×；21 個路徑基因共 0 個編碼突變，而同一流程在已知
   driver 上抓到 50 個。
-- 那五個元件**已經接好線、也已經解鎖，卻是關著的**：在 21 張實測接觸圖中，它們相對於啟動子都位於
+- 那五個元件已經接好線、也已經解鎖，卻是關著的：在 21 張實測接觸圖中，它們相對於啟動子都位於
   接觸上占優勢的位置；在正常 B 細胞中甲基化程度偏低（0.21，鄰近 peak 為 0.67、基因組背景為 0.90）；
   而它們的可及性低到和完全不做事的 peak 一樣。缺的是轉錄因子，不是染色質層面的許可。
 - 一個 90 殘基的迷你蛋白質針對 MafG，通過全部四個濕實驗校準門檻，並在四個指標中有三個超過天然的
   NRF2 夥伴。
-- MafG–NRF2 介面帶有一個**明確的抗原決定位**：一個以實測結合能、在同源性乾淨切分上校準過的模型，
+- MafG–NRF2 介面帶有一個明確的抗原決定位：一個以實測結合能、在同源性乾淨切分上校準過的模型，
   在 MafG 上標出 14 個熱點（殘基 69–107），在 NRF2 上標出 11 個（514–553），包含白胺酸拉鍊七肽重複位相（register）上
-  的每一個白胺酸。同一次計算也**推翻了我們自己先前的單點突變排名**，那個排名來自共摺疊的信賴度分數。
+  的每一個白胺酸。同一次計算也推翻了我們自己先前的單點突變排名，那個排名來自共摺疊的信賴度分數。
 
-### 誠實的限制
+### 限制
 
 - **只有兩位病人。** 公開資料中不存在第三例病人來源的 MCL 多體學。
 - **是預測，不是量測。** 這裡每一個結構都是模型。沒有任何結合親和力、沒有晶體結構、沒有細胞實驗。
@@ -216,7 +216,7 @@ ipSAE、ipTM、pDockQ、pDockQ2 與 LIS。
   「MafG 是可成藥樞紐」這個主張較弱：它的接觸訊號在被 peak 可及性解釋掉之後已撤回，
   它獲得的協同性在兩項染色質檢定中都沒過。我們最初認定關鍵的四個介面殘基中，
   只有 **L79** 被兩種方法同時列為關鍵。
-- 研究本身的報告列出 **29 個被檢定後推翻的假設**，包含作者自己犯的錯。在引用這裡任何單一數字之前，
+- 研究本身的報告列出 29 個被檢定後推翻的假設，包含作者自己犯的錯。在引用這裡任何單一數字之前，
   建議先讀那一節。
 
 ### 原始資料的來源
