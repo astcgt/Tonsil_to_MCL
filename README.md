@@ -175,11 +175,12 @@ one filter is marginal. The other three are cleared by a wide margin.
 LAAGGSVDTEKLAELQKKLEEMELELAKMQQELAELQKELEKLQKELAEAEAEMKAAGIPAKLSEEERARLLHWAALVEAPLHRVRRRPL
 ```
 
-### Hypotheses tested and rejected
+### The test record
 
-75 hypotheses and traps were tested and dropped. Several were our own first conclusions, and seventeen
-of those were retracted or corrected after this repository went public. The full table is in the report and the
-showcase page.
+75 tests are recorded one per row, each carrying its verdict, of which 23 are conclusions of our own
+that we published and then withdrew or corrected. The rest are hypotheses we rejected, method
+artefacts we fixed, claims that were challenged and held, and tests that could not decide; the
+breakdown and the full table are in the report and the showcase page.
 
 Three separate artefacts had the same cause: a foreground group and a background group that differed
 in length or base composition, first in motif length, then in GC content, then in peak width. Each
@@ -216,7 +217,7 @@ Massoni-Badosa *et al.* claim by claim, three pages on the extension above, one 
 |---|---|
 | `REPORT_assignment.html` | The report, English. Open it in a browser; print to PDF for a paper copy. |
 | `REPORT_assignment.zh.html` | The same report in Chinese. |
-| `REPORT_v3.md` | The long version, with all 75 rejected hypotheses (Chinese). |
+| `REPORT_v3.md` | The long version, with all 75 entries of the test record (Chinese). |
 
 Both HTML files are built from one bilingual source, `docs/report_template.html`, by
 `scripts/112_build_report.py`; `scripts/113_estimate_pages.py` checks that each language still
@@ -365,10 +366,11 @@ AP-1 與 BACH1 家族成員彼此冗餘，但都需要同一個夥伴：**MafG**
 LAAGGSVDTEKLAELQKKLEEMELELAKMQQELAELQKELEKLQKELAEAEAEMKAAGIPAKLSEEERARLLHWAALVEAPLHRVRRRPL
 ```
 
-### 被推翻的假設
+### 檢定紀錄
 
-共有 75 個假設與陷阱在檢定後被放棄，其中若干是我們自己最初的結論，並有十七個是在本倉庫公開之後才撤回或更正。
-完整表格見報告與展示頁。
+報告逐列記錄 75 項檢定並標明判定，其中 23 項是我們自己發表後又撤回或更正的結論。
+其餘為我們提出後被否決的假設、發現並修正的方法陷阱、受質疑後維持的結論，以及檢定力不足者；
+逐類數目與完整表格見報告與展示頁。
 
 三個獨立的假象出自同一個原因：前景組與背景組在長度或鹼基組成上並不相同，依序為 motif 長度、
 GC 含量與 peak 寬度。每一次都得到表面乾淨而實際錯誤的結果。
@@ -404,7 +406,7 @@ GC 含量與 peak 寬度。每一次都得到表面乾淨而實際錯誤的結�
 |---|---|
 | `REPORT_assignment.html` | 報告英文版。以瀏覽器開啟；需紙本時列印為 PDF。 |
 | `REPORT_assignment.zh.html` | 同一份報告的中文版。 |
-| `REPORT_v3.md` | 加長版，含全部 75 個被推翻的假設（中文）。 |
+| `REPORT_v3.md` | 加長版，含全部 75 項檢定紀錄（中文）。 |
 
 兩份 HTML 均由同一份雙語來源 `docs/report_template.html` 透過 `scripts/112_build_report.py`
 產生；`scripts/113_estimate_pages.py` 則負責檢查兩種語言各自仍為恰好五頁 A4。

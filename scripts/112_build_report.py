@@ -23,18 +23,29 @@ FIGS = os.path.join(BASE, "results", "figs")
 TPL = os.path.join(BASE, "docs", "report_template.html")
 REPORT = os.path.join(BASE, "REPORT_v3.md")
 
-# The rejected-hypothesis count is quoted in four more places. Each pattern
-# captures the number so it can be compared with section 6 of REPORT_v3.md,
-# which is the only place the count is actually maintained. A pattern that
-# stops matching is an error rather than a skipped check: the sentence was
-# reworded, and the gate has to be reworded with it.
+# Every row of section 6 carries one of these verdict classes. The counts the
+# report quotes are derived from the tags, so no number is maintained twice.
+# Boundary rule: a pre-registered prediction that fails is 否決, not 撤回 - a
+# pre-registration failing is the system working, not a retraction.
+CLASSES = ("撤回", "否決", "陷阱", "維持", "無檢定力")
+CLASS_TOKEN = {"撤回": "N_RETRACTED", "否決": "N_REFUTED", "陷阱": "N_PITFALL",
+               "維持": "N_UPHELD", "無檢定力": "N_NOPOWER"}
+
+# Numbers quoted outside the table, as (file, pattern, what it should equal).
+# "total" is every row; the other keys are verdict classes. Each pattern
+# captures the figure so it can be compared with section 6, the only place any
+# of them is maintained. A pattern that stops matching is an error rather than
+# a skipped check: the sentence was reworded, and the gate has to be reworded
+# with it instead of quietly stopping.
 QUOTED = [
-    ("README.md", r"\n(\d+) hypotheses and traps were tested and dropped\."),
-    ("README.md", r"共有 (\d+) 個假設與陷阱在檢定後被放棄"),
-    ("README.md", r"with all (\d+) rejected hypotheses \(Chinese\)"),
-    ("README.md", r"含全部 (\d+) 個被推翻的假設（中文）"),
-    ("docs/hf_model_card.md", r"lists (\d+) hypotheses that were tested and rejected"),
-    ("docs/hf_model_card.md", r"列出 (\d+) 個經檢定後推翻的假設"),
+    ("README.md", r"\n(\d+) tests are recorded one per row", "total"),
+    ("README.md", r"of which (\d+) are conclusions of our own", "撤回"),
+    ("README.md", r"逐列記錄 (\d+) 項檢定", "total"),
+    ("README.md", r"其中 (\d+) 項是我們自己發表後", "撤回"),
+    ("README.md", r"with all (\d+) entries of the test record \(Chinese\)", "total"),
+    ("README.md", r"含全部 (\d+) 項檢定紀錄（中文）", "total"),
+    ("docs/hf_model_card.md", r"test record of (\d+) entries", "total"),
+    ("docs/hf_model_card.md", r"(\d+) 項檢定紀錄", "total"),
 ]
 
 ONES = ("zero one two three four five six seven eight nine ten eleven twelve "
@@ -215,49 +226,70 @@ def spell(n):
     return w[0].upper() + w[1:]
 
 
-def count_rejected():
-    """Numbered rows in section 6 of REPORT_v3.md: the one maintained count."""
+def count_verdicts():
+    """Tally section 6 of REPORT_v3.md by verdict class: the one maintained count.
+
+    Returns (total, {class: n}). Every numbered row must carry exactly one of
+    CLASSES in its second cell, so a row added without a verdict fails the build
+    rather than quietly falling out of the totals.
+    """
     md = open(REPORT, encoding="utf-8").read()
     try:
         body = md[md.index("## 六、"):md.index("## 七、")]
     except ValueError:
         sys.exit("cannot locate section 6 of %s, which the report quotes" % REPORT)
-    n = len(re.findall(r"^\|\s*\d+\s*\|", body, re.M))
-    if n < 2:
-        sys.exit("section 6 of %s has %d numbered rows, which cannot be right" % (REPORT, n))
-    return n
+    tally, untagged = dict.fromkeys(CLASSES, 0), []
+    for line in body.split("\n"):
+        m = re.match(r"^\|\s*(\d+)\s*\|\s*([^|]*?)\s*\|", line)
+        if not m:
+            continue
+        if m.group(2) in tally:
+            tally[m.group(2)] += 1
+        else:
+            untagged.append("row %s: %r" % (m.group(1), m.group(2)))
+    if untagged:
+        sys.exit("section 6 rows without a recognised verdict class (%s):\n  %s"
+                 % ("／".join(CLASSES), "\n  ".join(untagged)))
+    total = sum(tally.values())
+    if total < 2:
+        sys.exit("section 6 of %s has %d tagged rows, which cannot be right" % (REPORT, total))
+    return total, tally
 
 
-def check_quoted(n):
-    """Fail if any other document states a different count."""
+def check_quoted(total, tally):
+    """Fail if any document states a figure that section 6 does not support."""
+    want = dict(tally, total=total)
     bad = []
-    for rel, pat in QUOTED:
+    for rel, pat, key in QUOTED:
         text = open(os.path.join(BASE, rel), encoding="utf-8").read()
         m = re.search(pat, text)
         if m is None:
             bad.append("%s: the sentence this gate watches has been reworded, so the "
-                       "count there is no longer checked. Update QUOTED in "
+                       "figure there is no longer checked. Update QUOTED in "
                        "scripts/112_build_report.py to match it: %s" % (rel, pat))
-        elif int(m.group(1)) != n:
-            bad.append("%s:%d says %s; section 6 of REPORT_v3.md has %d"
-                       % (rel, text[:m.start(1)].count("\n") + 1, m.group(1), n))
+        elif int(m.group(1)) != want[key]:
+            bad.append("%s:%d says %s for %s; section 6 of REPORT_v3.md has %d"
+                       % (rel, text[:m.start(1)].count("\n") + 1, m.group(1), key, want[key]))
     if bad:
-        sys.exit("rejected-hypothesis count out of step:\n  %s" % "\n  ".join(bad))
+        sys.exit("figures quoted outside section 6 are out of step:\n  %s" % "\n  ".join(bad))
 
 
 def main():
     tpl = open(TPL).read()
-    n = count_rejected()
-    check_quoted(n)
-    for token, value in (("N_REJECTED_WORD", spell(n)), ("N_REJECTED", str(n))):
+    total, tally = count_verdicts()
+    check_quoted(total, tally)
+    subs = [("N_ENTRIES_WORD", spell(total)), ("N_ENTRIES", str(total))]
+    subs += [(CLASS_TOKEN[k], str(tally[k])) for k in CLASSES]
+    for token, value in subs:
         tpl, k = re.subn(r"\{\{%s\}\}" % token, value, tpl)
         if not k:
             sys.exit("the template no longer carries {{%s}}; put it back or drop this "
                      "substitution" % token)
     for lang in BUILDS:
         build(tpl, lang)
-    print("rejected hypotheses: %d, counted in REPORT_v3.md section 6; "
-          "README and the model card agree" % n)
+    print("test record: %d entries in REPORT_v3.md section 6 (%s); README and the "
+          "model card agree on the total"
+          % (total, "、".join("%s %d" % (k, tally[k]) for k in CLASSES)))
 
 
 if __name__ == "__main__":
