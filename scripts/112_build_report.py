@@ -21,6 +21,26 @@ from html.parser import HTMLParser
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIGS = os.path.join(BASE, "results", "figs")
 TPL = os.path.join(BASE, "docs", "report_template.html")
+REPORT = os.path.join(BASE, "REPORT_v3.md")
+
+# The rejected-hypothesis count is quoted in four more places. Each pattern
+# captures the number so it can be compared with section 6 of REPORT_v3.md,
+# which is the only place the count is actually maintained. A pattern that
+# stops matching is an error rather than a skipped check: the sentence was
+# reworded, and the gate has to be reworded with it.
+QUOTED = [
+    ("README.md", r"\n(\d+) hypotheses and traps were tested and dropped\."),
+    ("README.md", r"共有 (\d+) 個假設與陷阱在檢定後被放棄"),
+    ("README.md", r"with all (\d+) rejected hypotheses \(Chinese\)"),
+    ("README.md", r"含全部 (\d+) 個被推翻的假設（中文）"),
+    ("docs/hf_model_card.md", r"lists (\d+) hypotheses that were tested and rejected"),
+    ("docs/hf_model_card.md", r"列出 (\d+) 個經檢定後推翻的假設"),
+]
+
+ONES = ("zero one two three four five six seven eight nine ten eleven twelve "
+        "thirteen fourteen fifteen sixteen seventeen eighteen nineteen").split()
+TENS = ("", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy",
+        "eighty", "ninety")
 
 FIG = {
     "FIG_OVERVIEW": "overview.light.svg",
@@ -187,10 +207,57 @@ def build(tpl, lang):
           % (out_name, len(html.encode()) / 1024, n_sheet, n_svg, cuts))
 
 
+def spell(n):
+    """English words for 0-99, capitalised: the sentence opens with it."""
+    if not 0 <= n < 100:
+        sys.exit("cannot spell %d in words; the report sentence assumes under a hundred" % n)
+    w = ONES[n] if n < 20 else TENS[n // 10] + ("-" + ONES[n % 10] if n % 10 else "")
+    return w[0].upper() + w[1:]
+
+
+def count_rejected():
+    """Numbered rows in section 6 of REPORT_v3.md: the one maintained count."""
+    md = open(REPORT, encoding="utf-8").read()
+    try:
+        body = md[md.index("## 六、"):md.index("## 七、")]
+    except ValueError:
+        sys.exit("cannot locate section 6 of %s, which the report quotes" % REPORT)
+    n = len(re.findall(r"^\|\s*\d+\s*\|", body, re.M))
+    if n < 2:
+        sys.exit("section 6 of %s has %d numbered rows, which cannot be right" % (REPORT, n))
+    return n
+
+
+def check_quoted(n):
+    """Fail if any other document states a different count."""
+    bad = []
+    for rel, pat in QUOTED:
+        text = open(os.path.join(BASE, rel), encoding="utf-8").read()
+        m = re.search(pat, text)
+        if m is None:
+            bad.append("%s: the sentence this gate watches has been reworded, so the "
+                       "count there is no longer checked. Update QUOTED in "
+                       "scripts/112_build_report.py to match it: %s" % (rel, pat))
+        elif int(m.group(1)) != n:
+            bad.append("%s:%d says %s; section 6 of REPORT_v3.md has %d"
+                       % (rel, text[:m.start(1)].count("\n") + 1, m.group(1), n))
+    if bad:
+        sys.exit("rejected-hypothesis count out of step:\n  %s" % "\n  ".join(bad))
+
+
 def main():
     tpl = open(TPL).read()
+    n = count_rejected()
+    check_quoted(n)
+    for token, value in (("N_REJECTED_WORD", spell(n)), ("N_REJECTED", str(n))):
+        tpl, k = re.subn(r"\{\{%s\}\}" % token, value, tpl)
+        if not k:
+            sys.exit("the template no longer carries {{%s}}; put it back or drop this "
+                     "substitution" % token)
     for lang in BUILDS:
         build(tpl, lang)
+    print("rejected hypotheses: %d, counted in REPORT_v3.md section 6; "
+          "README and the model card agree" % n)
 
 
 if __name__ == "__main__":
