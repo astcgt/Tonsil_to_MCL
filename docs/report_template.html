@@ -150,25 +150,25 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
   </div>
 
   <h1 lang="en">Mantle cell lymphoma is pinned to one normal B-cell state, and uses it to open a ferroptosis-defence programme</h1>
-  <h1 lang="zh-Hant">套細胞淋巴瘤被釘在單一正常 B 細胞狀態上，並以此打開一套抗鐵死亡程式</h1>
+  <h1 lang="zh-Hant">套細胞淋巴瘤被釘在單一正常 B 細胞狀態，並藉此開啟一套抗鐵死亡程式</h1>
 
   <p class="byline">Yi Liu</p>
   <p class="affil">
-<span lang="en"><span class="mono">github.com/astcgt/Tonsil_to_MCL</span> · all primary data public · no bench experiments</span><span lang="zh-Hant"><span class="mono">github.com/astcgt/Tonsil_to_MCL</span> · 全部為公開資料 · 無自做濕實驗</span>
+<span lang="en"><span class="mono">github.com/astcgt/Tonsil_to_MCL</span> · all primary data public · no bench experiments</span><span lang="zh-Hant"><span class="mono">github.com/astcgt/Tonsil_to_MCL</span> · 全部為公開資料 · 未進行濕實驗</span>
   </p>
 
   <div class="abstract">
     <p lang="en"><b>Massoni-Badosa <i>et al.</i></b> built an atlas of &gt;556,000 human tonsil cells and, in its final result, used it as a reference for two mantle cell lymphomas (MCL). Reproducing it from their raw multiome data, we recover both genomic findings exactly. Their transcriptional conclusion does not survive quantification: matching each of 19,975 tumour cells to 46 normal B-cell states, <b>90.0%</b> match non-class-switch memory B cells, not the activated-naive-to-GC-committed interval the paper names — and the match is <i>more</i> concentrated than in the normal B cells beside them (2.89 vs 3.32 effective states, <i>p</i> = 1.3 × 10<sup>−27</sup>). The tumour is not poised along a maturation axis; it is <b>pinned</b> — which is what makes a subtraction well posed. What survives it is not proliferation but one seven-letter site, <b>TGACTCA</b>, opening genome-wide, and a cystine-import → glutathione → ferroptosis-defence axis that matched normal cells never use. The tumour depends on five consecutive genes of that axis, carries no mutation in any, and the literature on it is empty. We design a 90-residue binder against MafG, the obligate partner at the site, passing all four wet-lab-calibrated filters.</p>
-    <p lang="zh-Hant"><b>Massoni-Badosa 等人</b>建立了超過 556,000 顆人類扁桃體細胞的圖譜，並在最後一項結果中，把它當作兩例套細胞淋巴瘤（MCL）的參考座標。我們從其原始 multiome 資料重跑該分析，完整重現其兩個基因體層面的發現。但其轉錄層面的結論經不起定量檢驗：把 19,975 顆腫瘤細胞逐一對位到 46 個正常 B 細胞狀態後，<b>90.0%</b> 對到非類別轉換記憶 B 細胞，而非論文所指的「活化初始 B 到 GC 承諾」區間；而且其對位比身旁正常 B 細胞<i>更集中</i>（有效狀態數 2.89 對 3.32，<i>p</i> = 1.3 × 10<sup>−27</sup>）。腫瘤並非沿成熟軸線游移，而是被<b>釘住</b> —— 正因如此「相減」才定義良好。相減後存活下來的不是增殖訊號，而是一個七字母位點 <b>TGACTCA</b> 的全基因組開啟，以及一條配對正常細胞從不使用的「胱胺酸輸入 → 穀胱甘肽 → 抗鐵死亡」軸線。腫瘤連續依賴該軸線五個基因、其上沒有任何突變、而相關文獻幾乎是空的。我們針對該位點的必要夥伴 MafG 設計出 90 殘基結合劑，通過全部四個以濕實驗校準的門檻。</p>
+    <p lang="zh-Hant"><b>Massoni-Badosa 等人</b>建立了超過 556,000 個人類扁桃體細胞的圖譜，並在最後一項結果中將其用作兩例套細胞淋巴瘤（MCL）的參考座標。我們自其原始 multiome 資料重跑該分析，完整重現其兩項基因體層面的發現。但其轉錄層面的結論無法通過定量檢驗：將 19,975 個腫瘤細胞逐一對位至 46 個正常 B 細胞狀態後，<b>90.0%</b> 對應到非類別轉換記憶 B 細胞，而非論文所指的「活化初始 B 至 GC 承諾」區間；且其對位較鄰近的正常 B 細胞<i>更為集中</i>（有效狀態數 2.89 對 3.32，<i>p</i> = 1.3 × 10<sup>−27</sup>）。腫瘤並非沿成熟軸線游移，而是被<b>釘住</b>於單一狀態，相減因此得以定義良好。相減後殘餘的並非增殖訊號，而是一個七字母位點 <b>TGACTCA</b> 的全基因組開啟，以及一條配對正常細胞從不啟用的「胱胺酸輸入 → 穀胱甘肽 → 抗鐵死亡」軸線。腫瘤連續依賴該軸線五個基因，其上不帶任何突變，而相關文獻幾近空白。我們針對該位點的必要夥伴 MafG 設計出 90 殘基結合劑，通過全部四項以濕實驗校準的門檻。</p>
   </div>
 
   <h2><span class="n">1</span><span lang="en">Revisiting the published analysis</span><span lang="zh-Hant">重現已發表的分析</span></h2>
 
   <p class="lead" lang="en">The Human Tonsil Atlas is a reference, and its last result section demonstrates what a reference is for. Having annotated 121 cell types and states across 17 tonsils, the authors profiled two tonsillar conventional MCL samples by 10x Multiome (M102 and M413; ages 64 and 80, both male), kept the CD19<sup>+</sup> fraction, discarded the accessibility data, and read the tumour transcriptomes "in the context of our tonsil atlas". Three claims followed (their Fig. 7G–I, M102 only), and from them the conclusion that "MCL cells are not frozen in a particular maturation stage, but they retain a certain differentiation potential of normal B cells."</p>
-  <p class="lead" lang="zh-Hant">人類扁桃體圖譜是一套參考座標，而其最後一節結果正是在示範「參考座標有什麼用」。作者在 17 顆扁桃體上註釋 121 種細胞型別與狀態後，以 10x Multiome 測了兩例扁桃體原發的典型 MCL（M102 與 M413；64 與 80 歲，皆男性），只保留 CD19<sup>+</sup> 部分、捨棄可及性資料，把腫瘤轉錄體放「在扁桃體圖譜的脈絡裡」解讀。由此得到三項主張（其 Fig. 7G–I，僅展示 M102），並得出結論：「MCL 細胞並未被凍結在某個特定成熟階段，而是保留了正常 B 細胞的某種分化潛能。」</p>
+  <p class="lead" lang="zh-Hant">人類扁桃體圖譜是一套參考座標，而其最後一節結果正是在示範參考座標的用途。作者在 17 例扁桃體上註釋 121 種細胞型別與狀態後，以 10x Multiome 檢測兩例扁桃體原發的典型 MCL（M102 與 M413；64 與 80 歲，皆男性），僅保留 CD19<sup>+</sup> 部分、捨棄可及性資料，並將腫瘤轉錄體置於「扁桃體圖譜的脈絡」中解讀。由此得到三項主張（其 Fig. 7G–I，僅展示 M102），並據以得出結論：「MCL 細胞並未被凍結在某個特定成熟階段，而是保留了正常 B 細胞的某種分化潛能。」</p>
 
   <p lang="en">We rebuilt the analysis from the same deposited object: 20,794 CD19<sup>+</sup> cells, of which 19,975 are tumour and 819 residual normal B cells in the same samples (M102: 10,030 cells, only 29 normal; M413: 10,764 with 790). Each claim was re-tested with a stated statistic rather than by eye (Fig. 2).</p>
-  <p lang="zh-Hant">我們從同一份公開物件重建分析：20,794 顆 CD19<sup>+</sup> 細胞，其中 19,975 顆腫瘤、819 顆同檢體殘存正常 B（M102 共 10,030 顆、僅 29 顆正常；M413 共 10,764 顆、790 顆正常）。每項主張都以明確統計量重新檢定，而非肉眼判讀（圖 2）。</p>
+  <p lang="zh-Hant">我們自同一份公開物件重建分析：20,794 個 CD19<sup>+</sup> 細胞，其中 19,975 個為腫瘤細胞、819 個為同檢體殘存的正常 B 細胞（M102 共 10,030 個，其中僅 29 個正常；M413 共 10,764 個，其中 790 個正常）。每項主張均以明確的統計量重新檢定，而非以肉眼判讀（圖 2）。</p>
 
   <table class="tight">
     <caption><b lang="en">Table 1 | Four claims, re-tested.</b><b lang="zh-Hant">表 1 ｜ 四項主張的重新檢定。</b>
@@ -176,79 +176,79 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
       <span lang="zh-Hant">對應其 Figure 7G–I 以及由此得出的 Discussion 結論。</span></caption>
     <thead><tr>
       <th style="width:26%"><span lang="en">Published claim</span><span lang="zh-Hant">原文主張</span></th>
-      <th style="width:74%"><span lang="en">What we measure, and the verdict</span><span lang="zh-Hant">我們量到的，以及結論</span></th>
+      <th style="width:74%"><span lang="en">What we measure, and the verdict</span><span lang="zh-Hant">我們的量測結果與判定</span></th>
     </tr></thead>
     <tbody>
       <tr>
-        <td><span lang="en">chrY-loss subclone in both patients (Fig. 7G)</span><span lang="zh-Hant">兩位病人都有 chrY 缺失亞克隆（Fig. 7G）</span></td>
+        <td><span lang="en">chrY-loss subclone in both patients (Fig. 7G)</span><span lang="zh-Hant">兩位病人皆有 chrY 缺失亞克隆（Fig. 7G）</span></td>
         <td><span class="yes">✓</span> <span lang="en"><b>Reproduced.</b> Bimodal in both: ΔBIC = 1,839 and 5,815; Cohen's <i>d</i> 2.20 and 2.75. chrY<sup>−</sup> = 24.3% of M102, 57.3% of M413.</span><span lang="zh-Hant"><b>重現。</b>兩人皆雙峰：ΔBIC = 1,839 與 5,815；Cohen's <i>d</i> 2.20 與 2.75。chrY<sup>−</sup> 占 24.3%（M102）、57.3%（M413）。</span></td>
       </tr>
       <tr>
-        <td><span lang="en">inferCNV separates tumour from normal B (Fig. 7G)</span><span lang="zh-Hant">inferCNV 可分開腫瘤與正常 B（Fig. 7G）</span></td>
-        <td><span class="yes">✓</span> <span lang="en"><b>Reproduced.</b> Against 5,298 tonsil normal B cells, 100% (M102) and 70.8% (M413) of tumour cells exceed the reference 99th percentile; <b>0%</b> of the normal B cells in the same samples do. We use an external reference because M102 leaves only 29 in-sample normal B cells.</span><span lang="zh-Hant"><b>重現。</b>以 5,298 顆扁桃體正常 B 為參考，100%（M102）與 70.8%（M413）腫瘤細胞超過第 99 百分位；同檢體正常 B <b>一顆也沒有</b>。因 M102 僅剩 29 顆檢體內正常 B，故改用外部參考。</span></td>
+        <td><span lang="en">inferCNV separates tumour from normal B (Fig. 7G)</span><span lang="zh-Hant">inferCNV 可區分腫瘤與正常 B 細胞（Fig. 7G）</span></td>
+        <td><span class="yes">✓</span> <span lang="en"><b>Reproduced.</b> Against 5,298 tonsil normal B cells, 100% (M102) and 70.8% (M413) of tumour cells exceed the reference 99th percentile; <b>0%</b> of the normal B cells in the same samples do. We use an external reference because M102 leaves only 29 in-sample normal B cells.</span><span lang="zh-Hant"><b>重現。</b>以 5,298 個扁桃體正常 B 細胞為參考，100%（M102）與 70.8%（M413）的腫瘤細胞超過第 99 百分位，同檢體正常 B 細胞則<b>無一超過</b>。因 M102 僅餘 29 個檢體內正常 B 細胞，故改用外部參考。</span></td>
       </tr>
       <tr>
         <td><span lang="en">Two clusters with raised metallothionein (Fig. 7I)</span><span lang="zh-Hant">兩個 metallothionein 升高的 cluster（Fig. 7I）</span></td>
-        <td><span class="part">◐</span> <span lang="en"><b>M102 only — the sample they show.</b> Cluster-structured there (η<sup>2</sup> = 0.240, spread 0.62) but concentrated in <b>one</b> cluster of eight (2,629 cells, 26% of the tumour; 6 of 8 MT genes <i>p</i> &lt; 10<sup>−10</sup>). In M413 every cluster is flat and negative (spread 0.06): patient-specific, not a property of MCL.</span><span lang="zh-Hant"><b>僅在其展示的 M102 重現。</b>在該檢體有 cluster 結構（η<sup>2</sup> = 0.240、全距 0.62），但集中於八個中的<b>一個</b>（2,629 顆、占 26%；8 個 MT 基因中 6 個 <i>p</i> &lt; 10<sup>−10</sup>）。M413 各 cluster 皆平坦為負（全距 0.06）：屬病人特異，非 MCL 共性。</span></td>
+        <td><span class="part">◐</span> <span lang="en"><b>M102 only — the sample they show.</b> Cluster-structured there (η<sup>2</sup> = 0.240, spread 0.62) but concentrated in <b>one</b> cluster of eight (2,629 cells, 26% of the tumour; 6 of 8 MT genes <i>p</i> &lt; 10<sup>−10</sup>). In M413 every cluster is flat and negative (spread 0.06): patient-specific, not a property of MCL.</span><span lang="zh-Hant"><b>僅在其展示的 M102 重現。</b>該檢體具 cluster 結構（η<sup>2</sup> = 0.240、全距 0.62），但集中於八個中的<b>一個</b>（2,629 個細胞、占 26%；8 個 MT 基因中有 6 個 <i>p</i> &lt; 10<sup>−10</sup>）。M413 各 cluster 皆平坦且為負（全距 0.06），屬病人特異性，而非 MCL 的共性。</span></td>
       </tr>
       <tr>
         <td><span lang="en">"Not frozen in a particular maturation stage"</span><span lang="zh-Hant">「未被凍結在特定成熟階段」</span></td>
-        <td><span class="no">✗</span> <span lang="en"><b>Refined and partly reversed.</b> <b>90.0%</b> of tumour cells match non-class-switch memory B; 8.4% fall in the interval they name (30.2% of the soft weight). Per cell the match is <i>more</i> concentrated than in the normal B cells beside them: 2.89 vs 3.32 effective states of 5, <i>p</i> = 1.3 × 10<sup>−27</sup>. The tumour is pinned, not poised.</span><span lang="zh-Hant"><b>修正並部分反轉。</b>腫瘤細胞 <b>90.0%</b> 對到非類別轉換記憶 B；8.4% 落在其所指區間（軟性權重 30.2%）。單顆細胞的對位比身旁正常 B <i>更集中</i>：有效狀態數 2.89 對 3.32（上限 5），<i>p</i> = 1.3 × 10<sup>−27</sup>。腫瘤是被釘住，而非游移。</span></td>
+        <td><span class="no">✗</span> <span lang="en"><b>Refined and partly reversed.</b> <b>90.0%</b> of tumour cells match non-class-switch memory B; 8.4% fall in the interval they name (30.2% of the soft weight). Per cell the match is <i>more</i> concentrated than in the normal B cells beside them: 2.89 vs 3.32 effective states of 5, <i>p</i> = 1.3 × 10<sup>−27</sup>. The tumour is pinned, not poised.</span><span lang="zh-Hant"><b>修正並部分反轉。</b>腫瘤細胞有 <b>90.0%</b> 對應到非類別轉換記憶 B 細胞；8.4% 落在其所指區間（軟性權重 30.2%）。逐細胞的對位較鄰近正常 B 細胞<i>更為集中</i>：有效狀態數 2.89 對 3.32（上限 5），<i>p</i> = 1.3 × 10<sup>−27</sup>。腫瘤是被釘住，而非沿軸線游移。</span></td>
       </tr>
     </tbody>
   </table>
 
   <div class="key">
-    <span class="h" lang="en">Why the fourth row is the hinge of this report</span><span class="h" lang="zh-Hant">為什麼第四列是本報告的樞紐</span>
+    <span class="h" lang="en">Why the fourth row is the hinge of this report</span><span class="h" lang="zh-Hant">第四列為何是本報告的樞紐</span>
     <p style="margin:0" lang="en">Markers on a dot plot say which programmes are <i>detectable</i>; soft-matching says which normal state a cell is <i>closest to</i>, and how closely. Both readings are self-consistent — the activation markers are present and carry 30% of the weight — but the modal counterpart is a resting memory B cell, and 90% of cells agree. That concentration licenses the rest of this report: were the cells spread along a maturation axis, no single normal state would be the right thing to subtract.</p>
-    <p style="margin:0" lang="zh-Hant">dot plot 上的標記說的是哪些程式<i>可被偵測</i>；軟性對位說的是細胞<i>最接近</i>哪個正常狀態、有多接近。兩種讀法自洽 —— 活化標記確實存在、占權重 30% —— 但最主要的對應狀態是靜止記憶 B，且 90% 的細胞都同意。正是這種集中性讓本報告後續站得住腳：若細胞沿成熟軸線散開，就沒有哪個正常狀態適合拿來相減。</p>
+    <p style="margin:0" lang="zh-Hant">dot plot 上的標記所反映的是哪些程式<i>可被偵測</i>；軟性對位所反映的則是細胞<i>最接近</i>哪個正常狀態、以及接近的程度。兩種讀法彼此自洽：活化標記確實存在，並占 30% 的權重，但最主要的對應狀態是靜止記憶 B 細胞，且 90% 的細胞一致指向它。正是這種集中性使本報告的後續分析得以成立；若細胞沿成熟軸線散開，便沒有任何單一正常狀態適合作為相減的對象。</p>
   </div>
 
-  <div class="foot" style="margin-top:4pt"><span lang="en"><b>Two corrections, since both propagate.</b> The paper's DOI is <span class="mono">10.1016/j.immuni.2024.01.006</span>; earlier drafts of our repository cited <span class="mono">2024.11.006</span>, which does not resolve. The reference has <b>48</b> annotated B-cell states, of which <b>46</b> carry ≥10 cells per donor and enter the pseudobulk — the "47" in our earlier write-ups is wrong.</span><span lang="zh-Hant"><b>兩項更正，因為兩者都會往下傳遞。</b>該論文 DOI 是 <span class="mono">10.1016/j.immuni.2024.01.006</span>；倉庫早期版本引用的 <span class="mono">2024.11.006</span> 並不存在。參考含 <b>48</b> 個註釋 B 細胞狀態，其中 <b>46</b> 個在每位捐贈者皆有 ≥10 顆細胞而進入 pseudobulk —— 先前文件寫的「47」是錯的。</span></div>
+  <div class="foot" style="margin-top:4pt"><span lang="en"><b>Two corrections, since both propagate.</b> The paper's DOI is <span class="mono">10.1016/j.immuni.2024.01.006</span>; earlier drafts of our repository cited <span class="mono">2024.11.006</span>, which does not resolve. The reference has <b>48</b> annotated B-cell states, of which <b>46</b> carry ≥10 cells per donor and enter the pseudobulk — the "47" in our earlier write-ups is wrong.</span><span lang="zh-Hant"><b>兩項更正，因為兩者都會向下傳遞。</b>該論文 DOI 為 <span class="mono">10.1016/j.immuni.2024.01.006</span>；倉庫早期版本引用的 <span class="mono">2024.11.006</span> 並不存在。參考含 <b>48</b> 個註釋 B 細胞狀態，其中 <b>46</b> 個在每位捐贈者皆有 ≥10 個細胞而進入 pseudobulk；先前文件所寫的「47」是錯的。</span></div>
 
   <div class="pageno">1</div>
 </section>
 
 <!-- ======================================================== PAGE 2 ====== -->
 <section class="sheet">
-  <h2><span class="n">2</span><span lang="en">Extending the analysis: what is left when development is subtracted</span><span lang="zh-Hant">延伸分析：把分化扣掉之後還剩什麼</span></h2>
+  <h2><span class="n">2</span><span lang="en">Extending the analysis: what is left when development is subtracted</span><span lang="zh-Hant">延伸分析：扣除分化之後的殘餘</span></h2>
 
   <h3 lang="en">2.1 The subtraction</h3>
   <h3 lang="zh-Hant">2.1 相減</h3>
 
   <p lang="en">Almost every MCL study compares tumour cells with normal B cells in bulk. Because MCL resembles an early B cell, that comparison measures development at least as much as cancer. Section 1 showed it can be done properly: the tumour is pinned to one normal state, so the right control is that state, not the average B cell.</p>
-  <p lang="zh-Hant">幾乎所有 MCL 研究都拿腫瘤細胞和整體正常 B 細胞相比。由於 MCL 外觀類似早期 B 細胞，那種比較量到的「分化」至少不少於「癌症」。第 1 節顯示它可以做得更正確：腫瘤被釘在單一正常狀態上，所以恰當的對照是「那個狀態」，而非「平均的 B 細胞」。</p>
+  <p lang="zh-Hant">幾乎所有 MCL 研究都是將腫瘤細胞與整體正常 B 細胞相比。由於 MCL 的表型類似早期 B 細胞，這類比較所測得的分化成分至少不少於癌化成分。第 1 節顯示此事可以做得更為正確：腫瘤被釘在單一正常狀態，因此恰當的對照是該狀態，而非平均的 B 細胞。</p>
 
   <div class="flow">
     <span lang="en"><b>46,216</b> tonsil B cells · 6 donors · RNA + ATAC in one nucleus → <b>46</b> states, pseudobulk per state per donor<br>each of <b>19,975</b> tumour cells → correlation to every state → softmax over the top 5 → <b>expected normal profile</b><br>measured − expected = <b>residual</b> → rebuild the network from RNA + ATAC → compare tumour with normal</span>
-    <span lang="zh-Hant"><b>46,216</b> 顆扁桃體 B 細胞 · 6 位捐贈者 · 同核 RNA + ATAC → <b>46</b> 個狀態，每狀態每捐贈者 pseudobulk<br><b>19,975</b> 顆腫瘤細胞各自 → 對每狀態算相關 → 取前 5 名 softmax → <b>期望的正常表現譜</b><br>實測 − 期望 = <b>殘差</b> → 用 RNA + ATAC 重建網絡 → 腫瘤與正常對比</span>
+    <span lang="zh-Hant"><b>46,216</b> 個扁桃體 B 細胞 · 6 位捐贈者 · 同核 RNA + ATAC → <b>46</b> 個狀態，每狀態每捐贈者 pseudobulk<br><b>19,975</b> 個腫瘤細胞逐一 → 對每個狀態計算相關 → 取前 5 名 softmax → <b>期望的正常表現譜</b><br>實測 − 期望 = <b>殘差</b> → 以 RNA + ATAC 重建網絡 → 腫瘤與正常對比</span>
   </div>
 
   <p lang="en">The value of the step shows in one gene. After matching, the expected expression of <span class="gene">SLC7A11</span> in the corresponding normal state is <b>0.001</b> — effectively off — while the tumour measures <b>0.206</b>. A window that size is invisible to any comparison that averages over developmental stages, because some normal B-cell states do express the gene.</p>
-  <p lang="zh-Hant">這一步的價值在單一基因上最清楚。配對後，<span class="gene">SLC7A11</span> 在對應正常狀態的期望表現是 <b>0.001</b>（等於不表現），腫瘤實測 <b>0.206</b>。這麼大的窗口在任何把分化階段平均掉的比較裡都看不見，因為有些正常 B 細胞狀態確實表現這個基因。</p>
+  <p lang="zh-Hant">這一步的價值在單一基因上最為清楚。配對後，<span class="gene">SLC7A11</span> 在對應正常狀態的期望表現量為 <b>0.001</b>（等同於不表現），腫瘤實測為 <b>0.206</b>。如此大的窗口在任何將分化階段平均化的比較中都無法顯現，因為部分正常 B 細胞狀態確實表現此基因。</p>
 
   <h3 lang="en">2.2 A seven-letter site, opening genome-wide</h3>
   <h3 lang="zh-Hant">2.2 一個七字母位點的全基因組開啟</h3>
 
   <p lang="en">To ask what <i>drives</i> the residual rather than catalogue it, we rebuilt the regulatory network from both modalities. MCL ATAC was requantified onto the atlas's own <b>215,204</b> peak coordinates — the same intervals in tumour and normal, so no peak-calling difference can masquerade as biology — and peak–gene links were computed at metacell level against an empirical null, giving <b>217,705</b> links, of which <b>2,572</b> are gained and <b>3,845</b> lost in the tumour. We then asked which motifs sit under the gained links, against a background matched for both length and GC content.</p>
-  <p lang="zh-Hant">為了問殘差「由什麼驅動」而非只是列舉它，我們用兩種模態重建調控網絡。MCL 的 ATAC 被重新量化到圖譜自己的 <b>215,204</b> 個 peak 座標上 —— 腫瘤與正常用完全相同的區間，因此 peak calling 的差異無法偽裝成生物學 —— 再於 metacell 層級對經驗虛無分布計算 peak–基因連結，共 <b>217,705</b> 組，其中腫瘤新生 <b>2,572</b> 條、斷裂 <b>3,845</b> 條。接著我們問新生連結底下坐著哪些 motif —— 背景同時配對長度與 GC 含量。</p>
+  <p lang="zh-Hant">為追問殘差由什麼驅動，而非僅止於列舉，我們以兩種模態重建調控網絡。MCL 的 ATAC 被重新量化至圖譜自身的 <b>215,204</b> 個 peak 座標上，腫瘤與正常使用完全相同的區間，因此 peak calling 的差異無法偽裝成生物學；再於 metacell 層級對經驗虛無分布計算 peak–基因連結，共 <b>217,705</b> 組，其中腫瘤新生 <b>2,572</b> 條、斷裂 <b>3,845</b> 條。接著我們檢視新生連結之下有哪些 motif，背景同時就長度與 GC 含量配對。</p>
 
   <p lang="en">Of 577 motifs tested, 54 are enriched among gained links after correction and 2 depleted. The enriched set is not a proliferation signature: it is one site, written from several directions — <b>TGACTCA</b>, the landing pad of the AP-1 and small-Maf families. <span class="gene">FOS::JUN</span> 1.39×, <span class="gene">FOS::JUNB</span> 1.38×, <span class="gene">FOS::JUND</span> 1.36×, <span class="gene">JUN</span> 1.32×, <span class="gene">FOSL1::JUN</span> 1.30×, and <span class="gene">BACH1</span> 1.38× (<i>p</i><sub>adj</sub> = 2.3 × 10<sup>−4</sup>). The other way, B-cell identity factors lose ground: <span class="gene">POU2F3</span> 0.70× (<i>p</i><sub>adj</sub> = 5 × 10<sup>−6</sup>) and <span class="gene">POU5F1</span> 0.83× (4 × 10<sup>−4</sup>), with seven further POU motifs at 0.75–0.88× that do not survive correction — a trend, not a result.</p>
-  <p lang="zh-Hant">檢定的 577 個 motif 中，校正後 54 個在新生連結富集、2 個耗竭。富集的那一組不是增殖訊號，而是同一個位點被多個家族從不同方向寫出來：<b>TGACTCA</b> —— AP-1 與 small Maf 家族的落腳點。<span class="gene">FOS::JUN</span> 1.39×、<span class="gene">FOS::JUNB</span> 1.38×、<span class="gene">FOS::JUND</span> 1.36×、<span class="gene">JUN</span> 1.32×、<span class="gene">FOSL1::JUN</span> 1.30×，以及 <span class="gene">BACH1</span> 1.38×（<i>p</i><sub>adj</sub> = 2.3 × 10<sup>−4</sup>）。反方向，B 細胞身分因子失去位點：<span class="gene">POU2F3</span> 0.70×（<i>p</i><sub>adj</sub> = 5 × 10<sup>−6</sup>）、<span class="gene">POU5F1</span> 0.83×（4 × 10<sup>−4</sup>）；另有七個 POU motif 落在 0.75–0.88× 但未通過校正 —— 只當趨勢報告，不當結果。</p>
+  <p lang="zh-Hant">所檢定的 577 個 motif 中，校正後有 54 個在新生連結富集、2 個耗竭。富集的這一組並非增殖訊號，而是同一個位點被多個家族自不同方向寫入：<b>TGACTCA</b>，即 AP-1 與 small Maf 家族的結合位點。<span class="gene">FOS::JUN</span> 1.39×、<span class="gene">FOS::JUNB</span> 1.38×、<span class="gene">FOS::JUND</span> 1.36×、<span class="gene">JUN</span> 1.32×、<span class="gene">FOSL1::JUN</span> 1.30×，以及 <span class="gene">BACH1</span> 1.38×（<i>p</i><sub>adj</sub> = 2.3 × 10<sup>−4</sup>）。反方向上，B 細胞身分因子則流失位點：<span class="gene">POU2F3</span> 0.70×（<i>p</i><sub>adj</sub> = 5 × 10<sup>−6</sup>）、<span class="gene">POU5F1</span> 0.83×（4 × 10<sup>−4</sup>）；另有七個 POU motif 落在 0.75–0.88× 但未通過校正，僅作為趨勢報告，不列為結果。</p>
 
   <h3 lang="en">2.3 What the site switches on: a connected pathway</h3>
-  <h3 lang="zh-Hant">2.3 這個位點打開了什麼：一條相連的路徑</h3>
+  <h3 lang="zh-Hant">2.3 這個位點開啟了什麼：一條相連的路徑</h3>
 
   <p lang="en">The gene that gains most is <span class="gene">SLC7A11</span>, which acquires five regulatory elements absent from normal cells at the matched state (Fig. 4). What makes this more than one gene is that its pathway neighbours come with it, and the pathway is linear: cystine enters through system x<sub>c</sub><sup>−</sup> (<span class="gene">SLC7A11</span> + <span class="gene">SLC3A2</span>) → the cell builds glutathione (<span class="gene">GCLC</span>, <span class="gene">GCLM</span>) → glutathione plus FSP1 (<span class="gene">AIFM2</span>) blocks ferroptosis. In DepMap CRISPR screens, MCL lines are selectively dependent on five consecutive members of exactly that line.</p>
-  <p lang="zh-Hant">增幅最大的是 <span class="gene">SLC7A11</span>，它長出五個在配對正常狀態中不存在的調控元件（圖 4）。讓這不只是「一個基因」的，是它同路徑的鄰居一起來，而且路徑是線性的：胱胺酸經 system x<sub>c</sub><sup>−</sup>（<span class="gene">SLC7A11</span> + <span class="gene">SLC3A2</span>）進入細胞 → 合成穀胱甘肽（<span class="gene">GCLC</span>、<span class="gene">GCLM</span>）→ 穀胱甘肽加 FSP1（<span class="gene">AIFM2</span>）阻擋鐵死亡。DepMap 的 CRISPR 篩選中，MCL 細胞株正好對這條線上連續五個成員有選擇性依賴。</p>
+  <p lang="zh-Hant">增幅最大的是 <span class="gene">SLC7A11</span>，它新生出五個在配對正常狀態中不存在的調控元件（圖 4）。使此事不僅涉及單一基因的，是同路徑的鄰近基因一併出現，且該路徑是線性的：胱胺酸經 system x<sub>c</sub><sup>−</sup>（<span class="gene">SLC7A11</span> + <span class="gene">SLC3A2</span>）輸入細胞 → 合成穀胱甘肽（<span class="gene">GCLC</span>、<span class="gene">GCLM</span>）→ 穀胱甘肽與 FSP1（<span class="gene">AIFM2</span>）共同阻擋鐵死亡。在 DepMap 的 CRISPR 篩選中，MCL 細胞株正好對這條線上連續五個成員具選擇性依賴。</p>
 
   <table class="tight">
     <caption><b lang="en">Table 2 | The axis, five ways.</b><b lang="zh-Hant">表 2 ｜ 這條軸線的五種證據。</b>
       <span lang="en">DepMap <i>z</i> compares MCL lines (JVM-2, MAVER-1, Z-138) with all other lineages. PubMed counts are gene + "mantle cell lymphoma".</span>
-      <span lang="zh-Hant">DepMap <i>z</i> 是 MCL 細胞株（JVM-2、MAVER-1、Z-138）相對所有其他譜系。PubMed 計數為該基因 + "mantle cell lymphoma"。</span></caption>
+      <span lang="zh-Hant">DepMap <i>z</i> 為 MCL 細胞株（JVM-2、MAVER-1、Z-138）相對於所有其他譜系。PubMed 計數為該基因 + "mantle cell lymphoma"。</span></caption>
     <thead><tr>
       <th><span lang="en">Gene</span><span lang="zh-Hant">基因</span></th>
-      <th><span lang="en">Role in the line</span><span lang="zh-Hant">在這條線上的角色</span></th>
+      <th><span lang="en">Role in the line</span><span lang="zh-Hant">在路徑中的角色</span></th>
       <th class="n"><span lang="en">MCL</span><span lang="zh-Hant">MCL</span></th>
       <th class="n"><span lang="en">Others</span><span lang="zh-Hant">其他</span></th>
       <th class="n"><span lang="en">Selectivity <i>z</i></span><span lang="zh-Hant">選擇性 <i>z</i></span></th>
@@ -265,22 +265,22 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
   </table>
 
   <p lang="en">For scale, the same query returns 393 papers for <span class="gene">CCND1</span> + MCL, 134 for <span class="gene">ATM</span>, 32 for <span class="gene">ROR1</span>, 16 for <span class="gene">IRF4</span>. "System x<sub>c</sub><sup>−</sup>" and MCL together return zero.</p>
-  <p lang="zh-Hant">作為尺度參照，同一查詢在 <span class="gene">CCND1</span> + MCL 得到 393 篇、<span class="gene">ATM</span> 134 篇、<span class="gene">ROR1</span> 32 篇、<span class="gene">IRF4</span> 16 篇。而「system x<sub>c</sub><sup>−</sup>」與 MCL 一起查是零篇。</p>
+  <p lang="zh-Hant">作為尺度參照，同一查詢對 <span class="gene">CCND1</span> + MCL 得到 393 篇、<span class="gene">ATM</span> 134 篇、<span class="gene">ROR1</span> 32 篇、<span class="gene">IRF4</span> 16 篇；而「system x<sub>c</sub><sup>−</sup>」與 MCL 併查則為零篇。</p>
 
   <h3 lang="en">2.4 Two negative results that change the interpretation</h3>
   <h3 lang="zh-Hant">2.4 兩個改變解讀的陰性結果</h3>
 
   <p lang="en">A rewired axis could be mutation-driven. It is not. In 22 whole-genome-sequenced MCL patients, mutation density in the gained-link peaks is 72.1/Mb against a 65.3/Mb background — <b>1.10×</b>, no enrichment. Across the 21 axis genes there are <b>zero</b> non-synonymous coding mutations (one synonymous <span class="gene">BACH2</span> variant); eight DepMap MCL lines add two non-LoF <span class="gene">NFE2L1</span> missense variants, 29 cBioPortal cases none. The same pipeline on the same data finds <b>50</b> coding mutations in known drivers (<span class="gene">ATM</span> 13, <span class="gene">SMARCA4</span> 9) at 100% reference-base agreement, and recovers <span class="gene">IGH</span> hypermutation in 17 of 22 patients — so the negative is a property of the axis, not the detector.</p>
-  <p lang="zh-Hant">被重接線的軸線可能是突變驅動的。它不是。22 位全基因組定序的 MCL 病人中，新生連結 peak 的體細胞突變密度是 72.1/Mb，背景 65.3/Mb —— <b>1.10×</b>，無富集。軸線 21 個基因上非同義編碼突變為 <b>零</b>（僅一個同義 <span class="gene">BACH2</span> 變異）；八株 DepMap MCL 細胞株另有兩個非失功能 <span class="gene">NFE2L1</span> 錯義變異，29 例 cBioPortal 為零。同一流程在同一份資料上，於已知 driver 抓到 <b>50</b> 個編碼突變（<span class="gene">ATM</span> 13、<span class="gene">SMARCA4</span> 9），參考鹼基 100% 相符，且 22 位中有 17 位重現 <span class="gene">IGH</span> 超突變 —— 所以陰性是軸線的性質，不是偵測器的問題。</p>
+  <p lang="zh-Hant">被重接線的軸線有可能是突變驅動的，但事實並非如此。在 22 位全基因組定序的 MCL 病人中，新生連結 peak 的體細胞突變密度為 72.1/Mb，背景為 65.3/Mb，即 <b>1.10×</b>，無富集。軸線 21 個基因上的非同義編碼突變為 <b>零</b>（僅一個同義 <span class="gene">BACH2</span> 變異）；八個 DepMap MCL 細胞株另有兩個非失功能的 <span class="gene">NFE2L1</span> 錯義變異，29 例 cBioPortal 病例則為零。同一流程在同一份資料上於已知 driver 檢出 <b>50</b> 個編碼突變（<span class="gene">ATM</span> 13、<span class="gene">SMARCA4</span> 9），參考鹼基 100% 相符，且 22 位病人中有 17 位重現 <span class="gene">IGH</span> 超突變；可見此陰性結果是軸線本身的性質，而非偵測方法的問題。</p>
 
   <p lang="en">Therapeutically this is the better of the two possible answers: a purely epigenetic / <i>trans</i>-driven dependency carries no pre-existing stock of resistance mutations.</p>
-  <p lang="zh-Hant">就治療而言，這是兩種可能答案裡較好的那一個：純表觀／<i>trans</i> 驅動的依賴，不會預先存著一庫抗藥性突變。</p>
+  <p lang="zh-Hant">就治療而言，這是兩種可能答案中較有利的一個：純表觀／<i>trans</i> 驅動的依賴不會事先累積一批抗藥性突變。</p>
 
   <h3 lang="en">2.5 An outside opinion, including the test we had to retract</h3>
-  <h3 lang="zh-Hant">2.5 外部意見，包含我們必須撤回的那個測試</h3>
+  <h3 lang="zh-Hant">2.5 外部驗證，包含我們必須撤回的一項檢定</h3>
 
   <p lang="en">Everything so far comes from two patients, and no third patient-derived MCL multiome exists in public data. The appropriate test is therefore to ask a model that has never seen our samples. We ran three tests: one failed, and cost us an earlier conclusion; two succeeded.</p>
-  <p lang="zh-Hant">到此為止的一切都來自兩位病人，而公開資料中不存在第三例病人來源的 MCL multiome。因此適當的做法是去問一個從未見過我們檢體的模型。我們做了三個測試：一個失敗，而且讓我們失去了先前的結論；兩個成功。</p>
+  <p lang="zh-Hant">至此的所有結果都出自兩位病人，而公開資料中不存在第三例病人來源的 MCL multiome。因此適當的做法是詢問一個從未見過我們檢體的模型。我們進行三項檢定：一項失敗，並使我們失去先前的一個結論；兩項成功。</p>
 
   <div class="pageno">2</div>
 </section>
@@ -289,53 +289,53 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
 <section class="sheet">
 
   <table class="tight">
-    <caption><b lang="en">Table 3 | Three external tests with AlphaGenome 2, all reported.</b><b lang="zh-Hant">表 3 ｜ AlphaGenome 2 的三個外部測試，全部報告。</b>
+    <caption><b lang="en">Table 3 | Three external tests with AlphaGenome 2, all reported.</b><b lang="zh-Hant">表 3 ｜ AlphaGenome 2 的三項外部檢定，全部報告。</b>
       <span lang="en">A sequence model trained on normal tissue only, which has never seen our samples.</span>
-      <span lang="zh-Hant">只在正常組織上訓練、從未見過我們檢體的序列模型。</span></caption>
+      <span lang="zh-Hant">一個僅在正常組織上訓練、從未見過我們檢體的序列模型。</span></caption>
     <thead><tr>
-      <th style="width:25%"><span lang="en">Test</span><span lang="zh-Hant">測試</span></th>
+      <th style="width:25%"><span lang="en">Test</span><span lang="zh-Hant">檢定</span></th>
       <th style="width:75%"><span lang="en">Result</span><span lang="zh-Hant">結果</span></th>
     </tr></thead>
     <tbody>
       <tr>
         <td><span lang="en">Baseline accessibility of the new elements</span><span lang="zh-Hant">新生元件的基線可及性</span></td>
-        <td><span class="no">✗</span> <span lang="en"><b>Failed and retracted</b>, after publication in our repository. Our elements scored 26–30× their controls, but predicted signal tracks peak width (<i>r</i> = +0.74) and our elements are 3.5× wider. Width-matched, the effect <b>reverses</b>: 0.55×, <i>p</i> = 0.57.</span><span lang="zh-Hant"><b>失敗並撤回</b>，且在已公開於倉庫之後才撤回。元件得分為對照的 26–30 倍，但預測訊號與 peak 寬度相關（<i>r</i> = +0.74），我們的元件寬 3.5 倍。寬度配對後效應<b>反轉</b>：0.55×、<i>p</i> = 0.57。</span></td>
+        <td><span class="no">✗</span> <span lang="en"><b>Failed and retracted</b>, after publication in our repository. Our elements scored 26–30× their controls, but predicted signal tracks peak width (<i>r</i> = +0.74) and our elements are 3.5× wider. Width-matched, the effect <b>reverses</b>: 0.55×, <i>p</i> = 0.57.</span><span lang="zh-Hant"><b>失敗並撤回</b>，且是在已公開於倉庫之後才撤回。元件得分為對照的 26–30 倍，但預測訊號與 peak 寬度相關（<i>r</i> = +0.74），而我們的元件寬出 3.5 倍。以寬度配對後，效應<b>反轉</b>：0.55×、<i>p</i> = 0.57。</span></td>
       </tr>
       <tr>
         <td><span lang="en">Saturation mutagenesis of the MARE site</span><span lang="zh-Hant">MARE 位點的飽和突變</span></td>
-        <td><span class="yes">✓</span> <span lang="en"><b>The hub is confirmed.</b> Breaking the MARE in the <span class="gene">MAFG</span> promoter (−769 bp) shifts predicted <span class="gene">MAFG</span> expression <b>3.1–3.2×</b> more than neighbouring bases (Bonferroni <i>p</i> = 1.3 and 3.1 × 10<sup>−4</sup>). The <span class="gene">HMOX1</span> control works (2.18×) and is selective: 1 of its 3 TGACTCA copies scores.</span><span lang="zh-Hant"><b>樞紐獲確認。</b>破壞 <span class="gene">MAFG</span> 啟動子（−769 bp）的 MARE，使預測表現改變量達鄰近鹼基的 <b>3.1–3.2 倍</b>（Bonferroni <i>p</i> = 1.3 與 3.1 × 10<sup>−4</sup>）。<span class="gene">HMOX1</span> 對照有效（2.18×）且具選擇性：三個 TGACTCA 只有一個顯著。</span></td>
+        <td><span class="yes">✓</span> <span lang="en"><b>The hub is confirmed.</b> Breaking the MARE in the <span class="gene">MAFG</span> promoter (−769 bp) shifts predicted <span class="gene">MAFG</span> expression <b>3.1–3.2×</b> more than neighbouring bases (Bonferroni <i>p</i> = 1.3 and 3.1 × 10<sup>−4</sup>). The <span class="gene">HMOX1</span> control works (2.18×) and is selective: 1 of its 3 TGACTCA copies scores.</span><span lang="zh-Hant"><b>樞紐獲得確認。</b>破壞 <span class="gene">MAFG</span> 啟動子（−769 bp）的 MARE 後，預測表現的改變量達鄰近鹼基的 <b>3.1–3.2 倍</b>（Bonferroni <i>p</i> = 1.3 與 3.1 × 10<sup>−4</sup>）。<span class="gene">HMOX1</span> 對照有效（2.18×）且具選擇性：三個 TGACTCA 位點中僅一個顯著。</span></td>
       </tr>
       <tr>
         <td><span lang="en">Cell-state conditioning, same DNA</span><span lang="zh-Hant">細胞狀態條件化，同一段 DNA</span></td>
-        <td><span class="yes">✓</span> <span lang="en"><b>Confirmed in both patients.</b> With the sequence fixed and only the cell state changed, the five <span class="gene">SLC7A11</span> elements open <b>1.97×</b> and <b>2.14×</b> under the tumour-like state, against 1.27× and 1.19× for non-rewired peaks in the same window (<i>p</i> = 1.9 × 10<sup>−5</sup>, 7.9 × 10<sup>−4</sup>). Identical DNA, so width and composition cancel exactly. The same test on the <span class="gene">MAFG</span> elements is null.</span><span lang="zh-Hant"><b>兩位病人皆確認。</b>固定序列、只改變細胞狀態，五個 <span class="gene">SLC7A11</span> 元件在類腫瘤狀態下開啟 <b>1.97×</b> 與 <b>2.14×</b>，同窗格未重接線的 peak 僅 1.27× 與 1.19×（<i>p</i> = 1.9 × 10<sup>−5</sup>、7.9 × 10<sup>−4</sup>）。DNA 完全相同，寬度與組成精確抵銷。對 <span class="gene">MAFG</span> 元件的同樣測試為陰性。</span></td>
+        <td><span class="yes">✓</span> <span lang="en"><b>Confirmed in both patients.</b> With the sequence fixed and only the cell state changed, the five <span class="gene">SLC7A11</span> elements open <b>1.97×</b> and <b>2.14×</b> under the tumour-like state, against 1.27× and 1.19× for non-rewired peaks in the same window (<i>p</i> = 1.9 × 10<sup>−5</sup>, 7.9 × 10<sup>−4</sup>). Identical DNA, so width and composition cancel exactly. The same test on the <span class="gene">MAFG</span> elements is null.</span><span lang="zh-Hant"><b>兩位病人皆獲確認。</b>序列固定、僅改變細胞狀態，五個 <span class="gene">SLC7A11</span> 元件在類腫瘤狀態下的開放程度為 <b>1.97×</b> 與 <b>2.14×</b>，同窗格內未重接線的 peak 僅 1.27× 與 1.19×（<i>p</i> = 1.9 × 10<sup>−5</sup>、7.9 × 10<sup>−4</sup>）。DNA 完全相同，寬度與鹼基組成精確抵銷。同一檢定在 <span class="gene">MAFG</span> 元件上為陰性。</span></td>
       </tr>
     </tbody>
   </table>
 
   <div class="key warn">
-    <span class="h" lang="en">The same mistake, three times</span><span class="h" lang="zh-Hant">同一個錯誤，犯了三次</span>
+    <span class="h" lang="en">The same mistake, three times</span><span class="h" lang="zh-Hant">同一個錯誤出現三次</span>
     <p style="margin:0" lang="en">Three separate artefacts here had one cause: foreground and background groups differing in length or base composition — motif length, then GC content, then peak width. Each produced a clean, large, publishable-looking effect, and each dissolved once the background was matched on the offending variable; the third only after it was public. Effect size tells you nothing about whether a comparison is fair, and a background set is a modelling decision, not a technicality.</p>
-    <p style="margin:0" lang="zh-Hant">本專案三個獨立的假象來自同一個原因：前景組與背景組在長度或鹼基組成上不同 —— 先是 motif 長度，再是 GC 含量，最後是 peak 寬度。每一次都產生乾淨、巨大、看起來可以發表的效應，而每一次在把背景對該變數配對後就瓦解；第三次還是公開之後才被抓到。效應大小完全無法告訴你比較是否公平，而「背景集」是建模決定，不是技術細節。</p>
+    <p style="margin:0" lang="zh-Hant">本專案三個獨立的假象出自同一個原因：前景組與背景組在長度或鹼基組成上並不相同，依序為 motif 長度、GC 含量與 peak 寬度。每一次都得到乾淨、巨大、看似可以發表的效應，而每一次都在把背景就該變數配對後瓦解；第三次更是在公開之後才被發現。效應大小完全無法說明一項比較是否公平，而背景集的選擇是建模決定，不是技術細節。</p>
   </div>
 
   <h3 lang="en">2.6 From a DNA site to a protein target</h3>
   <h3 lang="zh-Hant">2.6 從 DNA 位點到蛋白質標的</h3>
 
   <p lang="en">A seven-letter site is not a drug target. The proteins that read it are, but AP-1 and BACH1 family members are mutually redundant — knock out one and another takes over. They share one requirement: at a MARE, the small Maf protein <b>MafG</b> is the obligate partner. MafG is therefore the single point where the whole set converges, and the reason the axis is reachable at all.</p>
-  <p lang="zh-Hant">七個字母的位點不是藥物標的，讀取它的蛋白質才是；但 AP-1 與 BACH1 家族成員彼此冗餘 —— 敲掉一個，另一個就補上。它們共用一個要求：在 MARE 上，small Maf 蛋白 <b>MafG</b> 是必要夥伴。MafG 因此成為整組蛋白收斂到的唯一一點，也是這條軸線「碰得到」的原因。</p>
+  <p lang="zh-Hant">七個字母的位點不是藥物標的，讀取它的蛋白質才是；但 AP-1 與 BACH1 家族成員彼此冗餘，敲除其中一個，另一個即可替代。它們共有一項要求：在 MARE 上，small Maf 蛋白 <b>MafG</b> 是必要夥伴。MafG 因此成為整組蛋白唯一收斂的一點，也是這條軸線得以成為可及標的的原因。</p>
 
   <p lang="en">Two independent kinds of evidence point at the same residues. A protein language model (ESM-2; 7 proteins, &gt;60,000 variants) measures evolutionary constraint from sequence alone, knowing nothing about structure; the co-crystal 7X5E measures the interface from coordinates, knowing nothing about evolution. For MafG, the median constraint percentile of the 34 interface residues is <b>17.3</b> against <b>59.6</b> elsewhere (<i>p</i> = 8.3 × 10<sup>−11</sup>); for FSP1, 26.5 against 56.3 (<i>p</i> = 2.1 × 10<sup>−11</sup>). Those positions are also poor ground for resistance: the MafG interface tolerates <b>10.5%</b> of substitutions against 42.4% across the whole protein.</p>
-  <p lang="zh-Hant">兩種彼此獨立的證據指向同一組殘基。蛋白質語言模型（ESM-2；7 個蛋白質、超過 60,000 個變異）只從序列測量演化約束，對結構一無所知；共結晶 7X5E 只從座標測量介面，對演化一無所知。對 MafG，34 個介面殘基的約束度中位百分位是 <b>17.3</b>，其餘位置 <b>59.6</b>（<i>p</i> = 8.3 × 10<sup>−11</sup>）；FSP1 為 26.5 對 56.3（<i>p</i> = 2.1 × 10<sup>−11</sup>）。這些位置也是抗藥性的貧瘠土壤：MafG 介面只容忍 <b>10.5%</b> 的取代，全蛋白質平均 42.4%。</p>
+  <p lang="zh-Hant">兩種彼此獨立的證據指向同一組殘基。蛋白質語言模型（ESM-2；7 個蛋白質、超過 60,000 個變異）僅自序列測量演化約束，對結構一無所知；共結晶 7X5E 僅自座標測量介面，對演化一無所知。對 MafG 而言，34 個介面殘基的約束度中位百分位為 <b>17.3</b>，其餘位置為 <b>59.6</b>（<i>p</i> = 8.3 × 10<sup>−11</sup>）；FSP1 則為 26.5 對 56.3（<i>p</i> = 2.1 × 10<sup>−11</sup>）。這些位置也不利於抗藥性的產生：MafG 介面僅容許 <b>10.5%</b> 的取代，全蛋白質平均為 42.4%。</p>
 
   <h3 lang="en">2.7 Designing against the hub</h3>
-  <h3 lang="zh-Hant">2.7 針對樞紐做設計</h3>
+  <h3 lang="zh-Hant">2.7 針對樞紐進行設計</h3>
 
   <p lang="en">We generated backbones against the MafG face with RFdiffusion3, designed sequences with ProteinMPNN, and scored every complex by co-folding with Boltz-2, the open model of the AlphaFold 3 class (110 complexes, 159 predictions, five diffusion samples each). The thresholds are not ours: <span class="mono">ipSAE &gt; 0.61</span> comes from 3,766 binders tested at the bench across 15 targets, and <span class="mono">ipTM ≥ 0.50</span>, <span class="mono">pAE ≤ 10.85 Å</span>, <span class="mono">pLDDT ≥ 0.80</span> are BindCraft defaults, with an independent laboratory converging on the same ~10 Å cut.</p>
-  <p lang="zh-Hant">我們用 RFdiffusion3 針對 MafG 介面生成骨架、以 ProteinMPNN 設計序列，再用 Boltz-2 共摺疊評分（AlphaFold 3 同級的開源模型；110 個複合體、159 次預測，每個五次 diffusion 取樣）。門檻不是我們自訂的：<span class="mono">ipSAE &gt; 0.61</span> 來自 15 個標的共 3,766 個經實驗測試的結合劑，而 <span class="mono">ipTM ≥ 0.50</span>、<span class="mono">pAE ≤ 10.85 Å</span>、<span class="mono">pLDDT ≥ 0.80</span> 是 BindCraft 預設值，另有獨立實驗室收斂到同樣約 10 Å 的切點。</p>
+  <p lang="zh-Hant">我們以 RFdiffusion3 針對 MafG 介面生成骨架，以 ProteinMPNN 設計序列，再以 Boltz-2 共摺疊評分（AlphaFold 3 同級的開源模型；110 個複合體、159 次預測，每個五次 diffusion 取樣）。門檻並非由我們自訂：<span class="mono">ipSAE &gt; 0.61</span> 來自 15 個標的共 3,766 個經實驗測試的結合劑，而 <span class="mono">ipTM ≥ 0.50</span>、<span class="mono">pAE ≤ 10.85 Å</span>、<span class="mono">pLDDT ≥ 0.80</span> 是 BindCraft 預設值，另有獨立實驗室收斂到同樣約 10 Å 的切點。</p>
 
   <table class="tight">
     <caption><b lang="en">Table 4 | The best design against its controls.</b><b lang="zh-Hant">表 4 ｜ 最佳設計與對照。</b>
-<span lang="en">ipTM is the mean ± s.d. of five diffusion samples; NRF2 is the partner MafG really uses.</span><span lang="zh-Hant">ipTM 為五次 diffusion 取樣的平均 ± 標準差；NRF2 是 MafG 真正使用的夥伴。</span></caption>
+<span lang="en">ipTM is the mean ± s.d. of five diffusion samples; NRF2 is the partner MafG really uses.</span><span lang="zh-Hant">ipTM 為五次 diffusion 取樣的平均 ± 標準差；NRF2 為 MafG 實際使用的夥伴。</span></caption>
     <thead><tr>
       <th><span lang="en">Complex</span><span lang="zh-Hant">複合體</span></th>
       <th class="n">ipSAE</th><th class="n">ipTM</th>
@@ -344,17 +344,17 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
       <th class="n"><span lang="en">Filters</span><span lang="zh-Hant">通過</span></th>
     </tr></thead>
     <tbody>
-      <tr><td><b><span lang="en">Designed binder, 90 aa</span><span lang="zh-Hant">設計結合劑，90 殘基</span></b></td>
+      <tr><td><b><span lang="en">Designed binder, 90 aa</span><span lang="zh-Hant">設計的結合劑，90 殘基</span></b></td>
           <td class="n"><b>0.611</b> ± 0.020</td><td class="n"><b>0.790</b> ± 0.015</td><td class="n">6.97 Å</td><td class="n">0.902</td><td class="n"><b>4 / 4</b></td></tr>
       <tr><td><span lang="en">Native NRF2 (positive control)</span><span lang="zh-Hant">天然 NRF2（陽性對照）</span></td>
           <td class="n">0.519 ± 0.013</td><td class="n">0.713 ± 0.010</td><td class="n">9.16 Å</td><td class="n">0.937</td><td class="n">3 / 4</td></tr>
-      <tr><td><span lang="en">Scrambled sequence (negative control)</span><span lang="zh-Hant">亂序（陰性對照）</span></td>
+      <tr><td><span lang="en">Scrambled sequence (negative control)</span><span lang="zh-Hant">亂序序列（陰性對照）</span></td>
           <td class="n">0.003–0.020</td><td class="n">0.39–0.47</td><td class="n">17–20 Å</td><td class="n">0.58–0.65</td><td class="n">0 / 4</td></tr>
     </tbody>
   </table>
 
   <p lang="en">The design beats the protein's own natural partner on interface confidence (<i>p</i> = 3.5 × 10<sup>−4</sup> against scrambled controls) — the single most encouraging number here, and the one most in need of a wet-lab test.</p>
-  <p lang="zh-Hant">這個設計在介面信心上勝過該蛋白質自己的天然夥伴（對亂序對照 <i>p</i> = 3.5 × 10<sup>−4</sup>）—— 這是全報告最令人振奮的數字，也是最需要濕實驗檢驗的數字。</p>
+  <p lang="zh-Hant">此設計在介面信心上優於該蛋白質自身的天然夥伴（對亂序對照 <i>p</i> = 3.5 × 10<sup>−4</sup>）。這是全報告中最具前景的數字，也是最需要濕實驗檢驗的數字。</p>
 
   <div class="seq">LAAGGSVDTEKLAELQKKLEEMELELAKMQQELAELQKELEKLQKELAEAEAEMKAAGIPAKLSEEERARLLHWAALVEAPLHRVRRRPL</div>
 
@@ -364,25 +364,25 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
 <!-- ======================================================== PAGE 4 ====== -->
 <section class="sheet">
   <h3 lang="en">2.8 What we rejected, and what we still cannot explain</h3>
-  <h3 lang="zh-Hant">2.8 被我們推翻的，以及仍然無法解釋的</h3>
+  <h3 lang="zh-Hant">2.8 已被推翻者，以及仍無法解釋者</h3>
 
   <p lang="en">Sixty-four hypotheses and traps were tested and dropped. Several were our own earlier conclusions, and nine were retracted or corrected after the repository was public. The failures are more informative than the survivors, so they are listed with the same precision.</p>
-  <p lang="zh-Hant">共檢定並放棄了 64 個假設與陷阱。其中好幾個是我們自己先前的結論，有九個是在倉庫公開之後才撤回或更正。失敗比存活下來的更有資訊量，所以用同樣精度列出。</p>
+  <p lang="zh-Hant">共檢定並放棄了 64 個假設與陷阱。其中若干是我們自己先前的結論，有九個是在倉庫公開之後才撤回或更正。失敗的部分比存活下來的更有資訊量，因此以同樣的精度列出。</p>
 
   <table class="tight">
     <caption><b lang="en">Table 5 | Selected rejected hypotheses.</b><b lang="zh-Hant">表 5 ｜ 部分被推翻的假設。</b>
-      <span lang="en">The full list of 29 is in the repository report.</span><span lang="zh-Hant">29 項完整清單見倉庫內的報告。</span></caption>
+      <span lang="en">The full list of 29 is in the repository report.</span><span lang="zh-Hant">完整的 29 項清單見倉庫內的報告。</span></caption>
     <thead><tr>
       <th style="width:30%"><span lang="en">Hypothesis</span><span lang="zh-Hant">假設</span></th>
-      <th style="width:70%"><span lang="en">How it died</span><span lang="zh-Hant">它是怎麼死的</span></th>
+      <th style="width:70%"><span lang="en">How it died</span><span lang="zh-Hant">它如何被推翻</span></th>
     </tr></thead>
     <tbody>
-      <tr><td><span lang="en">The rewiring is mutation-driven</span><span lang="zh-Hant">重接線是突變驅動</span></td>
-          <td><span lang="en">1.10× background in non-coding regions; 0 non-synonymous coding mutations in 21 axis genes, against 50 in known drivers by the same pipeline.</span><span lang="zh-Hant">非編碼區僅背景 1.10×；21 個軸線基因 0 個非同義編碼突變，同一流程在已知 driver 抓到 50 個。</span></td></tr>
+      <tr><td><span lang="en">The rewiring is mutation-driven</span><span lang="zh-Hant">重接線為突變驅動</span></td>
+          <td><span lang="en">1.10× background in non-coding regions; 0 non-synonymous coding mutations in 21 axis genes, against 50 in known drivers by the same pipeline.</span><span lang="zh-Hant">非編碼區僅為背景的 1.10×；21 個軸線基因有 0 個非同義編碼突變，而同一流程在已知 driver 上檢出 50 個。</span></td></tr>
       <tr><td><span lang="en">The new elements are intrinsically accessible</span><span lang="zh-Hant">新生元件本身具可及性</span></td>
-          <td><span lang="en">A peak-width artefact: reverses to 0.55×, <i>p</i> = 0.57 once the background is width-matched.</span><span lang="zh-Hant">peak 寬度假象：背景配對寬度後反轉為 0.55×、<i>p</i> = 0.57。</span></td></tr>
-      <tr><td><span lang="en">Co-folding confidence can rank point mutations</span><span lang="zh-Hant">共摺疊信心可排名單點突變</span></td>
-          <td><span lang="en">On the protein–DNA interface, 0 of 24 mutations clear the noise floor — the baseline is saturated. On the protein–protein interface, an orthogonal binding-energy model calibrated against measured energies gives a ranking uncorrelated with ours (Spearman +0.17, <i>p</i> = 0.58). The score says which positions are in the interface, not which mutation is worse.</span><span lang="zh-Hant">蛋白質–DNA 介面上 24 個突變有 0 個超過雜訊地板 —— 基線已飽和。蛋白質–蛋白質介面上，以實測結合能校準的正交模型給出的排名與我們不相關（Spearman +0.17、<i>p</i> = 0.58）。這個分數能說「哪些位置在介面上」，不能說「哪個突變更嚴重」。</span></td></tr>
+          <td><span lang="en">A peak-width artefact: reverses to 0.55×, <i>p</i> = 0.57 once the background is width-matched.</span><span lang="zh-Hant">peak 寬度造成的假象：背景就寬度配對後，反轉為 0.55×、<i>p</i> = 0.57。</span></td></tr>
+      <tr><td><span lang="en">Co-folding confidence can rank point mutations</span><span lang="zh-Hant">共摺疊信心可為單點突變排名</span></td>
+          <td><span lang="en">On the protein–DNA interface, 0 of 24 mutations clear the noise floor — the baseline is saturated. On the protein–protein interface, an orthogonal binding-energy model calibrated against measured energies gives a ranking uncorrelated with ours (Spearman +0.17, <i>p</i> = 0.58). The score says which positions are in the interface, not which mutation is worse.</span><span lang="zh-Hant">在蛋白質–DNA 介面上，24 個突變中有 0 個高於雜訊地板，基線已飽和。在蛋白質–蛋白質介面上，以實測結合能校準的正交模型所給出的排名與我們的並不相關（Spearman +0.17、<i>p</i> = 0.58）。此分數能指出哪些位置位於介面上，但不能指出哪個突變較為嚴重。</span></td></tr>
     </tbody>
   </table>
 
@@ -391,29 +391,29 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
 
   <ul>
     <li lang="en"><b>Two patients.</b> Every single-cell claim rests on M102 and M413. Only the cell-state-conditioning test and the DepMap, WGS and literature evidence reach beyond them.</li>
-    <li lang="zh-Hant"><b>只有兩位病人。</b>所有單細胞主張都建立在 M102 與 M413 之上。只有細胞狀態條件化測試與 DepMap、WGS、文獻證據能延伸到這兩位之外。</li>
+    <li lang="zh-Hant"><b>僅有兩位病人。</b>所有單細胞層面的主張均建立在 M102 與 M413 之上。僅細胞狀態條件化檢定與 DepMap、WGS、文獻證據能延伸至這兩位病人之外。</li>
     <li lang="en"><b>The <span class="gene">MAFG</span> elements gain coupling but lose openness,</b> and we have no explanation. Our first one came from the width artefact and was retracted; the external test on these elements is null.</li>
-    <li lang="zh-Hant"><b><span class="gene">MAFG</span> 元件獲得協同性卻失去開放度</b>，我們沒有解釋。最初的解釋來自寬度假象、已撤回；外部測試在這些元件上為陰性。</li>
+    <li lang="zh-Hant"><b><span class="gene">MAFG</span> 元件獲得協同性卻失去開放度</b>，目前沒有解釋。我們最初的解釋出自寬度假象，已撤回；外部檢定在這些元件上為陰性。</li>
     <li lang="en"><b>Delivery is out of scope by design,</b> and <b>nothing here has been tested at the bench.</b> Every design assumes the protein reaches the nucleus; every claim is a hypothesis with a stated confidence level and, where found, a failure mode.</li>
-    <li lang="zh-Hant"><b>藥物傳遞依設計排除在範圍外</b>，且<b>本報告沒有任何結果經過實驗驗證</b>。所有設計都預設蛋白質能到達細胞核；每項主張都是帶有明確信心水準的假說，並在我們找到時標明其失效模式。</li>
+    <li lang="zh-Hant"><b>藥物遞送依設計排除於範圍之外</b>，且<b>本報告沒有任何結果經過實驗驗證</b>。所有設計均預設蛋白質能到達細胞核；每項主張都是帶有明確信心水準的假說，並在我們找到失效模式時一併標明。</li>
   </ul>
 
-  <h2><span class="n">3</span><span lang="en">What the two sections add up to</span><span lang="zh-Hant">兩節合起來說明了什麼</span></h2>
+  <h2><span class="n">3</span><span lang="en">What the two sections add up to</span><span lang="zh-Hant">兩節綜合說明了什麼</span></h2>
 
   <p lang="en">The published analysis used the atlas to show that MCL cells resemble normal B cells. Quantifying that resemblance changes its meaning: the tumour does not drift along a maturation axis — it sits on one state, non-class-switch memory B, more tightly than real memory B cells do. A tumour that is pinned can be subtracted from, and that subtraction turns a reference atlas from a labelling device into a measuring instrument.</p>
-  <p lang="zh-Hant">已發表的分析用圖譜說明「MCL 細胞類似正常 B 細胞」。把這個「類似」定量後意義就變了：腫瘤並非沿成熟軸線漂移，而是坐在單一狀態上（非類別轉換記憶 B），且坐得比真正的記憶 B 細胞更緊。被釘住的腫瘤才能被「相減」，而這個相減正是讓參考圖譜從標註工具變成量測儀器的關鍵。</p>
+  <p lang="zh-Hant">已發表的分析以圖譜說明「MCL 細胞類似正常 B 細胞」。將這個「類似」定量之後，其意義便改變了：腫瘤並非沿成熟軸線漂移，而是落在單一狀態（非類別轉換記憶 B 細胞）之上，且其集中程度高於真正的記憶 B 細胞。唯有被釘住的腫瘤才能被相減，而這個相減正是使參考圖譜從標註工具轉為量測儀器的關鍵。</p>
 
   <p lang="en">What it reads out is not a known cancer gene but seven letters of DNA, and behind them a metabolic programme that normal B cells at the same position never switch on. The programme has the shape a drug target should have: linear, so no bypass; non-mutated, so no stock of resistance; redundant among the factors that read the site, but convergent on one obligate partner. The design against that partner passes filters calibrated on thousands of real binders — and has never been near a laboratory. The most important number here, that it beats the natural partner, is exactly the one a wet-lab test would be most likely to take away.</p>
-  <p lang="zh-Hant">它讀出來的不是已知癌症基因，而是七個字母的 DNA，以及藏在背後、同一位置的正常 B 細胞從不打開的一套代謝程式。這套程式具備藥物標的該有的形狀：線性，所以沒有旁路；沒有突變，所以沒有抗藥性庫存；讀取位點的因子彼此冗餘，但收斂到唯一一個必要夥伴。針對那個夥伴的設計通過了以數千個真實結合劑校準的門檻 —— 也從未靠近過實驗室。本報告最重要的那個數字（它勝過天然夥伴），恰恰是濕實驗最可能收回去的那一個。</p>
+  <p lang="zh-Hant">它讀出的並非已知癌症基因，而是七個字母的 DNA，以及其背後一套同一位置的正常 B 細胞從不開啟的代謝程式。這套程式具備藥物標的應有的形態：線性，因此沒有旁路；不帶突變，因此沒有既存的抗藥性；讀取位點的因子彼此冗餘，但收斂於唯一一個必要夥伴。針對該夥伴的設計通過了以數千個真實結合劑校準的門檻，卻也從未進入實驗室。本報告最重要的那個數字，即它優於天然夥伴一事，恰好也是濕實驗最可能推翻的一項。</p>
 
   <h2><span class="n">4</span><span lang="en">Methods, data and code</span><span lang="zh-Hant">方法、資料與程式</span></h2>
   <div class="methods">
 
   <p lang="en">All primary data is public; nothing was generated at the bench. Human Tonsil Atlas and the MCL multiome samples M102/M413 (Zenodo 8373756); MCL somatic mutations, 22 whole genomes (16098829); MCL subclones with inferCNV labels (18200523); an 11-patient MCL scRNA cohort (GEO GSE303064); GRCh38 with GENCODE v44; JASPAR2024 CORE vertebrates; PDB 7X5E and 8YOQ; DepMap CRISPR gene effect; PIONEER2 interface predictions (stream-filtered, not redistributed); PubMed E-utilities. Models: AlphaGenome 2, ESM-2 650M, Boltz-2, RFdiffusion3, ProteinMPNN, Borzoi, and a reimplementation of IPSAE reconciled against the official tool. AlphaFold 3 was not used: its weights require an application to DeepMind, and Boltz-2 is the open model of the same class.</p>
-  <p lang="zh-Hant">所有原始資料皆為公開，本工作無任何自行產生的實驗資料。人類扁桃體圖譜與 MCL multiome 檢體 M102/M413（Zenodo 8373756）；22 例全基因組 MCL 體細胞突變（16098829）；含 inferCNV 標籤的 MCL 亞克隆（18200523）；11 位病人 MCL scRNA 隊列（GEO GSE303064）；GRCh38 搭配 GENCODE v44；JASPAR2024 CORE vertebrates；PDB 7X5E 與 8YOQ；DepMap CRISPR 基因效應；PIONEER2 介面預測（串流過濾，不轉載）；PubMed E-utilities。模型：AlphaGenome 2、ESM-2 650M、Boltz-2、RFdiffusion3、ProteinMPNN、Borzoi，以及自行重寫並與官方工具核對一致的 IPSAE。未使用 AlphaFold 3 —— 其權重需向 DeepMind 申請，而 Boltz-2 是同級開源模型。</p>
+  <p lang="zh-Hant">所有原始資料皆為公開，本研究未自行產生任何實驗資料。人類扁桃體圖譜與 MCL multiome 檢體 M102/M413（Zenodo 8373756）；22 例全基因組 MCL 體細胞突變（16098829）；含 inferCNV 標籤的 MCL 亞克隆（18200523）；11 位病人 MCL scRNA 隊列（GEO GSE303064）；GRCh38 搭配 GENCODE v44；JASPAR2024 CORE vertebrates；PDB 7X5E 與 8YOQ；DepMap CRISPR 基因效應；PIONEER2 介面預測（串流過濾，不轉載）；PubMed E-utilities。模型：AlphaGenome 2、ESM-2 650M、Boltz-2、RFdiffusion3、ProteinMPNN、Borzoi，以及自行重寫並與官方工具核對一致的 IPSAE。未使用 AlphaFold 3，因其權重需向 DeepMind 申請，而 Boltz-2 為同級的開源模型。</p>
 
   <p lang="en">The repository holds every analysis script numbered in execution order, aggregate results, and the reports. Section 1 is reproduced end to end by <span class="mono">110_revisit_fig7.py</span> and <span class="mono">111_fig_revisit.py</span>; differentiation matching is <span class="mono">15_residual_core.py</span>, motif enrichment <span class="mono">27_motif_enrichment.py</span>, external validation <span class="mono">91_alphagenome.py</span> and <span class="mono">92_ag_cellcond.py</span>, interface scoring <span class="mono">93_ipsae.py</span>. Per-cell tables with barcodes, per-patient variant calls, raw sequencing data and model weights are deliberately excluded.</p>
-  <p lang="zh-Hant">倉庫包含依執行順序編號的所有腳本、彙總結果與各版報告。第 1 節可由 <span class="mono">110_revisit_fig7.py</span> 與 <span class="mono">111_fig_revisit.py</span> 完整重現；分化配對 <span class="mono">15_residual_core.py</span>、motif 富集 <span class="mono">27_motif_enrichment.py</span>、外部驗證 <span class="mono">91_alphagenome.py</span> 與 <span class="mono">92_ag_cellcond.py</span>、介面評分 <span class="mono">93_ipsae.py</span>。含細胞條碼的逐細胞表格、每位病人變異位點、原始定序資料與模型權重皆刻意排除。</p>
+  <p lang="zh-Hant">倉庫包含依執行順序編號的所有腳本、彙總結果與各版報告。第 1 節可由 <span class="mono">110_revisit_fig7.py</span> 與 <span class="mono">111_fig_revisit.py</span> 完整重現；分化配對 <span class="mono">15_residual_core.py</span>、motif 富集 <span class="mono">27_motif_enrichment.py</span>、外部驗證 <span class="mono">91_alphagenome.py</span> 與 <span class="mono">92_ag_cellcond.py</span>、介面評分 <span class="mono">93_ipsae.py</span>。含細胞條碼的逐細胞表格、各病人的變異位點、原始定序資料與模型權重均刻意排除。</p>
   </div>
 
   <h2 style="border:none;margin-bottom:2pt"><span lang="en">References</span><span lang="zh-Hant">參考文獻</span></h2>
@@ -446,7 +446,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
       {{FIG_OVERVIEW}}
       <figcaption>
         <span lang="en"><b class="lab">Fig. 1 | What the study measures and what it builds.</b> <b>a</b>, Both readouts come from the same nucleus. <b>b</b>, Each tumour cell is compared with the normal state at its own position in development, not with the average B cell. <b>c</b>, What survives the subtraction is a seven-letter site and five new elements at <span class="gene">SLC7A11</span>. <b>d</b>, The protein that reads the site, with its natural partner and with the designed binder. Panel <b>d</b> is drawn from real coordinates; <b>a</b>–<b>c</b> are schematic.</span>
-        <span lang="zh-Hant"><b class="lab">圖 1 ｜ 這項研究量什麼、做出什麼。</b><b>a</b>，兩種讀出來自同一顆細胞核。<b>b</b>，每顆腫瘤細胞與「分化位置相同的正常狀態」相比，而非與平均 B 細胞相比。<b>c</b>，相減後存活下來的是一個七字母位點與 <span class="gene">SLC7A11</span> 的五個新生元件。<b>d</b>，讀取該位點的蛋白質，連同天然夥伴與設計的結合劑。<b>d</b> 由真實座標繪製；<b>a</b>–<b>c</b> 為示意圖。</span>
+        <span lang="zh-Hant"><b class="lab">圖 1 ｜ 本研究的測量對象與產出。</b><b>a</b>，兩種讀出皆來自同一個細胞核。<b>b</b>，每個腫瘤細胞與分化位置相同的正常狀態相比，而非與平均 B 細胞相比。<b>c</b>，相減後殘餘的是一個七字母位點與 <span class="gene">SLC7A11</span> 的五個新生元件。<b>d</b>，讀取該位點的蛋白質，連同天然夥伴與所設計的結合劑。<b>d</b> 依真實座標繪製；<b>a</b>–<b>c</b> 為示意圖。</span>
       </figcaption>
     </figure>
 
@@ -454,7 +454,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
       {{FIG_REVISIT}}
       <figcaption>
         <span lang="en"><b class="lab">Fig. 2 | Reproducing and re-examining Massoni-Badosa <i>et al.</i> Fig. 7G–I.</b> <b>a</b>, chrY module score across tumour cells; both patients bimodal, dashed lines at the two fitted component means. <b>b</b>, inferCNV score for 5,298 tonsil reference B cells, the normal B cells inside the same samples, and the tumour. <b>c</b>, Metallothionein score per tumour cluster; the solid bar is the one significantly elevated cluster. In M413 the programme is absent. <b>d</b>, Top, which of the 46 normal states each tumour cell matches (orange = the interval the paper names). Bottom, how concentrated that match is per cell, as the effective number of states (maximum 5, since matching keeps the top five); the tumour is <i>more</i> concentrated than the normal B cells beside it.</span>
-        <span lang="zh-Hant"><b class="lab">圖 2 ｜ 重現並重新檢視 Massoni-Badosa 等人的 Fig. 7G–I。</b><b>a</b>，腫瘤細胞的 chrY 模組分數；兩位病人皆雙峰，虛線為擬合的兩個成分平均。<b>b</b>，5,298 顆扁桃體參考 B 細胞、同檢體內正常 B 細胞與腫瘤的 inferCNV 分數。<b>c</b>，各腫瘤 cluster 的 metallothionein 分數；實心長條為唯一顯著升高者。在 M413 此程式不存在。<b>d</b>，上：每顆腫瘤細胞對位到 46 個正常狀態中的哪一個（橘色為論文所指區間）。下：該對位在單顆細胞有多集中，以「有效狀態數」表示（上限 5，因對位只保留前五名）；腫瘤比身旁正常 B 細胞<i>更</i>集中。</span>
+        <span lang="zh-Hant"><b class="lab">圖 2 ｜ 重現並重新檢視 Massoni-Badosa 等人的 Fig. 7G–I。</b><b>a</b>，腫瘤細胞的 chrY 模組分數；兩位病人皆為雙峰，虛線為擬合所得的兩個成分平均。<b>b</b>，5,298 個扁桃體參考 B 細胞、同檢體內正常 B 細胞與腫瘤的 inferCNV 分數。<b>c</b>，各腫瘤 cluster 的 metallothionein 分數；實心長條為唯一顯著升高者，在 M413 此程式不存在。<b>d</b>，上：每個腫瘤細胞對應到 46 個正常狀態中的哪一個（橘色為論文所指區間）。下：該對位在逐細胞層級的集中程度，以有效狀態數表示（上限 5，因對位僅保留前五名）；腫瘤較鄰近的正常 B 細胞<i>更為</i>集中。</span>
       </figcaption>
     </figure>
 
@@ -470,7 +470,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
         {{FIG_LOCUS}}
         <figcaption>
           <span lang="en"><b class="lab">Fig. 4 | The <span class="gene">SLC7A11</span> locus.</b> Every peak called in a 270 kb window, in normal and in tumour cells; the five new elements are blue. Each arc carries that element's contact rank against all position pairs at the same distance (median of six B-cell lines).</span>
-          <span lang="zh-Hant"><b class="lab">圖 4 ｜ <span class="gene">SLC7A11</span> 基因座。</b>270 kb 視窗內呼叫出的所有 peak，正常與腫瘤各一軌；五個新生元件標藍。弧線高度為該元件在「同距離所有配對」中的接觸排名（六條 B 細胞株中位數）。</span>
+          <span lang="zh-Hant"><b class="lab">圖 4 ｜ <span class="gene">SLC7A11</span> 基因座。</b>270 kb 視窗內所呼叫出的全部 peak，正常與腫瘤各一軌；五個新生元件以藍色標示。弧線高度為該元件在同距離所有位置配對中的接觸排名（六個 B 細胞株的中位數）。</span>
         </figcaption>
       </figure>
     </div>
@@ -479,7 +479,7 @@ body[data-lang="zh"] .lead::first-letter{font-size:inherit;float:none;padding:0;
       {{FIG_STRUCTURES}}
       <figcaption>
         <span lang="en"><b class="lab">Fig. 5 | The same interface, three ways.</b> <b>a</b>, Crystal structure 7X5E: MafG (blue) and NRF2 (orange) on the DNA. <b>b</b>, Binding-energy cost of removing each side chain (191-position alanine scan). <b>c</b>, The designed 90-residue binder (green) on the same face — a prediction, superposed on the crystal MafG.</span>
-        <span lang="zh-Hant"><b class="lab">圖 5 ｜ 同一個介面的三種看法。</b><b>a</b>，晶體 7X5E：MafG（藍）與 NRF2（橘）坐在 DNA 上。<b>b</b>，拿掉每個側鏈的結合能代價（191 位丙胺酸掃描）。<b>c</b>，設計的 90 殘基結合劑（綠）落在同一面 —— 為預測結果，疊合於晶體 MafG 上。</span>
+        <span lang="zh-Hant"><b class="lab">圖 5 ｜ 同一介面的三種視角。</b><b>a</b>，晶體 7X5E：MafG（藍）與 NRF2（橘）結合於 DNA 之上。<b>b</b>，移除各個側鏈所需的結合能代價（191 個位置的丙胺酸掃描）。<b>c</b>，所設計的 90 殘基結合劑（綠）落在同一面，為預測結果，疊合於晶體 MafG 之上。</span>
       </figcaption>
     </figure>
 
