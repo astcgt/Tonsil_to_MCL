@@ -64,6 +64,13 @@ def log(*a):
 
 def main():
     os.makedirs(DL, exist_ok=True)
+    if not os.path.exists(IDX):
+        raise SystemExit(
+            "缺少 BLUEPRINT 的檔案索引：%s\n"
+            "這個索引不在本倉庫裡（它是 EBI 的清單檔，不是我們的產出）。\n"
+            "取得方式：到 %sblueprint/ 的 index 目錄下載清單檔，\n"
+            "需要的欄位是 DONOR_ID、FILE_TYPE、FILE、FILE_SIZE，存成上面那個路徑。\n"
+            "已有一份的話，設 TONSILMCL_SCRATCH 指向它的上層目錄即可。" % (IDX, FTP))
     d = pd.read_csv(IDX, sep="\t", low_memory=False)
     q = d[(d.DONOR_ID.isin(MCL)) & (d.FILE_TYPE == "RNA_GENE_QUANT_STAR_CRG")]
     log("索引裡 MCL 的基因定量檔 %d 個" % len(q))
