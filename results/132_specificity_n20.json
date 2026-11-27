@@ -1,0 +1,129 @@
+{
+  "targets": {
+    "MAFG": {
+      "seq": "SLTDEELVTMSVRELNQHLRGLSKEEIVQLKQRRRTLKNRGYAASCRVKRVTQKEELEKQKAELQQEVEKLASENASMKLELDALRSKYEALQTFARTV",
+      "len": 99
+    },
+    "MAFF": {
+      "seq": "HLSDEALMGLSVRELNRHLRGLSAEEVTRLKQRRRTLKNRGYAASCRVKRVCQKEELQKQKSELEREVDKLARENAAMRLELDALRGKCEALQGFARSV",
+      "len": 99
+    },
+    "MAFK": {
+      "seq": "VLSDDELVSMSVRELNQHLRGLTKEEVTRLKQRRRTLKNRGYAASCRIKRVTQKEELERQRVELQQEVEKLARENSSMRLELDALRSKYEALQTFARTV",
+      "len": 99
+    },
+    "BACH1": {
+      "seq": "NAQRIISLSRNDFQSLLKMHKLTPEQLDCIHDIRRRSKNRIAAQRCRKRKLDCIQNLESEIEKLQSEKESLLKERDHILSTLGETKQNLTGLCQKVCKE",
+      "len": 99
+    },
+    "NFE2L2": {
+      "seq": "PVEKIINLPVVDFNEMMSKEQFNEAQLALIRDIRRRGKNKVAAQNCRKRKLENIVELEQDLDHLKDEKEKLLKEKGENDKSLHLLKKQLSTLYLEVFSM",
+      "len": 99
+    },
+    "JUN": {
+      "seq": "ALKEEPQTVPEMPGETPPLSPIDMESQERIKAERKRMRNRIAASKCRKRKLERIARLEEKVKTLKAQNSELASTANMLREQVAQLKQKVMNHVNSGCQL",
+      "len": 99
+    },
+    "FOS": {
+      "seq": "AGVVKTMTGGRAQSIGRRGKVEQLSPEEEEKRRIRRERNKMAAAKCRNRRRELTDTLQAETDQLEDEKSALQTEIANLLKEKEKLEFILAAHRPACKIP",
+      "len": 99
+    }
+  },
+  "binders": {
+    "D1_best": {
+      "len": 90
+    },
+    "D2_second": {
+      "len": 90
+    },
+    "CTRLPOS_NRF2": {
+      "len": 108
+    },
+    "CTRLNEG_scram": {
+      "len": 90
+    }
+  },
+  "samples": 20,
+  "specificity": {
+    "CTRLNEG_scram": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.6052745193243027,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.6457113862037659,
+        "gap_on_minus_best_off": -0.04043686687946324
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.06938654282130301,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.09721865877509117,
+        "gap_on_minus_best_off": -0.027832115953788164
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 7.492578506469727,
+        "best_off_target": "MAFK",
+        "best_off_value": 6.453325605392456,
+        "gap_on_minus_best_off": -1.0392529010772709
+      }
+    },
+    "CTRLPOS_NRF2": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.7149966478347778,
+        "best_off_target": "JUN",
+        "best_off_value": 0.7366537392139435,
+        "gap_on_minus_best_off": -0.021657091379165716
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.5201225683093071,
+        "best_off_target": "JUN",
+        "best_off_value": 0.5123992502689362,
+        "gap_on_minus_best_off": 0.007723318040370963
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 1.0725747227668763,
+        "best_off_target": "MAFK",
+        "best_off_value": 1.1588357359170913,
+        "gap_on_minus_best_off": 0.08626101315021506
+      }
+    },
+    "D1_best": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.7980513036251068,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.8066072076559067,
+        "gap_on_minus_best_off": -0.008555904030799866
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.6252714395523071,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.6375190109014511,
+        "gap_on_minus_best_off": -0.012247571349144004
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 0.7491390168666839,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.758057963848114,
+        "gap_on_minus_best_off": 0.008918946981430032
+      }
+    },
+    "D2_second": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.760127255320549,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.737217265367508,
+        "gap_on_minus_best_off": 0.022909989953041054
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.608055728673935,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.579688909649849,
+        "gap_on_minus_best_off": 0.028366819024086
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 0.8906270951032639,
+        "best_off_target": "MAFK",
+        "best_off_value": 1.0305550575256348,
+        "gap_on_minus_best_off": 0.13992796242237093
+      }
+    }
+  }
+}

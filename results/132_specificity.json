@@ -1,0 +1,129 @@
+{
+  "targets": {
+    "MAFG": {
+      "seq": "SLTDEELVTMSVRELNQHLRGLSKEEIVQLKQRRRTLKNRGYAASCRVKRVTQKEELEKQKAELQQEVEKLASENASMKLELDALRSKYEALQTFARTV",
+      "len": 99
+    },
+    "MAFF": {
+      "seq": "HLSDEALMGLSVRELNRHLRGLSAEEVTRLKQRRRTLKNRGYAASCRVKRVCQKEELQKQKSELEREVDKLARENAAMRLELDALRGKCEALQGFARSV",
+      "len": 99
+    },
+    "MAFK": {
+      "seq": "VLSDDELVSMSVRELNQHLRGLTKEEVTRLKQRRRTLKNRGYAASCRIKRVTQKEELERQRVELQQEVEKLARENSSMRLELDALRSKYEALQTFARTV",
+      "len": 99
+    },
+    "BACH1": {
+      "seq": "NAQRIISLSRNDFQSLLKMHKLTPEQLDCIHDIRRRSKNRIAAQRCRKRKLDCIQNLESEIEKLQSEKESLLKERDHILSTLGETKQNLTGLCQKVCKE",
+      "len": 99
+    },
+    "NFE2L2": {
+      "seq": "PVEKIINLPVVDFNEMMSKEQFNEAQLALIRDIRRRGKNKVAAQNCRKRKLENIVELEQDLDHLKDEKEKLLKEKGENDKSLHLLKKQLSTLYLEVFSM",
+      "len": 99
+    },
+    "JUN": {
+      "seq": "ALKEEPQTVPEMPGETPPLSPIDMESQERIKAERKRMRNRIAASKCRKRKLERIARLEEKVKTLKAQNSELASTANMLREQVAQLKQKVMNHVNSGCQL",
+      "len": 99
+    },
+    "FOS": {
+      "seq": "AGVVKTMTGGRAQSIGRRGKVEQLSPEEEEKRRIRRERNKMAAAKCRNRRRELTDTLQAETDQLEDEKSALQTEIANLLKEKEKLEFILAAHRPACKIP",
+      "len": 99
+    }
+  },
+  "binders": {
+    "D1_best": {
+      "len": 90
+    },
+    "D2_second": {
+      "len": 90
+    },
+    "CTRLPOS_NRF2": {
+      "len": 108
+    },
+    "CTRLNEG_scram": {
+      "len": 90
+    }
+  },
+  "samples": 5,
+  "specificity": {
+    "CTRLNEG_scram": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.4987100899219513,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.6469338417053223,
+        "gap_on_minus_best_off": -0.148223751783371
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.022550915495966977,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.06815067367663288,
+        "gap_on_minus_best_off": -0.0455997581806659
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 9.954185009002686,
+        "best_off_target": "MAFK",
+        "best_off_value": 6.344373035430908,
+        "gap_on_minus_best_off": -3.6098119735717775
+      }
+    },
+    "CTRLPOS_NRF2": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.7303143262863159,
+        "best_off_target": "JUN",
+        "best_off_value": 0.7420679569244385,
+        "gap_on_minus_best_off": -0.011753630638122625
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.5321196586684046,
+        "best_off_target": "JUN",
+        "best_off_value": 0.5156156379753819,
+        "gap_on_minus_best_off": 0.016504020693022703
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 0.9826525568962097,
+        "best_off_target": "MAFK",
+        "best_off_value": 1.2286101818084716,
+        "gap_on_minus_best_off": 0.24595762491226192
+      }
+    },
+    "D1_best": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.8033841013908386,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.814254081249237,
+        "gap_on_minus_best_off": -0.010869979858398438
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.6334392510437892,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.6528007401953956,
+        "gap_on_minus_best_off": -0.019361489151606404
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 0.7237384438514709,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.7244220018386841,
+        "gap_on_minus_best_off": 0.0006835579872132014
+      }
+    },
+    "D2_second": {
+      "iptm_mean": {
+        "on_target_MAFG": 0.7682972311973572,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.737006688117981,
+        "gap_on_minus_best_off": 0.031290543079376176
+      },
+      "ipsae_min_mean": {
+        "on_target_MAFG": 0.6171054920090617,
+        "best_off_target": "MAFK",
+        "best_off_value": 0.5797976354036667,
+        "gap_on_minus_best_off": 0.03730785660539504
+      },
+      "ipde_mean": {
+        "on_target_MAFG": 0.8326667785644531,
+        "best_off_target": "MAFK",
+        "best_off_value": 1.028879177570343,
+        "gap_on_minus_best_off": 0.19621239900588983
+      }
+    }
+  }
+}

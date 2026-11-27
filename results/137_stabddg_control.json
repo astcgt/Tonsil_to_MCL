@@ -1,0 +1,490 @@
+{
+  "applied": {
+    "to_MAFK": {
+      "n_applied": 15,
+      "n_skipped": 0,
+      "skipped_positions": [],
+      "mutations": [
+        "SA1V",
+        "TA3S",
+        "EA5D",
+        "TA9S",
+        "SA23T",
+        "IA27V",
+        "VA28T",
+        "QA29R",
+        "VA48I",
+        "KA59R",
+        "KA61R",
+        "AA62V",
+        "SA73R",
+        "AA76S",
+        "KA79R"
+      ]
+    },
+    "to_MAFF": {
+      "n_applied": 24,
+      "n_skipped": 0,
+      "skipped_positions": [],
+      "mutations": [
+        "SA1H",
+        "TA3S",
+        "EA6A",
+        "VA8M",
+        "TA9G",
+        "MA10L",
+        "QA17R",
+        "KA24A",
+        "IA27V",
+        "VA28T",
+        "QA29R",
+        "TA52C",
+        "EA58Q",
+        "AA62S",
+        "QA65E",
+        "QA66R",
+        "EA69D",
+        "SA73R",
+        "SA77A",
+        "KA79R",
+        "SA87G",
+        "YA89C",
+        "TA94G",
+        "TA98S"
+      ]
+    }
+  },
+  "comparison": {
+    "to_MAFK": {
+      "NRF2_crystal": 0.9516606633333332,
+      "designed_binder_predicted": 7.271425233333333
+    },
+    "to_MAFF": {
+      "NRF2_crystal": 3.767097966666667,
+      "designed_binder_predicted": 7.7672780999999995
+    }
+  },
+  "leucine_controls": {
+    "ctrl_L57A": 2.9660685,
+    "ctrl_L71A": 1.5394343,
+    "ctrl_L64A": 1.4596323666666666,
+    "ctrl_L82A": 1.3281982333333333,
+    "ctrl_L85A": 1.1600804666666666,
+    "ctrl_L80A": -0.18711751000000001
+  },
+  "all": [
+    {
+      "label": "to_MAFK",
+      "mutation": "SA1V,TA3S,EA5D,TA9S,SA23T,IA27V,VA28T,QA29R,VA48I,KA59R,KA61R,AA62V,SA73R,AA76S,KA79R",
+      "mut": "SA1V,TA3S,EA5D,TA9S,SA23T,IA27V,VA28T,QA29R,VA48I,KA59R,KA61R,AA62V,SA73R,AA76S,KA79R",
+      "ddg": 0.9517,
+      "sd": 0.155
+    },
+    {
+      "label": "single_MAFK_SA1V",
+      "mutation": "SA1V",
+      "mut": "SA1V",
+      "ddg": 0.037,
+      "sd": 0.0188
+    },
+    {
+      "label": "single_MAFK_TA3S",
+      "mutation": "TA3S",
+      "mut": "TA3S",
+      "ddg": -0.0189,
+      "sd": 0.0187
+    },
+    {
+      "label": "single_MAFK_TA3S",
+      "mutation": "TA3S",
+      "mut": "TA3S",
+      "ddg": -0.0189,
+      "sd": 0.0187
+    },
+    {
+      "label": "single_MAFK_EA5D",
+      "mutation": "EA5D",
+      "mut": "EA5D",
+      "ddg": -0.015,
+      "sd": 0.0259
+    },
+    {
+      "label": "single_MAFK_TA9S",
+      "mutation": "TA9S",
+      "mut": "TA9S",
+      "ddg": 0.0241,
+      "sd": 0.0117
+    },
+    {
+      "label": "single_MAFK_SA23T",
+      "mutation": "SA23T",
+      "mut": "SA23T",
+      "ddg": 0.0123,
+      "sd": 0.0148
+    },
+    {
+      "label": "single_MAFK_IA27V",
+      "mutation": "IA27V",
+      "mut": "IA27V",
+      "ddg": 0.0012,
+      "sd": 0.0112
+    },
+    {
+      "label": "single_MAFK_IA27V",
+      "mutation": "IA27V",
+      "mut": "IA27V",
+      "ddg": 0.0012,
+      "sd": 0.0113
+    },
+    {
+      "label": "single_MAFK_VA28T",
+      "mutation": "VA28T",
+      "mut": "VA28T",
+      "ddg": 0.0219,
+      "sd": 0.0085
+    },
+    {
+      "label": "single_MAFK_VA28T",
+      "mutation": "VA28T",
+      "mut": "VA28T",
+      "ddg": 0.0219,
+      "sd": 0.0085
+    },
+    {
+      "label": "single_MAFK_QA29R",
+      "mutation": "QA29R",
+      "mut": "QA29R",
+      "ddg": -0.0094,
+      "sd": 0.0205
+    },
+    {
+      "label": "single_MAFK_QA29R",
+      "mutation": "QA29R",
+      "mut": "QA29R",
+      "ddg": -0.0094,
+      "sd": 0.0205
+    },
+    {
+      "label": "single_MAFK_VA48I",
+      "mutation": "VA48I",
+      "mut": "VA48I",
+      "ddg": -0.0481,
+      "sd": 0.0216
+    },
+    {
+      "label": "single_MAFK_KA59R",
+      "mutation": "KA59R",
+      "mut": "KA59R",
+      "ddg": 0.373,
+      "sd": 0.0551
+    },
+    {
+      "label": "single_MAFK_KA61R",
+      "mutation": "KA61R",
+      "mut": "KA61R",
+      "ddg": 0.3103,
+      "sd": 0.024
+    },
+    {
+      "label": "single_MAFK_AA62V",
+      "mutation": "AA62V",
+      "mut": "AA62V",
+      "ddg": -0.0556,
+      "sd": 0.1054
+    },
+    {
+      "label": "single_MAFK_SA73R",
+      "mutation": "SA73R",
+      "mut": "SA73R",
+      "ddg": 0.0622,
+      "sd": 0.0439
+    },
+    {
+      "label": "single_MAFK_SA73R",
+      "mutation": "SA73R",
+      "mut": "SA73R",
+      "ddg": 0.0622,
+      "sd": 0.0439
+    },
+    {
+      "label": "single_MAFK_AA76S",
+      "mutation": "AA76S",
+      "mut": "AA76S",
+      "ddg": -0.3304,
+      "sd": 0.0205
+    },
+    {
+      "label": "single_MAFK_KA79R",
+      "mutation": "KA79R",
+      "mut": "KA79R",
+      "ddg": 0.5045,
+      "sd": 0.0308
+    },
+    {
+      "label": "single_MAFK_KA79R",
+      "mutation": "KA79R",
+      "mut": "KA79R",
+      "ddg": 0.5045,
+      "sd": 0.0308
+    },
+    {
+      "label": "to_MAFF",
+      "mutation": "SA1H,TA3S,EA6A,VA8M,TA9G,MA10L,QA17R,KA24A,IA27V,VA28T,QA29R,TA52C,EA58Q,AA62S,QA65E,QA66R,EA69D,SA73R,SA77A,KA79R,SA87G,YA89C,TA94G,TA98S",
+      "mut": "SA1H,TA3S,EA6A,VA8M,TA9G,MA10L,QA17R,KA24A,IA27V,VA28T,QA29R,TA52C,EA58Q,AA62S,QA65E,QA66R,EA69D,SA73R,SA77A,KA79R,SA87G,YA89C,TA94G,TA98S",
+      "ddg": 3.7671,
+      "sd": 0.1678
+    },
+    {
+      "label": "single_MAFF_SA1H",
+      "mutation": "SA1H",
+      "mut": "SA1H",
+      "ddg": 0.0226,
+      "sd": 0.0112
+    },
+    {
+      "label": "single_MAFF_TA3S",
+      "mutation": "TA3S",
+      "mut": "TA3S",
+      "ddg": -0.0189,
+      "sd": 0.0187
+    },
+    {
+      "label": "single_MAFF_TA3S",
+      "mutation": "TA3S",
+      "mut": "TA3S",
+      "ddg": -0.0189,
+      "sd": 0.0187
+    },
+    {
+      "label": "single_MAFF_EA6A",
+      "mutation": "EA6A",
+      "mut": "EA6A",
+      "ddg": -0.0117,
+      "sd": 0.0267
+    },
+    {
+      "label": "single_MAFF_VA8M",
+      "mutation": "VA8M",
+      "mut": "VA8M",
+      "ddg": -0.0024,
+      "sd": 0.0179
+    },
+    {
+      "label": "single_MAFF_TA9G",
+      "mutation": "TA9G",
+      "mut": "TA9G",
+      "ddg": -0.0323,
+      "sd": 0.0097
+    },
+    {
+      "label": "single_MAFF_MA10L",
+      "mutation": "MA10L",
+      "mut": "MA10L",
+      "ddg": -0.03,
+      "sd": 0.0228
+    },
+    {
+      "label": "single_MAFF_QA17R",
+      "mutation": "QA17R",
+      "mut": "QA17R",
+      "ddg": -0.007,
+      "sd": 0.0145
+    },
+    {
+      "label": "single_MAFF_KA24A",
+      "mutation": "KA24A",
+      "mut": "KA24A",
+      "ddg": 0.0281,
+      "sd": 0.0088
+    },
+    {
+      "label": "single_MAFF_IA27V",
+      "mutation": "IA27V",
+      "mut": "IA27V",
+      "ddg": 0.0012,
+      "sd": 0.0112
+    },
+    {
+      "label": "single_MAFF_IA27V",
+      "mutation": "IA27V",
+      "mut": "IA27V",
+      "ddg": 0.0012,
+      "sd": 0.0113
+    },
+    {
+      "label": "single_MAFF_VA28T",
+      "mutation": "VA28T",
+      "mut": "VA28T",
+      "ddg": 0.0219,
+      "sd": 0.0085
+    },
+    {
+      "label": "single_MAFF_VA28T",
+      "mutation": "VA28T",
+      "mut": "VA28T",
+      "ddg": 0.0219,
+      "sd": 0.0085
+    },
+    {
+      "label": "single_MAFF_QA29R",
+      "mutation": "QA29R",
+      "mut": "QA29R",
+      "ddg": -0.0094,
+      "sd": 0.0205
+    },
+    {
+      "label": "single_MAFF_QA29R",
+      "mutation": "QA29R",
+      "mut": "QA29R",
+      "ddg": -0.0094,
+      "sd": 0.0205
+    },
+    {
+      "label": "single_MAFF_TA52C",
+      "mutation": "TA52C",
+      "mut": "TA52C",
+      "ddg": 0.4682,
+      "sd": 0.0333
+    },
+    {
+      "label": "single_MAFF_EA58Q",
+      "mutation": "EA58Q",
+      "mut": "EA58Q",
+      "ddg": 1.1498,
+      "sd": 0.0527
+    },
+    {
+      "label": "single_MAFF_AA62S",
+      "mutation": "AA62S",
+      "mut": "AA62S",
+      "ddg": -0.5093,
+      "sd": 0.0507
+    },
+    {
+      "label": "single_MAFF_QA65E",
+      "mutation": "QA65E",
+      "mut": "QA65E",
+      "ddg": 0.5305,
+      "sd": 0.0316
+    },
+    {
+      "label": "single_MAFF_QA66R",
+      "mutation": "QA66R",
+      "mut": "QA66R",
+      "ddg": 0.2537,
+      "sd": 0.0361
+    },
+    {
+      "label": "single_MAFF_EA69D",
+      "mutation": "EA69D",
+      "mut": "EA69D",
+      "ddg": 0.6455,
+      "sd": 0.0958
+    },
+    {
+      "label": "single_MAFF_SA73R",
+      "mutation": "SA73R",
+      "mut": "SA73R",
+      "ddg": 0.0622,
+      "sd": 0.0439
+    },
+    {
+      "label": "single_MAFF_SA73R",
+      "mutation": "SA73R",
+      "mut": "SA73R",
+      "ddg": 0.0622,
+      "sd": 0.0439
+    },
+    {
+      "label": "single_MAFF_SA77A",
+      "mutation": "SA77A",
+      "mut": "SA77A",
+      "ddg": 0.2154,
+      "sd": 0.0387
+    },
+    {
+      "label": "single_MAFF_KA79R",
+      "mutation": "KA79R",
+      "mut": "KA79R",
+      "ddg": 0.5045,
+      "sd": 0.0308
+    },
+    {
+      "label": "single_MAFF_KA79R",
+      "mutation": "KA79R",
+      "mut": "KA79R",
+      "ddg": 0.5045,
+      "sd": 0.0308
+    },
+    {
+      "label": "single_MAFF_SA87G",
+      "mutation": "SA87G",
+      "mut": "SA87G",
+      "ddg": 0.1206,
+      "sd": 0.0256
+    },
+    {
+      "label": "single_MAFF_YA89C",
+      "mutation": "YA89C",
+      "mut": "YA89C",
+      "ddg": 0.3956,
+      "sd": 0.0432
+    },
+    {
+      "label": "single_MAFF_TA94G",
+      "mutation": "TA94G",
+      "mut": "TA94G",
+      "ddg": 0.0177,
+      "sd": 0.0256
+    },
+    {
+      "label": "single_MAFF_TA98S",
+      "mutation": "TA98S",
+      "mut": "TA98S",
+      "ddg": 0.0769,
+      "sd": 0.0228
+    },
+    {
+      "label": "ctrl_L57A",
+      "mutation": "LA57A",
+      "mut": "LA57A",
+      "ddg": 2.9661,
+      "sd": 0.0771
+    },
+    {
+      "label": "ctrl_L64A",
+      "mutation": "LA64A",
+      "mut": "LA64A",
+      "ddg": 1.4596,
+      "sd": 0.0868
+    },
+    {
+      "label": "ctrl_L71A",
+      "mutation": "LA71A",
+      "mut": "LA71A",
+      "ddg": 1.5394,
+      "sd": 0.0861
+    },
+    {
+      "label": "ctrl_L80A",
+      "mutation": "LA80A",
+      "mut": "LA80A",
+      "ddg": -0.1871,
+      "sd": 0.0224
+    },
+    {
+      "label": "ctrl_L82A",
+      "mutation": "LA82A",
+      "mut": "LA82A",
+      "ddg": 1.3282,
+      "sd": 0.0133
+    },
+    {
+      "label": "ctrl_L85A",
+      "mutation": "LA85A",
+      "mut": "LA85A",
+      "ddg": 1.1601,
+      "sd": 0.054
+    }
+  ]
+}

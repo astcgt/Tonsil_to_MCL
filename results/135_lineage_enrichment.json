@@ -1,0 +1,315 @@
+{
+  "n_lines": 1178,
+  "n_lymphoid": 93,
+  "lineage_enrichment": {
+    "SLC7A11": {
+      "n_dependent": 18,
+      "n_lymphoid_dependent": 12,
+      "frac_lymphoid_among_dependent": 0.6666666666666666,
+      "odds_ratio": 26.641975308641975,
+      "fisher_p": 3.685650879848735e-10,
+      "empirical_p_vs_rate_matched_genes": 0.021212121212121213,
+      "n_matched_genes": 1320,
+      "dep_frac": 0.015280135823429542
+    },
+    "SLC3A2": {
+      "n_dependent": 530,
+      "n_lymphoid_dependent": 64,
+      "frac_lymphoid_among_dependent": 0.12075471698113208,
+      "odds_ratio": 2.931478466775196,
+      "fisher_p": 1.2022037006231134e-06,
+      "empirical_p_vs_rate_matched_genes": 0.13609467455621302,
+      "n_matched_genes": 676,
+      "dep_frac": 0.44991511035653653
+    },
+    "GCLC": {
+      "n_dependent": 42,
+      "n_lymphoid_dependent": 33,
+      "frac_lymphoid_among_dependent": 0.7857142857142857,
+      "odds_ratio": 65.75555555555556,
+      "fisher_p": 2.730727585519667e-31,
+      "empirical_p_vs_rate_matched_genes": 0.00831353919239905,
+      "n_matched_genes": 842,
+      "dep_frac": 0.035653650254668934
+    },
+    "GCLM": {
+      "n_dependent": 18,
+      "n_lymphoid_dependent": 14,
+      "frac_lymphoid_among_dependent": 0.7777777777777778,
+      "odds_ratio": 47.892405063291136,
+      "fisher_p": 3.3205243666681095e-13,
+      "empirical_p_vs_rate_matched_genes": 0.015909090909090907,
+      "n_matched_genes": 1320,
+      "dep_frac": 0.015280135823429542
+    },
+    "AIFM2": {
+      "n_dependent": 7,
+      "n_lymphoid_dependent": 6,
+      "frac_lymphoid_among_dependent": 0.8571428571428571,
+      "odds_ratio": 74.75862068965517,
+      "fisher_p": 1.3634555903546154e-06,
+      "empirical_p_vs_rate_matched_genes": 0.007328072153325817,
+      "n_matched_genes": 1774,
+      "dep_frac": 0.005942275042444821
+    },
+    "MAFG": {
+      "n_dependent": 29,
+      "n_lymphoid_dependent": 2,
+      "frac_lymphoid_among_dependent": 0.06896551724137931,
+      "odds_ratio": 0.8612128612128612,
+      "fisher_p": 0.6825915061363168,
+      "empirical_p_vs_rate_matched_genes": 0.5539358600583091,
+      "n_matched_genes": 1029,
+      "dep_frac": 0.02461799660441426
+    },
+    "GPX4": {
+      "n_dependent": 831,
+      "n_lymphoid_dependent": 89,
+      "frac_lymphoid_among_dependent": 0.10709987966305656,
+      "odds_ratio": 10.285377358490566,
+      "fisher_p": 2.4348697770739334e-10,
+      "empirical_p_vs_rate_matched_genes": 0.036036036036036036,
+      "n_matched_genes": 1665,
+      "dep_frac": 0.7054329371816639
+    },
+    "NFE2L2": {
+      "n_dependent": 114,
+      "n_lymphoid_dependent": 2,
+      "frac_lymphoid_among_dependent": 0.017543859649122806,
+      "odds_ratio": 0.19093406593406592,
+      "fisher_p": 0.9993891231065696,
+      "empirical_p_vs_rate_matched_genes": 0.914074074074074,
+      "n_matched_genes": 675,
+      "dep_frac": 0.0967741935483871
+    },
+    "BACH1": {
+      "n_dependent": 5,
+      "n_lymphoid_dependent": 0,
+      "frac_lymphoid_among_dependent": 0.0,
+      "odds_ratio": 0.0,
+      "fisher_p": 1.0,
+      "empirical_p_vs_rate_matched_genes": 1.0,
+      "n_matched_genes": 1823,
+      "dep_frac": 0.004244482173174873
+    }
+  },
+  "slc7a11_dependent_lines": [
+    {
+      "line": "SKBR3",
+      "lineage": "Breast",
+      "subtype": "Invasive Breast Carcinoma",
+      "gene_effect": -0.5299658179283142
+    },
+    {
+      "line": "MV411",
+      "lineage": "Myeloid",
+      "subtype": "Acute Myeloid Leukemia",
+      "gene_effect": -0.547067403793335
+    },
+    {
+      "line": "OCILY19",
+      "lineage": "Lymphoid",
+      "subtype": "Diffuse Large B-Cell Lymphoma, NOS",
+      "gene_effect": -0.5115767121315002
+    },
+    {
+      "line": "JM1",
+      "lineage": "Lymphoid",
+      "subtype": "B-Lymphoblastic Leukemia/Lymphoma",
+      "gene_effect": -0.8828593492507935
+    },
+    {
+      "line": "SUDHL8",
+      "lineage": "Lymphoid",
+      "subtype": "Diffuse Large B-Cell Lymphoma, NOS",
+      "gene_effect": -0.59063321352005
+    },
+    {
+      "line": "SUDHL5",
+      "lineage": "Lymphoid",
+      "subtype": "Diffuse Large B-Cell Lymphoma, NOS",
+      "gene_effect": -0.6376535892486572
+    },
+    {
+      "line": "RCHACV",
+      "lineage": "Lymphoid",
+      "subtype": "B-Lymphoblastic Leukemia/Lymphoma with t(1;19)(q23;p13.3);TCF3-PBX1",
+      "gene_effect": -0.8295580148696899
+    },
+    {
+      "line": "NAMALWA",
+      "lineage": "Lymphoid",
+      "subtype": "Burkitt Lymphoma",
+      "gene_effect": -0.9047356843948364
+    },
+    {
+      "line": "SCMCRM2",
+      "lineage": "Soft Tissue",
+      "subtype": "Alveolar Rhabdomyosarcoma",
+      "gene_effect": -0.7219036817550659
+    },
+    {
+      "line": "COGN305",
+      "lineage": "Peripheral Nervous System",
+      "subtype": "Neuroblastoma",
+      "gene_effect": -0.6991665959358215
+    },
+    {
+      "line": "FARAGE",
+      "lineage": "Lymphoid",
+      "subtype": "Germinal Center B-Cell Type",
+      "gene_effect": -0.6423207521438599
+    },
+    {
+      "line": "HMY1",
+      "lineage": "Skin",
+      "subtype": "Melanoma",
+      "gene_effect": -1.2338463068008423
+    },
+    {
+      "line": "KARPAS1718",
+      "lineage": "Lymphoid",
+      "subtype": "Splenic Marginal Zone Lymphoma",
+      "gene_effect": -1.3603875637054443
+    },
+    {
+      "line": "OCILY18",
+      "lineage": "Lymphoid",
+      "subtype": "Diffuse Large B-Cell Lymphoma, NOS",
+      "gene_effect": -0.5042442679405212
+    },
+    {
+      "line": "LPS853",
+      "lineage": "Soft Tissue",
+      "subtype": "Dedifferentiated Liposarcoma",
+      "gene_effect": -0.753437340259552
+    },
+    {
+      "line": "TL1",
+      "lineage": "Lymphoid",
+      "subtype": "Burkitt Lymphoma",
+      "gene_effect": -0.5409781336784363
+    },
+    {
+      "line": "Z138",
+      "lineage": "Lymphoid",
+      "subtype": "Mantle Cell Lymphoma",
+      "gene_effect": -1.3402518033981323
+    },
+    {
+      "line": "U2946",
+      "lineage": "Lymphoid",
+      "subtype": "Diffuse Large B-Cell Lymphoma, NOS",
+      "gene_effect": -1.3151099681854248
+    }
+  ],
+  "module_coherence": {
+    "genes": [
+      "SLC7A11",
+      "SLC3A2",
+      "GCLC",
+      "GCLM",
+      "AIFM2"
+    ],
+    "mean_pairwise_r": 0.2781638299743254,
+    "null_mean": 0.0010677477344554905,
+    "null_p95": 0.03464483108027592,
+    "empirical_p": 0.0,
+    "matrix": {
+      "SLC7A11": {
+        "SLC7A11": 1.0,
+        "SLC3A2": 0.3598,
+        "GCLC": 0.3202,
+        "GCLM": 0.3151,
+        "AIFM2": 0.2525
+      },
+      "SLC3A2": {
+        "SLC7A11": 0.3598,
+        "SLC3A2": 1.0,
+        "GCLC": 0.2135,
+        "GCLM": 0.1739,
+        "AIFM2": 0.1241
+      },
+      "GCLC": {
+        "SLC7A11": 0.3202,
+        "SLC3A2": 0.2135,
+        "GCLC": 1.0,
+        "GCLM": 0.5424,
+        "AIFM2": 0.2528
+      },
+      "GCLM": {
+        "SLC7A11": 0.3151,
+        "SLC3A2": 0.1739,
+        "GCLC": 0.5424,
+        "GCLM": 1.0,
+        "AIFM2": 0.2274
+      },
+      "AIFM2": {
+        "SLC7A11": 0.2525,
+        "SLC3A2": 0.1241,
+        "GCLC": 0.2528,
+        "GCLM": 0.2274,
+        "AIFM2": 1.0
+      }
+    }
+  },
+  "module_vs_bcell_identity": {
+    "CD79A": {
+      "SLC7A11": 0.3714,
+      "SLC3A2": 0.1925,
+      "GCLC": 0.3835,
+      "GCLM": 0.3557,
+      "AIFM2": 0.263
+    },
+    "CD79B": {
+      "SLC7A11": 0.2619,
+      "SLC3A2": 0.1294,
+      "GCLC": 0.2421,
+      "GCLM": 0.2032,
+      "AIFM2": 0.1828
+    },
+    "EBF1": {
+      "SLC7A11": 0.2973,
+      "SLC3A2": 0.1695,
+      "GCLC": 0.4775,
+      "GCLM": 0.3384,
+      "AIFM2": 0.2927
+    },
+    "PAX5": {
+      "SLC7A11": 0.269,
+      "SLC3A2": 0.1521,
+      "GCLC": 0.4312,
+      "GCLM": 0.3125,
+      "AIFM2": 0.2644
+    },
+    "FOXO1": {
+      "SLC7A11": 0.2717,
+      "SLC3A2": 0.1364,
+      "GCLC": 0.3058,
+      "GCLM": 0.2251,
+      "AIFM2": 0.1464
+    },
+    "SYK": {
+      "SLC7A11": 0.2246,
+      "SLC3A2": 0.1055,
+      "GCLC": 0.3749,
+      "GCLM": 0.3189,
+      "AIFM2": 0.173
+    },
+    "BLNK": {
+      "SLC7A11": 0.1403,
+      "SLC3A2": 0.1092,
+      "GCLC": 0.2093,
+      "GCLM": 0.2156,
+      "AIFM2": 0.1052
+    },
+    "IRF4": {
+      "SLC7A11": 0.2033,
+      "SLC3A2": 0.0978,
+      "GCLC": 0.3221,
+      "GCLM": 0.2484,
+      "AIFM2": 0.1478
+    }
+  },
+  "module_vs_bcell_mean_r": 0.24178731257089617
+}

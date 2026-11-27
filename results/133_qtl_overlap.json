@@ -1,0 +1,76 @@
+{
+  "tissues": [
+    "Whole_Blood",
+    "Cells_EBV-transformed_lymphocytes",
+    "Spleen"
+  ],
+  "window_bp": 250000,
+  "p_cut": 0.0001,
+  "genes": {
+    "SLC7A11": {
+      "n_evariants_total": 56,
+      "foreground": {
+        "n_elements": 5,
+        "bp": 2517,
+        "n_variants": 0,
+        "per_kb": 0.0
+      },
+      "background_all": {
+        "n_peaks": 20,
+        "bp": 10975,
+        "n_variants": 4,
+        "per_kb": 0.36446469248291574,
+        "odds_ratio": 0.0,
+        "p": 1.0
+      },
+      "background_width_matched": {
+        "n_peaks": 10,
+        "bp": 8334,
+        "n_variants": 4,
+        "per_kb": 0.4799616030717543,
+        "odds_ratio": 0.0,
+        "p": 1.0,
+        "median_width_fg": 455.0,
+        "median_width_bg": 850.5
+      },
+      "elements": [
+        {
+          "chrom": "chr4",
+          "start": 138222944,
+          "end": 138223474,
+          "label": "-19.1 kb"
+        },
+        {
+          "chrom": "chr4",
+          "start": 138392601,
+          "end": 138393029,
+          "label": "+150.5 kb"
+        },
+        {
+          "chrom": "chr4",
+          "start": 138406192,
+          "end": 138406449,
+          "label": "+164.0 kb"
+        },
+        {
+          "chrom": "chr4",
+          "start": 138341498,
+          "end": 138342345,
+          "label": "+99.6 kb"
+        },
+        {
+          "chrom": "chr4",
+          "start": 138348035,
+          "end": 138348490,
+          "label": "+105.9 kb"
+        }
+      ]
+    },
+    "MAFG": {
+      "n_evariants": 0
+    },
+    "SLC3A2": {
+      "n_evariants": 0
+    }
+  }
+}
