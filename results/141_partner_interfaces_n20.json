@@ -1,0 +1,110 @@
+{
+  "bach1_only_positions": [
+    {
+      "frag": 39,
+      "uniprot": 61,
+      "aa": "N",
+      "bsa_bach1": 58.89051711443379,
+      "bsa_nrf2": 2.3930836994493268,
+      "bsa_d1": 0.0
+    },
+    {
+      "frag": 42,
+      "uniprot": 64,
+      "aa": "Y",
+      "bsa_bach1": 63.03002976293254,
+      "bsa_nrf2": 0.0,
+      "bsa_d1": 17.107977591546465
+    },
+    {
+      "frag": 43,
+      "uniprot": 65,
+      "aa": "A",
+      "bsa_bach1": 24.130349490826262,
+      "bsa_nrf2": 0.36228846481197524,
+      "bsa_d1": 0.0
+    },
+    {
+      "frag": 46,
+      "uniprot": 68,
+      "aa": "C",
+      "bsa_bach1": 42.740702034446585,
+      "bsa_nrf2": 2.2518936140931647,
+      "bsa_d1": 5.068017268771056
+    },
+    {
+      "frag": 49,
+      "uniprot": 71,
+      "aa": "K",
+      "bsa_bach1": 10.899333481577147,
+      "bsa_nrf2": 0.0,
+      "bsa_d1": 3.9006642705501435
+    },
+    {
+      "frag": 93,
+      "uniprot": 115,
+      "aa": "Q",
+      "bsa_bach1": 11.617059854260678,
+      "bsa_nrf2": 0.0,
+      "bsa_d1": 17.430335157094262
+    },
+    {
+      "frag": 95,
+      "uniprot": 117,
+      "aa": "F",
+      "bsa_bach1": 23.065698926362398,
+      "bsa_nrf2": 0.0,
+      "bsa_d1": 41.783936274981116
+    },
+    {
+      "frag": 96,
+      "uniprot": 118,
+      "aa": "A",
+      "bsa_bach1": 38.83672526860247,
+      "bsa_nrf2": 0.0,
+      "bsa_d1": 13.766961662855044
+    },
+    {
+      "frag": 99,
+      "uniprot": 121,
+      "aa": "V",
+      "bsa_bach1": 32.751274316313946,
+      "bsa_nrf2": 0.0,
+      "bsa_d1": 40.92319015337996
+    }
+  ],
+  "nrf2_only_positions": [],
+  "n_shared_core": 28,
+  "profile_correlation": {
+    "MAFG_x_NRF2": {
+      "MAFG_x_NRF2": 1.0,
+      "MAFG_x_BACH1": 0.7824,
+      "MAFG_x_MAFG": 0.7665,
+      "MAFG_x_D1design": 0.4359
+    },
+    "MAFG_x_BACH1": {
+      "MAFG_x_NRF2": 0.7824,
+      "MAFG_x_BACH1": 1.0,
+      "MAFG_x_MAFG": 0.9667,
+      "MAFG_x_D1design": 0.4817
+    },
+    "MAFG_x_MAFG": {
+      "MAFG_x_NRF2": 0.7665,
+      "MAFG_x_BACH1": 0.9667,
+      "MAFG_x_MAFG": 1.0,
+      "MAFG_x_D1design": 0.4073
+    },
+    "MAFG_x_D1design": {
+      "MAFG_x_NRF2": 0.4359,
+      "MAFG_x_BACH1": 0.4817,
+      "MAFG_x_MAFG": 0.4073,
+      "MAFG_x_D1design": 1.0
+    }
+  },
+  "total_bsa": {
+    "MAFG_x_NRF2": 1460.0660839407717,
+    "MAFG_x_BACH1": 1742.860865715237,
+    "MAFG_x_MAFG": 2072.4340400131523,
+    "MAFG_x_D1design": 2436.973749386178
+  }
+}

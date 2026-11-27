@@ -1,0 +1,277 @@
+{
+  "resolution": 1.2,
+  "n_substates_kept": 9,
+  "n_substates_dropped": 1,
+  "donor_reproducibility_rule": ">= 5/6 donors with >= 10 cells",
+  "substate_profile": {
+    "6": {
+      "n": 1413,
+      "dpt": 0.0724,
+      "dpt_q25": 0.0621,
+      "dpt_q75": 0.0818,
+      "top_state": "ncsMBC",
+      "top_state_frac": 0.3248,
+      "n_donors": 6
+    },
+    "dropped": {
+      "n": 11,
+      "dpt": 0.088,
+      "dpt_q25": 0.0853,
+      "dpt_q75": 0.0898,
+      "top_state": "csMBC",
+      "top_state_frac": 0.7273,
+      "n_donors": 0
+    },
+    "1": {
+      "n": 2763,
+      "dpt": 0.1003,
+      "dpt_q25": 0.0943,
+      "dpt_q75": 0.1059,
+      "top_state": "csMBC",
+      "top_state_frac": 0.856,
+      "n_donors": 6
+    },
+    "0": {
+      "n": 3422,
+      "dpt": 0.1011,
+      "dpt_q25": 0.093,
+      "dpt_q75": 0.1081,
+      "top_state": "csMBC",
+      "top_state_frac": 0.7312,
+      "n_donors": 6
+    },
+    "2": {
+      "n": 1311,
+      "dpt": 0.1191,
+      "dpt_q25": 0.0981,
+      "dpt_q75": 0.1487,
+      "top_state": "csMBC FCRL4/5+",
+      "top_state_frac": 0.6705,
+      "n_donors": 6
+    },
+    "4": {
+      "n": 3402,
+      "dpt": 0.1223,
+      "dpt_q25": 0.1137,
+      "dpt_q75": 0.1299,
+      "top_state": "ncsMBC",
+      "top_state_frac": 0.883,
+      "n_donors": 6
+    },
+    "3": {
+      "n": 1781,
+      "dpt": 0.1272,
+      "dpt_q25": 0.1153,
+      "dpt_q75": 0.1399,
+      "top_state": "ncsMBC",
+      "top_state_frac": 0.8832,
+      "n_donors": 6
+    },
+    "5": {
+      "n": 1261,
+      "dpt": 0.1297,
+      "dpt_q25": 0.1186,
+      "dpt_q75": 0.1393,
+      "top_state": "ncsMBC",
+      "top_state_frac": 0.9564,
+      "n_donors": 6
+    },
+    "9": {
+      "n": 314,
+      "dpt": 0.5192,
+      "dpt_q25": 0.4479,
+      "dpt_q75": 0.5628,
+      "top_state": "Reactivated proliferative MBCs",
+      "top_state_frac": 0.9204,
+      "n_donors": 6
+    },
+    "7": {
+      "n": 675,
+      "dpt": 0.6833,
+      "dpt_q25": 0.5966,
+      "dpt_q75": 0.7794,
+      "top_state": "Precursor MBCs",
+      "top_state_frac": 0.5644,
+      "n_donors": 6
+    }
+  },
+  "markers": {
+    "0": [
+      "PDE4D",
+      "TOX",
+      "ADK",
+      "RABGAP1L",
+      "PIP4K2A",
+      "TEX9",
+      "ZDHHC14",
+      "PAG1",
+      "MALAT1",
+      "HLA-DPB1",
+      "HLA-DRA",
+      "MEF2C"
+    ],
+    "1": [
+      "ANK3",
+      "MALAT1",
+      "TXNIP",
+      "IFNG-AS1",
+      "ST6GALNAC3",
+      "PATJ",
+      "ITGA4",
+      "RPS12",
+      "NR3C2",
+      "GNG7",
+      "EEF1A1",
+      "ATXN1"
+    ],
+    "2": [
+      "SOX5",
+      "FCRL4",
+      "RABGAP1L",
+      "DNAH8",
+      "FCRL5",
+      "RFTN1",
+      "FUT8",
+      "PTPN1",
+      "ENTPD1",
+      "TOX",
+      "ACTB",
+      "ZEB2"
+    ],
+    "3": [
+      "ZNF804A",
+      "TCF4",
+      "AL592429.2",
+      "GAB2",
+      "GAB1",
+      "MAST4",
+      "ADAMTS6",
+      "ARHGAP24",
+      "KHDRBS2",
+      "KCNQ5",
+      "TBC1D9",
+      "TFEC"
+    ],
+    "4": [
+      "FOXP1",
+      "IGHM",
+      "CCSER1",
+      "STEAP1B",
+      "KHDRBS2",
+      "AUTS2",
+      "COL19A1",
+      "TXNIP",
+      "DPYD",
+      "UTRN",
+      "RALGPS2",
+      "CD69"
+    ],
+    "5": [
+      "ZNF804A",
+      "TCF4",
+      "AL592429.2",
+      "IGHM",
+      "ARHGAP24",
+      "ADAMTS6",
+      "FOXP1",
+      "PTPRJ",
+      "CBLB",
+      "CAMK2D",
+      "FCRL3",
+      "STEAP1B"
+    ],
+    "6": [
+      "ZEB2",
+      "FCRL5",
+      "SOX5",
+      "MS4A1",
+      "BMP2K",
+      "MEF2C",
+      "CAMK2D",
+      "HDAC9",
+      "CD96",
+      "ZDHHC14",
+      "ADK",
+      "MACROD2"
+    ],
+    "7": [
+      "AC023590.1",
+      "RAPGEF5",
+      "AFF2",
+      "RGS13",
+      "CD38",
+      "MYBL1",
+      "SYNE2",
+      "RFTN1",
+      "SPRED2",
+      "PDGFD",
+      "LPP",
+      "MAML3"
+    ],
+    "9": [
+      "TUBA1B",
+      "TUBB",
+      "EZH2",
+      "HMGB2",
+      "STMN1",
+      "GAPDH",
+      "POLQ",
+      "FANCI",
+      "H2AFZ",
+      "DIAPH3",
+      "CENPK",
+      "ACTB"
+    ]
+  },
+  "tumour": {
+    "n": 19975,
+    "top_substates_pct": {
+      "3": 56.57,
+      "5": 26.7,
+      "4": 15.85,
+      "7": 0.3,
+      "1": 0.2,
+      "0": 0.14,
+      "9": 0.11,
+      "dropped": 0.06,
+      "6": 0.04,
+      "2": 0.03
+    },
+    "largest_pct": 56.57071339173967,
+    "sub_dpt_median": 0.14036159217357635,
+    "sub_dpt_iqr": [
+      0.1351189762353897,
+      0.1435152143239975
+    ]
+  },
+  "nontumour": {
+    "n": 819,
+    "sub_dpt_median": 0.1311284303665161,
+    "sub_dpt_iqr": [
+      0.10451249778270721,
+      0.6497514843940735
+    ]
+  },
+  "per_donor": {
+    "M102": {
+      "n": 10001,
+      "top": {
+        "3": 3745,
+        "5": 3664,
+        "4": 2550,
+        "1": 13
+      },
+      "sub_dpt_median": 0.13727113604545593
+    },
+    "M413": {
+      "n": 9974,
+      "top": {
+        "3": 7555,
+        "5": 1670,
+        "4": 617,
+        "7": 60
+      },
+      "sub_dpt_median": 0.14195522665977478
+    }
+  }
+}
