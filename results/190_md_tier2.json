@@ -1,0 +1,111 @@
+{
+  "tier": 2,
+  "config": {
+    "systems": [
+      "MAFG__D1_best",
+      "MAFK__D1_best",
+      "MAFF__D1_best",
+      "MAFG__CTRLPOS_NRF2",
+      "MAFG__CTRLNEG_scram"
+    ],
+    "reps": 3,
+    "ns": 30
+  },
+  "gate": {
+    "per_system": {
+      "MAFG__D1_best": {
+        "Q_mean": 0.5419881343614859,
+        "Q_sd": 0.4035627488669571,
+        "n_reps": 3
+      },
+      "MAFK__D1_best": {
+        "Q_mean": 0.764257271214544,
+        "Q_sd": 0.20790578840874338,
+        "n_reps": 3
+      }
+    },
+    "difference": {
+      "pair": [
+        "MAFG__D1_best",
+        "MAFK__D1_best"
+      ],
+      "delta_Q": -0.22226913685305816
+    },
+    "verdict": "A3_replicates_disagree",
+    "action": "續做 tier2：重複之間矛盾，取樣不足"
+  },
+  "per_rep": [
+    {
+      "system": "MAFG__D1_best",
+      "rep": "rep1",
+      "n_frames": 200,
+      "n_native_contacts": 565,
+      "Q_mean_last_half": 0.642,
+      "Q_min": 0.0,
+      "Q_final": 0.8637,
+      "com_start": 1.1461,
+      "com_mean_last_half": 4.4165,
+      "com_drift": 3.2704
+    },
+    {
+      "system": "MAFG__D1_best",
+      "rep": "rep2",
+      "n_frames": 200,
+      "n_native_contacts": 515,
+      "Q_mean_last_half": 0.8861,
+      "Q_min": 0.0,
+      "Q_final": 0.8485,
+      "com_start": 1.2016,
+      "com_mean_last_half": 1.169,
+      "com_drift": -0.0327
+    },
+    {
+      "system": "MAFG__D1_best",
+      "rep": "rep3",
+      "n_frames": 200,
+      "n_native_contacts": 544,
+      "Q_mean_last_half": 0.0978,
+      "Q_min": 0.0,
+      "Q_final": 0.0,
+      "com_start": 1.159,
+      "com_mean_last_half": 12.5575,
+      "com_drift": 11.3985
+    },
+    {
+      "system": "MAFK__D1_best",
+      "rep": "rep1",
+      "n_frames": 200,
+      "n_native_contacts": 468,
+      "Q_mean_last_half": 0.8776,
+      "Q_min": 0.8141,
+      "Q_final": 0.844,
+      "com_start": 1.0879,
+      "com_mean_last_half": 1.2227,
+      "com_drift": 0.1348
+    },
+    {
+      "system": "MAFK__D1_best",
+      "rep": "rep2",
+      "n_frames": 200,
+      "n_native_contacts": 590,
+      "Q_mean_last_half": 0.8908,
+      "Q_min": 0.8424,
+      "Q_final": 0.8746,
+      "com_start": 1.1883,
+      "com_mean_last_half": 1.2179,
+      "com_drift": 0.0296
+    },
+    {
+      "system": "MAFK__D1_best",
+      "rep": "rep3",
+      "n_frames": 200,
+      "n_native_contacts": 622,
+      "Q_mean_last_half": 0.5243,
+      "Q_min": 0.0,
+      "Q_final": 0.0,
+      "com_start": 1.179,
+      "com_mean_last_half": 6.5156,
+      "com_drift": 5.3366
+    }
+  ]
+}

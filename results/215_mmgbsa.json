@@ -1,0 +1,56 @@
+{
+  "method": "單軌跡 MM/GBSA（amber14 + GBn2，CPU 平台）",
+  "stride": 10,
+  "last_half_only": true,
+  "per_system_kcal": {
+    "MAFF__D1_best": {
+      "mean": -209.6321068817309,
+      "sd": null,
+      "n_reps": 1
+    },
+    "MAFG__CTRLNEG_scram": {
+      "mean": -160.47411301313818,
+      "sd": null,
+      "n_reps": 1
+    },
+    "MAFG__CTRLPOS_NRF2": {
+      "mean": -110.04872659870612,
+      "sd": null,
+      "n_reps": 1
+    },
+    "MAFG__D1_best": {
+      "mean": -176.83776583750023,
+      "sd": 39.48592873185486,
+      "n_reps": 2
+    },
+    "MAFK__D1_best": {
+      "mean": -181.84841744439052,
+      "sd": 31.189646107985592,
+      "n_reps": 3
+    }
+  },
+  "P1_negative_control_is_worse": {
+    "design_kcal": -176.83776583750023,
+    "scrambled_kcal": -160.47411301313818,
+    "gap_kcal": 16.36365282436205,
+    "pass": true
+  },
+  "P4_gap_exceeds_replicate_noise": {
+    "gap_kcal": 16.36365282436205,
+    "max_replicate_sd_kcal": 39.48592873185486,
+    "pass": false
+  },
+  "P2_positive_control": {
+    "natural_NRF2_kcal": -110.04872659870612,
+    "design_kcal": -176.83776583750023,
+    "pass": false
+  },
+  "P3_mafg_vs_mafk": {
+    "MAFG_kcal": -176.83776583750023,
+    "MAFK_kcal": -181.84841744439052,
+    "difference_kcal": 5.010651606890292,
+    "interpretable": false,
+    "note": "P1/P4 未通過時這個差異沒有意義，僅列出數字"
+  },
+  "verdict": "readout_also_cannot_discriminate"
+}

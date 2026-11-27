@@ -1,0 +1,242 @@
+{
+  "tier": 1,
+  "config": {
+    "systems": [
+      "MAFG__D1_best",
+      "MAFK__D1_best",
+      "MAFF__D1_best",
+      "MAFG__CTRLPOS_NRF2",
+      "MAFG__CTRLNEG_scram"
+    ],
+    "reps": 3,
+    "ns": 10
+  },
+  "gate": {
+    "per_system": {
+      "MAFF__D1_best": {
+        "Q_mean": 0.8896940250300703,
+        "Q_sd": 0.03749834207101161,
+        "n_reps": 3
+      },
+      "MAFG__CTRLNEG_scram": {
+        "Q_mean": 0.7976490365590138,
+        "Q_sd": 0.044304110604323724,
+        "n_reps": 3
+      },
+      "MAFG__CTRLPOS_NRF2": {
+        "Q_mean": 0.8624389395408304,
+        "Q_sd": 0.0486898969855552,
+        "n_reps": 3
+      },
+      "MAFG__D1_best": {
+        "Q_mean": 0.8752267904433877,
+        "Q_sd": 0.02048289151730451,
+        "n_reps": 3
+      },
+      "MAFK__D1_best": {
+        "Q_mean": 0.8916025834333642,
+        "Q_sd": 0.009368933781907856,
+        "n_reps": 3
+      }
+    },
+    "controls": {
+      "positive": {
+        "system": "MAFG__CTRLPOS_NRF2",
+        "Q_mean": 0.8624389395408304,
+        "expect": "Q > 0.60",
+        "pass": true
+      },
+      "negative": {
+        "system": "MAFG__CTRLNEG_scram",
+        "Q_mean": 0.7976490365590138,
+        "expect": "Q < 0.40",
+        "pass": false
+      }
+    },
+    "controls_all_pass": false,
+    "verdict": "A5_assay_cannot_discriminate",
+    "action": "停止：打亂序列的陰性對照在 10 ns 仍維持 Q=0.798（預期 < 0.40），這個讀數沒有鑑別力，不值得延長"
+  },
+  "per_rep": [
+    {
+      "system": "MAFG__D1_best",
+      "rep": "10ns_rep1",
+      "n_frames": 200,
+      "n_native_contacts": 565,
+      "Q_mean_last_half": 0.888,
+      "Q_min": 0.8442,
+      "Q_final": 0.8619,
+      "com_start": 1.1461,
+      "com_mean_last_half": 1.1253,
+      "com_drift": -0.0208
+    },
+    {
+      "system": "MAFG__D1_best",
+      "rep": "10ns_rep2",
+      "n_frames": 200,
+      "n_native_contacts": 515,
+      "Q_mean_last_half": 0.8861,
+      "Q_min": 0.7903,
+      "Q_final": 0.8485,
+      "com_start": 1.2016,
+      "com_mean_last_half": 1.169,
+      "com_drift": -0.0327
+    },
+    {
+      "system": "MAFG__D1_best",
+      "rep": "10ns_rep3",
+      "n_frames": 200,
+      "n_native_contacts": 544,
+      "Q_mean_last_half": 0.8516,
+      "Q_min": 0.7684,
+      "Q_final": 0.8309,
+      "com_start": 1.159,
+      "com_mean_last_half": 1.1575,
+      "com_drift": -0.0016
+    },
+    {
+      "system": "MAFK__D1_best",
+      "rep": "10ns_rep1",
+      "n_frames": 200,
+      "n_native_contacts": 468,
+      "Q_mean_last_half": 0.8822,
+      "Q_min": 0.8184,
+      "Q_final": 0.8504,
+      "com_start": 1.0879,
+      "com_mean_last_half": 1.2148,
+      "com_drift": 0.1269
+    },
+    {
+      "system": "MAFK__D1_best",
+      "rep": "10ns_rep2",
+      "n_frames": 200,
+      "n_native_contacts": 590,
+      "Q_mean_last_half": 0.8917,
+      "Q_min": 0.8424,
+      "Q_final": 0.8763,
+      "com_start": 1.1883,
+      "com_mean_last_half": 1.2166,
+      "com_drift": 0.0282
+    },
+    {
+      "system": "MAFK__D1_best",
+      "rep": "10ns_rep3",
+      "n_frames": 200,
+      "n_native_contacts": 622,
+      "Q_mean_last_half": 0.9009,
+      "Q_min": 0.8424,
+      "Q_final": 0.8778,
+      "com_start": 1.179,
+      "com_mean_last_half": 1.0685,
+      "com_drift": -0.1104
+    },
+    {
+      "system": "MAFF__D1_best",
+      "rep": "10ns_rep1",
+      "n_frames": 200,
+      "n_native_contacts": 515,
+      "Q_mean_last_half": 0.927,
+      "Q_min": 0.866,
+      "Q_final": 0.866,
+      "com_start": 1.1785,
+      "com_mean_last_half": 1.2215,
+      "com_drift": 0.0429
+    },
+    {
+      "system": "MAFF__D1_best",
+      "rep": "10ns_rep2",
+      "n_frames": 200,
+      "n_native_contacts": 511,
+      "Q_mean_last_half": 0.852,
+      "Q_min": 0.7789,
+      "Q_final": 0.8356,
+      "com_start": 1.2421,
+      "com_mean_last_half": 1.2242,
+      "com_drift": -0.018
+    },
+    {
+      "system": "MAFF__D1_best",
+      "rep": "10ns_rep3",
+      "n_frames": 200,
+      "n_native_contacts": 529,
+      "Q_mean_last_half": 0.8901,
+      "Q_min": 0.7826,
+      "Q_final": 0.9112,
+      "com_start": 1.228,
+      "com_mean_last_half": 1.1781,
+      "com_drift": -0.0499
+    },
+    {
+      "system": "MAFG__CTRLPOS_NRF2",
+      "rep": "10ns_rep1",
+      "n_frames": 200,
+      "n_native_contacts": 377,
+      "Q_mean_last_half": 0.8096,
+      "Q_min": 0.7454,
+      "Q_final": 0.8329,
+      "com_start": 1.7794,
+      "com_mean_last_half": 1.9364,
+      "com_drift": 0.157
+    },
+    {
+      "system": "MAFG__CTRLPOS_NRF2",
+      "rep": "10ns_rep2",
+      "n_frames": 200,
+      "n_native_contacts": 299,
+      "Q_mean_last_half": 0.8721,
+      "Q_min": 0.7926,
+      "Q_final": 0.8796,
+      "com_start": 1.8035,
+      "com_mean_last_half": 1.849,
+      "com_drift": 0.0456
+    },
+    {
+      "system": "MAFG__CTRLPOS_NRF2",
+      "rep": "10ns_rep3",
+      "n_frames": 200,
+      "n_native_contacts": 283,
+      "Q_mean_last_half": 0.9055,
+      "Q_min": 0.8304,
+      "Q_final": 0.841,
+      "com_start": 1.8946,
+      "com_mean_last_half": 1.9886,
+      "com_drift": 0.0941
+    },
+    {
+      "system": "MAFG__CTRLNEG_scram",
+      "rep": "10ns_rep1",
+      "n_frames": 200,
+      "n_native_contacts": 470,
+      "Q_mean_last_half": 0.8245,
+      "Q_min": 0.7553,
+      "Q_final": 0.8191,
+      "com_start": 2.9438,
+      "com_mean_last_half": 2.7787,
+      "com_drift": -0.1652
+    },
+    {
+      "system": "MAFG__CTRLNEG_scram",
+      "rep": "10ns_rep2",
+      "n_frames": 200,
+      "n_native_contacts": 478,
+      "Q_mean_last_half": 0.8219,
+      "Q_min": 0.7657,
+      "Q_final": 0.8159,
+      "com_start": 2.9998,
+      "com_mean_last_half": 3.0257,
+      "com_drift": 0.0258
+    },
+    {
+      "system": "MAFG__CTRLNEG_scram",
+      "rep": "10ns_rep3",
+      "n_frames": 200,
+      "n_native_contacts": 453,
+      "Q_mean_last_half": 0.7465,
+      "Q_min": 0.6865,
+      "Q_final": 0.7815,
+      "com_start": 3.01,
+      "com_mean_last_half": 2.8878,
+      "com_drift": -0.1222
+    }
+  ]
+}

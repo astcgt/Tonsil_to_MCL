@@ -1,0 +1,342 @@
+{
+  "cutoff_nm": 0.45,
+  "q_cut_nm": 0.675,
+  "systems": {
+    "MAFF__D1_best": {
+      "trajectory": "results/190_md/MAFF__D1_best/10ns_rep1/traj.dcd",
+      "chain_residues": [
+        99,
+        90
+      ],
+      "n_heavy_atoms": [
+        798,
+        713
+      ],
+      "box_perp_widths_nm": [
+        11.340559852964613,
+        11.340559852964613,
+        9.821212925805273
+      ],
+      "mic_valid_below_nm": 4.910606462902637,
+      "n_native_contacts": 515,
+      "test1_lattice_invariance_max_dev_nm_within_limit": {
+        "+a": 4.81873657420806e-07,
+        "+b": 4.818736583089844e-07,
+        "+c": 4.818736583089844e-07,
+        "-a+2b": 4.818736591971629e-07,
+        "+a-b+c": 4.818736618616981e-07
+      },
+      "test1_max_dev_nm_beyond_limit": {
+        "+a": 5.462838519321167e-07,
+        "+b": 5.462838519321167e-07,
+        "+c": 5.462838501557599e-07,
+        "-a+2b": 5.462838519321167e-07,
+        "+a-b+c": 5.462838501557599e-07
+      },
+      "test1_n_pairs_beyond_limit": 198102,
+      "test1_n_pairs_total": 568974,
+      "test1_all_native_contacts_within_limit": true,
+      "test1_pass": true,
+      "test2_fabricated_Q_after_rigid_separation": {
+        "1.5nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "2.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "3.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "4.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "5.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        }
+      },
+      "test2_pass": true,
+      "test3_com_range_nm": [
+        1.1045167514224188,
+        1.187857506085848
+      ],
+      "test3_pass": true,
+      "test4_frame0_Q": 1.0,
+      "test4_pass": true,
+      "all_pass": true
+    },
+    "MAFG__CTRLNEG_scram": {
+      "trajectory": "results/190_md/MAFG__CTRLNEG_scram/10ns_rep1/traj.dcd",
+      "chain_residues": [
+        99,
+        90
+      ],
+      "n_heavy_atoms": [
+        807,
+        713
+      ],
+      "box_perp_widths_nm": [
+        10.554153066121465,
+        10.554153066121465,
+        9.140164670690602
+      ],
+      "mic_valid_below_nm": 4.570082335345301,
+      "n_native_contacts": 470,
+      "test1_lattice_invariance_max_dev_nm_within_limit": {
+        "+a": 4.0807979706514175e-07,
+        "+b": 4.0807979706514175e-07,
+        "+c": 4.080797983974094e-07,
+        "-a+2b": 4.0807979662105254e-07,
+        "+a-b+c": 4.08079799729677e-07
+      },
+      "test1_max_dev_nm_beyond_limit": {
+        "+a": 4.129325557045149e-07,
+        "+b": 4.129325557045149e-07,
+        "+c": 4.1293255659269335e-07,
+        "-a+2b": 4.1293255748087176e-07,
+        "+a-b+c": 4.129325592572286e-07
+      },
+      "test1_n_pairs_beyond_limit": 231590,
+      "test1_n_pairs_total": 575391,
+      "test1_all_native_contacts_within_limit": true,
+      "test1_pass": true,
+      "test2_fabricated_Q_after_rigid_separation": {
+        "1.5nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "2.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "3.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "4.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "5.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        }
+      },
+      "test2_pass": true,
+      "test3_com_range_nm": [
+        2.8726056391048376,
+        2.9823129045381185
+      ],
+      "test3_pass": true,
+      "test4_frame0_Q": 1.0,
+      "test4_pass": true,
+      "all_pass": true
+    },
+    "MAFG__CTRLPOS_NRF2": {
+      "trajectory": "results/190_md/MAFG__CTRLPOS_NRF2/10ns_rep1/traj.dcd",
+      "chain_residues": [
+        99,
+        108
+      ],
+      "n_heavy_atoms": [
+        807,
+        898
+      ],
+      "box_perp_widths_nm": [
+        10.788801889428443,
+        10.788801889428443,
+        9.343376512642578
+      ],
+      "mic_valid_below_nm": 4.671688256321289,
+      "n_native_contacts": 377,
+      "test1_lattice_invariance_max_dev_nm_within_limit": {
+        "+a": 3.2595826038317455e-07,
+        "+b": 3.2595826127135297e-07,
+        "+c": 3.2595825949499613e-07,
+        "-a+2b": 3.259582621595314e-07,
+        "+a-b+c": 3.259582577186393e-07
+      },
+      "test1_max_dev_nm_beyond_limit": {
+        "+a": 3.8521997056116284,
+        "+b": 3.8521997056116284,
+        "+c": 3.85219970561163,
+        "-a+2b": 3.85219970561163,
+        "+a-b+c": 3.8521997056116284
+      },
+      "test1_n_pairs_beyond_limit": 249277,
+      "test1_n_pairs_total": 724686,
+      "test1_all_native_contacts_within_limit": true,
+      "test1_pass": true,
+      "test2_fabricated_Q_after_rigid_separation": {
+        "1.5nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "2.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "3.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "4.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "5.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        }
+      },
+      "test2_pass": true,
+      "test3_com_range_nm": [
+        1.7793803691138403,
+        1.8775189007204696
+      ],
+      "test3_pass": true,
+      "test4_frame0_Q": 1.0,
+      "test4_pass": true,
+      "all_pass": true
+    },
+    "MAFG__D1_best": {
+      "trajectory": "results/190_md/MAFG__D1_best/10ns_rep1/traj.dcd",
+      "chain_residues": [
+        99,
+        90
+      ],
+      "n_heavy_atoms": [
+        807,
+        713
+      ],
+      "box_perp_widths_nm": [
+        11.41711128635271,
+        11.41711128635271,
+        9.887508411815482
+      ],
+      "mic_valid_below_nm": 4.943754205907741,
+      "n_native_contacts": 565,
+      "test1_lattice_invariance_max_dev_nm_within_limit": {
+        "+a": 4.440644207903688e-07,
+        "+b": 4.440644207903688e-07,
+        "+c": 4.440644207903688e-07,
+        "-a+2b": 4.440644207903688e-07,
+        "+a-b+c": 4.440644216785472e-07
+      },
+      "test1_max_dev_nm_beyond_limit": {
+        "+a": 4.7138318848283234e-07,
+        "+b": 4.7138318937101076e-07,
+        "+c": 4.7138318937101076e-07,
+        "-a+2b": 4.713831858182971e-07,
+        "+a-b+c": 4.7138318848283234e-07
+      },
+      "test1_n_pairs_beyond_limit": 203376,
+      "test1_n_pairs_total": 575391,
+      "test1_all_native_contacts_within_limit": true,
+      "test1_pass": true,
+      "test2_fabricated_Q_after_rigid_separation": {
+        "1.5nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "2.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "3.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "4.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "5.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        }
+      },
+      "test2_pass": true,
+      "test3_com_range_nm": [
+        1.0437636491366156,
+        1.23961185982754
+      ],
+      "test3_pass": true,
+      "test4_frame0_Q": 1.0,
+      "test4_pass": true,
+      "all_pass": true
+    },
+    "MAFK__D1_best": {
+      "trajectory": "results/190_md/MAFK__D1_best/10ns_rep1/traj.dcd",
+      "chain_residues": [
+        99,
+        90
+      ],
+      "n_heavy_atoms": [
+        822,
+        713
+      ],
+      "box_perp_widths_nm": [
+        10.877284257397621,
+        10.877284257397621,
+        9.42000449109088
+      ],
+      "mic_valid_below_nm": 4.71000224554544,
+      "n_native_contacts": 468,
+      "test1_lattice_invariance_max_dev_nm_within_limit": {
+        "+a": 6.942101364870723e-07,
+        "+b": 6.942101360429831e-07,
+        "+c": 6.942101373752507e-07,
+        "-a+2b": 6.942101387075184e-07,
+        "+a-b+c": 6.942101373752507e-07
+      },
+      "test1_max_dev_nm_beyond_limit": {
+        "+a": 9.441827355516352e-07,
+        "+b": 9.441827355516352e-07,
+        "+c": 9.441827364398137e-07,
+        "-a+2b": 9.441827364398137e-07,
+        "+a-b+c": 9.441827382161705e-07
+      },
+      "test1_n_pairs_beyond_limit": 215197,
+      "test1_n_pairs_total": 586086,
+      "test1_all_native_contacts_within_limit": true,
+      "test1_pass": true,
+      "test2_fabricated_Q_after_rigid_separation": {
+        "1.5nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "2.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "3.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "4.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        },
+        "5.0nm": {
+          "median": 0.0,
+          "max": 0.0
+        }
+      },
+      "test2_pass": true,
+      "test3_com_range_nm": [
+        1.0557006813017393,
+        1.25676312778614
+      ],
+      "test3_pass": true,
+      "test4_frame0_Q": 1.0,
+      "test4_pass": true,
+      "all_pass": true
+    }
+  },
+  "all_systems_pass": true
+}
