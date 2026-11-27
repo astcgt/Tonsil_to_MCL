@@ -1,0 +1,77 @@
+{
+  "seeds_done": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "n_genes": 4012,
+  "gates": {
+    "P0_determinism": {
+      "A_reproduces_published_exactly": true,
+      "max_abs_delta_rank": {
+        "A_gene_space": 0,
+        "B_scvi_counterfactual": 0,
+        "C_contrastivevi": 0,
+        "D_latent_arithmetic": 0
+      },
+      "nondeterministic_at_fixed_seed": {
+        "B_scvi_counterfactual": false,
+        "C_contrastivevi": false,
+        "D_latent_arithmetic": false
+      },
+      "pass": true,
+      "note": "方法 A 沒有 RNG，完全重現 = 流程可信"
+    },
+    "P1_positive_control": {
+      "requirement": "CCND1 與 SOX11 在每個方法 × 每個種子都要進前 50",
+      "violations": [
+        {
+          "gene": "CCND1",
+          "method": "D_latent_arithmetic",
+          "seed": 1,
+          "rank": 56
+        },
+        {
+          "gene": "CCND1",
+          "method": "D_latent_arithmetic",
+          "seed": 3,
+          "rank": 173
+        },
+        {
+          "gene": "CCND1",
+          "method": "D_latent_arithmetic",
+          "seed": 4,
+          "rank": 326
+        },
+        {
+          "gene": "SOX11",
+          "method": "B_scvi_counterfactual",
+          "seed": 1,
+          "rank": 63
+        },
+        {
+          "gene": "SOX11",
+          "method": "D_latent_arithmetic",
+          "seed": 0,
+          "rank": 96
+        },
+        {
+          "gene": "SOX11",
+          "method": "D_latent_arithmetic",
+          "seed": 1,
+          "rank": 136
+        },
+        {
+          "gene": "SOX11",
+          "method": "D_latent_arithmetic",
+          "seed": 2,
+          "rank": 84
+        }
+      ],
+      "pass": false
+    }
+  },
+  "verdict": "VOID_positive_control_failed"
+}

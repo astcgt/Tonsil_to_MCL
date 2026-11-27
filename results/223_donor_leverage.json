@@ -1,0 +1,297 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "gates": {
+    "D1_patch_correctness": {
+      "requirement": "_ds 的合併欄位必須與 _s 逐位元相同",
+      "per_seed": {
+        "0": {
+          "A_gene_space": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "B_scvi_counterfactual": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "C_contrastivevi": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "D_latent_arithmetic": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          }
+        },
+        "1": {
+          "A_gene_space": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "B_scvi_counterfactual": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "C_contrastivevi": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "D_latent_arithmetic": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          }
+        },
+        "2": {
+          "A_gene_space": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "B_scvi_counterfactual": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "C_contrastivevi": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "D_latent_arithmetic": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          }
+        },
+        "3": {
+          "A_gene_space": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "B_scvi_counterfactual": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "C_contrastivevi": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "D_latent_arithmetic": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          }
+        },
+        "4": {
+          "A_gene_space": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "B_scvi_counterfactual": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "C_contrastivevi": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          },
+          "D_latent_arithmetic": {
+            "bit_identical": true,
+            "max_abs_diff": 0.0
+          }
+        }
+      },
+      "pass": true
+    },
+    "D2_subtrahend_is_one_donor": {
+      "prediction": "合併 vs 只用 mcl_M413 的 ρ > 0.99，合併 vs 只用 mcl_M102 的 ρ < 0.90",
+      "values": {
+        "A_gene_space": {
+          "rho_pooled_vs_mcl_M413_only": 0.9952452565866079,
+          "rho_pooled_vs_mcl_M102_only": 0.3329897105167357,
+          "rho_between_the_two_donors": 0.29916181899873584
+        },
+        "B_scvi_counterfactual": {
+          "rho_pooled_vs_mcl_M413_only": 0.995554411890215,
+          "rho_pooled_vs_mcl_M102_only": 0.6014418343502754,
+          "rho_between_the_two_donors": 0.5667262786328255
+        },
+        "C_contrastivevi": {
+          "rho_pooled_vs_mcl_M413_only": 0.9988343545028041,
+          "rho_pooled_vs_mcl_M102_only": 0.4682684324466339,
+          "rho_between_the_two_donors": 0.44548267661386964
+        },
+        "D_latent_arithmetic": {
+          "rho_pooled_vs_mcl_M413_only": 0.9984312019217658,
+          "rho_pooled_vs_mcl_M102_only": 0.21525562276275564,
+          "rho_between_the_two_donors": 0.19087520829408824
+        }
+      },
+      "pass": true
+    },
+    "D3_swing_by_method": {
+      "prediction": "換捐贈者的衝擊 C 最大、A 最小",
+      "focus_gene": "SLC7A11",
+      "values": {
+        "A_gene_space": {
+          "pooled": {
+            "mean": 8.676069254097852,
+            "by_seed": [
+              8.676069254097852,
+              8.676069254097852,
+              8.676069254097852,
+              8.676069254097852,
+              8.676069254097852
+            ]
+          },
+          "mcl_M413": {
+            "mean": 8.806954763507804,
+            "by_seed": [
+              8.806954763507804,
+              8.806954763507804,
+              8.806954763507804,
+              8.806954763507804,
+              8.806954763507804
+            ]
+          },
+          "mcl_M102": {
+            "mean": 5.110565756830122,
+            "by_seed": [
+              5.110565756830122,
+              5.110565756830122,
+              5.110565756830122,
+              5.110565756830122,
+              5.110565756830122
+            ]
+          },
+          "swing_big_minus_small": 3.6963890066776814
+        },
+        "B_scvi_counterfactual": {
+          "pooled": {
+            "mean": 5.3866924122331366,
+            "by_seed": [
+              4.620202046330428,
+              4.63957849816493,
+              6.715865721786592,
+              6.6915293390813115,
+              4.266286455802424
+            ]
+          },
+          "mcl_M413": {
+            "mean": 5.187798217777341,
+            "by_seed": [
+              4.403022355909419,
+              4.558085160508003,
+              6.401703308354377,
+              6.691059714054357,
+              3.885120550060548
+            ]
+          },
+          "mcl_M102": {
+            "mean": 10.80484372959295,
+            "by_seed": [
+              10.53646472417297,
+              6.859570561567306,
+              15.27408423207747,
+              6.704327655859009,
+              14.649771474287991
+            ]
+          },
+          "swing_big_minus_small": -5.617045511815609
+        },
+        "C_contrastivevi": {
+          "pooled": {
+            "mean": 1.3208313233990663,
+            "by_seed": [
+              1.5065398348135057,
+              1.5456986125615875,
+              1.2407957960418736,
+              0.9266645288293759,
+              1.3844578447489888
+            ]
+          },
+          "mcl_M413": {
+            "mean": 1.1413824392931091,
+            "by_seed": [
+              1.3453545333124795,
+              1.318639120358712,
+              1.1320555310033737,
+              0.7432587724246078,
+              1.1676042393663728
+            ]
+          },
+          "mcl_M102": {
+            "mean": 6.209264040426774,
+            "by_seed": [
+              5.897449772255257,
+              7.731107510921537,
+              4.20303247336541,
+              5.922886553492982,
+              7.291843892098681
+            ]
+          },
+          "swing_big_minus_small": -5.067881601133665
+        },
+        "D_latent_arithmetic": {
+          "pooled": {
+            "mean": 4.200284881021118,
+            "by_seed": [
+              4.133132975875599,
+              3.4608087253557858,
+              4.778230808694129,
+              4.7006590649192255,
+              3.928592830260849
+            ]
+          },
+          "mcl_M413": {
+            "mean": 4.560938896210095,
+            "by_seed": [
+              4.41706860488025,
+              3.754005442457575,
+              5.238032470192503,
+              5.212933638483191,
+              4.182654325036957
+            ]
+          },
+          "mcl_M102": {
+            "mean": -5.624424751575362,
+            "by_seed": [
+              -3.6016668696454195,
+              -4.526261129250416,
+              -7.747405369048692,
+              -9.2544129452267,
+              -2.992377444705582
+            ]
+          },
+          "swing_big_minus_small": 10.185363647785458
+        }
+      },
+      "abs_swing": {
+        "A_gene_space": 3.6963890066776814,
+        "B_scvi_counterfactual": 5.617045511815609,
+        "C_contrastivevi": 5.067881601133665,
+        "D_latent_arithmetic": 10.185363647785458
+      },
+      "pass": false
+    },
+    "D4_not_estimable_from_two_donors": {
+      "prediction": "兩位捐贈者之間的逐基因差距中位數 / 跨基因標準差 > 1",
+      "values": {
+        "A_gene_space": 0.14491236240216612,
+        "B_scvi_counterfactual": 0.24343730416926004,
+        "C_contrastivevi": 0.2349378442778748,
+        "D_latent_arithmetic": 0.18185615213755132
+      },
+      "pass": false
+    }
+  },
+  "donors": {
+    "mcl_M102": 29,
+    "mcl_M413": 790
+  },
+  "verdict": {
+    "D2": true,
+    "D3": false,
+    "D4": false
+  }
+}

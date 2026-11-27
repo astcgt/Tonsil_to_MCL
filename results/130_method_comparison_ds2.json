@@ -1,0 +1,224 @@
+{
+  "spearman": {
+    "A_gene_space": {
+      "A_gene_space": 1.0,
+      "B_scvi_counterfactual": 0.3810178582,
+      "C_contrastivevi": 0.3994843594,
+      "D_latent_arithmetic": 0.0781616586
+    },
+    "B_scvi_counterfactual": {
+      "A_gene_space": 0.3810178582,
+      "B_scvi_counterfactual": 1.0,
+      "C_contrastivevi": 0.3317152233,
+      "D_latent_arithmetic": 0.3213252451
+    },
+    "C_contrastivevi": {
+      "A_gene_space": 0.3994843594,
+      "B_scvi_counterfactual": 0.3317152233,
+      "C_contrastivevi": 1.0,
+      "D_latent_arithmetic": 0.2375746657
+    },
+    "D_latent_arithmetic": {
+      "A_gene_space": 0.0781616586,
+      "B_scvi_counterfactual": 0.3213252451,
+      "C_contrastivevi": 0.2375746657,
+      "D_latent_arithmetic": 1.0
+    }
+  },
+  "jaccard_top100": {
+    "A_gene_space": {
+      "A_gene_space": 1.0,
+      "B_scvi_counterfactual": 0.2578616352,
+      "C_contrastivevi": 0.2820512821,
+      "D_latent_arithmetic": 0.0989010989
+    },
+    "B_scvi_counterfactual": {
+      "A_gene_space": 0.2578616352,
+      "B_scvi_counterfactual": 1.0,
+      "C_contrastivevi": 0.2903225806,
+      "D_latent_arithmetic": 0.2422360248
+    },
+    "C_contrastivevi": {
+      "A_gene_space": 0.2820512821,
+      "B_scvi_counterfactual": 0.2903225806,
+      "C_contrastivevi": 1.0,
+      "D_latent_arithmetic": 0.1173184358
+    },
+    "D_latent_arithmetic": {
+      "A_gene_space": 0.0989010989,
+      "B_scvi_counterfactual": 0.2422360248,
+      "C_contrastivevi": 0.1173184358,
+      "D_latent_arithmetic": 1.0
+    }
+  },
+  "snr": {
+    "A_gene_space": {
+      "noise_floor_mean_abs_nontumour": 0.04866986451796932,
+      "tumour_mean_abs": 0.10573537876359265,
+      "global_ratio": 2.1725020155861388,
+      "panel_z_over_floor": {
+        "SLC7A11": 8.676069254097841,
+        "SLC3A2": 7.5494327793169855,
+        "GCLM": -1.0003911327729937,
+        "GCLC": -0.34185363668802327,
+        "AIFM2": 0.11198129050843508,
+        "MAFG": 2.626452598231552,
+        "MAFF": 1.7004861333509134,
+        "MAFK": 1.7323540690008592,
+        "BACH1": 8.727136237942366,
+        "NFE2L2": 7.119420659672292,
+        "CCND1": 41.21838606804162,
+        "SOX11": 17.974849769021574,
+        "TXN": 0.7419457436383333,
+        "GPX4": -1.1902901925029203,
+        "HMOX1": 0.2266371511110829,
+        "NQO1": 0.09310544124849135
+      },
+      "panel_rank": {
+        "SLC7A11": 158,
+        "SLC3A2": 195,
+        "GCLM": 3582,
+        "GCLC": 3348,
+        "AIFM2": 1577,
+        "MAFG": 468,
+        "MAFF": 599,
+        "MAFK": 595,
+        "BACH1": 156,
+        "NFE2L2": 213,
+        "CCND1": 5,
+        "SOX11": 45,
+        "TXN": 908,
+        "GPX4": 3625,
+        "HMOX1": 1341,
+        "NQO1": 1663
+      }
+    },
+    "B_scvi_counterfactual": {
+      "noise_floor_mean_abs_nontumour": 0.02171966233949142,
+      "tumour_mean_abs": 0.026771359696357886,
+      "global_ratio": 1.2325863670394774,
+      "panel_z_over_floor": {
+        "SLC7A11": 6.715865721786584,
+        "SLC3A2": 3.626067597788745,
+        "GCLM": -0.09321083990383076,
+        "GCLC": -1.1698699253569393,
+        "AIFM2": -1.1656127800889788,
+        "MAFG": -0.1345561507220638,
+        "MAFF": 0.4973697514333123,
+        "MAFK": 0.5343419218198067,
+        "BACH1": 0.43388969235669766,
+        "NFE2L2": -1.3117602172857243,
+        "CCND1": 11.277548837732809,
+        "SOX11": 9.066980013880253,
+        "TXN": -0.1494751954715559,
+        "GPX4": 0.7173252876628419,
+        "HMOX1": 0.6363973062492966,
+        "NQO1": -0.2903289491001281
+      },
+      "panel_rank": {
+        "SLC7A11": 82,
+        "SLC3A2": 213,
+        "GCLM": 2558,
+        "GCLC": 3434,
+        "AIFM2": 3432,
+        "MAFG": 2685,
+        "MAFF": 978,
+        "MAFK": 957,
+        "BACH1": 1018,
+        "NFE2L2": 3486,
+        "CCND1": 21,
+        "SOX11": 40,
+        "TXN": 2728,
+        "GPX4": 850,
+        "HMOX1": 901,
+        "NQO1": 2943
+      }
+    },
+    "C_contrastivevi": {
+      "noise_floor_mean_abs_nontumour": 0.14060298371935648,
+      "tumour_mean_abs": 0.021962654824343484,
+      "global_ratio": 0.1562033339788929,
+      "panel_z_over_floor": {
+        "SLC7A11": 1.2407957960418743,
+        "SLC3A2": 0.20946511246105626,
+        "GCLM": -0.7413289329055998,
+        "GCLC": -0.9138132382840806,
+        "AIFM2": 0.6558165165253009,
+        "MAFG": -0.09075156881626424,
+        "MAFF": 0.10831737571550655,
+        "MAFK": 0.7443777900941,
+        "BACH1": 0.2992955652737899,
+        "NFE2L2": 0.6995325330478773,
+        "CCND1": 12.342403308915657,
+        "SOX11": 6.960331593151303,
+        "TXN": -1.5255475966590641,
+        "GPX4": -1.3438882712383864,
+        "HMOX1": 0.9503488761599013,
+        "NQO1": 0.3923859411363799
+      },
+      "panel_rank": {
+        "SLC7A11": 496,
+        "SLC3A2": 1289,
+        "GCLM": 3304,
+        "GCLC": 3390,
+        "AIFM2": 808,
+        "MAFG": 2576,
+        "MAFF": 1569,
+        "MAFK": 746,
+        "BACH1": 1137,
+        "NFE2L2": 768,
+        "CCND1": 2,
+        "SOX11": 29,
+        "TXN": 3630,
+        "GPX4": 3573,
+        "HMOX1": 616,
+        "NQO1": 1021
+      }
+    },
+    "D_latent_arithmetic": {
+      "noise_floor_mean_abs_nontumour": 0.02094900534325386,
+      "tumour_mean_abs": 0.02091759849709123,
+      "global_ratio": 0.9985007953529047,
+      "panel_z_over_floor": {
+        "SLC7A11": 4.7782308086941185,
+        "SLC3A2": 0.7947121710155951,
+        "GCLM": 0.7808749974618989,
+        "GCLC": 3.8172667883852505,
+        "AIFM2": -0.24483366238462806,
+        "MAFG": -0.7093011496766122,
+        "MAFF": -0.3426765475830521,
+        "MAFK": 0.3199440747789774,
+        "BACH1": 0.05608510886350655,
+        "NFE2L2": 0.35180228859002594,
+        "CCND1": 5.511414888174607,
+        "SOX11": 3.7314743958318006,
+        "TXN": 0.17086891448418526,
+        "GPX4": 0.5887598315549017,
+        "HMOX1": 0.7593478597098016,
+        "NQO1": -0.057260101326181576
+      },
+      "panel_rank": {
+        "SLC7A11": 41,
+        "SLC3A2": 544,
+        "GCLM": 550,
+        "GCLC": 80,
+        "AIFM2": 2829,
+        "MAFG": 3277,
+        "MAFF": 2978,
+        "MAFK": 856,
+        "BACH1": 1255,
+        "NFE2L2": 824,
+        "CCND1": 24,
+        "SOX11": 84,
+        "TXN": 1029,
+        "GPX4": 652,
+        "HMOX1": 559,
+        "NQO1": 2320
+      }
+    }
+  },
+  "n_genes": 4012,
+  "n_tumour": 19975,
+  "n_nontumour": 819,
+  "n_reference": 46216
+}
