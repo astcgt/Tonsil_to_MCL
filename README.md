@@ -516,9 +516,9 @@ If this work is useful, please cite the primary data sources above — above all
 ## Repository layout / 倉庫結構
 
 ```
-scripts/                     84 analysis scripts, numbered in execution order
-                             84 個分析腳本，依執行順序編號
-results/                     Aggregate results: CSV and JSON (59 MB)
+scripts/                     140 analysis scripts, numbered in execution order
+                             140 個分析腳本，依執行順序編號
+results/                     Aggregate results: CSV and JSON (93 MB)
                              彙總結果：CSV 與 JSON
 results/figs/                Figures for the report and the showcase page (SVG, GIF)
                              報告與展示頁的圖
