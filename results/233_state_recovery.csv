@@ -1,0 +1,49 @@
+true_state,n,recovery,top_confusion
+GC DZ Noproli,2,0.0,NBC
+Mature IgM+ PC,4,0.0,MBC derived IgG+ PC
+MBC derived early PC precursor,6,0.0,csMBC
+Short lived IgM+ PC,10,0.0,IgG+ PC precursor
+Transitional PB,6,0.0,IgG+ PC precursor
+preGC,18,0.0,csMBC
+Proliferative NBC,7,0.0,NBC
+NBC CD229+,70,0.08571428571428572,ncsMBC
+MBC derived IgA+ PC,11,0.09090909090909091,Mature IgA+ PC
+Early PC precursor,10,0.1,IgG+ PC precursor
+PB committed early PC precursor,10,0.1,IgG+ PC precursor
+Early GC-commited NBC,68,0.10294117647058823,NBC
+IgM+ early PC precursor,9,0.1111111111111111,IgG+ PC precursor
+DZ migratory PC precursor,9,0.1111111111111111,IgG+ PC precursor
+preMature IgG+ PC,32,0.25,IgG+ PC precursor
+IgM+ PC precursor,10,0.3,preMature IgM+ PC
+IgD PC precursor,12,0.3333333333333333,IgG+ PC precursor
+Early MBC,17,0.35294117647058826,NBC
+MBC FCRL5+,113,0.40707964601769914,csMBC
+ncsMBC FCRL4/5+,89,0.449438202247191,csMBC FCRL4/5+
+Mature IgG+ PC,20,0.5,Mature IgA+ PC
+MBC derived PC precursor,10,0.5,IgG+ PC precursor
+LZ,120,0.525,DZ_LZ transition
+GC-commited NBC,242,0.5578512396694215,NBC
+NBC IFN-activated,87,0.5747126436781609,NBC
+LZ_DZ transition,66,0.5757575757575758,DZ late Sphase
+DZ cell cycle exit,45,0.5777777777777777,DZ non proliferative
+preMature IgM+ PC,12,0.5833333333333334,MBC derived PC precursor
+PB,13,0.6153846153846154,Reactivated proliferative MBCs
+Reactivated proliferative MBCs,84,0.6428571428571429,DZ late G2Mphase
+Precursor MBCs,67,0.6567164179104478,DZ_LZ transition
+PC committed Light Zone GCBC,31,0.6774193548387096,DZ_LZ transition
+LZ proliferative,75,0.72,DZ late Sphase
+DZ early Sphase,155,0.7225806451612903,DZ late Sphase
+csMBC FCRL4/5+,189,0.746031746031746,csMBC
+MBC derived IgG+ PC,21,0.7619047619047619,Mature IgG+ PC
+DZ early G2Mphase,127,0.7716535433070866,DZ late G2Mphase
+NBC,1394,0.7826398852223816,NBC early activation
+LZ_DZ reentry commitment,53,0.7924528301886793,LZ
+NBC early activation,824,0.7985436893203883,NBC
+DZ late G2Mphase,126,0.8333333333333334,DZ early G2Mphase
+IgG+ PC precursor,60,0.85,IgD PC precursor
+csMBC,875,0.8548571428571429,ncsMBC
+ncsMBC,1018,0.8654223968565815,csMBC
+Mature IgA+ PC,27,0.8888888888888888,preMature IgG+ PC
+DZ late Sphase,228,0.8903508771929824,DZ early G2Mphase
+DZ non proliferative,201,0.9154228855721394,DZ_LZ transition
+DZ_LZ transition,301,0.9368770764119602,DZ non proliferative

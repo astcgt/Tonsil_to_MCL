@@ -1,0 +1,295 @@
+{
+  "n_reference": 46216,
+  "n_holdout": 6984,
+  "k": 15,
+  "holdout_frac": 0.15,
+  "seed": 0,
+  "pca_var_explained": 0.30860793590545654,
+  "C0_projection_sane": {
+    "rule": "投影 dpt 與真實 dpt 的 Spearman > 0.80",
+    "spearman_r": 0.9213948160395488,
+    "pvalue": 0.0,
+    "pass": true
+  },
+  "C1_state_recovery": {
+    "rule": "ncsMBC 的回收率 ≥ 0.80",
+    "overall_accuracy": 0.7554410080183276,
+    "focus_state": "ncsMBC",
+    "focus_recovery": 0.8654223968565815,
+    "n_states": 48,
+    "per_state": {
+      "GC DZ Noproli": {
+        "n": 2,
+        "recovery": 0.0,
+        "top_confusion": "NBC"
+      },
+      "Mature IgM+ PC": {
+        "n": 4,
+        "recovery": 0.0,
+        "top_confusion": "MBC derived IgG+ PC"
+      },
+      "MBC derived early PC precursor": {
+        "n": 6,
+        "recovery": 0.0,
+        "top_confusion": "csMBC"
+      },
+      "Short lived IgM+ PC": {
+        "n": 10,
+        "recovery": 0.0,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "Transitional PB": {
+        "n": 6,
+        "recovery": 0.0,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "preGC": {
+        "n": 18,
+        "recovery": 0.0,
+        "top_confusion": "csMBC"
+      },
+      "Proliferative NBC": {
+        "n": 7,
+        "recovery": 0.0,
+        "top_confusion": "NBC"
+      },
+      "NBC CD229+": {
+        "n": 70,
+        "recovery": 0.08571428571428572,
+        "top_confusion": "ncsMBC"
+      },
+      "MBC derived IgA+ PC": {
+        "n": 11,
+        "recovery": 0.09090909090909091,
+        "top_confusion": "Mature IgA+ PC"
+      },
+      "Early PC precursor": {
+        "n": 10,
+        "recovery": 0.1,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "PB committed early PC precursor": {
+        "n": 10,
+        "recovery": 0.1,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "Early GC-commited NBC": {
+        "n": 68,
+        "recovery": 0.10294117647058823,
+        "top_confusion": "NBC"
+      },
+      "IgM+ early PC precursor": {
+        "n": 9,
+        "recovery": 0.1111111111111111,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "DZ migratory PC precursor": {
+        "n": 9,
+        "recovery": 0.1111111111111111,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "preMature IgG+ PC": {
+        "n": 32,
+        "recovery": 0.25,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "IgM+ PC precursor": {
+        "n": 10,
+        "recovery": 0.3,
+        "top_confusion": "preMature IgM+ PC"
+      },
+      "IgD PC precursor": {
+        "n": 12,
+        "recovery": 0.3333333333333333,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "Early MBC": {
+        "n": 17,
+        "recovery": 0.35294117647058826,
+        "top_confusion": "NBC"
+      },
+      "MBC FCRL5+": {
+        "n": 113,
+        "recovery": 0.40707964601769914,
+        "top_confusion": "csMBC"
+      },
+      "ncsMBC FCRL4/5+": {
+        "n": 89,
+        "recovery": 0.449438202247191,
+        "top_confusion": "csMBC FCRL4/5+"
+      },
+      "Mature IgG+ PC": {
+        "n": 20,
+        "recovery": 0.5,
+        "top_confusion": "Mature IgA+ PC"
+      },
+      "MBC derived PC precursor": {
+        "n": 10,
+        "recovery": 0.5,
+        "top_confusion": "IgG+ PC precursor"
+      },
+      "LZ": {
+        "n": 120,
+        "recovery": 0.525,
+        "top_confusion": "DZ_LZ transition"
+      },
+      "GC-commited NBC": {
+        "n": 242,
+        "recovery": 0.5578512396694215,
+        "top_confusion": "NBC"
+      },
+      "NBC IFN-activated": {
+        "n": 87,
+        "recovery": 0.5747126436781609,
+        "top_confusion": "NBC"
+      },
+      "LZ_DZ transition": {
+        "n": 66,
+        "recovery": 0.5757575757575758,
+        "top_confusion": "DZ late Sphase"
+      },
+      "DZ cell cycle exit": {
+        "n": 45,
+        "recovery": 0.5777777777777777,
+        "top_confusion": "DZ non proliferative"
+      },
+      "preMature IgM+ PC": {
+        "n": 12,
+        "recovery": 0.5833333333333334,
+        "top_confusion": "MBC derived PC precursor"
+      },
+      "PB": {
+        "n": 13,
+        "recovery": 0.6153846153846154,
+        "top_confusion": "Reactivated proliferative MBCs"
+      },
+      "Reactivated proliferative MBCs": {
+        "n": 84,
+        "recovery": 0.6428571428571429,
+        "top_confusion": "DZ late G2Mphase"
+      },
+      "Precursor MBCs": {
+        "n": 67,
+        "recovery": 0.6567164179104478,
+        "top_confusion": "DZ_LZ transition"
+      },
+      "PC committed Light Zone GCBC": {
+        "n": 31,
+        "recovery": 0.6774193548387096,
+        "top_confusion": "DZ_LZ transition"
+      },
+      "LZ proliferative": {
+        "n": 75,
+        "recovery": 0.72,
+        "top_confusion": "DZ late Sphase"
+      },
+      "DZ early Sphase": {
+        "n": 155,
+        "recovery": 0.7225806451612903,
+        "top_confusion": "DZ late Sphase"
+      },
+      "csMBC FCRL4/5+": {
+        "n": 189,
+        "recovery": 0.746031746031746,
+        "top_confusion": "csMBC"
+      },
+      "MBC derived IgG+ PC": {
+        "n": 21,
+        "recovery": 0.7619047619047619,
+        "top_confusion": "Mature IgG+ PC"
+      },
+      "DZ early G2Mphase": {
+        "n": 127,
+        "recovery": 0.7716535433070866,
+        "top_confusion": "DZ late G2Mphase"
+      },
+      "NBC": {
+        "n": 1394,
+        "recovery": 0.7826398852223816,
+        "top_confusion": "NBC early activation"
+      },
+      "LZ_DZ reentry commitment": {
+        "n": 53,
+        "recovery": 0.7924528301886793,
+        "top_confusion": "LZ"
+      },
+      "NBC early activation": {
+        "n": 824,
+        "recovery": 0.7985436893203883,
+        "top_confusion": "NBC"
+      },
+      "DZ late G2Mphase": {
+        "n": 126,
+        "recovery": 0.8333333333333334,
+        "top_confusion": "DZ early G2Mphase"
+      },
+      "IgG+ PC precursor": {
+        "n": 60,
+        "recovery": 0.85,
+        "top_confusion": "IgD PC precursor"
+      },
+      "csMBC": {
+        "n": 875,
+        "recovery": 0.8548571428571429,
+        "top_confusion": "ncsMBC"
+      },
+      "ncsMBC": {
+        "n": 1018,
+        "recovery": 0.8654223968565815,
+        "top_confusion": "csMBC"
+      },
+      "Mature IgA+ PC": {
+        "n": 27,
+        "recovery": 0.8888888888888888,
+        "top_confusion": "preMature IgG+ PC"
+      },
+      "DZ late Sphase": {
+        "n": 228,
+        "recovery": 0.8903508771929824,
+        "top_confusion": "DZ early G2Mphase"
+      },
+      "DZ non proliferative": {
+        "n": 201,
+        "recovery": 0.9154228855721394,
+        "top_confusion": "DZ_LZ transition"
+      },
+      "DZ_LZ transition": {
+        "n": 301,
+        "recovery": 0.9368770764119602,
+        "top_confusion": "DZ non proliferative"
+      }
+    },
+    "pass": true
+  },
+  "C2_smoothing_artefact": {
+    "rule": "留出 ncsMBC 的投影 dpt IQR 寬度 ≤ 2.0 × 腫瘤的 0.0084 → 「腫瘤特別集中」必須撤回",
+    "holdout_proj_iqr_width": 0.018139565829187652,
+    "holdout_true_iqr_width": 0.02150816982612014,
+    "tumour_iqr_width": 0.0084,
+    "smoothing_factor_in_normal_cells": 1.1857047753321748,
+    "tightness_claim_must_be_withdrawn": false
+  },
+  "C3_median_displacement": {
+    "rule": "留出細胞的位移與腫瘤的位移同向且在 0.5–2 倍之間 → 判定為管線假象",
+    "holdout_shift": 0.001363458111882196,
+    "tumour_shift": 0.010266210636496596,
+    "ratio": 0.13281026078259814,
+    "displacement_is_artefact": false
+  },
+  "C4_neighbour_distance": {
+    "note": "描述性。留出細胞與參考系同批次，距離必然偏小，此比較被批次混淆；腫瘤公平的對照是同檢體非腫瘤細胞（15.190）。",
+    "holdout_median": 14.011560440063477,
+    "holdout_q25_q75": [
+      12.783268213272095,
+      14.976170301437378
+    ],
+    "tumour_median": 15.783,
+    "intra_sample_nontumour_median": 15.19
+  },
+  "verdict": {
+    "C0": true,
+    "C1_focus_pass": true,
+    "C2_tightness_claim_withdrawn": false,
+    "C3_displacement_is_artefact": false
+  }
+}

@@ -1,0 +1,46 @@
+[_compat] 已為 csr_array, csc_array, coo_array, lil_array, dia_array, bsr_array, dok_array 補上 getnnz()
+[_compat] 已修補 scanpy 的 kNN 連續性問題
+[233] 參考: (46216, 37378)
+[233] 對位基因: 2000
+[233] 留出 6984 / 46216 顆（48 個狀態）
+[233] PCA 擬合於保留的 39232 顆，解釋變異 0.309
+[233] kNN 完成
+[233] 
+=== C0 健全性 ===
+[233]   投影 dpt vs 真實 dpt：Spearman r = 0.9214 (p = 0) → 通過
+[233] 
+=== C1 狀態回收率（留出細胞，走完全相同的管線）===
+[233]   整體準確率 0.755（48 個狀態）
+[233]   ncsMBC 回收率 0.865（門檻 0.80）→ 通過
+[233] 
+  最差的 8 個狀態：
+[233]     GC DZ Noproli                      n=    2 回收 0.000  最常誤判成 → NBC
+[233]     Mature IgM+ PC                     n=    4 回收 0.000  最常誤判成 → MBC derived IgG+ PC
+[233]     MBC derived early PC precursor     n=    6 回收 0.000  最常誤判成 → csMBC
+[233]     Short lived IgM+ PC                n=   10 回收 0.000  最常誤判成 → IgG+ PC precursor
+[233]     Transitional PB                    n=    6 回收 0.000  最常誤判成 → IgG+ PC precursor
+[233]     preGC                              n=   18 回收 0.000  最常誤判成 → csMBC
+[233]     Proliferative NBC                  n=    7 回收 0.000  最常誤判成 → NBC
+[233]     NBC CD229+                         n=   70 回收 0.086  最常誤判成 → ncsMBC
+[233]   最好的 5 個：
+[233]     ncsMBC                             n= 1018 回收 0.865
+[233]     Mature IgA+ PC                     n=   27 回收 0.889
+[233]     DZ late Sphase                     n=  228 回收 0.890
+[233]     DZ non proliferative               n=  201 回收 0.915
+[233]     DZ_LZ transition                   n=  301 回收 0.937
+[233] 
+=== C2 「腫瘤很集中」是生物還是平滑假象 ===
+[233]   留出 ncsMBC：真實 dpt IQR 寬 0.0215 → 投影後 0.0181（被平滑 1.2 倍）
+[233]   腫瘤投影 dpt IQR 寬 0.0084
+[233]   → 正常細胞投影後仍明顯較寬 → 腫瘤的集中程度有生物成分
+[233] 
+=== C3 中位數位移 ===
+[233]   留出 ncsMBC：真實中位 0.0378 → 投影中位 0.0392（位移 +0.0014）
+[233]   腫瘤：投影中位 0.0481，對同一真實中位的位移 +0.0103
+[233]   比值 0.13 → 位移不能單以管線解釋
+[233] 
+=== C4 鄰居距離（描述性）===
+[233]   留出參考細胞 14.012 | 同檢體非腫瘤 15.190 | 腫瘤 15.783
+[233]   （留出細胞同批次，數字必然偏小，不可直接拿來說腫瘤是外插）
+[233] 
+→ results/233_projection_control.json、233_state_recovery.csv、233_holdout_cells.csv.gz

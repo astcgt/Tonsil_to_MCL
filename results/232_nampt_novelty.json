@@ -1,0 +1,504 @@
+{
+  "queries": {
+    "L1_nampt_lymphoma": {
+      "query": "NAMPT AND lymphoma",
+      "count": 43,
+      "top": [
+        {
+          "pmid": "42845519",
+          "year": "2026",
+          "journal": "bioRxiv",
+          "title": "Tyrosine phosphorylation and dimerization cooperatively activate NAMPT to enable NAD+ synthesis in cancer."
+        },
+        {
+          "pmid": "42544650",
+          "year": "2026",
+          "journal": "Zhongguo Shi Yan Xue Ye Xue Za Zhi",
+          "title": "[Daporinad Potently Induces Cell Death in Ph(+) Acute Lymphoblastic Leukemia SUP-B15 Cells Independent of the Intrinsic Apoptotic Pathway]."
+        },
+        {
+          "pmid": "42308688",
+          "year": "2026",
+          "journal": "J Geriatr Oncol",
+          "title": "Patient-reported outcomes in BRUIN CLL-321: A randomized phase 3 trial comparing pirtobrutinib to investigators choice of idelalisib plus rituximab or bendamustine plus rituximab in patients with relapsed/refractory chronic lymphocytic leukemia/small lymphocytic lymphoma in the post-cBTKi setting."
+        },
+        {
+          "pmid": "42180876",
+          "year": "2026",
+          "journal": "Transl Cancer Res",
+          "title": "Starving leukemia: nicotinamide phosphoribosyltransferase-dependent nicotinamide adenine dinucleotide salvage links metabolic vulnerability to therapeutic sensitivity in acute myeloid leukemia."
+        },
+        {
+          "pmid": "41993707",
+          "year": "2026",
+          "journal": "Pharm Sci Adv",
+          "title": "NAD(+) precursor supplementation reverses CD36-mediated lipid accumulation and ferroptosis to restore antitumor function of NK cells in DLBCL."
+        },
+        {
+          "pmid": "41727499",
+          "year": "2026",
+          "journal": "Front Immunol",
+          "title": "Predictors and responses to varying durations of BTK inhibitor bridging therapy before anti-CD19 CAR-T cell therapy in patients with relapsed/refractory DLBCL."
+        },
+        {
+          "pmid": "41428986",
+          "year": "2026",
+          "journal": "Blood Adv",
+          "title": "Inhibition of NAMPT targets DNA damage response to sensitize alkylating chemotherapy in TP53 mutant mantle cell lymphoma."
+        },
+        {
+          "pmid": "41401031",
+          "year": "2026",
+          "journal": "Leuk Lymphoma",
+          "title": "NAMPT inhibition uncovers therapeutic vulnerabilities to venetoclax and chemotherapy in acute myelogenous leukemia."
+        },
+        {
+          "pmid": "41103169",
+          "year": "2025",
+          "journal": "Cytometry A",
+          "title": "Metabolic Changes in Living Human Lymphoma Cells Intervening NAD (+) Metabolism as Revealed by NAD(P)H-Fluorescence Lifetime Imaging and Para-Hydrogen-Induced Polarization NMR."
+        },
+        {
+          "pmid": "40526635",
+          "year": "2025",
+          "journal": "PLoS One",
+          "title": "Efficacy of NAMPT inhibition in T-cell acute lymphoblastic leukemia."
+        },
+        {
+          "pmid": "39105568",
+          "year": "2024",
+          "journal": "Blood Cancer Discov",
+          "title": "Repurposing NAMPT Inhibitors for Germinal Center B Cell-Like Diffuse Large B-Cell Lymphoma."
+        },
+        {
+          "pmid": "38359376",
+          "year": "2024",
+          "journal": "Blood Adv",
+          "title": "A molecular circuit linking the BCR to the NAD biosynthetic enzyme NAMPT is an actionable target in Richter syndrome."
+        }
+      ]
+    },
+    "L1_nampt_inhibitor_clinical": {
+      "query": "(NAMPT) AND (inhibitor) AND (clinical trial[pt])",
+      "count": 7,
+      "top": [
+        {
+          "pmid": "42308688",
+          "year": "2026",
+          "journal": "J Geriatr Oncol",
+          "title": "Patient-reported outcomes in BRUIN CLL-321: A randomized phase 3 trial comparing pirtobrutinib to investigators choice of idelalisib plus rituximab or bendamustine plus rituximab in patients with relapsed/refractory chronic lymphocytic leukemia/small lymphocytic lymphoma in the post-cBTKi setting."
+        },
+        {
+          "pmid": "41824279",
+          "year": "2026",
+          "journal": "Target Oncol",
+          "title": "First-in-Human Phase I Study of KPT-9274, a First-in-Class Dual Inhibitor of PAK4 and NAMPT, in Patients with Advanced Solid Malignancies."
+        },
+        {
+          "pmid": "41727499",
+          "year": "2026",
+          "journal": "Front Immunol",
+          "title": "Predictors and responses to varying durations of BTK inhibitor bridging therapy before anti-CD19 CAR-T cell therapy in patients with relapsed/refractory DLBCL."
+        },
+        {
+          "pmid": "24819315",
+          "year": "2014",
+          "journal": "Gynecol Endocrinol",
+          "title": "Effect of simvastatin treatment on plasma visfatin levels in obese women."
+        },
+        {
+          "pmid": "20470283",
+          "year": "2010",
+          "journal": "Nephrology (Carlton)",
+          "title": "Effect of renin-angiotensin-aldosterone system (RAAS) blockade on visfatin levels in diabetic nephropathy."
+        },
+        {
+          "pmid": "17931620",
+          "year": "2008",
+          "journal": "Eur J Pharmacol",
+          "title": "Effect of rosuvastatin treatment on plasma visfatin levels in patients with primary hyperlipidemia."
+        },
+        {
+          "pmid": "17142138",
+          "year": "2006",
+          "journal": "Metabolism",
+          "title": "The effect of spironolactone on circulating adipocytokines in patients with type 2 diabetes mellitus complicated by diabetic nephropathy."
+        }
+      ]
+    },
+    "L2_nampt_ferroptosis": {
+      "query": "NAMPT AND ferroptosis",
+      "count": 20,
+      "top": [
+        {
+          "pmid": "42735786",
+          "year": "2026",
+          "journal": "Life Sci",
+          "title": "NAMPT activation protects against myocardial ischemia/reperfusion injury via FSP1-CoQ10 ferroptosis defense."
+        },
+        {
+          "pmid": "42449637",
+          "year": "2026",
+          "journal": "Cancers (Basel)",
+          "title": "Targeting Sirtuins in Thyroid Cancer: Mechanisms, Drug Development, and Emerging Roles in Tumor Immunity and Ferroptosis."
+        },
+        {
+          "pmid": "41993707",
+          "year": "2026",
+          "journal": "Pharm Sci Adv",
+          "title": "NAD(+) precursor supplementation reverses CD36-mediated lipid accumulation and ferroptosis to restore antitumor function of NK cells in DLBCL."
+        },
+        {
+          "pmid": "41988189",
+          "year": "2026",
+          "journal": "Front Immunol",
+          "title": "NAMPT inhibition induces ferroptosis via mitochondrial metabolic reprogramming to enhance tumour immunogenicity in glioblastoma."
+        },
+        {
+          "pmid": "41557688",
+          "year": "2026",
+          "journal": "PLoS One",
+          "title": "Cell death-related gene signatures as dual-function biomarkers: Early diagnosis and therapeutic targeting in Staphylococcus aureus pneumonia."
+        },
+        {
+          "pmid": "41021591",
+          "year": "2025",
+          "journal": "PLoS One",
+          "title": "Machine learning-based transcriptomic analysis identifies NAMPT and SAT1 as potential biomarkers and therapeutic targets in ferroptosis-associated rheumatoid arthritis."
+        },
+        {
+          "pmid": "40695797",
+          "year": "2025",
+          "journal": "Cell Death Dis",
+          "title": "(+)-JQ-1 alleviates cardiac injury in myocardial infarction by inhibiting ferroptosis through the NAMPT/SIRT1 pathway."
+        },
+        {
+          "pmid": "40492508",
+          "year": "2025",
+          "journal": "Adv Sci (Weinh)",
+          "title": "ROS-Responsive Hydrogel for Localized Delivery of Nampt and Stat3 Inhibitors Exhibits Synergistic Antitumor Effects in Colorectal Cancer Through Ferroptosis Induction and Immune Microenvironment Remodeling."
+        },
+        {
+          "pmid": "40228223",
+          "year": "2025",
+          "journal": "Crit Rev Eukaryot Gene Expr",
+          "title": "Identification of Ferroptosis-Associated Genes in Primary Open-Angle Glaucoma through Bioinformatics Analysis."
+        },
+        {
+          "pmid": "40185323",
+          "year": "2025",
+          "journal": "Eur J Pharmacol",
+          "title": "Tangeretin alleviates myocardial ischemia-reperfusion injury by inhibiting ferroptosis via targeting nicotinamide phosphoribosyltransferase (NAMPT)."
+        },
+        {
+          "pmid": "39072329",
+          "year": "2024",
+          "journal": "Front Immunol",
+          "title": "Exploration of ferroptosis and necroptosis-related genes and potential molecular mechanisms in psoriasis and atherosclerosis."
+        },
+        {
+          "pmid": "39059204",
+          "year": "2024",
+          "journal": "Redox Biol",
+          "title": "Inhibition of ethanol-induced eNAMPT secretion attenuates liver ferroptosis through BAT-Liver communication."
+        }
+      ]
+    },
+    "L2_nampt_slc7a11": {
+      "query": "NAMPT AND SLC7A11",
+      "count": 2,
+      "top": [
+        {
+          "pmid": "37370246",
+          "year": "2023",
+          "journal": "Cancer Biol Ther",
+          "title": "LncRNA ITGB2-AS1 promotes cisplatin resistance of non-small cell lung cancer by inhibiting ferroptosis via activating the FOSL2/NAMPT axis."
+        },
+        {
+          "pmid": "36867945",
+          "year": "2023",
+          "journal": "Redox Biol",
+          "title": "A pan-cancer analysis shows immunoevasive characteristics in NRF2 hyperactive squamous malignancies."
+        }
+      ]
+    },
+    "L2_nad_ferroptosis": {
+      "query": "(NAD OR NADPH) AND ferroptosis AND lymphoma",
+      "count": 6,
+      "top": [
+        {
+          "pmid": "41993707",
+          "year": "2026",
+          "journal": "Pharm Sci Adv",
+          "title": "NAD(+) precursor supplementation reverses CD36-mediated lipid accumulation and ferroptosis to restore antitumor function of NK cells in DLBCL."
+        },
+        {
+          "pmid": "41959453",
+          "year": "2026",
+          "journal": "bioRxiv",
+          "title": "Epstein-Barr Virus Latent Membrane Protein 1 Suppresses Ferroptosis via Pentose Phosphate Pathway and Glutathione Metabolism."
+        },
+        {
+          "pmid": "41297623",
+          "year": "2026",
+          "journal": "Exp Cell Res",
+          "title": "Sagittaria sagittifolia polysaccharide regulates Nrf2-mediated antioxidant to improve apoptosis and ferroptosis in high glucose-induced lens epithelial cells."
+        },
+        {
+          "pmid": "40165507",
+          "year": "2025",
+          "journal": "J Biochem Mol Toxicol",
+          "title": "Polyphyllin VII Enhances the Antitumor Activity of Cisplatin in Non-Small Cell Lung Cancer Cells by Inducing Ferroptosis and Enhancing Apoptosis."
+        },
+        {
+          "pmid": "39095152",
+          "year": "2025",
+          "journal": "J Environ Sci (China)",
+          "title": "Selenium deficiency exacerbates ROS/ER stress mediated pyroptosis and ferroptosis induced by bisphenol A in chickens thymus."
+        },
+        {
+          "pmid": "38537407",
+          "year": "2024",
+          "journal": "Poult Sci",
+          "title": "Molybdenum and cadmium co-induce apoptosis and ferroptosis through inhibiting Nrf2 signaling pathway in duck (Anas platyrhyncha) testes."
+        }
+      ]
+    },
+    "L3_nampt_mcl": {
+      "query": "NAMPT AND (mantle cell lymphoma)",
+      "count": 4,
+      "top": [
+        {
+          "pmid": "41428986",
+          "year": "2026",
+          "journal": "Blood Adv",
+          "title": "Inhibition of NAMPT targets DNA damage response to sensitize alkylating chemotherapy in TP53 mutant mantle cell lymphoma."
+        },
+        {
+          "pmid": "35008323",
+          "year": "2021",
+          "journal": "Cancers (Basel)",
+          "title": "PAK4 and NAMPT as Novel Therapeutic Targets in Diffuse Large B-Cell Lymphoma, Follicular Lymphoma, and Mantle Cell Lymphoma."
+        },
+        {
+          "pmid": "30455381",
+          "year": "2019",
+          "journal": "Blood",
+          "title": "IDH2 inhibition enhances proteasome inhibitor responsiveness in hematological malignancies."
+        },
+        {
+          "pmid": "19196867",
+          "year": "2009",
+          "journal": "Blood",
+          "title": "The NAD biosynthesis inhibitor APO866 has potent antitumor activity against hematologic malignancies."
+        }
+      ]
+    },
+    "L3_nampt_bcell_selective": {
+      "query": "NAMPT AND (B-cell) AND (dependency OR vulnerability)",
+      "count": 33,
+      "top": [
+        {
+          "pmid": "43060098",
+          "year": "2026",
+          "journal": "bioRxiv",
+          "title": "NAD Metabolism Drives CTCF-Cohesin Chromatin Regulation in EBV-Transformed B-Cells."
+        },
+        {
+          "pmid": "42180876",
+          "year": "2026",
+          "journal": "Transl Cancer Res",
+          "title": "Starving leukemia: nicotinamide phosphoribosyltransferase-dependent nicotinamide adenine dinucleotide salvage links metabolic vulnerability to therapeutic sensitivity in acute myeloid leukemia."
+        },
+        {
+          "pmid": "41103169",
+          "year": "2025",
+          "journal": "Cytometry A",
+          "title": "Metabolic Changes in Living Human Lymphoma Cells Intervening NAD (+) Metabolism as Revealed by NAD(P)H-Fluorescence Lifetime Imaging and Para-Hydrogen-Induced Polarization NMR."
+        },
+        {
+          "pmid": "33182523",
+          "year": "2020",
+          "journal": "Cells",
+          "title": "Visfatin: A Possible Role in Cardiovasculo-Metabolic Disorders."
+        },
+        {
+          "pmid": "30975903",
+          "year": "2019",
+          "journal": "J Biol Chem",
+          "title": "Nuclear transport of nicotinamide phosphoribosyltransferase is cell cycle-dependent in mammalian cells, and its inhibition slows cell growth."
+        },
+        {
+          "pmid": "28904384",
+          "year": "2018",
+          "journal": "Leukemia",
+          "title": "Targeting the vulnerability to NAD(+) depletion in B-cell acute lymphoblastic leukemia."
+        },
+        {
+          "pmid": "28877980",
+          "year": "2018",
+          "journal": "Gut",
+          "title": "NAD metabolism fuels human and mouse intestinal inflammation."
+        },
+        {
+          "pmid": "27576732",
+          "year": "2016",
+          "journal": "Sci Rep",
+          "title": "Pre-B-cell colony-enhancing factor protects against apoptotic neuronal death and mitochondrial damage in ischemia."
+        },
+        {
+          "pmid": "26767650",
+          "year": "2016",
+          "journal": "Endocrine",
+          "title": "Nicotinamide phosphoribosyltransferase leukocyte overexpression in Graves' opthalmopathy."
+        },
+        {
+          "pmid": "25709099",
+          "year": "2015",
+          "journal": "Pharmacol Ther",
+          "title": "Inhibition of nicotinamide phosphoribosyltransferase (NAMPT) as a therapeutic strategy in cancer."
+        },
+        {
+          "pmid": "25516545",
+          "year": "2015",
+          "journal": "Am J Physiol Endocrinol Metab",
+          "title": "Pre-B cell colony enhancing factor induces Nampt-dependent translocation of the insulin receptor out of lipid microdomains in A549 lung epithelial cells."
+        },
+        {
+          "pmid": "25172933",
+          "year": "2014",
+          "journal": "Clin Cancer Res",
+          "title": "On-target effect of FK866, a nicotinamide phosphoribosyl transferase inhibitor, by apoptosis-mediated death in chronic lymphocytic leukemia cells."
+        }
+      ]
+    },
+    "CTRL_ccnd1_mcl": {
+      "query": "CCND1 AND (mantle cell lymphoma)",
+      "count": 413,
+      "top": [
+        {
+          "pmid": "43078063",
+          "year": "2026",
+          "journal": "J Investig Med High Impact Case Rep",
+          "title": "Missed Diagnosis of Mantle Cell Lymphoma in a Patient Initially Diagnosed With Ulcerative Colitis: A Case Report."
+        },
+        {
+          "pmid": "43070215",
+          "year": "2026",
+          "journal": "Hematol Oncol",
+          "title": "A Novel KMT2A::ETS1 Fusion in Mantle Cell Lymphoma."
+        },
+        {
+          "pmid": "43010142",
+          "year": "2026",
+          "journal": "Histopathology",
+          "title": "Clinical, histopathological and molecular characterization of mantle cell lymphoma with MALToma-like presentation."
+        },
+        {
+          "pmid": "42967635",
+          "year": "2026",
+          "journal": "Zhonghua Bing Li Xue Za Zhi",
+          "title": "[Composite follicular lymphoma and mantle cell lymphoma: report of a case]."
+        },
+        {
+          "pmid": "42648785",
+          "year": "2026",
+          "journal": "BMJ Case Rep",
+          "title": "Mantle cell lymphoma presenting as bullous pemphigoid: a rare paraneoplastic syndrome."
+        },
+        {
+          "pmid": "42619836",
+          "year": "2026",
+          "journal": "medRxiv",
+          "title": "Surveying the Genomic Landscape of Mantle Cell Lymphoma Indicates the Importance of Multimodal Genomic and Transcriptomic Exploration."
+        },
+        {
+          "pmid": "42375693",
+          "year": "2026",
+          "journal": "Kidney Med",
+          "title": "Concurrent Mantle Cell Lymphoma and Paraneoplastic Membranous Nephropathy."
+        },
+        {
+          "pmid": "42308239",
+          "year": "2026",
+          "journal": "Blood Adv",
+          "title": "Application of Hi-C sequencing to detect oncogene rearrangements for diagnosis and treatment of large B-cell lymphoma."
+        },
+        {
+          "pmid": "42226881",
+          "year": "2026",
+          "journal": "Cureus",
+          "title": "Anti-3-Hydroxy-3-Methylglutaryl-Coenzyme A Reductase (HMGCR) Immune-Mediated Necrotizing Myopathy With Subsequent Diagnosis of Mantle Cell Lymphoma."
+        },
+        {
+          "pmid": "42200827",
+          "year": "2026",
+          "journal": "Hematol Rep",
+          "title": "Leukemic Non-Nodal Mantle Cell Lymphoma Presenting with Traumatic Splenic Rupture."
+        },
+        {
+          "pmid": "42096246",
+          "year": "2026",
+          "journal": "Blood",
+          "title": "Classic Hodgkin lymphoma with IGH::CCND1 rearrangement: evidence of clonal relation to preceding mantle cell lymphoma."
+        },
+        {
+          "pmid": "42023939",
+          "year": "2026",
+          "journal": "J Cutan Pathol",
+          "title": "Cutaneous Acral Presentation of Indolent Mantle Cell Lymphoma With Prominent Nail Involvement and Atypical Immunophenotype."
+        }
+      ]
+    }
+  },
+  "thresholds": {
+    "L1_nampt_lymphoma": 20,
+    "L2_nampt_ferroptosis": 10,
+    "L2_nampt_slc7a11": 3,
+    "CTRL_ccnd1_mcl": 500
+  },
+  "client_tool": "regulatory-genomics-pipeline",
+  "note": "PubMed 標題／摘要層級檢索，不等於全文檢索",
+  "control": {
+    "ccnd1_mcl_count": 413,
+    "prespecified_threshold_500": 500,
+    "prespecified_threshold_passed": false,
+    "prespecified_threshold_note": "我事先猜 ≥ 500，實際 413 —— 這是我的校準錯誤，不是檢索故障。對照的用途是檢定檢索健康，不該依賴猜對文獻量級。",
+    "operative_rule": "命中 ≥ 50 且前 12 篇中有 ≥ 3 篇標題含 'mantle'",
+    "titles_matching": 11,
+    "pass": true
+  },
+  "L1_target_known": {
+    "rule": "NAMPT AND lymphoma ≥ 20",
+    "count": 43,
+    "known": true
+  },
+  "L2_mechanism_known": {
+    "rule": "NAMPT AND ferroptosis ≥ 10 或 NAMPT AND SLC7A11 ≥ 3",
+    "counts": {
+      "ferroptosis": 20,
+      "slc7a11": 2
+    },
+    "known": true
+  },
+  "L3_our_specific_claim": {
+    "rule": "NAMPT AND MCL 有命中、且前 12 篇裡有標題同時含 NAMPT 與 mantle/MCL",
+    "count": 4,
+    "title_level_hits": [
+      {
+        "pmid": "41428986",
+        "year": "2026",
+        "journal": "Blood Adv",
+        "title": "Inhibition of NAMPT targets DNA damage response to sensitize alkylating chemotherapy in TP53 mutant mantle cell lymphoma."
+      },
+      {
+        "pmid": "35008323",
+        "year": "2021",
+        "journal": "Cancers (Basel)",
+        "title": "PAK4 and NAMPT as Novel Therapeutic Targets in Diffuse Large B-Cell Lymphoma, Follicular Lymphoma, and Mantle Cell Lymphoma."
+      }
+    ],
+    "known": true
+  },
+  "verdict": "fully_known_reposition_as_method_validation"
+}
