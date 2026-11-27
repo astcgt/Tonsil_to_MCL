@@ -1,0 +1,126 @@
+{
+  "R4_scale_sanity": {
+    "rule": "打亂序列對自己的 z 必須恆為 0",
+    "values": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "pass": true
+  },
+  "R3_positive_control": {
+    "rule": "天然 NRF2 對 MAFG 的 z ≥ 2.0",
+    "z": 5.663651930483198,
+    "pass": true
+  },
+  "R1_pan_maf_coverage": {
+    "rule": "MAFG/MAFF/MAFK 三個都 z ≥ 2.0",
+    "per_design": {
+      "D1_best": {
+        "small_maf_z": {
+          "MAFG": 5.974979398078849,
+          "MAFF": 1.5680773285741418,
+          "MAFK": 10.21551755890686
+        },
+        "off_target_z": {
+          "BACH1": 0.03997580347479864,
+          "FOS": 4.581353103958046,
+          "JUN": -1.586726840617747,
+          "NFE2L2": 0.21670859073354662
+        },
+        "n_small_maf_passing": 2,
+        "off_target_hits": [
+          "FOS"
+        ],
+        "call": "partial_maf_2_of_3"
+      },
+      "D2_second": {
+        "small_maf_z": {
+          "MAFG": 5.223589132637518,
+          "MAFF": 4.474239804924433,
+          "MAFK": 9.478858272153856
+        },
+        "off_target_z": {
+          "BACH1": 0.37987921730995095,
+          "FOS": 16.625639460607665,
+          "JUN": -5.418270219823708,
+          "NFE2L2": -0.5343251649221213
+        },
+        "n_small_maf_passing": 3,
+        "off_target_hits": [
+          "FOS"
+        ],
+        "call": "pan_maf_coverage"
+      }
+    }
+  },
+  "R2_off_target": {
+    "rule": "BACH1/FOS/JUN/NFE2L2 都必須 z < 2.0",
+    "hits": {
+      "D1_best": [
+        "FOS"
+      ],
+      "D2_second": [
+        "FOS"
+      ]
+    }
+  },
+  "boltz_for_transparency": {
+    "note": "Boltz-2 的陰性對照在 MafK 上與真設計無法區分（步驟 132，n=20 時 0.646），判定不可用，此處僅列出不參與判定",
+    "z": {
+      "D1_best": {
+        "MAFG": 1.6951049297947958,
+        "MAFF": 1.6794811576303619,
+        "MAFK": 1.2676902206579899,
+        "BACH1": -0.14926130941646285,
+        "FOS": 0.6269026715383352,
+        "JUN": 6.24795304910235,
+        "NFE2L2": 1.0488516453760506
+      },
+      "D2_second": {
+        "MAFG": 1.3616351010911345,
+        "MAFF": 1.1129928959152413,
+        "MAFK": 0.7209702968146544,
+        "BACH1": 1.715933211338842,
+        "FOS": 0.03479477561824235,
+        "JUN": 1.6488197786641552,
+        "NFE2L2": -0.5324505480608617
+      },
+      "CTRLPOS_NRF2": {
+        "MAFG": 0.9647972997384866,
+        "MAFF": 0.6688370446079172,
+        "MAFK": 0.5469672268141487,
+        "BACH1": -0.061313858660188424,
+        "FOS": 2.262937120356539,
+        "JUN": 7.955291541939721,
+        "NFE2L2": -0.6656281343952778
+      }
+    }
+  },
+  "trade_off": {
+    "D1_best": {
+      "n_small_maf": 2,
+      "worst_off_target": "FOS",
+      "worst_off_target_z": 4.581353103958046,
+      "natural_NRF2_z_same_target": 7.913344451892065,
+      "exceeds_natural_partner": false
+    },
+    "D2_second": {
+      "n_small_maf": 3,
+      "worst_off_target": "FOS",
+      "worst_off_target_z": 16.625639460607665,
+      "natural_NRF2_z_same_target": 7.913344451892065,
+      "exceeds_natural_partner": true
+    }
+  },
+  "verdict": {
+    "any_design_meets_corrected_spec": [],
+    "D1_best": "partial_maf_2_of_3",
+    "D2_second": "pan_maf_coverage",
+    "reading": "舊判準把『也黏 MafF/MafK』當缺點；在 234 的冗餘結果之後，pan_maf_coverage 才是有效的形狀。"
+  }
+}

@@ -109,7 +109,7 @@ so a reader can recompute ipSAE, ipTM, pDockQ, pDockQ2 and LIS from them directl
   signal was retracted after peak accessibility explained it, and its gained coupling failed two
   chromatin tests. Of the four interface residues we first called critical, only **L79** is ranked
   critical by two methods.
-- The study's own report lists 71 hypotheses that were tested and rejected, including several of the
+- The study's own report lists 75 hypotheses that were tested and rejected, including several of the
   authors' own errors. Read that section before building on any single number here.
 
 ## Provenance of the primary data
@@ -217,7 +217,7 @@ ipSAE、ipTM、pDockQ、pDockQ2 與 LIS。
   「MafG 為可成藥樞紐」這一主張則較弱：其接觸訊號在被 peak 可及性解釋之後已撤回，
   其獲得的協同性在兩項染色質檢定中均未通過。我們最初認定為關鍵的四個介面殘基中，
   僅 **L79** 被兩種方法同時列為關鍵。
-- 本研究的報告列出 71 個經檢定後推翻的假設，其中包含作者自身的錯誤。在引用本倉庫任何單一數字之前，
+- 本研究的報告列出 75 個經檢定後推翻的假設，其中包含作者自身的錯誤。在引用本倉庫任何單一數字之前，
   建議先閱讀該節。
 
 ### 原始資料來源
