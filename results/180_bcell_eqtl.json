@@ -1,0 +1,69 @@
+{
+  "datasets": 18,
+  "n_cs_variants": 12,
+  "caqtl_note": "已作廢（2026-11-27 更新）。原文寫「記憶 B 細胞 caQTL 已登記但尚未釋出」，事實上 TenK10K 的 multiome caQTL 已經可以取得（Hugging Face anglixue/TenK10K_multiome，CC-BY-4.0），而且我們實際測了：六個元件都有受測 peak，q 值全部 ≥ 0.983。但這個陰性**不可解讀** —— 該資料集的顯著 peak 基礎率只有 2.01%，六個元件的期望命中數是 0.125，等於沒有檢定力。詳見 results/206_external_validation_scouting.md 與報告 §2.11。",
+  "genes": {
+    "SLC7A11": {
+      "n_cs_variants": 4,
+      "n_unique_positions": 3,
+      "foreground": {
+        "bp": 2517,
+        "n": 0,
+        "expected": 0.0
+      },
+      "background": {
+        "bp": 10975,
+        "n": 0,
+        "per_kb": 0.0,
+        "odds_ratio": NaN,
+        "p": 1.0
+      },
+      "width_matched": {
+        "bp": 8334,
+        "n": 0,
+        "odds_ratio": NaN,
+        "p": 1.0
+      },
+      "hits": [],
+      "datasets_with_cs": [
+        "GEUVADIS LCL"
+      ]
+    },
+    "MAFG": {
+      "n_cs_variants": 0
+    },
+    "SLC3A2": {
+      "n_cs_variants": 0
+    },
+    "GCLM": {
+      "n_cs_variants": 0
+    },
+    "AIFM2": {
+      "n_cs_variants": 8,
+      "n_unique_positions": 8,
+      "foreground": {
+        "bp": 0,
+        "n": 0,
+        "expected": 0.0
+      },
+      "background": {
+        "bp": 39221,
+        "n": 2,
+        "per_kb": 0.05099309043624589,
+        "odds_ratio": NaN,
+        "p": NaN
+      },
+      "width_matched": {
+        "bp": 9479,
+        "n": 2,
+        "odds_ratio": NaN,
+        "p": NaN
+      },
+      "hits": [],
+      "datasets_with_cs": [
+        "MAGE LCL"
+      ]
+    }
+  },
+  "caqtl_note_superseded": "記憶 B 細胞 caQTL 已登記但尚未釋出：TenK10K QTD100034 n=913、FG_multiome QTD00068 n=1108"
+}

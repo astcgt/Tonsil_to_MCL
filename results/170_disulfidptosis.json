@@ -1,0 +1,243 @@
+{
+  "n_lines": 1103,
+  "driver": "SLC7A11",
+  "by_set": {
+    "glucose_transport": {
+      "n_genes": 2,
+      "mean_rho": 0.016955605601247006,
+      "n_sig": 0,
+      "mean_z_vs_null": 0.41600780541310245
+    },
+    "PPP_oxidative": {
+      "n_genes": 6,
+      "mean_rho": -0.04269172963845274,
+      "n_sig": 1,
+      "mean_z_vs_null": -0.9391706115416106
+    },
+    "NADPH_other": {
+      "n_genes": 4,
+      "mean_rho": -0.00035306819783890997,
+      "n_sig": 1,
+      "mean_z_vs_null": 0.24627934680207883
+    },
+    "WRC_actin": {
+      "n_genes": 7,
+      "mean_rho": -0.010137522566380378,
+      "n_sig": 0,
+      "mean_z_vs_null": 0.15007933924174016
+    },
+    "ctrl_fatty_acid": {
+      "n_genes": 3,
+      "mean_rho": -0.05713122956246048,
+      "n_sig": 0,
+      "mean_z_vs_null": -0.9659193172791339
+    },
+    "ctrl_purine": {
+      "n_genes": 4,
+      "mean_rho": 0.07891075730733907,
+      "n_sig": 0,
+      "mean_z_vs_null": 0.29136188409931696
+    },
+    "ctrl_panessential": {
+      "n_genes": 2,
+      "mean_rho": -0.012559317283780694,
+      "n_sig": 0,
+      "mean_z_vs_null": -0.34256163608032675
+    },
+    "positive_ctrl_partner": {
+      "n_genes": 3,
+      "mean_rho": 0.0992550123424214,
+      "n_sig": 0,
+      "mean_z_vs_null": 0.5028138460396833
+    }
+  },
+  "lineage": {
+    "SLC2A1": {
+      "lymphoid": -0.025489930642077812,
+      "other": -0.004334692048482496
+    },
+    "SLC2A3": {
+      "lymphoid": -0.0034082131567664178,
+      "other": 0.02890104222399234
+    },
+    "G6PD": {
+      "lymphoid": -0.20888842880443148,
+      "other": -0.2165388385152137
+    },
+    "PGD": {
+      "lymphoid": -0.21726562562900686,
+      "other": -0.04312692922913144
+    },
+    "TALDO1": {
+      "lymphoid": 0.1141353251774137,
+      "other": 0.03577445918252496
+    },
+    "TKT": {
+      "lymphoid": 0.05299452934177689,
+      "other": -0.0596437333052844
+    },
+    "RPIA": {
+      "lymphoid": -0.11616591946473949,
+      "other": -0.007657902499710086
+    },
+    "RPE": {
+      "lymphoid": -0.06288471798828132,
+      "other": -0.09908140784494447
+    }
+  },
+  "mcl": {
+    "JVM2": {
+      "slc7a11_expr": 3.056583528366368,
+      "slc7a11_expr_pct": 0.43517679057116954,
+      "SLC2A1_dep": -0.43780139088630676,
+      "G6PD_dep": -0.20988932251930237
+    },
+    "MAVER1": {
+      "slc7a11_expr": 1.835924074254375,
+      "slc7a11_expr_pct": 0.17316409791477788,
+      "SLC2A1_dep": -0.09095528721809387,
+      "G6PD_dep": -0.43280649185180664
+    },
+    "Z138": {
+      "slc7a11_expr": 1.510961919277379,
+      "slc7a11_expr_pct": 0.12239347234814144,
+      "SLC2A1_dep": -0.8891907930374146,
+      "G6PD_dep": -0.6723873615264893
+    }
+  },
+  "stratified": {
+    "SLC2A1": {
+      "set": "glucose_transport",
+      "median_high_SLC7A11": -0.314462274312973,
+      "median_low_SLC7A11": -0.3623162806034088,
+      "delta": 0.04785400629043579,
+      "p_high_more_dependent": 0.797895454855883
+    },
+    "SLC2A3": {
+      "set": "glucose_transport",
+      "median_high_SLC7A11": 0.07765430957078934,
+      "median_low_SLC7A11": 0.0660167932510376,
+      "delta": 0.01163751631975174,
+      "p_high_more_dependent": 0.8387905212211275
+    },
+    "G6PD": {
+      "set": "PPP_oxidative",
+      "median_high_SLC7A11": -0.1714268922805786,
+      "median_low_SLC7A11": -0.07582206279039383,
+      "delta": -0.09560482949018478,
+      "p_high_more_dependent": 5.507210838195738e-09
+    },
+    "PGD": {
+      "set": "PPP_oxidative",
+      "median_high_SLC7A11": -0.8641011714935303,
+      "median_low_SLC7A11": -0.8644322752952576,
+      "delta": 0.0003311038017272949,
+      "p_high_more_dependent": 0.5222834241365722
+    },
+    "TALDO1": {
+      "set": "PPP_oxidative",
+      "median_high_SLC7A11": -0.10366353392601013,
+      "median_low_SLC7A11": -0.11898937821388245,
+      "delta": 0.015325844287872314,
+      "p_high_more_dependent": 0.949250622982636
+    },
+    "TKT": {
+      "set": "PPP_oxidative",
+      "median_high_SLC7A11": -0.28415220975875854,
+      "median_low_SLC7A11": -0.29484522342681885,
+      "delta": 0.010693013668060303,
+      "p_high_more_dependent": 0.2917432465463957
+    },
+    "RPIA": {
+      "set": "PPP_oxidative",
+      "median_high_SLC7A11": -0.307478666305542,
+      "median_low_SLC7A11": -0.31909582018852234,
+      "delta": 0.011617153882980347,
+      "p_high_more_dependent": 0.7398126388375748
+    },
+    "RPE": {
+      "set": "PPP_oxidative",
+      "median_high_SLC7A11": -0.6224803328514099,
+      "median_low_SLC7A11": -0.5928309559822083,
+      "delta": -0.02964937686920166,
+      "p_high_more_dependent": 0.0142528607880226
+    },
+    "NCKAP1": {
+      "set": "WRC_actin",
+      "median_high_SLC7A11": -0.4429711699485779,
+      "median_low_SLC7A11": -0.40794676542282104,
+      "delta": -0.035024404525756836,
+      "p_high_more_dependent": 0.06904369321579915
+    },
+    "WASF2": {
+      "set": "WRC_actin",
+      "median_high_SLC7A11": -0.2036435604095459,
+      "median_low_SLC7A11": -0.21386022865772247,
+      "delta": 0.010216668248176575,
+      "p_high_more_dependent": 0.8120137351307729
+    },
+    "CYFIP1": {
+      "set": "WRC_actin",
+      "median_high_SLC7A11": -0.29972225427627563,
+      "median_low_SLC7A11": -0.29673853516578674,
+      "delta": -0.0029837191104888916,
+      "p_high_more_dependent": 0.2059279407646175
+    },
+    "ABI1": {
+      "set": "WRC_actin",
+      "median_high_SLC7A11": -0.06379426270723343,
+      "median_low_SLC7A11": -0.06750088930130005,
+      "delta": 0.00370662659406662,
+      "p_high_more_dependent": 0.8584184337748209
+    },
+    "ABI2": {
+      "set": "WRC_actin",
+      "median_high_SLC7A11": 0.13045614957809448,
+      "median_low_SLC7A11": 0.12411251664161682,
+      "delta": 0.006343632936477661,
+      "p_high_more_dependent": 0.8508349130461648
+    },
+    "BRK1": {
+      "set": "WRC_actin",
+      "median_high_SLC7A11": -0.2115744650363922,
+      "median_low_SLC7A11": -0.21068137884140015,
+      "delta": -0.0008930861949920654,
+      "p_high_more_dependent": 0.32959672103246285
+    },
+    "RAC1": {
+      "set": "WRC_actin",
+      "median_high_SLC7A11": -0.7587100267410278,
+      "median_low_SLC7A11": -0.7192714214324951,
+      "delta": -0.039438605308532715,
+      "p_high_more_dependent": 0.12378125391678702
+    },
+    "PPAT": {
+      "set": "ctrl_purine",
+      "median_high_SLC7A11": -0.6023005843162537,
+      "median_low_SLC7A11": -0.6633175015449524,
+      "delta": 0.06101691722869873,
+      "p_high_more_dependent": 0.9982108796840163
+    },
+    "GART": {
+      "set": "ctrl_purine",
+      "median_high_SLC7A11": -0.3736432194709778,
+      "median_low_SLC7A11": -0.4612162113189697,
+      "delta": 0.08757299184799194,
+      "p_high_more_dependent": 0.9933904977876685
+    },
+    "PAICS": {
+      "set": "ctrl_purine",
+      "median_high_SLC7A11": -0.43931955099105835,
+      "median_low_SLC7A11": -0.5811821222305298,
+      "delta": 0.14186257123947144,
+      "p_high_more_dependent": 0.9999223326055081
+    },
+    "ATIC": {
+      "set": "ctrl_purine",
+      "median_high_SLC7A11": -0.20333725214004517,
+      "median_low_SLC7A11": -0.2778821289539337,
+      "delta": 0.07454487681388855,
+      "p_high_more_dependent": 0.9969387710132473
+    }
+  }
+}
